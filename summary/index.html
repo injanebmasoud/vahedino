@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>واحدینو | خلاصه وضعیت</title>
+    
+    <style>
+        /* Font Face */
+        @font-face {
+            font-family: "IRANSans";
+            src: url("IRANSansWeb(FaNum).woff2");
+        }
+
+        /* Root Variables */
+        :root {
+            --scale-factor: 1;
+            --primary-color: #051d33;
+            --secondary-color: rgba(13, 59, 102, .5);
+            --accent-color: #00b894;
+            --text-color: white;
+        }
+
+        /* Global Styles */
+        * {
+            font-family: "IRANSans";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--primary-color);
+            color: var(--text-color);
+            padding: 20px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, rgba(13, 59, 102, 0.8) 0%, rgba(13, 59, 102, 0) 100%);
+            border-radius: 15px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Navigation Styles */
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-item {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 8px 16px;
+            position: relative;
+        }
+
+        /* Container Styles */
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .status-box {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), transparent);
+        }
+
+        .status-box h2 {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Total Units Box */
+        .total-units {
+            background: rgba(0, 184, 148, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid rgba(0, 184, 148, 0.2);
+        }
+
+        .total-units span {
+            font-size: 1.1em;
+        }
+
+        .total-units strong {
+            color: var(--accent-color);
+            font-size: 1.2em;
+            margin: 0 5px;
+        }
+
+        /* Course List Styles */
+        .course-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .course-item {
+            background: rgba(13, 59, 102, .7);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .course-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .course-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .course-code {
+            color: var(--accent-color);
+            font-size: 0.9em;
+            padding: 4px 8px;
+            background: rgba(0, 184, 148, 0.1);
+            border-radius: 4px;
+        }
+
+        .course-prof {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 8px 0;
+        }
+
+        .course-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .course-units {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Exam Schedule Styles */
+        .exam-schedule {
+            margin-top: 20px;
+        }
+
+        .exam-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: background-color 0.2s ease;
+        }
+
+        .exam-item:hover {
+            background-color: rgba(13, 59, 102, 0.3);
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            transition: transform 0.2s ease;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Media Query */
+        @media screen and (max-width: 1200px) {
+            body {
+                transform-origin: top left;
+                transform: scale(var(--scale-factor));
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <span style="font-size: 24px;">واحدینو</span>
+            <span style="font-size: 14px; color: #c4c4c4;">(نسخه بتا)</span>
+        </div>
+        <div class="nav-menu">
+            <a href="../" class="nav-item">برنامه هفتگی</a>
+            <a href="../summary/" class="nav-item">خلاصه وضعیت</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://t.me/vahedino" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 4px; font-size: 14px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                تلگرام
+            </a>
+            <!--<a href="https://github.com/vahedino" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 4px; font-size: 14px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                گیت‌هاب
+            </a>-->
+        </div>
+    </header>
+
+    <main class="container">
+        <div style="display: flex; gap: 20px; width: 100%;">
+            <section class="status-box" style="flex: 1;">
+                <h2>دروس انتخاب شده</h2>
+                <div class="total-units" id="totalUnits"></div>
+                <div class="course-list" id="selectedCoursesList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;"></div>
+            </section>
+    
+            <section class="status-box" style="flex: 1;">
+                <h2>برنامه امتحانات</h2>
+                <div class="exam-schedule" id="examSchedule" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;"></div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const programs = JSON.parse(localStorage.getItem('programs')) || [{id: 1, selectedCourses: []}];
+        const currentProgram = programs[0];
+
+        function displaySelectedCourses() {
+            const coursesList = document.getElementById('selectedCoursesList');
+            const examSchedule = document.getElementById('examSchedule');
+            const totalUnitsDiv = document.getElementById('totalUnits');
+            
+            coursesList.innerHTML = '';
+            examSchedule.innerHTML = '';
+
+            // Calculate total units
+            const totalUnits = currentProgram.selectedCourses.reduce((sum, course) => sum + Number(course.units), 0);
+            
+            // Display total units
+            totalUnitsDiv.innerHTML = `
+                <span>مجموع واحدها: </span>
+                <strong>${totalUnits}</strong>
+                <span> واحد</span>
+            `;
+
+            currentProgram.selectedCourses
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .forEach(course => {
+                    coursesList.innerHTML += `
+                        <div class="course-item">
+                            <div class="course-header">
+                                <span class="course-name">${course.name}</span>
+                                <span class="course-code">${course.code || '---'}</span>
+                            </div>
+                            <div class="course-prof">استاد: ${course.prof}</div>
+                            <div class="course-details">
+                                <span class="course-units">${course.units} واحد</span>
+                                <span>کد درس: ${course.code || '---'}</span>
+                            </div>
+                        </div>
+                    `;
+
+                    if (course.examDate) {
+                        examSchedule.innerHTML += `
+                            <div class="exam-item">
+                                <span>${course.name}</span>
+                                <span>${course.examDate}</span>
+                            </div>
+                        `;
+                    }
+                });
+        }
+        
+
+        displaySelectedCourses();
+    </script>
+</body>
+</html>

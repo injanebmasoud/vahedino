@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <!-- نمایش همیشه در حالت دسکتاپ حتی روی موبایل -->
+  <meta name="viewport" content="width=1200">
+  <title>واحدینو | موقتاً در دسترس نیست</title>
+  <meta name="description" content="واحدینو به‌روزرسانی می‌شود؛ به‌زودی برمی‌گردیم." />
+  <style>
+    @font-face {
+      font-family: "IRANSans";
+      src: url("IRANSansWeb(FaNum).woff2");
+    }
+    *{font-family:"IRANSans";box-sizing:border-box}
+    html,body{height:100%;margin:0;padding:0}
+    body{
+      color:#e7f0fb;
+      background:
+        radial-gradient(1200px 800px at 80% -10%, #123b62 0%, transparent 60%),
+        radial-gradient(900px 600px at -10% 110%, #0b2a47 0%, transparent 60%),
+        linear-gradient(180deg, #081e2f, #0d2b45);
+      display:flex;align-items:center;justify-content:center;
+    }
+
+    .aurora{
+      position:fixed; inset:-20% -10%;
+      pointer-events:none; filter: blur(60px) saturate(120%);
+      opacity:.45; animation: float 18s ease-in-out infinite alternate;
+      background:
+        radial-gradient(35% 30% at 20% 30%, #1e90ff55 0%, transparent 70%),
+        radial-gradient(40% 35% at 85% 70%, #00e5ff44 0%, transparent 72%),
+        radial-gradient(25% 22% at 55% 15%, #5ad1ff33 0%, transparent 70%);
+    }
+    @keyframes float{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(0,-2%,0)}}
+
+    .card{
+      width:min(880px,95vw);
+      background: linear-gradient(180deg, #0f2f4acc, #0b243a99);
+      backdrop-filter: blur(12px);
+      border:1px solid #2c4c69aa;
+      border-radius:22px;
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+      padding:40px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .brand{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:12px;margin-bottom:18px;flex-wrap:wrap;
+    }
+    .logo{
+      font-weight:800;font-size:32px;
+      background:linear-gradient(90deg,#fff,#bfe5ff 60%,#e8f6ff);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+    }
+    .badge{
+      border:1px dashed #5394c9;
+      color:#cfe6fb;
+      border-radius:999px;
+      padding:6px 12px;
+      font-size:13px;white-space:nowrap;
+    }
+
+    h1{margin:6px 0 8px;font-size:26px;font-weight:700}
+    p{margin:6px 0 0;color:#a9c3da;line-height:1.9;font-size:15px}
+
+    .status{
+      margin-top:20px;
+      background: linear-gradient(180deg,#0f2f4a66,#0b2a4555);
+      border:1px solid #2a4c6aaa;border-radius:16px;
+      padding:16px;
+    }
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{
+      padding:6px 12px;border-radius:999px;
+      border:1px solid #2a4c6a99;color:#d7e9fb;font-size:13px;
+    }
+    .progress{
+      margin-top:12px;height:8px;width:100%;
+      border-radius:999px;background:#0a2338;overflow:hidden;
+    }
+    .bar{
+      height:100%;width:40%;
+      background:linear-gradient(90deg,#3aa0ff,#6bd1ff);
+      animation:loading 3.6s ease-in-out infinite alternate;
+    }
+    @keyframes loading{0%{width:25%}100%{width:85%}}
+
+    .links{
+      margin-top:20px;
+      display:flex;gap:10px;flex-wrap:wrap
+    }
+    .link{
+      padding:10px 14px;border-radius:12px;font-size:14px;
+      text-decoration:none;color:#eaf4ff;text-align:center;
+      background:linear-gradient(180deg,#123a5d,#0c2d49);
+      border:1px solid #2b4d6a;
+      transition:.2s;
+    }
+    .link:hover{transform:translateY(-2px);border-color:#3aa0ff}
+
+    .foot{
+      margin-top:20px;color:#b8d2e6;font-size:12.5px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
+    }
+
+    .wave{
+      position:absolute;inset:auto -10% -1px -10%;
+      height:130px;opacity:.25;
+      background:
+        radial-gradient(1200px 150px at 50% 30%,#6bd1ff33 0%,transparent 70%),
+        radial-gradient(1200px 150px at 50% 90%,#3aa0ff33 0%,transparent 72%);
+      filter:blur(8px);
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="card">
+    <div class="brand">
+      <div class="logo">واحدینو</div>
+      <div class="badge">در حال به‌روزرسانی برای ترم جدید</div>
+    </div>
+    <h1>سایت موقتاً در دسترس نیست</h1>
+    <p>به دلیل ثبت و همگام‌سازی <strong>دروس ترم جدید</strong>، سامانه واحدینو برای مدت کوتاهی غیرفعال است. به‌زودی برمی‌گردیم و مثل همیشه همراهتان هستیم.</p>
+
+    <section class="status">
+      <div class="row">
+        <span class="pill">به‌روزرسانی پایگاه داده</span>
+        <span class="pill">بهینه‌سازی سرعت</span>
+        <span class="pill">افزودن دروس جدید</span>
+      </div>
+      <div class="progress"><div class="bar"></div></div>
+    </section>
+
+    <div class="links">
+      <a class="link" href="https://t.me/vahedino" target="_blank">پیگیری اخبار در تلگرام</a>
+      <a class="link" href="https://t.me/injanebmasoud">ارتباط با پشتیبانی</a>
+    </div>
+
+    <div class="foot">
+      <span>© واحدینو — انتخاب واحد، ساده‌تر از همیشه</span>
+      <span>نسخه موقت جهت نگهداری و به‌روزرسانی</span>
+    </div>
+
+    <div class="wave"></div>
+  </main>
+</body>
+</html>

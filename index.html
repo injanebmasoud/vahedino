@@ -1,27 +1,49 @@
+
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <!-- نمایش همیشه در حالت دسکتاپ حتی روی موبایل -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=1200">
   <title>واحدینو | موقتاً در دسترس نیست</title>
   <meta name="description" content="واحدینو به‌روزرسانی می‌شود؛ به‌زودی برمی‌گردیم." />
   <style>
     @font-face {
-      font-family: "IRANSans";
-      src: url("IRANSansWeb(FaNum).woff2");
+            font-family: "IRANSans";
+            src: url("IRANSansWeb(FaNum).woff2");
+        }
+        *{
+            font-family: "IRANSans";
+        }
+    /* رنگ‌های اصلی */
+    :root{
+      --bg-1:#081e2f;
+      --bg-2:#0d2b45;
+      --bg-3:#0a2236;
+      --card:#0f2f4a99;   /* شیشه‌ای */
+      --txt:#e7f0fb;
+      --muted:#a9c3da;
+      --accent:#3aa0ff;
+      --accent-2:#6bd1ff;
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 22px;
     }
-    *{font-family:"IRANSans";box-sizing:border-box}
-    html,body{height:100%;margin:0;padding:0}
+
+    /* ریست کوچک */
+    *{box-sizing:border-box}
+    html,body{height:100%}
     body{
-      color:#e7f0fb;
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Vazirmatn", "IRANSans", Tahoma, Arial, sans-serif;
+      color:var(--txt);
       background:
         radial-gradient(1200px 800px at 80% -10%, #123b62 0%, transparent 60%),
         radial-gradient(900px 600px at -10% 110%, #0b2a47 0%, transparent 60%),
-        linear-gradient(180deg, #081e2f, #0d2b45);
-      display:flex;align-items:center;justify-content:center;
+        linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      overflow-x:hidden;
     }
 
+    /* لایه‌ی نورهای نرم متحرک */
     .aurora{
       position:fixed; inset:-20% -10%;
       pointer-events:none; filter: blur(60px) saturate(120%);
@@ -31,120 +53,192 @@
         radial-gradient(40% 35% at 85% 70%, #00e5ff44 0%, transparent 72%),
         radial-gradient(25% 22% at 55% 15%, #5ad1ff33 0%, transparent 70%);
     }
-    @keyframes float{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(0,-2%,0)}}
+    @keyframes float{
+      0%{transform: translate3d(0,0,0) rotate(0deg)}
+      100%{transform: translate3d(0,-2%,0) rotate(2deg)}
+    }
 
+    /* کانتینر */
+    .wrap{
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    /* کارت شیشه‌ای */
     .card{
-      width:min(880px,95vw);
+      width:min(880px, 96vw);
       background: linear-gradient(180deg, #0f2f4acc, #0b243a99);
       backdrop-filter: blur(12px);
       border:1px solid #2c4c69aa;
-      border-radius:22px;
-      box-shadow:0 20px 60px rgba(0,0,0,.35);
-      padding:40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(20px, 4vw, 40px);
       position:relative;
       overflow:hidden;
     }
 
+    /* نوار بالای کارت */
     .brand{
-      display:flex;align-items:center;justify-content:space-between;
-      gap:12px;margin-bottom:18px;flex-wrap:wrap;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      margin-bottom: 18px;
     }
     .logo{
-      font-weight:800;font-size:32px;
-      background:linear-gradient(90deg,#fff,#bfe5ff 60%,#e8f6ff);
-      -webkit-background-clip:text;background-clip:text;color:transparent;
+      font-weight: 800;
+      letter-spacing:.5px;
+      font-size: clamp(22px, 4vw, 32px);
+      line-height:1;
+      background: linear-gradient(90deg, #ffffff, #bfe5ff 60%, #e8f6ff);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      white-space:nowrap;
     }
     .badge{
       border:1px dashed #5394c9;
       color:#cfe6fb;
-      border-radius:999px;
-      padding:6px 12px;
-      font-size:13px;white-space:nowrap;
+      border-radius: 999px;
+      padding:8px 14px;
+      font-size: 13px;
+      white-space:nowrap;
+      opacity:.95;
     }
 
-    h1{margin:6px 0 8px;font-size:26px;font-weight:700}
-    p{margin:6px 0 0;color:#a9c3da;line-height:1.9;font-size:15px}
+    /* تیتر و متن */
+    h1{
+      margin: 6px 0 8px;
+      font-size: clamp(20px, 3.6vw, 26px);
+      font-weight: 700;
+      color: var(--txt);
+    }
+    p{
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 15.5px;
+    }
 
+    /* باکس وضعیت */
     .status{
-      margin-top:20px;
-      background: linear-gradient(180deg,#0f2f4a66,#0b2a4555);
-      border:1px solid #2a4c6aaa;border-radius:16px;
+      margin-top: 22px;
+      background: linear-gradient(180deg, #0f2f4a66, #0b2a4555);
+      border:1px solid #2a4c6aaa;
+      border-radius: calc(var(--radius) - 6px);
       padding:16px;
     }
-    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .row{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
     .pill{
-      padding:6px 12px;border-radius:999px;
-      border:1px solid #2a4c6a99;color:#d7e9fb;font-size:13px;
+      padding:8px 14px; border-radius:999px;
+      border:1px solid #2a4c6a99; color:#d7e9fb; font-size:13px;
     }
+
+    /* نوار پیشرفت نرم */
     .progress{
-      margin-top:12px;height:8px;width:100%;
-      border-radius:999px;background:#0a2338;overflow:hidden;
+      margin-top:14px; height:8px; width:100%;
+      border-radius:999px; background:#0a2338;
+      overflow:hidden; border:1px solid #173a56;
     }
     .bar{
-      height:100%;width:40%;
-      background:linear-gradient(90deg,#3aa0ff,#6bd1ff);
-      animation:loading 3.6s ease-in-out infinite alternate;
+      height:100%; width:38%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-right:1px solid #e8f6ff22;
+      animation: loading 3.6s ease-in-out infinite alternate;
     }
-    @keyframes loading{0%{width:25%}100%{width:85%}}
+    @keyframes loading{
+      0%{width:28%}
+      100%{width:86%}
+    }
 
+    /* لینک‌ها */
     .links{
-      margin-top:20px;
-      display:flex;gap:10px;flex-wrap:wrap
+      margin-top: 20px;
+      display:flex; gap:10px; flex-wrap:wrap;
     }
     .link{
-      padding:10px 14px;border-radius:12px;font-size:14px;
-      text-decoration:none;color:#eaf4ff;text-align:center;
-      background:linear-gradient(180deg,#123a5d,#0c2d49);
+      display:inline-block;
+      padding:10px 14px;
+      border-radius: 12px;
+      font-size:14px;
+      text-decoration:none;
+      color:#eaf4ff;
+      background: linear-gradient(180deg, #123a5d, #0c2d49);
       border:1px solid #2b4d6a;
-      transition:.2s;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
-    .link:hover{transform:translateY(-2px);border-color:#3aa0ff}
+    .link:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.25);
+      border-color:#3aa0ff;
+    }
 
+    /* فوتر */
     .foot{
-      margin-top:20px;color:#b8d2e6;font-size:12.5px;
-      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
+      margin-top: 22px;
+      color:#b8d2e6; font-size:12.5px;
+      opacity:.9;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
     }
 
+    /* موج تزئینی پایین کارت (بدون آیکون، فقط CSS) */
     .wave{
-      position:absolute;inset:auto -10% -1px -10%;
-      height:130px;opacity:.25;
+      position:absolute; inset:auto -10% -1px -10%;
+      height:130px; pointer-events:none; opacity:.25;
       background:
-        radial-gradient(1200px 150px at 50% 30%,#6bd1ff33 0%,transparent 70%),
-        radial-gradient(1200px 150px at 50% 90%,#3aa0ff33 0%,transparent 72%);
-      filter:blur(8px);
+        radial-gradient(1200px 150px at 50% 30%, #6bd1ff33 0%, transparent 70%),
+        radial-gradient(1200px 150px at 50% 90%, #3aa0ff33 0%, transparent 72%);
+      filter: blur(8px);
+    }
+
+    /* واکنش‌گرایی ریز */
+    @media (max-width:540px){
+      .badge{display:none}
+      .row{gap:8px}
+      .pill{font-size:12px}
+      .links{gap:8px}
+      .link{padding:9px 12px}
     }
   </style>
 </head>
 <body>
-  <div class="aurora"></div>
-  <main class="card">
-    <div class="brand">
-      <div class="logo">واحدینو</div>
-      <div class="badge">در حال به‌روزرسانی برای ترم جدید</div>
-    </div>
-    <h1>سایت موقتاً در دسترس نیست</h1>
-    <p>به دلیل ثبت و همگام‌سازی <strong>دروس ترم جدید</strong>، سامانه واحدینو برای مدت کوتاهی غیرفعال است. به‌زودی برمی‌گردیم و مثل همیشه همراهتان هستیم.</p>
+  <div class="aurora" aria-hidden="true"></div>
 
-    <section class="status">
-      <div class="row">
-        <span class="pill">به‌روزرسانی پایگاه داده</span>
-        <span class="pill">بهینه‌سازی سرعت</span>
-        <span class="pill">افزودن دروس جدید</span>
+  <div class="wrap">
+    <main class="card" role="main" aria-labelledby="title">
+      <div class="brand">
+        <div class="logo">واحدینو</div>
+        <div class="badge">در حال به‌روزرسانی برای ترم جدید</div>
       </div>
-      <div class="progress"><div class="bar"></div></div>
-    </section>
 
-    <div class="links">
-      <a class="link" href="https://t.me/vahedino" target="_blank">پیگیری اخبار در تلگرام</a>
-      <a class="link" href="https://t.me/injanebmasoud">ارتباط با پشتیبانی</a>
-    </div>
+      <h1 id="title">سایت موقتاً در دسترس نیست</h1>
+      <p>
+        به دلیل ثبت و همگام‌سازی <strong>دروس ترم جدید</strong>، سامانه واحدینو برای مدت کوتاهی
+        غیرفعال است. این مشکل به‌زودی برطرف خواهد شد و می‌توانید مثل همیشه برنامه‌ریزی
+        هفتگی و انتخاب واحدتان را با خیال راحت انجام دهید.
+      </p>
 
-    <div class="foot">
-      <span>© واحدینو — انتخاب واحد، ساده‌تر از همیشه</span>
-      <span>نسخه موقت جهت نگهداری و به‌روزرسانی</span>
-    </div>
+      <section class="status" aria-label="وضعیت سامانه">
+        <div class="row">
+          <span class="pill">به‌روزرسانی پایگاه داده</span>
+          <span class="pill">بهینه‌سازی سرعت</span>
+          <span class="pill">افزودن دروس جدید</span>
+        </div>
+        <div class="progress" aria-hidden="true">
+          <div class="bar"></div>
+        </div>
+      </section>
 
-    <div class="wave"></div>
-  </main>
+      <div class="links">
+        <a class="link" href="https://t.me/vahedino" target="_blank" rel="noopener">پیگیری اخبار در تلگرام</a>
+        <a class="link" href="https://t.me/injanebmasoud">ارتباط با پشتیبانی</a>
+      </div>
+
+      <div class="foot">
+        <span>© واحدینو — انتخاب واحد، ساده‌تر از همیشه</span>
+        <span>نسخه موقت جهت نگهداری و به‌روزرسانی</span>
+      </div>
+
+      <div class="wave" aria-hidden="true"></div>
+    </main>
+  </div>
 </body>
 </html>
+

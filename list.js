@@ -1,9763 +1,6696 @@
 const courses = [
-    {
-        id: 1000001,
-        name: " فیزیک نور",
-        code: "51_4218015",
-        prof: "اساتید گروه آموزشی",
-        units: 3,
-        sessions: [
-            {days: [4], start: 7.5 ,duration: 1.5},
-            {days: [2], start: 7.5, duration: 1.5}
-            
-        ],
-        examDate: "1404/03/28",
-        department: "مهندسي نقشه برداري"
-    },
-    ,
-    {
-        id: 100000,
-        name: "فارسی یک",
-        code: "56_۵۵۱۲۰۰۴",
-        prof: "اساتید گروه آموزشی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 9, duration: 3},
-            
-        ],
-        examDate: "1404/03/26",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 889,
-        name: "معادلات دیفرانسیل",
-        code: "47_5712095",
-        prof: "اساتید گروه آموزشی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/09",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 204,
-        name: "ریاضی عمومی ۲",
-        code: "52_5712096",
-        prof: "اساتید گروه آموزشی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 1.5},
-            {days: [4], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 3,
-        name: "مبانی نقشه",
-        code: "21_7707070",
-        prof: "دکتر پیله فروشها",
-        units: 3,
-        sessions: [
-            {days: [2], start: 13.5, duration: 1.5},
-            {days: [4], start: 13.5, duration: 1.5}
-        ],
-        examDate:  "1404/03/31",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 5,
-        name: "ع مبانی نقشه",
-        code: "21_7707071",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [3], start: 9, duration: 3.5}
-        ],
-        examDate: "تعیین نشده ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 6,
-        name: "ع مبانی نقشه",
-        code: "22_7707071",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [5], start: 9, duration: 6}
-        ],
-        examDate: "      تعیین  نشده ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 7,
-        name: "مصالح ساختمانی",
-        code: "21_7707072",
-        prof: "دکتر باقری",
-        units: 2,
-        sessions: [
-            {days: [1], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 8,
-        name: "زیرسازی روسازی راه",
-        code: "21_7707075",
-        prof: "دکتر خدادادی",
-        units: 2,
-        sessions: [
-            {days: [4], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/09",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 9,
-        name: "روش اجرای ساختمان",
-        code: "21_7707076",
-        prof: "اساتید آموزشی",
-        units: 2,
-        sessions: [
-            {days: [5], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 10,
-        name: "تئوری برآورد",
-        code: "21_7707078",
-        prof: "دکتر مشهدی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/26",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 11,
-        name: "ژئودزی هندسی",
-        code: "21_7707081",
-        prof: "دکتر علیزاده",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [3], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 12,
-        name: "نقشه برداری ژئوتیک",
-        code: "21_7707084",
-        prof: "دکتر وثوقی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 1.5},
-            {days: [5], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/03/28",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 13,
-        name: "هیدروگرافی",
-        code: "21_7707086",
-        prof: "دکتر جزیرئیان",
-        units: 2,
-        sessions: [
-            {days: [4], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/03/27",
-        department: "مهندسي نقشه برداري"
-    },
-    
-    {
-        id: 16,
-        name: "مبانی فتوگرامتری",
-        code: "21_۷۷۰۷۰۸۷",
-        prof: "دکتر مختارزاده",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 1.5},
-            {days: [3], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 17,
-        name: "ع مبانی فتوگرامتری",
-        code: "21_۷۷۰۷۰۸۸",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [4], start: 10.5, duration: 1.5}
-        ],
-        examDate:  "تعیین نشده      ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 18,
-        name: "ع مبانی فتوگرامتری",
-        code: "22_۷۷۰۷۰۸۸",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [5], start: 13.5, duration: 1.5}
-        ],
-        examDate:  "تعیین نشده        ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 40,
-        name: "ع مبانی فتوگرامتری",
-        code: "23_۷۷۰۷۰۸۸",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [5], start: 10.5, duration: 1.5}
-        ],
-        examDate:  "تعیین نشده          ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 19,
-        name: "ع مبانی فتوگرامتری",
-        code: "25_۷۷۰۷۰۸۸",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [5], start: 7.5, duration: 1.5}
-        ],
-        examDate:  "تعیین   نشده",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 20,
-        name: "کاربرد فتوگرامتري",
-        code: "21_۷۷۰۷۰۹۰",
-        prof: "دکتر عبادی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 15, duration: 1.5},
-            {days: [4], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 21,
-        name: "ع کاربرد فتوگرامتري",
-        code: "21_۷۷۰۷۰۹۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [1], start: 10.5, duration: 1.5}
-        ],
-        examDate:  "تعیین  نشده  ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 22,
-        name: "ع کاربرد فتوگرامتري",
-        code: "22_۷۷۰۷۰۹۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate:  "تعیین    نشده   ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 23,
-        name: "ع سنجش از دور",
-        code: "21_۷۷۰۷۰۹۴",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [4], start: 10.5, duration: 1.5}
-        ],
-        examDate:  "تعیین    نشده    ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 24,
-        name: "ع سنجش از دور",
-        code: "22_۷۷۰۷۰۹۴",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [4], start: 13.5, duration: 1.5}
-        ],
-        examDate:  "تعیین     نشده     ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 25,
-        name: "تحليل هاي مكاني",
-        code: "21_۷۷۰۷۱۰۰",
-        prof: "دکتر ملک",
-        units: 2,
-        sessions: [
-            {days: [2], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 26,
-        name: "ع تحليل هاي مكاني",
-        code: "21_۷۷۰۷۱۰۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [1], start: 13.5, duration: 1.5}
-        ],
-        examDate:  "تعیین      نشده      ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 66,
-        name: "ع تحليل هاي مكاني",
-        code: "22_۷۷۰۷۱۰۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [1], start: 9, duration: 1.5}
-        ],
-        examDate:  "  تعیین     نشده" ,
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 27,
-        name: "ع تحليل هاي مكاني",
-        code: "23_۷۷۰۷۱۰۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [3], start: 7.5, duration: 1.5}
-        ],
-        examDate:  "تعیین    نشده‌      ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 28,
-        name: "ع تحليل هاي مكاني",
-        code: "24_۷۷۰۷۱۰۱",
-        prof: "اساتید آموزشی",
-        units: 1,
-        sessions: [
-            {days: [3], start: 9, duration: 1.5}
-        ],
-        examDate:  "تعیین  نشده    ",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 29,
-        name: "حد نگاری",
-        code: "21_۷۷۰۷۱۰۲",
-        prof: "دکتر مسگری",
-        units: 1,
-        sessions: [
-            {days: [3], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 30,
-        name: "مديريت پروژه",
-        code: "21_۷۷۰۷۱۰۳",
-        prof: "دکتر کریمی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 31,
-        name: "کاربرد سيستم اطلاعات مكاني",
-        code: "21_۷۷۰۷۱۰۵",
-        prof: "دکتر آل شیخ",
-        units: 2,
-        sessions: [
-            {days: [2], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 32,
-        name: "آمايش سرزمين",
-        code: "21_۷۷۰۷۱۰۷",
-        prof: "اساتید آموزشی",
-        units: 2,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 33,
-        name: "فتوگرامتري برد  ",
-        code: "21_۷۷۰۷۱۱۲",
-        prof: "اساتید آموزشی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 7.5, duration: 1.5},
-            {days: [4], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 34,
-        name: "كاربردسنجش ازدور ",
-        code: "21_۷۷۰۷۱۱۳",
-        prof: "دکتر خصالی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 7.5, duration: 1.5},
-            {days: [3], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 35,
-        name: "ميكروژئودزي",
-        code: "21_۷۷۰۷۱۱۵",
-        prof: "دکتر وثوقی",
-        units: 2,
-        sessions: [
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسي نقشه برداري"
-    },
-    {
-        id: 36,
-        name: "جزر و مد",
-        code: "21_۷۷۰۷۱۱۸",
-        prof: "دکتر جزیرئیان",
-        units: 2,
-        sessions: [
-            {days: [2], start: 10.5, duration: 1.5}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسي نقشه برداري"
-    },
-    
-
-// فیزیک
-{
-    id: 14,
-    name: "فیزیک عمومی 2",
-    code: "41_4210040",
-    prof: "دکتر رادین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 15,
-    name: "فیزیک عمومی 2",
-    code: "42_4210040",
-    prof: "دکتر حاتمی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-
-// مهندسی برق
-
-
-    {
-        id: 70,
-        name: "ریاضیات مهندسی",
-        code: "11_1110001",
-        prof: "شاملی محمدعلی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 7.5, duration: 1.5},
-            {days: [5], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسی برق"
-    },
-    {
-        id: 71,
-        name: "مدارهای الکتریکی ۱",
-        code: "11_1110136",
-        prof: "شمسی حسین",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/28",
-        department: "مهندسی برق"
-    },
-    {
-        id: 72,
-        name: "مدارهای الکتریکی ۱",
-        code: "12_1110136",
-        prof: "کیوان فرد فرزانه",
-        units: 3,
-        sessions: [
-            {days: [3], start: 7.5, duration: 1.5},
-            {days: [5], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/03/28",
-        department: "مهندسی برق"
-    },
-    {
-        id: 73,
-        name: "معادلات دیفرانسیل",
-        code: "11_1110203",
-        prof: "نکویی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 7.5, duration: 1.5},
-            {days: [4], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی برق"
-    },
-    {
-        id: 74,
-        name: "معادلات دیفرانسیل",
-        code: "12_1110203",
-        prof: "خادم علی",
-        units: 3,
-        sessions: [
-            {days: [3], start: 10.5, duration: 2},
-            {days: [5], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی برق"
-    },
-    {
-        id: 75,
-        name: "محاسبات عددی",
-        code: "11_1110234",
-        prof: "نیکوفرد امیرحسین",
-        units: 2,
-        sessions: [
-            {days: [1], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/03/26",
-        department: "مهندسی برق"
-    },
-    {
-        id: 76,
-        name: "سیستم‌های دیجیتال ۱",
-        code: "11_1110239",
-        prof: "یارمند",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 2},
-            {days: [4], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی برق"
-    },
-    {
-        id: 77,
-        name: "سیستم‌های دیجیتال ۱",
-        code: "12_1110239",
-        prof: "یارمند",
-        units: 3,
-        sessions: [
-            {days: [2], start: 15, duration: 1.5},
-            {days: [4], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی برق"
-    },
-    {
-        id: 78,
-        name: "سیستم‌های دیجیتال ۱",
-        code: "13_1110239",
-        prof: "دلیر روی فرد رسول",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی برق"
-    },
-    {
-        id: 79,
-        name: "سیستم‌های دیجیتال ۲",
-        code: "11_1110240",
-        prof: "دلیر روی فرد رسول",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 2},
-            {days: [4], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسی برق"
-    },
-    {
-        id: 80,
-        name: "سیستم‌های دیجیتال ۲",
-        code: "13_1110240",
-        prof: "خان کلانتری رکن آبادی سعید",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 2},
-            {days: [4], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسی برق"
-    },
-    {
-        id: 81,
-        name: "مدارهای الکتریکی ۲",
-        code: "11_1110241",
-        prof: "دلیر روی فرد رسول",
-        units: 2,
-        sessions: [
-            {days: [3], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسی برق"
-    },
-    {
-        id: 82,
-        name: "مدارهای الکتریکی ۲",
-        code: "12_1110241",
-        prof: "دلیر روی فرد رسول",
-        units: 2,
-        sessions: [
-            {days: [5], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسی برق"
-    },
-    {
-        id: 83,
-        name: "سیگنال‌ها و سیستم‌ها",
-        code: "11_1110256",
-        prof: "جمشیدی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 9, duration: 1.5},
-            {days: [5], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسی برق"
-    },
-    {
-        id: 84,
-        name: "سیگنال‌ها و سیستم‌ها",
-        code: "12_1110256",
-        prof: "محبی آشتیانی مریم",
-        units: 3,
-        sessions: [
-            {days: [3], start: 10.5, duration: 2},
-            {days: [5], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسی برق"
-    },
-    {
-        id: 85,
-        name: "سیگنال‌ها و سیستم‌ها",
-        code: "13_1110256",
-        prof: "حیرانی نوبری جعفر",
-        units: 3,
-        sessions: [
-            {days: [2], start: 7.5, duration: 1.5},
-            {days: [4], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسی برق"
-    },
-    {
-        id: 86,
-        name: "الکترومغناطیس مهندسی",
-        code: "11_1110258",
-        prof: "قطان کاشانی زهرا",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [5], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/26",
-        department: "مهندسی برق"
-    },
-    {
-        id: 87,
-        name: "الکترونیک ۱",
-        code: "11_1110259",
-        prof: "احسانیان مفرد مهدی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 10.5, duration: 2},
-            {days: [3], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی برق"
-    },
-    {
-        id: 88,
-        name: "الکترونیک ۲",
-        code: "11_1110260",
-        prof: "ندیمی ابراهیم",
-        units: 3,
-        sessions: [
-            {days: [3], start: 9, duration: 1.5},
-            {days: [5], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی برق"
-    },
-    {
-        id: 89,
-        name: "الکترونیک ۲",
-        code: "12_1110260",
-        prof: "زندی حسام",
-        units: 3,
-        sessions: [
-            {days: [1], start: 10.5, duration: 2},
-            {days: [5], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی برق"
-    },
-    {
-        id: 90,
-        name: "الکترونیک ۲",
-        code: "13_1110260",
-        prof: "کولیوند یاراله",
-        units: 3,
-        sessions: [
-            {days: [1], start: 13.5, duration: 1.5},
-            {days: [5], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی برق"
-    },
-    {
-        id: 91,
-        name: "احتمال مهندسی",
-        code: "11_1110261",
-        prof: "حبیبی بسطامی علی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 10.5, duration: 2},
-            {days: [4], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسی برق"
-    },
-    {
-        id: 92,
-        name: "احتمال مهندسی",
-        code: "12_1110261",
-        prof: "اخباری بهاره",
-        units: 3,
-        sessions: [
-            {days: [1], start: 9, duration: 1.5},
-            {days: [3], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسی برق"
-    },
-    {
-        id: 93,
-        name: "برنامه‌نویسی کامپیوتر",
-        code: "11_1110262",
-        prof: "خان کلانتری رکن آبادی سعید",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/09",
-        department: "مهندسی برق"
-    },
-    {
-        id: 94,
-        name: "برنامه‌نویسی کامپیوتر",
-        code: "12_1110262",
-        prof: "نوید نادری",
-        units: 3,
-        sessions: [
-            {days: [3], start: 15, duration: 1.5},
-            {days: [5], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/09",
-        department: "مهندسی برق"
-    },
-    {
-        id: 95,
-        name: "مبانی بیوالکتریک",
-        code: "11_1110280",
-        prof: "ولی منصور",
-        units: 3,
-        sessions: [
-            {days: [1], start: 10.5, duration: 2},
-            {days: [3], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی برق"
-    },
-    {
-        id: 96,
-        name: "سیستم‌های رادیولوژی و تصویرگر پزشکی",
-        code: "11_1110284",
-        prof: "خادم علی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 9, duration: 1.5},
-            {days: [5], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی برق"
-    },
-    {
-        id: 97,
-        name: "هوش مصنوعی مقدماتی",
-        code: "11_1110289",
-        prof: "علیاری شوره دلی مهدی",
-        units: 3,
-        sessions: [
-            {days: [2], start: 9, duration: 1.5},
-            {days: [4], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسی برق"
-    }
-,
-
-// مهندسی کمپیوتر
-
-    {
-        id: 98,
-        name: "الکترونیک دیجیتال و طراحی مدارهای مجتمع پر تراکم",
-        code: "19_1910020",
-        prof: "صیفوری",
-        units: 3,
-        sessions: [
-            {days: [6], start: 7.5, duration: 1.5},
-            {days: [2], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسی کامپیوتر"
-    },
-    {
-        id: 99,
-        name: "نظریه و الگوریتم‌های گراف",
-        code: "19_1910022",
-        prof: "شهسواری",
-        units: 3,
-        sessions: [
-            {days: [2], start: 7.5, duration: 1.5},
-            {days: [4], start: 7.5, duration: 1.5}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسی کامپیوتر"
-    },
-    {
-        id: 100,
-        name: "شبکه‌های کامپیوتری ۱",
-        code: "19_1910023",
-        prof: "مرادیان",
-        units: 3,
-        sessions: [
-            {days: [1], start: 9, duration: 1.5},
-            {days: [3], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی کامپیوتر"
-    },
-    {
-        id: 101,
-        name: "شبکه‌های کامپیوتری ۲",
-        code: "19_1910024",
-        prof: "یعقوبی کعبه",
-        units: 3,
-        sessions: [
-            {days: [6], start: 15, duration: 1.5},
-            {days: [2], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی کامپیوتر"
-    },
-    {
-        id: 102,
-        name: "آمار و احتمالات مهندسی",
-        code: "19_1910029",
-        prof: "اساتید گروه آموزشی",
-        units: 3,
-        sessions: [
-            {days: [1], start: 15.5, duration: 2},
-            {days: [3], start: 15.5, duration: 2}
-        ],
-        examDate: "1404/04/04",
-        department: "مهندسی کامپیوتر"
-    },
-    {
-        id: 103,
-        name: "زبان تخصصی",
-        code: "19_1910039",
-        prof: "یعقوبی کعبه",
-        units: 2,
-        sessions: [
-            {days: [6], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/02",
-        department: "مهندسی کامپیوتر"
-    }
-,
-
-// عمران
-
-{
-    id: 170,
-    name: "اقتصاد مهندسی",
-    code: "21_2220084",
-    prof: "دهقانی سانیج محمدسعید",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی عمران"
-},
-{
-    id: 171,
-    name: "بازرسی، تعمیر و ترمیم سازه‌ها",
-    code: "21_2220097",
-    prof: "بهشتی اول سید بهرام",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 172,
-    name: "اصول مهندسی زلزله و باد",
+  
+ 
+  {
+    id: 1,
+    name: "اصول مهندسي زلزله وباد",
     code: "21_2220098",
-    prof: "مشایخی محمدرضا، ذوالفقاری محمدرضا",
+    prof: "ذوالفقاري محمد رضا، قادري گركاني مجيد",
     units: 3,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/03/25",
-    department: "مهندسی عمران"
-},
-{
-    id: 173,
-    name: "محاسبات عددی",
-    code: "21_2220110",
-    prof: "اسدی رزا",
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 2,
+    name: "كارآموزي",
+    code: "21_2220114",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 3,
+    name: "تاسيسات مكانيكي وبرقي",
+    code: "21_2220162",
+    prof: "وكيل زاده داود",
     units: 2,
     sessions: [
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [5], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/03/25",
-    department: "مهندسی عمران"
-},
-{
-    id: 174,
-    name: "محاسبات عددی",
-    code: "22_2220110",
-    prof: "ایزدی اردلان",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی عمران"
-},
-{
-    id: 175,
-    name: "مقررات ملی ساختمان",
-    code: "21_2220116",
-    prof: "صباغ یزدی سعیدرضا",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 176,
-    name: "اصول مدیریت ساخت",
+    examDate: "1404/10/21 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 4,
+    name: "اصول مديريت ساخت",
     code: "21_2220163",
-    prof: "علیپوری یعقوب",
+    prof: "عليپوري يعقوب",
     units: 2,
     sessions: [
-        {days: [3], start: 10.5, duration: 2}
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/03/31",
-    department: "مهندسی عمران"
-},
-{
-    id: 177,
-    name: "هوش مصنوعی و تحول دیجیتال",
+    examDate: "1404/10/29 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 5,
+    name: "آشنايي با رشته مهندسي عمران (كاربيني)",
+    code: "21_2220170",
+    prof: "وكيل زاده داود",
+    units: 1,
+    sessions: [
+      {days: [3], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 130,
+    gender: "مختلط"
+  },
+  {
+    id: 6,
+    name: "هوش مصنوعي و تحول ديجيتال",
     code: "21_2220171",
     prof: "قاسم زاده حسن",
     units: 2,
     sessions: [
-        {days: [6], start: 13.5, duration: 1.5}
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/03/25",
-    department: "مهندسی عمران"
-},
-{
-    id: 178,
-    name: "برنامه‌سازی کامپیوتر",
+    examDate: "1404/10/23 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 7,
+    name: "برنامه سازي كامپيوتر",
     code: "21_2220173",
-    prof: "صادقی نعیمه",
+    prof: "خدادادي مجتبي",
     units: 3,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [1], start: 15, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 15, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 179,
-    name: "برنامه‌سازی کامپیوتر",
-    code: "22_2220173",
-    prof: "صادقی نعیمه",
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8,
+    name: "مكانيك جامدات ۱",
+    code: "21_2220175",
+    prof: "عسگريان بهروز",
     units: 3,
     sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 180,
-    name: "برنامه‌سازی کامپیوتر",
-    code: "23_2220173",
-    prof: "خدادادی مجتبی",
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 9,
+    name: "مكانيك جامدات ۱",
+    code: "22_2220175",
+    prof: "مسعودي مصطفي",
     units: 3,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 181,
-    name: "برنامه‌سازی کامپیوتر",
-    code: "24_2220173",
-    prof: "خدادادی مجتبی",
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 10,
+    name: "مكانيك جامدات ۱",
+    code: "23_2220175",
+    prof: "اصيل قره باغي سعيد",
     units: 3,
     sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/04/07",
-    department: "مهندسی عمران"
-},
-{
-    id: 182,
-    name: "مبانی معماری و شهرسازی",
-    code: "21_2220177",
-    prof: "اساتید گروه آموزشی",
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+
+  /* --- مصالح و دینامیک و آزمایشگاه مصالح --- */
+  {
+    id: 11,
+    name: "آزمايشگاه مصالح و فرآورده هاي ساختماني",
+    code: "21_2220182",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 12,
+    name: "آزمايشگاه مصالح و فرآورده هاي ساختماني",
+    code: "22_2220182",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 13,
+    name: "مصالح و فرآورده هاي ساختماني",
+    code: "21_2220183",
+    prof: "باقري عليرضا",
     units: 2,
     sessions: [
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 183,
-    name: "مبانی معماری و شهرسازی",
-    code: "22_2220177",
-    prof: "اساتید گروه آموزشی",
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 14,
+    name: "مصالح و فرآورده هاي ساختماني",
+    code: "22_2220183",
+    prof: "باقري عليرضا",
     units: 2,
     sessions: [
-        {days: [3], start: 15, duration: 1.5}
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 184,
-    name: "مبانی معماری و شهرسازی",
-    code: "23_2220177",
-    prof: "اساتید گروه آموزشی",
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 15,
+    name: "مصالح و فرآورده هاي ساختماني",
+    code: "23_2220183",
+    prof: "زنگانه حامد",
     units: 2,
     sessions: [
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [5], start: 9, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 185,
-    name: "مبانی معماری و شهرسازی",
-    code: "24_2220177",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 186,
-    name: "اصول مهندسی منابع آب",
-    code: "21_2220204",
-    prof: "موسوی سید مرتضی",
-    units: 2,
-    sessions: [
-        {days: [6], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 187,
-    name: "تغییر اقلیم",
-    code: "21_2220205",
-    prof: "اسدی رزا",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی عمران"
-},
-{
-    id: 188,
-    name: "اصول ایمنی در ساختمان و حفاظت آتش سوزی",
-    code: "21_2220223",
-    prof: "احمدیار",
-    units: 2,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی عمران"
-}
-,
-{
-    id: 189,
-    name: "مکانیک سیالات",
-    code: "21_2220224",
-    prof: "دکتر مسعودی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/29",
-    department: "مهندسی عمران"
-},
-{
-    id: 190,
-    name: "مکانیک سیالات",
-    code: "22_2220224", 
-    prof: "دکتر مسعودی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/29",
-    department: "مهندسی عمران"
-},
-{
-    id: 191,
-    name: "مقاومت مصالح ۱",
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 16,
+    name: "ديناميك",
     code: "21_2220225",
-    prof: "دکتر کاظمی",
-    units: 3,
+    prof: "ايزدي اردلان",
+    units: 2,
     sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-},
-{
-    id: 192,
-    name: "مقاومت مصالح ۱",
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 17,
+    name: "ديناميك",
     code: "22_2220225",
-    prof: "دکتر کاظمی",
+    prof: "ايزدي اردلان",
+    units: 2,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 18,
+    name: "ديناميك",
+    code: "23_2220225",
+    prof: "ايزدي اردلان",
+    units: 2,
+    sessions: [
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+
+  /* --- گروه آموزشی آب --- */
+  {
+    id: 19,
+    name: "مكانيك سيالات",
+    code: "21_2221023",
+    prof: "عليزاد كريم",
     units: 3,
     sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-},
-{
-    id: 193,
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 20,
+    name: "مكانيك سيالات",
+    code: "22_2221023",
+    prof: "استادميرزا تهراني محمدجواد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 21,
+    name: "هيدروليك",
+    code: "21_2221026",
+    prof: "استادميرزا تهراني محمدجواد",
+    units: 2,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 22,
+    name: "هيدروليك",
+    code: "22_2221026",
+    prof: "عليزاد كريم",
+    units: 2,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 23,
+    name: "آز هيدروليك",
+    code: "21_2221027",
+    prof: "وكيل زاده داود",
+    units: 1,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 24,
+    name: "آز هيدروليك",
+    code: "22_2221027",
+    prof: "استادميرزا تهراني محمدجواد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 25,
+    name: "آز هيدروليك",
+    code: "23_2221027",
+    prof: "عليزاد كريم",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 26,
+    name: "آز هيدروليك",
+    code: "24_2221027",
+    prof: "عليزاد كريم",
+    units: 1,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 27,
+    name: "آز هيدروليك",
+    code: "25_2221027",
+    prof: "ايزدي اردلان",
+    units: 1,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 28,
+    name: "آز هيدروليك",
+    code: "26_2221027",
+    prof: "استادميرزا تهراني محمدجواد",
+    units: 1,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 29,
+    name: "آز هيدروليك",
+    code: "27_2221027",
+    prof: "ايزدي اردلان",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 30,
+    name: "آز هيدروليك",
+    code: "28_2221027",
+    prof: "وكيل زاده داود",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 31,
+    name: "هيدرولوژي مهندسي",
+    code: "21_2221036",
+    prof: "مهجوري مجد نجمه",
+    units: 2,
+    sessions: [
+      {days: [4], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 32,
+    name: "آبهاي زيرزميني",
+    code: "21_2221043",
+    prof: "موسوي سيد مرتضي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 33,
+    name: "مهندسي آب و فاضلاب و پروژه",
+    code: "21_2221047",
+    prof: "كاويانپور محمدرضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 34,
+    name: "بناهاي آبي",
+    code: "21_2221049",
+    prof: "كاويانپور محمدرضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 35,
+    name: "آزمايشگاه هيدرولوژي و منابع آب",
+    code: "21_2221184",
+    prof: "برهاني داريان عليرضا",
+    units: 1,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 8,
+    gender: "مختلط"
+  },
+
+  /* --- گروه خاک و پی --- */
+  {
+    id: 36,
+    name: "مكانيك خاك ۲",
+    code: "21_2227012",
+    prof: "عبدي محمود رضا",
+    units: 2,
+    sessions: [
+      {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 37,
+    name: "مكانيك خاك ۱",
+    code: "21_2227030",
+    prof: "عبدي محمود رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 38,
+    name: "مكانيك خاك ۱",
+    code: "22_2227030",
+    prof: "رئيسيان زاده جواد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 39,
+    name: "آزمكانيك خاك",
+    code: "21_2227031",
+    prof: "رئيسيان زاده جواد",
+    units: 1,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 40,
+    name: "آزمكانيك خاك",
+    code: "22_2227031",
+    prof: "ايرانمنش محمدعلي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 41,
+    name: "آزمكانيك خاك",
+    code: "23_2227031",
+    prof: "رئيسيان زاده جواد",
+    units: 1,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 42,
+    name: "آزمكانيك خاك",
+    code: "24_2227031",
+    prof: "ايرانمنش محمدعلي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 43,
+    name: "مهندسي پي و پروژه",
+    code: "21_2227071",
+    prof: "مقدس تفرشي سيد ناصر، قضاوي محمود",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 44,
+    name: "مهندسي پي و پروژه",
+    code: "22_2227071",
+    prof: "قضاوي محمود",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 45,
+    name: "روش هاي اجرائ گود و سازه نگهبان",
+    code: "21_2227105",
+    prof: "ايرانمنش محمدعلي",
+    units: 2,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+
+  /* --- سایر دروس سازه/نقشه/استاتیک/دینامیک --- */
+  {
+    id: 46,
     name: "مقاومت مصالح ۲",
-    code: "21_2220226",
-    prof: "دکتر صباغ یزدی",
+    code: "21_2271068",
+    prof: "كياني كيوان",
     units: 3,
     sessions: [
-        {days: [1], start: 10.5, duration: 1.5},
-        {days: [3], start: 10.5, duration: 1.5}
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/02",
-    department: "مهندسی عمران"
-},
-{
-    id: 194,
-    name: "تحلیل سازه ۱",
-    code: "21_2220227",
-    prof: "دکتر مشایخی",
+    examDate: "1404/11/05 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 47,
+    name: "سازه هاي فولادي ۱",
+    code: "21_2271082",
+    prof: "فنايي نادر",
     units: 3,
     sessions: [
-        {days: [2], start: 10.5, duration: 1.5},
-        {days: [4], start: 10.5, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/03/30",
-    department: "مهندسی عمران"
-},
-{
-    id: 195,
-    name: "تحلیل سازه ۲",
-    code: "21_2220228",
-    prof: "دکتر ذوالفقاری",
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 48,
+    name: "سازه هاي فولادي ۱",
+    code: "22_2271082",
+    prof: "مشايخي محمد رضا",
     units: 3,
     sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
     ],
-    examDate: "1404/04/05",
-    department: "مهندسی عمران"
-},
-{
-    id: 196,
-    name: "طراحی سازه‌های فولادی ۱",
-    code: "21_2220229",
-    prof: "دکتر بهشتی",
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 49,
+    name: "سازه هاي بتن آرمه ۲",
+    code: "21_2271084",
+    prof: "مسعودي مصطفي",
     units: 3,
     sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
+      {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/04/01",
-    department: "مهندسی عمران"
-},
-{
-    id: 197,
-    name: "طراحی سازه‌های بتنی ۱",
-    code: "21_2220230",
-    prof: "دکتر قاسم زاده",
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 50,
+    name: "تئوري نقشه برداري ۱",
+    code: "21_2271086",
+    prof: "رحيم زادگان مجيد",
+    units: 1,
+    sessions: [
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 51,
+    name: "تئوري نقشه برداري ۱",
+    code: "22_2271086",
+    prof: "رحيم زادگان مجيد",
+    units: 1,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 52,
+    name: "استاتيك",
+    code: "21_2271088",
+    prof: "عسجدي امير حسين",
     units: 3,
     sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
     ],
-    examDate: "1404/03/28",
-    department: "مهندسی عمران"
-}
+    examDate: "1404/10/23 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 53,
+    name: "استاتيك",
+    code: "22_2271088",
+    prof: "باراني لنباني اميد رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"},
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 54,
+    name: "ديناميك",
+    code: "21_2271090",
+    prof: "ايزدي اردلان",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 55,
+    name: "مقاومت مصالح ۱",
+    code: "21_2271091",
+    prof: "عسگريان بهروز",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 5,
+    gender: "مختلط"
+  },
+  {
+    id: 56,
+    name: "مقاومت مصالح ۱",
+    code: "22_2271091",
+    prof: "مسعودي مصطفي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 5,
+    gender: "مختلط"
+  },
+  {
+    id: 57,
+    name: "مقاومت مصالح ۱",
+    code: "23_2271091",
+    prof: "اصيل قره باغي سعيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 5,
+    gender: "مختلط"
+  },
+
+  /* --- رسم فنی، زمین‌شناسی، آز بتن، متره/برآورد، تحلیل‌ها، بتن۱ --- */
+  {
+    id: 58,
+    name: "رسم فني و نقشه كشي ساختمان",
+    code: "21_2271094",
+    prof: "وكيل زاده داود",
+    units: 2,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 59,
+    name: "رسم فني و نقشه كشي ساختمان",
+    code: "22_2271094",
+    prof: "وكيل زاده داود",
+    units: 2,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 60,
+    name: "رسم فني و نقشه كشي ساختمان",
+    code: "23_2271094",
+    prof: "وكيل زاده داود",
+    units: 2,
+    sessions: [
+      {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 61,
+    name: "رسم فني و نقشه كشي ساختمان",
+    code: "24_2271094",
+    prof: "وكيل زاده داود",
+    units: 2,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 62,
+    name: "زمين شناسي مهندسي",
+    code: "21_2271098",
+    prof: "علي آباديان زينب",
+    units: 2,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 63,
+    name: "زمين شناسي مهندسي",
+    code: "22_2271098",
+    prof: "علي آباديان زينب",
+    units: 2,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 64,
+    name: "زمين شناسي مهندسي",
+    code: "23_2271098",
+    prof: "علي آباديان زينب",
+    units: 2,
+    sessions: [
+      {days: [4], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 65,
+    name: "آز بتن",
+    code: "21_2271100",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 66,
+    name: "آز بتن",
+    code: "22_2271100",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 67,
+    name: "آز بتن",
+    code: "23_2271100",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 68,
+    name: "آز بتن",
+    code: "24_2271100",
+    prof: "زنگانه حامد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 69,
+    name: "متره و براورد و پروژه",
+    code: "21_2271107",
+    prof: "خانعلي پور وزواني مهدي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 70,
+    name: "تحليل سازه ها ۱",
+    code: "21_2271108",
+    prof: "قادري گركاني مجيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 71,
+    name: "تحليل سازه ها ۱",
+    code: "22_2271108",
+    prof: "عسجدي امير حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 72,
+    name: "تحليل سازه ها ۲",
+    code: "21_2271118",
+    prof: "كرمي محمدي رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 73,
+    name: "تحليل سازه ها ۲",
+    code: "22_2271118",
+    prof: "دلفاني محمدرسول",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 74,
+    name: "سازه هاي بتن آرمه ۱",
+    code: "21_2271121",
+    prof: "ميرزا بزرگ حسن",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 75,
+    name: "سازه هاي بتن آرمه ۱",
+    code: "22_2271121",
+    prof: "نصراله زاده نشلي كورش",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+
+  /* --- روش‌های اجرایی، فولاد۲، آز مقاومت، پروژه‌ها، عملیات نقشه‌برداری --- */
+  {
+    id: 76,
+    name: "روشهاي اجرايي ساختمان",
+    code: "21_2271123",
+    prof: "خليفه لو سيداكبر",
+    units: 2,
+    sessions: [
+      {days: [5], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 77,
+    name: "سازه هاي فولادي ۲",
+    code: "21_2271131",
+    prof: "خليفه لو سيداكبر",
+    units: 2,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 78,
+    name: "سازه هاي فولادي ۲",
+    code: "22_2271131",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"},
+      {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 79,
+    name: "آز مقاومت مصالح",
+    code: "21_2271142",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 80,
+    name: "آز مقاومت مصالح",
+    code: "22_2271142",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 81,
+    name: "آز مقاومت مصالح",
+    code: "23_2271142",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 82,
+    name: "آز مقاومت مصالح",
+    code: "24_2271142",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 83,
+    name: "آز مقاومت مصالح",
+    code: "25_2271142",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 84,
+    name: "پروژه بتن آرمه",
+    code: "21_2271209",
+    prof: "ميرزا بزرگ حسن",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 85,
+    name: "پروژه سازه هاي فولادي",
+    code: "21_2271216",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [5], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 86,
+    name: "پروژه سازه هاي فولادي",
+    code: "22_2271216",
+    prof: "خليفه لو سيداكبر",
+    units: 1,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 87,
+    name: "عمليات نقشه برداري ۱",
+    code: "21_2271277",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 18,
+    gender: "مختلط"
+  },
+  {
+    id: 88,
+    name: "عمليات نقشه برداري ۱",
+    code: "22_2271277",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 18,
+    gender: "مختلط"
+  },
+  {
+    id: 89,
+    name: "عمليات نقشه برداري ۱",
+    code: "23_2271277",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 18,
+    gender: "مختلط"
+  },
+  {
+    id: 90,
+    name: "عمليات نقشه برداري ۱",
+    code: "24_2271277",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی عمران",
+    capacity: 18,
+    gender: "مختلط"
+  },
+
+  /* --- محیط زیست --- */
+  {
+    id: 91,
+    name: "مهندسي محيط زيست",
+    code: "21_2274004",
+    prof: "وفائي فريدون",
+    units: 2,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 92,
+    name: "مهندسي محيط زيست",
+    code: "22_2274004",
+    prof: "بوداقپور سيامك",
+    units: 2,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 20,
+    gender: "مختلط"
+  },
+
+  /* --- راه و ترابری --- */
+  {
+    id: 93,
+    name: "آزمايشگاه روسازي",
+    code: "21_2279005",
+    prof: "خدادادي مجتبي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 94,
+    name: "آزمايشگاه روسازي",
+    code: "22_2279005",
+    prof: "فخري منصور",
+    units: 1,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 95,
+    name: "مهندسي ترابري",
+    code: "21_2279008",
+    prof: "ادريسي علي",
+    units: 2,
+    sessions: [
+      {days: [4], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 96,
+    name: "ماشين آلات راهسازي",
+    code: "21_2279017",
+    prof: "ادريسي علي",
+    units: 2,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 97,
+    name: "روسازي راه",
+    code: "21_2279018",
+    prof: "فخري منصور",
+    units: 2,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 98,
+    name: "راهسازي",
+    code: "21_2279021",
+    prof: "منجم محمد سعيد",
+    units: 2,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی عمران",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 99,
+    name: "پروژه راه",
+    code: "21_2279076",
+    prof: "منجم محمد سعيد",
+    units: 1,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 100,
+    name: "پروژه راه",
+    code: "22_2279076",
+    prof: "منجم محمد سعيد",
+    units: 1,
+    sessions: [
+      {days: [3], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 101,
+    name: "پروژه راه",
+    code: "23_2279076",
+    prof: "منجم محمد سعيد",
+    units: 1,
+    sessions: [
+      {days: [4], start: 15, duration: 1.5, location: "کلاس"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی عمران",
+    capacity: 0,
+    gender: "مختلط"
+  }
 ,
-    {
-        id: 104,
-        name: "اقتصاد مهندسی",
-        code: "21_2220084",
-        prof: "دهقانی سانیج محمدسعید",
-        units: 2,
-        sessions: [
-            {days: [1], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/01",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 105,
-        name: "بازرسی، تعمیر و ترمیم سازه‌ها",
-        code: "21_2220097",
-        prof: "بهشتی اول سید بهرام",
-        units: 2,
-        sessions: [
-            {days: [2], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 106,
-        name: "اصول مهندسی زلزله و باد",
-        code: "21_2220098",
-        prof: "مشایخی محمدرضا، ذوالفقاری محمدرضا",
-        units: 3,
-        sessions: [
-            {days: [6], start: 9, duration: 1.5},
-            {days: [2], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 107,
-        name: "محاسبات عددی",
-        code: "21_2220110",
-        prof: "اسدی رزا",
-        units: 2,
-        sessions: [
-            {days: [3], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 108,
-        name: "محاسبات عددی",
-        code: "22_2220110",
-        prof: "ایزدی اردلان",
-        units: 2,
-        sessions: [
-            {days: [3], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی عمران"
-    },
-    // {
-    //     id: 109,
-    //     name: "کارآموزی",
-    //     code: "21_2220114",
-    //     prof: "اساتید گروه آموزشی",
-    //     units: 1,
-    //     sessions: [],
-    //     examDate: "تعیین نشده",
-    //     department: "مهندسی عمران"
-    // },
-    {
-        id: 110,
-        name: "مقررات ملی ساختمان",
-        code: "21_2220116",
-        prof: "صباغ یزدی سعیدرضا",
-        units: 2,
-        sessions: [
-            {days: [2], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    // {
-    //     id: 111,
-    //     name: "پروژه تخصصی",
-    //     code: "21_2220121",
-    //     prof: "اساتید گروه آموزشی",
-    //     units: 3,
-    //     sessions: [],
-    //     examDate: "تعیین نشده",
-    //     department: "مهندسی عمران"
-    // },
-    {
-        id: 112,
-        name: "اصول مدیریت ساخت",
-        code: "21_2220163",
-        prof: "علیپوری یعقوب",
-        units: 2,
-        sessions: [
-            {days: [3], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 113,
-        name: "هوش مصنوعی و تحول دیجیتال",
-        code: "21_2220171",
-        prof: "قاسم زاده حسن",
-        units: 2,
-        sessions: [
-            {days: [6], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/03/25",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 114,
-        name: "برنامه‌سازی کامپیوتر",
-        code: "21_2220173",
-        prof: "صادقی نعیمه",
-        units: 3,
-        sessions: [
-            {days: [6], start: 9, duration: 1.5},
-            {days: [2], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 115,
-        name: "برنامه‌سازی کامپیوتر",
-        code: "22_2220173",
-        prof: "صادقی نعیمه",
-        units: 3,
-        sessions: [
-            {days: [6], start: 10.5, duration: 2},
-            {days: [2], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 116,
-        name: "برنامه‌سازی کامپیوتر",
-        code: "23_2220173",
-        prof: "خدادادی مجتبی",
-        units: 3,
-        sessions: [
-            {days: [6], start: 9, duration: 1.5},
-            {days: [2], start: 9, duration: 1.5}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 117,
-        name: "برنامه‌سازی کامپیوتر",
-        code: "24_2220173",
-        prof: "خدادادی مجتبی",
-        units: 3,
-        sessions: [
-            {days: [6], start: 10.5, duration: 2},
-            {days: [2], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/04/07",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 118,
-        name: "مبانی معماری و شهرسازی",
-        code: "21_2220177",
-        prof: "اساتید گروه آموزشی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 119,
-        name: "مبانی معماری و شهرسازی",
-        code: "22_2220177",
-        prof: "اساتید گروه آموزشی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 120,
-        name: "مبانی معماری و شهرسازی",
-        code: "23_2220177",
-        prof: "اساتید گروه آموزشی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 13.5, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 121,
-        name: "مبانی معماری و شهرسازی",
-        code: "24_2220177",
-        prof: "اساتید گروه آموزشی",
-        units: 2,
-        sessions: [
-            {days: [3], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 122,
-        name: "اصول مهندسی منابع آب",
-        code: "21_2220204",
-        prof: "موسوی سید مرتضی",
-        units: 2,
-        sessions: [
-            {days: [6], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/03",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 122,
-        name: "تغییر اقلیم",
-        code: "21_2220205",
-        prof: "اسدی رزا",
-        units: 2,
-        sessions: [
-            {days: [3], start: 15, duration: 1.5}
-        ],
-        examDate: "1404/04/08",
-        department: "مهندسی عمران"
-    },
-    {
-        id: 123,
-        name: "اصول ایمنی در ساختمان و حفاظت آتش سوزی",
-        code: "21_2220223",
-        prof: "احمدیار",
-        units: 2,
-        sessions: [
-            {days: [1], start: 10.5, duration: 2}
-        ],
-        examDate: "1404/03/31",
-        department: "مهندسی عمران"
-    },
-
-// هوافضا
-// Continuing the courses array...
-{
-    id: 124,
-    name: "آز مکانیک سیالات",
-    code: "81_8880036",
-    prof: "شیخ الاسلام نوری سید مهدی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 125,
-    name: "آز مکانیک سیالات",
-    code: "82_8880036",
-    prof: "شیخ الاسلام نوری سید مهدی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 126,
-    name: "آز مکانیک سیالات",
-    code: "83_8880036",
-    prof: "شیخ الاسلام نوری سید مهدی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 127,
-    name: "طراحی اجزاء ۱",
-    code: "81_8880037",
-    prof: "مظفری علی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 128,
-    name: "طراحی اجزاء ۱",
-    code: "82_8880037",
-    prof: "ذاکری مهناز",
-    units: 3,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 129,
-    name: "آز مقاومت مصالح",
-    code: "81_8880038",
-    prof: "ذاکری مهناز",
-    units: 1,
-    sessions: [
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 130,
-    name: "آز مقاومت مصالح",
-    code: "82_8880038",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 131,
-    name: "تحلیل سازه‌های هوایی",
-    code: "81_8880040",
-    prof: "خراسانی رضا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 132,
-    name: "آز آئرودینامیک ۱",
-    code: "81_8880047",
-    prof: "پوریوسفی غلامحسین",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 133,
-    name: "آز آئرودینامیک ۱",
-    code: "82_8880047",
-    prof: "پوریوسفی غلامحسین",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 134,
-    name: "آز آئرودینامیک ۱",
-    code: "83_8880047",
-    prof: "پوریوسفی غلامحسین",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 135,
-    name: "زبان تخصصی مهندسی هوافضا",
-    code: "81_8880050",
-    prof: "واحدی",
+  {
+    id: 3330014,
+    name: "زبان تخصصي",
+    code: "31_3330014",
+    prof: "ساداتي سيدحسين",
     units: 2,
     sessions: [
-        {days: [6], start: 15, duration: 1.5}
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۱"}
     ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 136,
-    name: "زبان تخصصی مهندسی هوافضا",
-    code: "82_8880050",
-    prof: "واحدی",
-    units: 2,
-    sessions: [
-        {days: [6], start: 16.5, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 137,
-    name: "محاسبات عددی",
-    code: "81_8880059",
-    prof: "پوریوسفی غلامحسین",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 2}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 138,
-    name: "محاسبات عددی",
-    code: "82_8880059",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [4], start: 15, duration: 2}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 139,
-    name: "مکانیک پرواز ۱",
-    code: "81_8880060",
-    prof: "نیکخواه امیرعلی",
-    units: 3,
-    sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 140,
-    name: "مکانیک پرواز ۱",
-    code: "82_8880060",
-    prof: "خوشنود عبدالمجید",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 141,
-    name: "ترمودینامیک ۲",
-    code: "81_8880067",
-    prof: "مهدوی مقدم حسین",
-    units: 2,
-    sessions: [
-        {days: [6], start: 15, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 142,
-    name: "آئرودینامیک ۲",
-    code: "81_8880082",
-    prof: "فتحعلی مانی",
-    units: 3,
-    sessions: [
-        {days: [6], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-
-// مکانیک
-{
-    id: 143,
-    name: "زبان تخصصی",
-    code: "31_3330016",
-    prof: "نحوی علی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-// {
-//     id: 144,
-//     name: "پروژه",
-//     code: "31_3330017",
-//     prof: "اساتید گروه آموزشی",
-//     units: 3,
-//     sessions: [],
-//     examDate: "تعیین نشده",
-//     department: "مهندسی مکانیک"
-// },
-
-{
-    id: 145,
-    name: "برنامه‌سازی کامپیوتر",
+    examDate: "1404/11/04 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330039,
+    name: "برنامه سازي كامپيوتر",
     code: "31_3330039",
-    prof: "کازرونی مهرداد",
+    prof: "ترابي فرشاد",
     units: 3,
     sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۲"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۲۰۲"}
     ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 146,
-    name: "برنامه‌سازی کامپیوتر",
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 45,
+    gender: "مختلط"
+  },
+  {
+    id: 3330039,
+    name: "برنامه سازي كامپيوتر",
     code: "32_3330039",
-    prof: "ستاری امیرمحمد",
+    prof: "ستاري اميرمحمد",
     units: 3,
     sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۵"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۳۰۵"}
     ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 147,
-    name: "محاسبات عددی",
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 45,
+    gender: "مختلط"
+  },
+  {
+    id: 3330040,
+    name: "محاسبات عددي",
     code: "31_3330040",
-    prof: "ساداتی سیدحسین",
+    prof: "رسولي آيسا",
     units: 2,
     sessions: [
-        {days: [2], start: 15, duration: 1.5}
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/04/08",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 148,
-    name: "محاسبات عددی",
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330040,
+    name: "محاسبات عددي",
     code: "32_3330040",
-    prof: "لسانی",
+    prof: "ساداتي سيدحسين",
     units: 2,
     sessions: [
-        {days: [4], start: 9, duration: 1.5}
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۲۰۷"}
     ],
-    examDate: "1404/04/08",
-    department: "مهندسی مکانیک"
-},
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  }
+,
 {
-    id: 149,
-    name: "مبانی مهندسی برق ۱",
+    id: 3330041,
+    name: "مباني مهندسي برق ۱",
     code: "31_3330041",
-    prof: "اکبری",
+    prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [1], start: 16.5, duration: 1.5},
-        {days: [3], start: 16.5, duration: 1.5}
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 150,
-    name: "مبانی مهندسی برق ۲",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 46,
+    gender: "مختلط"
+  },
+  {
+    id: 3330041,
+    name: "مباني مهندسي برق ۱",
+    code: "32_3330041",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 45,
+    gender: "مختلط"
+  },
+  {
+    id: 3330042,
+    name: "مباني مهندسي برق ۲",
     code: "31_3330042",
-    prof: "علیزاده",
+    prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
+      {days: [2], start: 16.5, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 16.5, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 151,
-    name: "مبانی مهندسی برق ۲",
-    code: "32_3330042",
-    prof: "اکبری",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 152,
-    name: "آز مبانی مهندسی برق",
-    code: "31_3330043",
-    prof: "عباس زاده کریم",
-    units: 1,
-    sessions: [
-        {days: [3], start: 13.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 153,
-    name: "آز مبانی مهندسی برق",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 26,
+    gender: "مختلط"
+  },
+  {
+    id: 3330043,
+    name: "آز مباني مهندسي برق",
     code: "32_3330043",
-    prof: "عباس زاده کریم",
+    prof: "اساتيد گروه آموزشي",
     units: 1,
     sessions: [
-        {days: [3], start: 15.5, duration: 2}
+      {days: [4], start: 15, duration: 1.5, location: "آزمايشگاه"}
     ],
     examDate: "تعیین نشده",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 154,
-    name: "کنترل مدرن",
-    code: "31_3330051",
-    prof: "نجفی اردکانی علی",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330052,
+    name: "رباتيك مقدماتي وآزمايشگاه",
+    code: "31_3330052",
+    prof: "نجفي اردكاني علي",
     units: 3,
     sessions: [
-        {days: [6], start: 16.5, duration: 1.5},
-        {days: [2], start: 16.5, duration: 1.5}
+      {days: [1], start: 16.5, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [3], start: 16.5, duration: 1.5, location: "كلاس ۲۰۱"}
     ],
-    examDate: "1404/04/01",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 155,
-    name: "دینامیک خودرو",
+    examDate: "1404/10/30 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330056,
+    name: "ديناميك خودرو",
     code: "31_3330056",
-    prof: "آزادی شهرام",
+    prof: "آزادي شهرام",
     units: 3,
     sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۳۰۸"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۳۰۸"}
     ],
-    examDate: "1404/04/02",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 156,
-    name: "هیدرولیک و پنوماتیک",
-    code: "31_3330058",
-    prof: "تقوی پور امیر",
-    units: 3,
-    sessions: [
-        {days: [6], start: 15, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی مکانیک"
-},
-// Continuing the courses array...
-{
-    id: 157,
-    name: "طراحی مکانیزم‌ها",
-    code: "31_3330059",
-    prof: "نجفی اردکانی علی",
-    units: 3,
-    sessions: [
-        {days: [6], start: 13.5, duration: 1.5},
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 158,
-    name: "مقدمه‌ای بر اجزاء محدود",
-    code: "31_3330060",
-    prof: "صفاری محمدعلی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 159,
-    name: "مقدمه‌ای بر سیستم‌های مکاترونیکی",
-    code: "31_3330061",
-    prof: "نجفی اردکانی علی",
-    units: 3,
-    sessions: [
-        {days: [6], start: 15, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 160,
-    name: "مقدمه‌ای بر مهندسی مکاترونیک",
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 3330062,
+    name: "روش اجزائ محدودمقدماتي",
     code: "31_3330062",
-    prof: "نجفی اردکانی علی",
+    prof: "هدايتي رضا",
     units: 3,
     sessions: [
-        {days: [1], start: 10.5, duration: 1.5},
-        {days: [3], start: 10.5, duration: 1.5}
+      {days: [1], start: 15, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۲۰۱"}
     ],
-    examDate: "1404/04/02",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 161,
-    name: "روش‌های تولید",
-    code: "31_3330063",
-    prof: "حق پناه محمدرضا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 162,
-    name: "مقدمه‌ای بر CAD/CAM",
-    code: "31_3330064",
-    prof: "حق پناه محمدرضا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 163,
-    name: "مقدمه‌ای بر رباتیک",
+    examDate: "1404/10/20 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330065,
+    name: "انرژي هاي نو",
     code: "31_3330065",
-    prof: "آزادی شهرام",
+    prof: "ترابي فرشاد",
     units: 3,
     sessions: [
-        {days: [6], start: 13.5, duration: 1.5},
-        {days: [2], start: 13.5, duration: 1.5}
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۷"}
     ],
-    examDate: "1404/04/08",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 164,
-    name: "مقدمه‌ای بر مهندسی پزشکی",
-    code: "31_3330066",
-    prof: "فرزانه حسن",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 165,
-    name: "رياضي عمومي۲",
-    code: "42_۵۷۱۲۰۹۶",
-    prof: "اساتید آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-
-{
-    id: 166,
-    name: "ریاضی عمومی دو",
-    code: "43_۵۷۱۲۰۹۶",
-    prof: "اساتید آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 167,
-    name: "ریاضی عمومی دو",
-    code: "44_۵۷۱۲۰۹۶",
-    prof: "اساتید آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 1.5},
-        {days: [4], start: 10.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-
-{
-    id: 198,
-    name: "ریاضی عمومی ۲",
-    code: "45_5712096",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 199,
-    name: "ریاضی عمومی ۲",
-    code: "46_5712096",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی مکانیک"
-}
-,
-// Add to the courses array:
-{
-    id: 200,
-    name: "ریاضی عمومی ۲",
-    code: "47_5712096",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی برق"
-},
-{
-    id: 201,
-    name: "ریاضی عمومی ۲", 
-    code: "48_5712096",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی برق"
-},
-{
-    id: 202,
-    name: "ریاضی عمومی ۲",
-    code: "49_5712096", 
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی برق"
-},
-{
-    id: 203,
-    name: "ریاضی عمومی ۲",
-    code: "50_5712096",
-    prof: "اساتید گروه آموزشی", 
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی برق"
-},
-
-{
-    id: 205,
-    name: "ریاضی عمومی ۲",
-    code: "54_5712096",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی صنایع"
-}
-,
-{
-    id: 300,
-    name: "سمينار ۲",
-    code: "80_۸۸۸۰۰۸۶",
+    examDate: "1404/10/21 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330077,
+    name: "محركه هاي نا متداول",
+    code: "31_3330077",
     prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 301,
-    name: "سيستم هاي اتوماتيك درفضا",
-    code: "81_۸۸۸۰۱۰۲", 
-    prof: "با صحبت نوين زاد عليرضا",
+    units: 2,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330090,
+    name: "بهينه سازي سيستم هاي انرژي",
+    code: "31_3330090",
+    prof: "شربتدار مهكامه",
     units: 3,
     sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/03/26",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 302,
-    name: "طراحي،كنترل وكاربردسيستم هاي ماهواره اي",
-    code: "81_۸۸۸۰۱۱۰",
-    prof: "چيني فروشان محمد",
+    examDate: "1404/11/06 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 3330091,
+    name: "مكانيك سيالات زيستي",
+    code: "31_3330091",
+    prof: "ستاري اميرمحمد",
     units: 3,
     sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [5], start: 13.5, duration: 1.5}
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۵"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۵"}
     ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 303,
-    name: "رساله دكترا",
-    code: "80_۸۸۸۰۱۲۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 304,
-    name: "مكانيك مدارهاي فضايي",
-    code: "81_۸۸۸۰۱۳۲",
-    prof: "مير شمس مهران",
+    examDate: "1404/10/24 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330093,
+    name: "سيستم مديريت تاسيسات وانرژي درساختمان",
+    code: "31_3330093",
+    prof: "شهيديان آزاده",
+    units: 2,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 3330103,
+    name: "رياضيات مهندسي",
+    code: "31_3330103",
+    prof: "رسولي آيسa",
     units: 3,
     sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۵"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۲۰۵"}
     ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 305,
-    name: "مكانيك مدارهاي فضايي",
-    code: "82_۸۸۸۰۱۳۲",
-    prof: "چيني فروشان محمد",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 47,
+    gender: "مختلط"
+  },
+  {
+    id: 3330103,
+    name: "رياضيات مهندسي",
+    code: "32_3330103",
+    prof: "هدايتي رضا",
     units: 3,
     sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 306,
-    name: "ديناميك پروازو كنترل فضا پيما",
-    code: "89_۸۸۸۹۰۰۸",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 45,
+    gender: "مختلط"
+  },
+  {
+    id: 3330131,
+    name: "ترموديناميك ۱",
+    code: "31_3330131",
+    prof: "قاسمي مجيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۳۰۵"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۵"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 3330132,
+    name: "ترموديناميك ۲",
+    code: "31_3330132",
+    prof: "بازارگان مجيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330132,
+    name: "ترموديناميك ۲",
+    code: "32_3330132",
     prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۷"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۳۰۷"}
     ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 307,
-    name: "طراحي موتورهاي موشك سوخت مايع",
-    code: "89_۸۸۸۹۰۱۰",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 308,
-    name: "مكانيك مدار پيشرفته",
-    code: "89_۸۸۸۹۰۱۴",
-    prof: "جعفري ندوشن مهدي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 309,
-    name: "طراحي سيستمي فضاپيما",
-    code: "89_۸۸۸۹۰۲۴",
-    prof: "مير شمس مهران",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 310,
-    name: "كنترل جريان سيال",
-    code: "89_۸۸۸۹۰۴۳",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 311,
-    name: "ديناميك سيالات عددي ۱",
-    code: "93_۸۸۹۳۰۱۲",
-    prof: "علي صادقي آراني حامد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 312,
-    name: "سوخت و احتراق پيشرفته ۱",
-    code: "93_۸۸۹۳۰۱۶",
-    prof: "ابراهيمي رضا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 313,
-    name: "اصول جلوبرنده پيشرفته",
-    code: "93_۸۸۹۳۰۱۷",
-    prof: "مهدوي مقدم حسين",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 314,
-    name: "تئوري كنترل بهينه",
-    code: "94_۸۸۹۴۰۱۴",
-    prof: "روشني يان جعفر",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 315,
-    name: "هدايت و ناوبري ۱",
-    code: "94_۸۸۹۴۰۱۶",
-    prof: "نيكخواه امير علي، روشني يان جعفر",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [5], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 316,
-    name: "شناسايي سيستم و تخمين پارامترهاي پرواز",
-    code: "94_۸۸۹۴۰۳۱",
-    prof: "خوشنود عبدالمجيد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 317,
-    name: "طراحي سيستم هاي كنترلي",
-    code: "94_۸۸۹۴۰۳۵",
-    prof: "طايفي نصرآبادي مرتضي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 318,
-    name: "تعيين مدار و وضعيت",
-    code: "94_۸۸۹۴۰۳۶",
-    prof: "چيني فروشان محمد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [5], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 319,
-    name: "روشهاي اجزا محدود",
-    code: "95_۸۸۹۵۰۰۹",
-    prof: "خراساني رضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [5], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 320,
-    name: "آئروالاستيسيته",
-    code: "95_۸۸۹۵۰۱۵",
-    prof: "ايراني سعيد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 321,
-    name: "مكانيك مواد مركب",
-    code: "95_۸۸۹۵۰۲۸",
-    prof: "ذاكري مهناز",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 322,
-    name: "آناليز و تست مودال",
-    code: "95_۸۸۹۵۰۳۳",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 323,
-    name: "توربولانس",
-    code: "96_۸۸۹۶۰۱۱",
-    prof: "فتحعلي ماني",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 324,
-    name: "جريانهاي چند فازي",
-    code: "96_۸۸۹۶۰۱۵",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 325,
-    name: "آيروديناميك تجربي",
-    code: "96_۸۸۹۶۰۲۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی هوافضا"
-},
-
-{
-    id: 326,
-    name: "انتقال حرارت جابجايي",
-    code: "96_۸۸۹۶۰۲۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 400,
-    name: "رياضي عمومي۲",
-    code: "47_۵۷۱۲۰۹۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده برق"
-},
-{
-    id: 401,
-    name: "رياضي عمومي۲", 
-    code: "48_۵۷۱۲۰۹۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده برق"
-},
-{
-    id: 402,
-    name: "رياضي عمومي۲",
-    code: "49_۵۷۱۲۰۹۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده برق"
-},
-{
-    id: 403,
-    name: "رياضي عمومي۲",
-    code: "50_۵۷۱۲۰۹۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده برق"
-}
-,
-{
-    id: 404,
-    name: "رياضي عمومي۲",
-    code: "54_۵۷۱۲۰۹۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده صنايع"
-}
-,
-{
-    id: 500,
-    name: "هندسه جبري",
-    code: "42_۵۷۱۲۰۵۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "دانشكده رياضي"
-},
-{
-    id: 501,
-    name: "گروههاي متناهي",
-    code: "42_۵۷۱۲۰۶۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشكده رياضي"
-},
-{
-    id: 502,
-    name: "رياضيات عمومي ۱",
-    code: "42_۵۷۱۲۰۶۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشكده رياضي"
-},
-{
-    id: 503,
-    name: "رياضيات عمومي ۲",
-    code: "42_۵۷۱۲۰۷۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 504,
-    name: "رياضيات عمومي ۲",
-    code: "43_۵۷۱۲۰۷۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 505,
-    name: "توپولوژي جبري ۱",
-    code: "42_۵۷۱۲۱۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 506,
-    name: "نظريه پيشرفته احتمال",
-    code: "42_۵۷۱۲۱۷۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-},
-{
-    id: 507,
-    name: "شبيه سازي",
-    code: "42_۵۷۱۲۱۷۳",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "دانشكده رياضي"
-},
-{
-    id: 508,
-    name: "جبر پيشرفته",
-    code: "42_۵۷۱۲۱۹۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-}
-,
-{
-    id: 600,
-    name: "معادلات ديفرانسيل",
-    code: "42_۵۷۱۴۰۵۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي"
-},
-{
-    id: 601,
-    name: "برنامه سازي پيشرفته",
-    code: "42_۵۷۱۴۰۸۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشكده رياضي"
-},
-{
-    id: 602,
-    name: "برنامه سازي پيشرفته",
-    code: "43_۵۷۱۴۰۸۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشكده رياضي"
-},
-{
-    id: 603,
-    name: "مباني احتمال",
-    code: "42_۵۷۱۴۱۱۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي"
-},
-{
-    id: 604,
-    name: "حل عددي معادلات ديفرانسيل",
-    code: "42_۵۷۱۴۱۲۶",
-    prof: "قريشي فريده",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 605,
-    name: "فرآيندهاي تصادفي",
-    code: "42_۵۷۱۴۱۵۱",
-    prof: "خودسياني راضيه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "دانشكده رياضي"
-},
-{
-    id: 606,
-    name: "آناليز حقيقي",
-    code: "42_۵۷۱۴۱۹۳",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "دانشكده رياضي"
-},
-{
-    id: 607,
-    name: "حل عددي معادلات ديفرانسيل و انتگرال كسري",
-    code: "42_۵۷۱۴۲۱۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "دانشكده رياضي"
-},
-{
-    id: 608,
-    name: "آزمايشگاه رياضي ۱",
-    code: "42_۵۷۱۴۲۳۵",
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "31_3330133",
     prof: "اساتيد گروه آموزشي",
     units: 1,
     sessions: [
-        {days: [1], start: 13.5, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه"}
     ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-},
-{
-    id: 609,
-    name: "مباني ماتريس ها و جبر خطي",
-    code: "42_۵۷۱۴۲۳۸",
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "32_3330133",
     prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "33_3330133",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیك",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "34_3330133",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "35_3330133",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330133,
+    name: "آزترموديناميك",
+    code: "36_3330133",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330134,
+    name: "مكانيك سيالات ۱",
+    code: "31_3330134",
+    prof: "كارمزدي محسن",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۳۰۲"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۳۰۲"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330135,
+    name: "مكانيك سيالات ۲",
+    code: "31_3330135",
+    prof: "مجري افسانه",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۵"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330135,
+    name: "مكانيك سيالات ۲",
+    code: "32_3330135",
+    prof: "شمس مهرزاد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۶"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "31_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "32_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "33_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "34_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "35_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330136,
+    name: "آزمكانيك سيالات",
+    code: "36_3330136",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 9,
+    gender: "مختلط"
+  },
+  {
+    id: 3330137,
+    name: "انتقال حرارت ۱",
+    code: "31_3330137",
+    prof: "پوربگيان برزي مهدي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۱"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 27,
+    gender: "مختلط"
+  },
+  {
+    id: 3330137,
+    name: "انتقال حرارت ۱",
+    code: "32_3330137",
+    prof: "آقانجفي سيروس",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۵"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 27,
+    gender: "مختلط"
+  },
+  {
+    id: 3330139,
+    name: "موتورهاي احتراق داخلي",
+    code: "31_3330139",
+    prof: "شامخي امير حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/10/28 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "31_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "32_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 15, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "33_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "34_3330141",
+    prof: "غفاري ملكي سيدمجتبi",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 15, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "35_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "36_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "37_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330141,
+    name: "كارگاه اتومكانيك",
+    code: "38_3330141",
+    prof: "غفاري ملكي سيدمجتبي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [5], start: 15, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3330144,
+    name: "انتقال حرارت 2",
+    code: "31_3330144",
+    prof: "آقانجفي سيروس",
+    units: 2,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۲"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330147,
+    name: "توربوماشين",
+    code: "31_3330147",
+    prof: "اشرفي زاده علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330149,
+    name: "نيروگاه حرارتي",
+    code: "31_3330149",
+    prof: "بهبهاني نيا سيد علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۷"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/11/01 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330152,
+    name: "حرارت مركزي وتهويه مطبوع ۱",
+    code: "31_3330152",
+    prof: "صيادي حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330171,
+    name: "استاتيك",
+    code: "31_3330171",
+    prof: "هدايتي رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۳۰۵"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۳۰۵"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330172,
+    name: "ديناميك",
+    code: "31_3330172",
+    prof: "موسويان سيد علي اكبر",
     units: 4,
     sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۱"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۱"}
     ],
-    examDate: "1404/04/07",
-    department: "دانشكده رياضي"
-}
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330172,
+    name: "دينамيك",
+    code: "32_3330172",
+    prof: "همائي نژاد محمد رضا",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۵"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330174,
+    name: "مقاومت مصالح ۱",
+    code: "31_3330174",
+    prof: "شاهاني امير رضا",
+    units: 3,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۳۰۵"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۳۰۵"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 39,
+    gender: "مختلط"
+  },
+  {
+    id: 3330175,
+    name: "علم مواد",
+    code: "31_3330175",
+    prof: "قنادي صابر",
+    units: 3,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۰۶"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330177,
+    name: "طراحي اجزائ۱",
+    code: "31_3330177",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۰۶"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330178,
+    name: "طراحي اجزائ۲",
+    code: "31_3330178",
+    prof: "كارمزدي علي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 3330178,
+    name: "طراحي اجزائ۲",
+    code: "32_3330178",
+    prof: "لساني علي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 3330179,
+    name: "مقاومت مصالح ۲",
+    code: "31_3330179",
+    prof: "قريشي سيد مجيد",
+    units: 2,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۳۰۲"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330179,
+    name: "مقاومت مصالح ۲",
+    code: "32_3330179",
+    prof: "شرعيات محمد",
+    units: 2,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330180,
+    name: "آزمقاومت مصالح",
+    code: "31_3330180",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330180,
+    name: "آزمقاومت مصالح",
+    code: "32_3330180",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330180,
+    name: "آزمقاومت مصالح",
+    code: "33_3330180",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330180,
+    name: "آزمقاومت مصالح",
+    code: "34_3330180",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330180,
+    name: "آزمقاومت مصالح",
+    code: "35_3330180",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330181,
+    name: "ديناميك ماشين",
+    code: "31_3330181",
+    prof: "نحوي علي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۷"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330182,
+    name: "آز ديناميك ماشين و ارتعاشات",
+    code: "31_3330182",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330182,
+    name: "آز ديناميك ماشين و ارتعاشات",
+    code: "32_3330182",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330182,
+    name: "آز ديناميك ماشين و ارتعاشات",
+    code: "33_3330182",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330182,
+    name: "آز ديناميك ماشين و ارتعاشات",
+    code: "34_3330182",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330182,
+    name: "آز ديناميك ماشين و ارتعاشات",
+    code: "35_3330182",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330183,
+    name: "ارتعاشات مكانيكي",
+    code: "31_3330183",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۲۰۶"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330183,
+    name: "ارتعاشات مكانيكي",
+    code: "32_3330183",
+    prof: "همائي نژاد محمد رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 3330184,
+    name: "روشهاي توليدوكارگاه",
+    code: "31_3330184",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۰۵"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330185,
+    name: "كنترل اتوماتيك",
+    code: "31_3330185",
+    prof: "ناصري فر ناصر",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۶"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۶"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 20,
+    gender: "مختلط"
+  }
+  ,
+
+    {
+    id: 3330185,
+    name: "كنترل اتوماتيك",
+    code: "32_3330185",
+    prof: "موسويان سيد علي اكبر",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330186,
+    name: "اندازه گيري وسيستم هاي كنترل",
+    code: "31_3330186",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [2], start: 16.5, duration: 1.5, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "31_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "32_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "33_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 15, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "34_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "35_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [4], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330189,
+    name: "كارگاه جوشكاري وورقكاري",
+    code: "36_3330189",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [5], start: 15, duration: 1.5, location: " كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "31_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 15, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  }
 ,
 {
-    id: 610,
-    name: "مدل سازي و پردازش مه داده ها",
-    code: "42_۵۷۱۴۲۴۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "32_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [2], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 10.5, duration: 2, location: "كارگاه"}
     ],
-    examDate: "1404/04/08",
-    department: "دانشكده رياضي"
-},
-{
-    id: 611,
-    name: "كنترل و حساب تغييرات",
-    code: "42_۵۷۱۴۲۵۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "33_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
+      {days: [2], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 15, duration: 1.5, location: "كارگاه"}
     ],
-    examDate: "1404/03/25",
-    department: "دانشكده رياضي"
-},
-{
-    id: 612,
-    name: "مباني جبر",
-    code: "42_۵۷۱۴۲۵۵",
-    prof: "قلندرزاده شعبان",
-    units: 4,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "34_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
+      {days: [3], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 10.5, duration: 2, location: "كارگاه"}
     ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-},
-{
-    id: 613,
-    name: "بهينه سازي غيرخطي",
-    code: "42_۵۷۱۴۲۵۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "35_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
+      {days: [3], start: 13.5, duration: 1.5, location: "كارگاه"}
     ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 614,
-    name: "آناليز رياضي",
-    code: "42_۵۷۱۴۲۵۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "36_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
+      {days: [4], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 10.5, duration: 2, location: "كارگاه"}
     ],
-    examDate: "1404/04/02",
-    department: "دانشكده رياضي"
-},
-{
-    id: 615,
-    name: "هندسه جبري مقدماتي",
-    code: "42_۵۷۱۴۲۵۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "37_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
+      {days: [4], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [4], start: 15, duration: 1.5, location: "كارگاه"}
     ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 616,
-    name: "نظريه معادلات ديفرانسيل عادي",
-    code: "42_۵۷۱۴۲۶۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "38_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [6], start: 7.5, duration: 1.5},
-        {days: [2], start: 7.5, duration: 1.5}
+      {days: [5], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [5], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [5], start: 10.5, duration: 2, location: "كارگاه"}
     ],
-    examDate: "1404/03/25",
-    department: "دانشكده رياضي"
-},
-{
-    id: 617,
-    name: "آناليز رياضي چند متغيره",
-    code: "42_۵۷۱۴۲۶۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330191,
+    name: "كارگاه ماشين ابزار",
+    code: "39_3330191",
+    prof: "حسني خندابي مرتضي",
+    units: 1,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [5], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [5], start: 15, duration: 1.5, location: "كارگاه"}
     ],
-    examDate: "1404/03/28",
-    department: "دانشكده رياضي"
-},
-{
-    id: 618,
-    name: "نظريه اعداد",
-    code: "42_۵۷۱۴۲۶۳",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
+    examDate: "تعیین نشده",
+    department: "مهندسی مکانیک",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 3330193,
+    name: "روشهاي طراحي مهندسي",
+    code: "31_3330193",
+    prof: "كازروني مهرداد",
+    units: 2,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۵"}
     ],
-    examDate: "1404/03/25",
-    department: "دانشكده رياضي"
-},
-{
-    id: 619,
-    name: "جبرخطي عددي",
-    code: "42_۵۷۱۴۲۶۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [6], start: 10.5, duration: 2},
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-}
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 32,
+    gender: "مختلط"
+  }
 ,
 {
-    id: 620,
-    name: "استنباط آماري ۲",
-    code: "42_۵۷۱۶۰۴۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
+    id: 3330227,
+    name: "ديناميك",
+    code: "32_3330227",
+    prof: "همائي نژاد محمد رضا",
+    units: 3,
     sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۵"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۵"}
     ],
-    examDate: "1404/04/07",
-    department: "دانشكده رياضي"
-},
-{
-    id: 621,
-    name: "نظريه اندازه و احتمال ۲",
-    code: "42_۵۷۱۶۰۵۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشكده رياضي"
-},
-{
-    id: 622,
-    name: "اصول سيستمهاي كامپيوتري",
-    code: "42_۵۷۱۶۰۷۰",
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330228,
+    name: "مباني مهندسي برق",
+    code: "31_3330228",
     prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [6], start: 15, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۶"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۶"}
     ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 623,
-    name: "مباني آناليز رياضي",
-    code: "42_۵۷۱۶۰۷۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/08",
-    department: "دانشكده رياضي"
-},
-{
-    id: 624,
-    name: "رياضي عمومي۳",
-    code: "42_۵۷۱۶۰۷۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 4,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "دانشكده رياضي"
-},
-{
-    id: 625,
-    name: "هوش مصنوعي",
-    code: "42_۵۷۱۶۰۷۹",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330228,
+    name: "مباني مهندسي برق",
+    code: "32_3330228",
     prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [6], start: 9, duration: 1.5},
-        {days: [2], start: 9, duration: 1.5}
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۷"}
     ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي"
-},
-{
-    id: 626,
-    name: "مباني نظريه محاسبه",
-    code: "42_۵۷۱۶۰۸۱",
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3330229,
+    name: "هوش مصنوعي و تحول ديجيتال",
+    code: "31_3330229",
+    prof: "كازروني مهرداد",
+    units: 2,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 3331001,
+    name: "مباني انرژي هاي تجديد پذير",
+    code: "31_3331001",
+    prof: "اشرفي زاده علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331059,
+    name: "رياضيات پيشرفته",
+    code: "31_3331059",
+    prof: "كارمزدي محسن",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331063,
+    name: "ترموديناميك پيشرفته",
+    code: "31_3331063",
     prof: "اساتيد گروه آموزشي",
     units: 3,
     sessions: [
-        {days: [6], start: 13.5, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۳۰۲"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۲"}
     ],
-    examDate: "1404/03/31",
-    department: "دانشكده رياضي"
-},
-{
-    id: 627,
-    name: "نظريه محاسبه",
-    code: "42_۵۷۱۶۰۸۲",
-    prof: "اساتيد گروه آموزشي",
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "mokhtalet"
+  },
+  {
+    id: 3331065,
+    name: "انتقال حرارت پيشرفته جابجاي",
+    code: "31_3331065",
+    prof: "قاسمي مجيد",
     units: 3,
     sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۱"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۳۰۱"}
     ],
-    examDate: "1404/04/01",
-    department: "دانشكده رياضي"
-},
-{
-    id: 628,
-    name: "مباني منطق و نظريه مجموعه ها",
-    code: "42_۵۷۱۶۰۸۳",
-    prof: "اساتيد گروه آموزشي",
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331066,
+    name: "انتقال حرارت پيشرفته تشعشع",
+    code: "31_3331066",
+    prof: "آقانجفي سيروس",
     units: 3,
     sessions: [
-        {days: [6], start: 7.5, duration: 1.5},
-        {days: [2], start: 7.5, duration: 1.5}
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۷"}
     ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي"
-},
-{
-    id: 629,
-    name: "پايگاه داده ها",
-    code: "42_۵۷۱۶۲۶۷",
-    prof: "اساتيد گروه آموزشي",
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331068,
+    name: "مكانيك سيالات پيشرفته",
+    code: "31_3331068",
+    prof: "مجري افسانه",
     units: 3,
     sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5},
-        {days: [3], start: 13.5, duration: 1.5}
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۳۰۱"}
     ],
-    examDate: "1404/03/26",
-    department: "دانشكده رياضي"
-}
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331071,
+    name: "لايه هاي مرزي ۱",
+    code: "31_3331071",
+    prof: "شمس مهرزاد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۲"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۳۰۲"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331076,
+    name: "ديناميك سيالات محاسباتي ۱",
+    code: "31_3331076",
+    prof: "پوربگيان برزي مهدي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3331147,
+    name: "نانو سيال- ميكرو و نانوفلويديك",
+    code: "31_3331147",
+    prof: "شهيديان آزاده",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333104,
+    name: "رياضيات پيشرفته ۱",
+    code: "34_3333104",
+    prof: "شاهاني امير رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333106,
+    name: "مكانيك محيط پيوسته",
+    code: "33_3333106",
+    prof: "شahani amir reza",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۳۰۱"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333133,
+    name: "ديناميك پيشرفته",
+    code: "33_3333133",
+    prof: "موسويان سيد علي اكبر",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333136,
+    name: "ارتعاشات پيشرفته غيرخطي",
+    code: "33_3333136",
+    prof: "همائي نژاد محمد رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۸"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۳۰۸"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  }
 ,
 {
-    id: 630,
+    id: 3333137,
+    name: "ارتعاشات پيشرفته-ارتعاشات سيستم هاي ممتد",
+    code: "33_3333137",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333145,
+    name: "شبكه هاي عصبي",
+    code: "33_3333145",
+    prof: "ساداتي سيدحسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۷"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۳۰۷"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333146,
+    name: "ارتعاشات پيشرفته-ارتعاشات اتفاقي",
+    code: "33_3333146",
+    prof: "همائي نژاد محمد رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۳۰۷"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۷"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333147,
+    name: "سيستمهاي كنترل پيشرفته ۱",
+    code: "33_3333147",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۳۰۲"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۳۰۲"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333161,
+    name: "مواد مركب",
+    code: "33_3333161",
+    prof: "خليلي سيد محمدرضا",
+    units: 3,
+    sessions: [
+      {days: [3], start: 16.5, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [5], start: 16.5, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3333250,
+    name: "ميكرو الكترومكانيك",
+    code: "33_3333250",
+    prof: "ناصري فر ناصر",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339026,
+    name: "سيستم كنترل وآزمايش ماشين هاي ابزار",
+    code: "39_3339026",
+    prof: "وحدتي مهرداد",
+    units: 3,
+    sessions: [
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339029,
+    name: "فرايندهاي الكتروفيزيكي",
+    code: "39_3339029",
+    prof: "قريشي سيد مجيد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۳۰۶"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339030,
+    name: "آناليز شكل دادن فلزات",
+    code: "39_3339030",
+    prof: "جلالي آقچاي عبدالحسين",
+    units: 3,
+    sessions: [
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۳۰۸"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۳۰۸"}
+    ],
+    examDate: "1404/11/04 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339041,
+    name: "اتوماسيون در توليد",
+    code: "39_3339041",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس ۳۰۱"},
+      {days: [5], start: 15, duration: 1.5, location: "كلاس ۳۰۱"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339043,
+    name: "هوش مصنوعي وسيستم هاي خبره",
+    code: "39_3339043",
+    prof: "كازروني مهرداد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3339057,
+    name: "نمونه سازي سريع",
+    code: "39_3339057",
+    prof: "نخودچي سهيل",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۳۰۸"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۳۰۸"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3368003,
+    name: "مباني بيومكانيك",
+    code: "68_3368003",
+    prof: "رسولي آيسا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "۱۰۷"},
+      {days: [4], start: 9, duration: 1.5, location: "۱۰۷"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3368004,
+    name: "ابزار دقيق در سيستم هاي زيستي",
+    code: "68_3368004",
+    prof: "شربتدار مهكامه",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "۱۰۷"},
+      {days: [5], start: 10.5, duration: 2, location: "۱۰۷"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3368015,
+    name: "بيومكانيك شغلي",
+    code: "68_3368015",
+    prof: "لساني علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "۱۰۷"},
+      {days: [5], start: 13.5, duration: 1.5, location: "۱۰۷"}
+    ],
+    examDate: "1404/10/21 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397005,
+    name: "رياضيات مهندسي پيشرفته",
+    code: "97_3397005",
+    prof: "شرعيات محمد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397006,
+    name: "ديناميك خودرووآز",
+    code: "97_3397006",
+    prof: "كاظمي رضا",
+    units: 3,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۳۰۷"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۳۰۷"}
+    ],
+    examDate: "1404/11/05 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397008,
+    name: "كاربرد كنترل پيشرفته در خودرو",
+    code: "97_3397008",
+    prof: "شامخي امير حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۹"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۹"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397021,
+    name: "المانهاي محدود",
+    code: "97_3397021",
+    prof: "شرعيات محمد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۳۰۷"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۳۰۷"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397029,
+    name: "طراحي موتورهاي پيستوني",
+    code: "97_3397029",
+    prof: "شامخي امير حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۹"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۹"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3397053,
+    name: "كنترل پيشرفته ۲",
+    code: "97_3397053",
+    prof: "آزادي شهرام",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398004,
+    name: "مباني اقتصاد",
+    code: "98_3398004",
+    prof: "زماني پدرام مونا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398005,
+    name: "مهندسي فرايند",
+    code: "98_3398005",
+    prof: "زماني پدرام مونا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "سمعي بصري كارشناسي"},
+      {days: [4], start: 9, duration: 1.5, location: "سمعي بصري كارشناسي"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398017,
+    name: "بهينه سازي جريان اگزژي",
+    code: "98_3398017",
+    prof: "صيadi حسين",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۳۰۶"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398018,
+    name: "تكنولوژي Pinch",
+    code: "98_3398018",
+    prof: "عميد پور مجيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۳۰۸"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۳۰۸"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398027,
+    name: "تكنولوژي نيروگاههاي حرارتي خورشيدي وهيدروژن خورشيدي",
+    code: "98_3398027",
+    prof: "بهبهاني نيا سيد علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۳۰۷"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۳۰۷"}
+    ],
+    examDate: "1404/10/28 13:30-16:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 3398071,
+    name: "مباني و مدلسازي باتري هاي الكتروشيميايي",
+    code: "98_3398071",
+    prof: "ترابي فرشاد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۳۰۶"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۳۰۶"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی مکانیک",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 4210010,
     name: "فيزيك عمومي ۳",
-    code: "41_۴۲۱۰۰۱۰",
-    prof: "ژوليده حقيقي محمد حسين",
+    code: "41_4210010",
+    prof: "نصيري راد امين",
     units: 3,
     sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۱۲"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۱۲"}
     ],
-    examDate: "1404/03/26",
-    department: "فيزيك"
-},
-{
-    id: 631,
+    examDate: "1404/11/05 10:30-12:30",
+    department: "فیزیک",
+    capacity: 50,
+    gender: "مختلط"
+  },
+  {
+    id: 4210011,
+    name: "فيزيك عمومي ۴",
+    code: "41_4210011",
+    prof: "افشاري محمد مهدي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۱۲"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۱۲"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "فیزیک",
+    capacity: 50,
+    gender: "مختلط"
+  },
+  {
+    id: 4210012,
+    name: "ترموديناميك و مكانيك آماري ۱",
+    code: "41_4210012",
+    prof: "نوروزي فر احسان",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۲"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۲"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "فیزیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 4210013,
     name: "الكترومغناطيس ۱",
-    code: "41_۴۲۱۰۰۱۳",
+    code: "41_4210013",
     prof: "حمزه پور حسين",
     units: 3,
     sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۲"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۲"}
     ],
-    examDate: "1404/03/25",
-    department: "فيزيك"
-},
-{
-    id: 632,
+    examDate: "1404/10/22 10:30-12:30",
+    department: "فیزik",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 4210015,
     name: "آز فيزيك ۴",
-    code: "41_۴۲۱۰۰۱۵",
+    code: "42_4210015",
     prof: "مسعودي سيد فرهاد",
     units: 2,
     sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
+      {days: [2], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه"}
     ],
     examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 633,
+    department: "فیزیک",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 4210015,
     name: "آز فيزيك ۴",
-    code: "42_۴۲۱۰۰۱۵",
+    code: "43_4210015",
     prof: "مسعودي سيد فرهاد",
     units: 2,
     sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
+      {days: [4], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [4], start: 9, duration: 1.5, location: "آزمايشگاه"}
     ],
     examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 634,
-    name: "آز فيزيك ۴",
-    code: "43_۴۲۱۰۰۱۵",
-    prof: "مشحون سارا",
-    units: 2,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 635,
+    department: "فیزیک",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 4210017,
     name: "مكانيك كوانتمي ۱",
-    code: "41_۴۲۱۰۰۱۷",
+    code: "41_4210017",
     prof: "هدايتي خليل آباد هادي",
     units: 3,
     sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۲۰۲"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۱۲"}
     ],
-    examDate: "1404/04/04",
-    department: "فيزيك"
-},
-{
-    id: 636,
-    name: "الكترومغناطيس ۲",
-    code: "41_۴۲۱۰۰۱۸",
+    examDate: "1404/11/06 10:30-12:30",
+    department: "فیزیک",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 4210029,
+    name: "انرژي هاي نو",
+    code: "41_4210029",
+    prof: "مشحون سارا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۲"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۲"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "فیزیک",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 4210039,
+    name: "فيزيك عمومي ۱",
+    code: "41_4210039",
     prof: "رادين مهدي",
     units: 3,
     sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۱۲"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۱۲"}
     ],
-    examDate: "1404/03/25",
-    department: "فيزيك"
-},
-{
-    id: 637,
-    name: "ترموديناميك و مكانيك آماري ۲",
-    code: "41_۴۲۱۰۰۱۹",
-    prof: "مشحون سارا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "فيزيك"
-},
-{
-    id: 638,
-    name: "مكانيك كوانتمي ۲",
-    code: "41_۴۲۱۰۰۲۱",
-    prof: "مشكوري مهدي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "فيزيك"
-},
-{
-    id: 639,
-    name: "برنامه نويسي كامپيوتر",
-    code: "41_۴۲۱۰۰۲۲",
-    prof: "مسعودي سيد فرهاد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "فيزيك"
-},
-{
-    id: 640,
-    name: "برنامه نويسي كامپيوتر",
-    code: "42_۴۲۱۰۰۲۲",
-    prof: "مسعودي سيد فرهاد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/03",
-    department: "فيزيك"
-},
-{
-    id: 641,
-    name: "نظريه نسبيت",
-    code: "41_۴۲۱۰۰۲۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "فيزيك"
-},
-{
-    id: 642,
-    name: "محاسبات و اطلاعات كوانتمي",
-    code: "41_۴۲۱۰۰۳۴",
-    prof: "افضلي رضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فيزيك"
-},
-{
-    id: 643,
-    name: "پايان نامه",
-    code: "41_۴۲۱۰۰۴۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 644,
-    name: "رساله دكترا",
-    code: "41_۴۲۱۰۰۵۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 645,
-    name: "تاريخ و فلسفه علم فيزيك",
-    code: "41_۴۲۱۰۰۵۳",
-    prof: "تقي زاده فيروزجائي جواد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فيزيك"
-},
-{
-    id: 647,
-    name: "مكانيك آماري پيشرفته ۱",
-    code: "41_۴۲۱۰۰۷۰",
-    prof: "حمزه پور حسين",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فيزيك"
-},
-{
-    id: 648,
-    name: "مكانيك كوانتوم پيشرفته ۱",
-    code: "41_۴۲۱۰۰۷۱",
-    prof: "افشاري محمد مهدي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "فيزيك"
-},
-{
-    id: 649,
-    name: "يادگيري ماشيني در فيزيك",
-    code: "41_۴۲۱۰۰۷۶",
-    prof: "هدايتي خليل آباد هادي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "فيزيك"
-},
-{
-    id: 650,
-    name: "رياضي فيزيك ۱",
-    code: "41_۴۲۱۰۰۸۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5},
-        {days: [5], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/01",
-    department: "فيزيك"
-},
-{
-    id: 651,
-    name: "مكانيك تحليلي ۲",
-    code: "41_۴۲۱۰۰۸۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 652,
-    name: "مكانيك تحليلي ۲",
-    code: "42_۴۲۱۰۰۸۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5},
-        {days: [5], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 653,
-    name: "رياضي فيزيك ۲",
-    code: "41_۴۲۱۰۰۹۰",
-    prof: "جعفري محمود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فيزيك"
-},
-{
-    id: 654,
-    name: "آزاپتيك",
-    code: "41_۴۲۱۰۰۹۷",
-    prof: "حمزه پور حسين",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 655,
-    name: "آزاپتيك",
-    code: "42_۴۲۱۰۰۹۷",
-    prof: "افشاري محمد مهدي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-}
-,
-
-{
-    id: 646,
-    name: "سامانه هاي پيچيده",
-    code: "41_۴۲۱۰۰۶۶",
-    prof: "تقي زاده فيروزجائي جواد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "فيزيك"
-},
-{
-    id: 656,
-    name: "فيزيك ۱",
-    code: "51_۴۲۱۰۱۱۳",
-    prof: "واعظ زاده مجيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "فيزيك"
-},
-{
-    id: 657,
-    name: "فيزيك ۲",
-    code: "44_۴۲۱۰۱۱۵",
-    prof: "حاتمي محمد محسن",
-    units: 3,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 658,
-    name: "آزفيزيك ۲",
-    code: "21_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 659,
-    name: "آزفيزيك ۲",
-    code: "22_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 660,
-    name: "آزفيزيك ۲",
-    code: "23_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 661,
-    name: "آزفيزيك ۲",
-    code: "24_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 662,
-    name: "آزفيزيك ۲",
-    code: "25_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 663,
-    name: "آزفيزيك ۲",
-    code: "26_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 664,
-    name: "آزفيزيك ۲",
-    code: "27_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 665,
-    name: "آزفيزيك ۲",
-    code: "28_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-}
-,
-{
-    id: 666,
-    name: "آزفيزيك ۲",
-    code: "29_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 667,
-    name: "آزفيزيك ۲",
-    code: "30_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 668,
-    name: "آزفيزيك ۲",
-    code: "31_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 669,
-    name: "آزفيزيك ۲",
-    code: "32_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 670,
-    name: "آزفيزيك ۲",
-    code: "33_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 671,
-    name: "آزفيزيك ۲",
-    code: "34_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 672,
-    name: "آزفيزيك ۲",
-    code: "35_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 673,
-    name: "آزفيزيك ۲",
-    code: "36_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 674,
-    name: "آزفيزيك ۲",
-    code: "37_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 675,
-    name: "آزفيزيك ۲",
-    code: "38_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-
-
-{
-    id: 676,
-    name: "آزفيزيك ۲",
-    code: "39_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 677,
-    name: "آزفيزيك ۲",
-    code: "40_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 678,
-    name: "آزفيزيك ۲",
-    code: "41_۴۲۱۰۱۱۶",
-    prof: "اميريان چايجاني امين",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 679,
-    name: "آزفيزيك ۲",
-    code: "42_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 680,
-    name: "آزفيزيك ۲",
-    code: "43_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 681,
-    name: "آزفيزيك ۲",
-    code: "44_۴۲۱۰۱۱۶",
-    prof: "اميريان چايجاني امين",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 682,
-    name: "آزفيزيك ۲",
-    code: "45_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 683,
-    name: "آزفيزيك ۲",
-    code: "46_۴۲۱۰۱۱۶",
-    prof: "اميريان چايجاني امين",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 684,
-    name: "آزفيزيك ۲",
-    code: "47_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 685,
-    name: "آزفيزيك ۲",
-    code: "48_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-}
-,
-{
-    id: 686,
-    name: "آزفيزيك ۲",
-    code: "49_۴۲۱۰۱۱۶",
-    prof: "اميريان چايجاني امين",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 687,
-    name: "آزفيزيك ۲",
-    code: "50_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 688,
-    name: "آزفيزيك ۲",
-    code: "51_۴۲۱۰۱۱۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 689,
-    name: "آزفيزيك ۲",
-    code: "52_۴۲۱۰۱۱۶",
-    prof: "اميريان چايجاني امين",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 690,
-    name: "الكترو ديناميك پيشرفته ۱",
-    code: "41_۴۲۱۰۱۳۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/25",
-    department: "فيزيك"
-},
-{
-    id: 691,
-    name: "موضوعات ويژه ۱",
-    code: "41_۴۲۱۰۱۳۳",
-    prof: "افضلي رضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "فيزيك"
-},
-{
-    id: 692,
-    name: "موضوعات ويژه ۱",
-    code: "42_۴۲۱۰۱۳۳",
-    prof: "ژوليده حقيقي محمد حسين",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/07",
-    department: "فيزيك"
-}
-
-,
-{
-    id: 693,
-    name: "فيزيك حالت جامد پيشرفته ۲",
-    code: "41_۴۲۱۲۱۵۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 694,
-    name: "فيزيك حالت جامد ۱",
-    code: "41_۴۲۱۲۱۶۷",
-    prof: "جعفري محمود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "فيزيك"
-},
-{
-    id: 695,
-    name: "آز حالت جامد",
-    code: "41_۴۲۱۲۲۱۳",
-    prof: "مشكوري مهدي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 696,
-    name: "فيزيك لايه هاي نازك",
-    code: "41_۴۲۱۲۲۶۳",
-    prof: "افضل زاده رضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "فيزيك"
-}
-
-,
-{
-    id: 697,
-    name: "آز پيشرفته هسته اي ۱",
-    code: "41_۴۲۱۴۰۱۲",
-    prof: "رحماني فائزه",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "فيزيك"
-},
-{
-    id: 698,
-    name: "فيزيك آشكارسازها",
-    code: "41_۴۲۱۴۰۲۲",
-    prof: "رحماني فائزه",
-    units: 3,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/25",
-    department: "فيزيك"
-},
-{
-    id: 699,
-    name: "فيزيك هسته اي و ذرات بنيادي",
-    code: "41_۴۲۱۴۰۳۶",
-    prof: "رسولي فاطمه سادات",
-    units: 3,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/07",
-    department: "فيزيك"
-}
-,
-{
-    id: 700,
-    name: "نجوم و اختر فيزيك",
-    code: "41_۴۲۱۸۰۰۱",
-    prof: "نصيري راد امين",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "فيزيك"
-},
-{
-    id: 701,
-    name: "ليزر",
-    code: "41_۴۲۱۸۰۱۱",
+    examDate: "1404/10/24 10:30-12:30",
+    department: "فیزیک",
+    capacity: 60,
+    gender: "مختلط"
+  },
+  {
+    id: 4210043,
+    name: "طيف سنجي",
+    code: "41_4210043",
     prof: "رضايي فاطمه",
     units: 3,
     sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
+      {days: [2], start: 10.5, duration: 2, location: "حياط دانشكده ۰۱"},
+      {days: [4], start: 10.5, duration: 2, location: "حياط دانشكده ۰۱"}
     ],
-    examDate: "1404/04/02",
-    department: "فيزيك"
-},
-{
-    id: 702,
-    name: "كيهان شناسي",
-    code: "41_۴۲۱۸۰۲۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "فيزيك"
-},
-{
-    id: 703,
-    name: "فيزيك ليزر پيشرفته ۱",
-    code: "41_۴۲۱۸۰۲۵",
-    prof: "رضايي فاطمه",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "فيزيك"
-},
-{
-    id: 704,
-    name: "اختر فيزيك پيشرفته ۲",
-    code: "41_۴۲۱۸۰۲۷",
-    prof: "نصيري راد امين",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "فيزيك"
-},
-{
-    id: 705,
-    name: "روش هاي آناليز نانو ساختارها",
-    code: "41_۴۲۱۸۰۳۴",
-    prof: "صمدپور محمود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "فيزيك"
-},
-{
-    id: 706,
-    name: "آز نانوفيزيك ۱",
-    code: "41_۴۲۱۸۰۳۵",
-    prof: "صمدپور محمود",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "فيزيك"
-}
+    examDate: "1404/10/20 10:30-12:30",
+    department: "فیزیک",
+    capacity: 25,
+    gender: "مختلط"
+  }
 ,
 {
-    id: 800,
-    name: "زبان تخصصي شيمي",
-    code: "41_۴۸۱۲۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "شيمي"
-},
-{
-    id: 801,
-    name: "اصول محاسبات شيمي صنعتي",
-    code: "41_۴۸۱۲۰۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/04",
-    department: "شيمي"
-},
-{
-    id: 802,
-    name: "سمينار ۱",
-    code: "41_۴۸۱۲۰۴۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 803,
-    name: "سمينار ۲",
-    code: "41_۴۸۱۲۰۵۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 804,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "41_۴۸۱۲۰۵۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 805,
-    name: "امتحان جامع دكتري ۱",
-    code: "41_۴۸۱۲۰۵۹",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 806,
-    name: "شيمي صنعتي ۲",
-    code: "41_۴۸۱۲۰۶۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "شيمي"
-},
-{
-    id: 807,
-    name: "شيمي تجزيه ۲",
-    code: "41_۴۸۱۲۰۷۰",
-    prof: "روح الهي احمد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/08",
-    department: "شيمي"
-},
-{
-    id: 808,
-    name: "شيمي معدني ۲",
-    code: "41_۴۸۱۲۰۷۱",
-    prof: "حشمت پور فلورا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/01",
-    department: "شيمي"
-},
-{
-    id: 809,
-    name: "رياضي در شيمي",
-    code: "41_۴۸۱۲۰۷۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-}
-,
-{
-    id: 810,
-    name: "آز شيمي تجزيه ۳",
-    code: "41_۴۸۱۲۰۷۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 811,
-    name: "آز شيمي تجزيه ۳",
-    code: "42_۴۸۱۲۰۷۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 812,
-    name: "شيمي فيزيك ۳",
-    code: "41_۴۸۱۲۰۷۵",
-    prof: "جليلي سيف اله",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "شيمي"
-},
-{
-    id: 813,
-    name: "آز شناسائي تركيبات آلي",
-    code: "41_۴۸۱۲۰۷۹",
-    prof: "خاكي زاده وحيد",
-    units: 2,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 814,
-    name: "آز شناسائي تركيبات آلي",
-    code: "42_۴۸۱۲۰۷۹",
-    prof: "خاكي زاده وحيد",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 815,
-    name: "شيمي و فناوري رنگ",
-    code: "41_۴۸۱۲۰۹۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [1], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "شيمي"
-},
-{
-    id: 816,
-    name: "پايان نامه",
-    code: "41_۴۸۱۲۱۰۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 817,
-    name: "شيمي آلي ۲",
-    code: "41_۴۸۱۲۱۰۴",
-    prof: "احمدي فرشته",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-},
-{
-    id: 818,
-    name: "رساله دكترا",
-    code: "41_۴۸۱۲۱۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 819,
-    name: "كاربرد نظريه گروه در شيمي",
-    code: "41_۴۸۱۲۱۱۰",
-    prof: "رعيتي سعيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/07",
-    department: "شيمي"
-}
-,
-
-{
-    id: 820,
-    name: "سمينار",
-    code: "41_۴۸۱۲۱۱۱",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 821,
-    name: "روش هاي جداسازي در شيمي تجزيه",
-    code: "41_۴۸۱۲۱۱۳",
-    prof: "سعيد زاده اميري نصيبه",
-    units: 2,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/03/28",
-    department: "شيمي"
-},
-{
-    id: 822,
-    name: "شيمي سبز و محيط زيست",
-    code: "41_۴۸۱۲۱۱۴",
-    prof: "احمدي فرشته",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-}
-,
-{
-    id: 823,
-    name: "آزشيمي الي ۱",
-    code: "41_۴۸۱۴۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 824,
-    name: "آزشيمي الي ۱",
-    code: "42_۴۸۱۴۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 825,
-    name: "آزشيمي الي ۲",
-    code: "41_۴۸۱۴۰۰۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 826,
-    name: "آزشيمي الي ۲",
-    code: "42_۴۸۱۴۰۰۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 827,
-    name: "شيمي الي ۳",
-    code: "41_۴۸۱۴۰۰۵",
-    prof: "درويش فاطمه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "شيمي"
-},
-{
-    id: 828,
-    name: "طيف سنجي ملكولي ۱",
-    code: "41_۴۸۱۴۰۰۹",
-    prof: "صيدي شهرام",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/28",
-    department: "شيمي"
-},
-{
-    id: 829,
-    name: "شيمي فيزيك الي",
-    code: "41_۴۸۱۴۰۱۵",
-    prof: "احمدي فرشته",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/09",
-    department: "شيمي"
-},
-{
-    id: 830,
-    name: "استريو شيمي",
-    code: "41_۴۸۱۴۰۱۹",
-    prof: "بلالائي سعيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "شيمي"
-},
-{
-    id: 831,
-    name: "شيمي آلي فلزي",
-    code: "41_۴۸۱۴۰۲۳",
-    prof: "مؤمني بدري زمان",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/26",
-    department: "شيمي"
-},
-{
-    id: 832,
-    name: "سنتزموادالي",
-    code: "41_۴۸۱۴۰۲۹",
-    prof: "خاكي زاده وحيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 16.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-}
-,
-{
-    id: 833,
-    name: "شيمي پپتيد پيشرفته",
-    code: "41_۴۸۱۴۰۳۵",
-    prof: "بلالائي سعيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [3], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "شيمي"
-},
-{
-    id: 834,
-    name: "شيمي تركيبات آلي فسفردار",
-    code: "41_۴۸۱۴۰۳۸",
-    prof: "درويش فاطمه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/31",
-    department: "شيمي"
-},
-{
-    id: 835,
-    name: "واكنش هاي كاتاليزوري",
-    code: "41_۴۸۱۴۰۴۰",
-    prof: "رعيتي سعيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "شيمي"
-}
-,
-{
-    id: 836,
-    name: "آزشيمي معدني ۱",
-    code: "41_۴۸۱۶۰۰۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 837,
-    name: "آزشيمي معدني ۱",
-    code: "42_۴۸۱۶۰۰۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 838,
-    name: "آزشيمي معدني ۲",
-    code: "41_۴۸۱۶۰۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 839,
-    name: "آزشيمي معدني ۲",
-    code: "42_۴۸۱۶۰۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 840,
-    name: "سينتيك و ترموديناميك واكنش هاي معدني",
-    code: "41_۴۸۱۶۰۱۳",
-    prof: "مؤمني بدري زمان",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/26",
-    department: "شيمي"
-},
-{
-    id: 841,
-    name: "كاربرد طيف سنجي درشيمي معدني",
-    code: "41_۴۸۱۶۰۱۷",
-    prof: "حشمت پور فلورا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/01",
-    department: "شيمي"
-}
-
-,
-{
-    id: 842,
-    name: "آزشيمي فيزيك ۱",
-    code: "41_۴۸۱۸۰۰۳",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 843,
-    name: "آزشيمي فيزيك ۱",
-    code: "42_۴۸۱۸۰۰۳",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 844,
-    name: "شيمي فيزيك ۲",
-    code: "41_۴۸۱۸۰۰۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [3], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/27",
-    department: "شيمي"
-},
-{
-    id: 845,
-    name: "آزشيمي فيزيك ۲",
-    code: "41_۴۸۱۸۰۰۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 846,
-    name: "آزشيمي فيزيك ۲",
-    code: "42_۴۸۱۸۰۰۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 847,
-    name: "خوردگي فلزات",
-    code: "41_۴۸۱۸۰۱۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "شيمي"
-},
-{
-    id: 848,
-    name: "الكتروشيمي پيشرفته",
-    code: "41_۴۸۱۸۰۱۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "شيمي"
-},
-{
-    id: 849,
-    name: "شيمي محاسباتي",
-    code: "41_۴۸۱۸۰۲۲",
-    prof: "جليلي سيف اله",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/08",
-    department: "شيمي"
-},
-{
-    id: 850,
-    name: "مكانيك كوانتومي",
-    code: "41_۴۸۱۸۰۵۶",
-    prof: "جليلي سيف اله",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/27",
-    department: "شيمي"
-}
-,
-{
-    id: 851,
-    name: "شيمي عمومي ۲",
-    code: "41_۴۸۲۰۰۰۱",
-    prof: "سعيد زاده اميري نصيبه",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/01",
-    department: "شيمي"
-},
-{
-    id: 852,
-    name: "آزشيمي عمومي ۲",
-    code: "41_۴۸۲۰۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 853,
-    name: "آزشيمي عمومي ۲",
-    code: "42_۴۸۲۰۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 854,
-    name: "آزشيمي عمومي ۲",
-    code: "43_۴۸۲۰۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 855,
-    name: "آزشيمي عمومي ۲",
-    code: "44_۴۸۲۰۰۰۲",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 856,
-    name: "آزشيمي تجزيه ۱",
-    code: "41_۴۸۲۰۰۰۴",
-    prof: "سعيد زاده اميري نصيبه",
-    units: 1,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 857,
-    name: "آزشيمي تجزيه ۱",
-    code: "42_۴۸۲۰۰۰۴",
-    prof: "سعيد زاده اميري نصيبه",
-    units: 1,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 858,
-    name: "آزشيمي تجزيه ۲",
-    code: "41_۴۸۲۰۰۰۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 859,
-    name: "آزشيمي تجزيه ۲",
-    code: "42_۴۸۲۰۰۰۶",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [2], start: 15, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "شيمي"
-},
-{
-    id: 860,
-    name: "اصول تصفيه آب وپساب هاي صنعتي",
-    code: "41_۴۸۲۰۰۱۰",
-    prof: "سعيد زاده اميري نصيبه",
-    units: 3,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "شيمي"
-}
-,
-{
-    id: 861,
-    name: "شيمي عمومي ۱",
-    code: "41_۴۸۲۰۰۱۱",
-    prof: "حشمت پور فلورا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-}
-,
-{
-    id: 862,
-    name: "شيمي دارويي ۲",
-    code: "41_۴۸۲۲۰۰۴",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5},
-        {days: [1], start: 16.5, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "شيمي"
-},
-{
-    id: 863,
-    name: "شيمي محاسباتي و طراحي دارو",
-    code: "41_۴۸۲۲۰۰۷",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "شيمي"
-},
-{
-    id: 864,
-    name: "مباحث نوين در شيمي دارويي",
-    code: "41_۴۸۲۲۰۰۸",
-    prof: "رمضانپور سرور",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "شيمي"
-},
-{
-    id: 865,
-    name: "مباني سنتز در شيمي آلي",
-    code: "41_۴۸۲۲۰۱۱",
-    prof: "خاكي زاده وحيد",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5},
-        {days: [3], start: 16.5, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "شيمي"
-},
-{
-    id: 866,
-    name: "سمينار",
-    code: "80_۸۸۸۰۰۰۴",
-    prof: "مظفري علي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 867,
-    name: "نقشه كشي صنعتي ۲",
-    code: "81_۸۸۸۰۰۱۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5},
-        {days: [3], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 868,
-    name: "نقشه كشي صنعتي ۲",
-    code: "82_۸۸۸۰۰۱۸",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2},
-        {days: [3], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 869,
-    name: "استاتيك",
-    code: "81_۸۸۸۰۰۱۹",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 870,
-    name: "استاتيك",
-    code: "82_۸۸۸۰۰۱۹",
-    prof: "ايراني سعيد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [5], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 871,
-    name: "رياضيات مهندسي",
-    code: "81_۸۸۸۰۰۲۰",
-    prof: "جعفري ندوشن مهدي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [5], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 872,
-    name: "رياضيات مهندسي",
-    code: "82_۸۸۸۰۰۲۰",
-    prof: "با صحبت نوين زاد عليرضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 873,
-    name: "مكانيك سيالات",
-    code: "81_۸۸۸۰۰۲۱",
-    prof: "ابراهيمي رضا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 874,
-    name: "مكانيك سيالات",
-    code: "82_۸۸۸۰۰۲۱",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 875,
-    name: "علم مواد",
-    code: "81_۸۸۸۰۰۲۲",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [5], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 876,
-    name: "علم مواد",
-    code: "82_۸۸۸۰۰۲۲",
-    prof: "خراساني رضا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [5], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 877,
-    name: "آلگوريتمهاوبرنامه سازي كامپيوتر",
-    code: "81_۸۸۸۰۰۲۵",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 878,
-    name: "آلگوريتمهاوبرنامه سازي كامپيوتر",
-    code: "82_۸۸۸۰۰۲۵",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 879,
-    name: "ترموديناميك ۱",
-    code: "81_۸۸۸۰۰۲۶",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 880,
-    name: "ترموديناميك ۱",
-    code: "82_۸۸۸۰۰۲۶",
-    prof: "مهدوي مقدم حسين",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 881,
-    name: "كنترل اتوماتيك",
-    code: "81_۸۸۸۰۰۲۸",
-    prof: "روشني يان جعفر",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 882,
-    name: "آئروديناميك ۱",
-    code: "81_۸۸۸۰۰۲۹",
-    prof: "فتحعلي ماني",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5},
-        {days: [4], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 883,
-    name: "آزمباني برق والكترونيك",
-    code: "81_۸۸۸۰۰۳۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 884,
-    name: "آزمباني برق والكترونيك",
-    code: "82_۸۸۸۰۰۳۰",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 885,
-    name: "انتقال حرارت",
-    code: "81_۸۸۸۰۰۳۱",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی هوافضا"
-}
-,
-{
-    id: 886,
-    name: "معادلات دیفرانسیل",
-    code: "44_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 16.5, duration: 1.5},
-        {days: [4], start: 16.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 887,
-    name: "معادلات دیفرانسیل",
-    code: "45_5712095", 
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 888,
-    name: "معادلات دیفرانسیل",
-    code: "46_5712095",
-    prof: "اساتید گروه آموزشی", 
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی مکانیک"
+  id: 4210070,
+  name: "مکانيک آماري پيشرفته ۱",
+  code: "41_4210070",
+  prof: "مشحون سارا",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس ۲۱۱"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 30,
+  gender: "مختلط"
+},
+{
+  id: 4210071,
+  name: "مکانيک کوانتوم پيشرفته ۱",
+  code: "41_4210071",
+  prof: "افضلي رضا",
+  units: 3,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "کلاس ۲۱۱"},
+    {days: [4], start: 15, duration: 1.5, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 30,
+  gender: "مختلط"
+},
+{
+  id: 4210075,
+  name: "اپتيک",
+  code: "41_4210075",
+  prof: "افشاري محمد مهدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۰۲"},
+    {days: [4], start: 10.5, duration: 2, location: "класс ۲۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4210075,
+  name: "اپتيک",
+  code: "41_4210075",
+  prof: "مقدسين هدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۲۱۲"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۲۱۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4210076,
+  name: "يادگيري ماشيني در فيزيک",
+  code: "41_4210076",
+  prof: "تقي زاده فيروزجائي جواد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "حياط دانشكده ۰۱"},
+    {days: [4], start: 9, duration: 1.5, location: "حياط دانشكده ۰۱"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4210085,
+  name: "مکانيک تحليلي ۱",
+  code: "41_4210085",
+  prof: "انصاري فرد محمد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 15, duration: 1.5, location: "کلاس ۲۱۲"},
+    {days: [3], start: 15, duration: 1.5, location: "کلاس ۲۱۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 50,
+  gender: "مختلط"
+},
+{
+  id: 4210086,
+  name: "رياضي فيزيک ۱",
+  code: "41_4210086",
+  prof: "مسعودي سيد فرهاد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۱۲"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس ۲۱۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 50,
+  gender: "مختلط"
+},
+{
+  id: 4210089,
+  name: "الکترونيک ۱",
+  code: "41_4210089",
+  prof: "رضايي فاطمه",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس ۲۱۱"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 7.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 7.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210091,
+  name: "آزفيزيک پايه ۳",
+  code: "41_4210091",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210097,
+  name: "آزاپتيک",
+  code: "41_4210097",
+  prof: "حمزه پور حسين",
+  units: 2,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210097,
+  name: "آزاپتيک",
+  code: "41_4210097",
+  prof: "حمزه پور حسين",
+  units: 2,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210097,
+  name: "آزاپتيک",
+  code: "41_4210097",
+  prof: "حمزه پور حسين",
+  units: 2,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
 },
 
 {
-    id: 890,
-    name: "معادلات دیفرانسیل",
-    code: "48_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی صنایع"
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی مکانیک",
+  capacity: 70,
+  gender: "مختلط"
 },
 {
-    id: 891,
-    name: "معادلات دیفرانسیل",
-    code: "49_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5},
-        {days: [5], start: 13.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فیزیک"
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی مکانیک",
+  capacity: 70,
+  gender: "مختلط"
 },
 {
-    id: 892,
-    name: "معادلات دیفرانسیل",
-    code: "50_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5},
-        {days: [5], start: 15, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "فیزیک"
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "صمدپور محمود",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "شیمی",
+  capacity: 55,
+  gender: "مختلط"
 },
 {
-    id: 893,
-    name: "معادلات دیفرانسیل",
-    code: "51_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5},
-        {days: [4], start: 7.5, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی عمران"
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "واعظ زاده مجيد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی برق",
+  capacity: 65,
+  gender: "مختلط"
 },
 {
-    id: 894,
-    name: "معادلات دیفرانسیل",
-    code: "52_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5},
-        {days: [4], start: 9, duration: 1.5}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی عمران"
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "واعظ زاده مجيد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی برق",
+  capacity: 65,
+  gender: "مختلط"
 },
 {
-    id: 895,
-    name: "معادلات دیفرانسیل",
-    code: "53_5712095",
-    prof: "اساتید گروه آموزشی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2},
-        {days: [4], start: 10.5, duration: 2}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی عمران"
-}
-,
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "رادين مهدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 13.5, duration: 1.5, location: "класс"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی برق",
+  capacity: 65,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "رادين مهدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 15, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی برق",
+  capacity: 65,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی و علم مواد",
+  capacity: 55,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی عمران",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی عمران",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی عمران",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "حاتمي محمد محسن",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی هوافضا",
+  capacity: 45,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "حاتمي محمد محسن",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی هوافضا",
+  capacity: 45,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی صنایع",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4210113,
+  name: "فيزيک ۱",
+  code: "41_4210113",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی صنایع",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210114,
+  name: "آزفيزيک ۱",
+  code: "41_4210114",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی برق",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210115,
+  name: "فيزيک ۲",
+  code: "41_4210115",
+  prof: "افضل زاده رضا",
+  units: 3,
+  sessions: [
+    {days: [3], start: 7.5, duration: 1.5, location: "کلاس ۲۰۲"},
+    {days: [5], start: 7.5, duration: 1.5, location: "کلاس ۲۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 50,
+  gender: "مختلط"
+},
+{
+  id: 4210115,
+  name: "فيزيک ۲",
+  code: "41_4210115",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی مکانیک",
+  capacity: 50,
+  gender: "مختلط"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيدグループ آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی مکانیک",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210116,
+  name: "آزفيزيک ۲",
+  code: "41_4210116",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه هاي دانشكده فيزيك"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی و علم مواد",
+  capacity: 8,
+  gender: "مرد"
+},
+{
+  id: 4210122,
+  name: "سمينار ۲",
+  code: "41_4210122",
+  prof: "اساتيد گروه آموزشي",
+  units: 0,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "فیزیک",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4210128,
+  name: "فيزيک مكانيک و حرارت",
+  code: "41_4210128",
+  prof: "ژوليده حقيقي محمد حسين",
+  units: 3,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [3], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 55,
+  gender: "مختلط"
+},
+{
+  id: 4210130,
+  name: "الکتروديناميک پيشرفته ۱",
+  code: "41_4210130",
+  prof: "نوروزي فر احسان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۱۱"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 30,
+  gender: "مختلط"
+},
+{
+  id: 4210135,
+  name: "بيوفيزيک",
+  code: "41_4210135",
+  prof: "نوروزي فر احسان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۲۰۲"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۲۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4210136,
+  name: "ديناميک غيرخطي و آشوب",
+  code: "41_4210136",
+  prof: "انصاري فرد محمد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس ۲۱۲"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۱۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4212137,
+  name: "فيزيک محاسباتي",
+  code: "41_4212137",
+  prof: "حمزه پور حسين",
+  units: 2,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "حياط دانشكده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 30,
+  gender: "مختلط"
+},
+{
+  id: 4212137,
+  name: "فيزيک محاسباتي",
+  code: "41_4212137",
+  prof: "مسعودي سيد فرهاد",
+  units: 2,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4212154,
+  name: "هواشناسي عمومي",
+  code: "41_4212154",
+  prof: "تقي زاده فيروزجائي جواد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس ۲۱۱"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4212160,
+  name: "فيزيک حالت جامد پيشرفته ۱",
+  code: "41_4212160",
+  prof: "جعفري محمود",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۱۱"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4212173,
+  name: "ابررسانايي و کاربرد آن",
+  code: "41_4212173",
+  prof: "مشکوري مهدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۲۱۱"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۲۱۱"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4212231,
+  name: "فيزيک سطح پيشرفته ۱",
+  code: "41_4212231",
+  prof: "افضل زاده رضا",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۰۶"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4214017,
+  name: "فيزيک هسته اي پيشرفته ۱",
+  code: "41_4214017",
+  prof: "رسولي فاطمه سادات",
+  units: 3,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "کلاس ۲۰۲"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس ۲۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4218018,
+  name: "گرانش ۱",
+  code: "41_4218018",
+  prof: "انصاري فرد محمد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "حياط دانشكده ۰۲"},
+    {days: [3], start: 10.5, duration: 2, location: "حياط دانشكده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4218021,
+  name: "فيزيک پلاسما پيشرفته ۱",
+  code: "41_4218021",
+  prof: "حاتمي محمد محسن",
+  units: 3,
+  sessions: [
+    {days: [1], start: 13.5, duration: 1.5, location: "کلاس ۲۰۶"},
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4218027,
+  name: "اختر فيزيک پيشرفته ۲",
+  code: "41_4218027",
+  prof: "نصيري راد امين",
+  units: 3,
+  sessions: [
+    {days: [1], start: 15, duration: 1.5, location: "کلاس ۲۰۶"},
+    {days: [3], start: 15, duration: 1.5, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4218031,
+  name: "فيزيک بر هم کنش ليزر با پلاسما",
+  code: "41_4218031",
+  prof: "مقدسين هدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس ۲۰۶"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4218032,
+  name: "حالت جامد پيشرفته",
+  code: "41_4218032",
+  prof: "مشکوري مهدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۰۶"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4218034,
+  name: "روش هاي آناليز نانو ساختارها",
+  code: "41_4218034",
+  prof: "صمدپور محمود",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۰۶"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس ۲۰۶"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4812008,
+  name: "شيمي صنعتي ۱",
+  code: "41_4812008",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [5], start: 15, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812016,
+  name: "شيمي عمومي",
+  code: "41_4812016",
+  prof: "سعيد زاده اميري نصيبه",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "فیزیک",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812057,
+  name: "دفاع از پيشنهاد رساله دکتري",
+  code: "41_4812057",
+  prof: "اساتيد گروه آموزشي",
+  units: 0,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4812059,
+  name: "امتحان جامع دکتري ۱",
+  code: "41_4812059",
+  prof: "اساتيد گروه آموزشي",
+  units: 0,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4812068,
+  name: "متون علمي شيمي",
+  code: "41_4812068",
+  prof: "يارداني سفيدي پريا",
+  units: 2,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "حياط دانشكده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 25,
+  gender: "مختلط"
+},
+{
+  id: 4812073,
+  name: "شيمي تجزيه ۳",
+  code: "41_4812073",
+  prof: "روح الهي احمد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "حياط دانشكده ۰۲"},
+    {days: [4], start: 9, duration: 1.5, location: "حياط دانشكده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۳ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812074,
+  name: "آز شيمي تجزيه ۳",
+  code: "41_4812074",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812074,
+  name: "آز شيمي تجزيه ۳",
+  code: "41_4812074",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812076,
+  name: "شيمي معدني۳",
+  code: "41_4812076",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 16.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [4], start: 16.5, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812077,
+  name: "شناسائي ترکيبات آلي",
+  code: "41_4812077",
+  prof: "احمدي فرشته",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "حياط دانشكده ۰۲"},
+    {days: [4], start: 7.5, duration: 1.5, location: "حياط دانشكده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812079,
+  name: "آز شناسائي ترکيبات آلي",
+  code: "41_4812079",
+  prof: "خاکي زاده وحيد",
+  units: 2,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "آزمايشگاه"},
+    {days: [1], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812079,
+  name: "آز شناسائي ترکيبات آلي",
+  code: "41_4812079",
+  prof: "خاکي زاده وحيد",
+  units: 2,
+  sessions: [
+    {days: [1], start: 13.5, duration: 1.5, location: "آزمايشگاه"},
+    {days: [1], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812082,
+  name: "کارگاه عمومي با شيشه گري",
+  code: "41_4812082",
+  prof: "رسولي سيدرضا",
+  units: 1,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کارگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812082,
+  name: "کارگاه عمومي با شيشه گري",
+  code: "41_4812082",
+  prof: "رسولي سيدرضa",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کارگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812082,
+  name: "کارگاه عمومي با شيشه گري",
+  code: "41_4812082",
+  prof: "رسولي سيدرضا",
+  units: 1,
+  sessions: [
+    {days: [4], start: 9, duration: 1.5, location: "کارگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812082,
+  name: "کارگاه عمومي با شيشه گري",
+  code: "41_4812082",
+  prof: "رسولي سيدرضا",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "کارگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 6,
+  gender: "مختلط"
+},
+{
+  id: 4812097,
+  name: "الکتروشيمي کاربري",
+  code: "41_4812097",
+  prof: "يارداني سفيدي پريا",
+  units: 3,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "حياط دانشكده ۰۲"},
+    {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4812100,
+  name: "پايان نامه",
+  code: "41_4812100",
+  prof: "اساتيد گروه آموزشي",
+  units: 6,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 100,
+  gender: "مختلط"
+},
+{
+  id: 4812107,
+  name: "رساله دکتري",
+  code: "41_4812107",
+  prof: "اساتيد گروه آموزشي",
+  units: 24,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 30,
+  gender: "مختلط"
+},
+{
+  id: 4814001,
+  name: "شيمي آلي ۱",
+  code: "41_4814001",
+  prof: "بلالائي سعيد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس ۲۱۰"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۱۰"},
+    {days: [1], start: 7.5, duration: 1.5, location: "کلاس ۲۱۰"},
+    {days: [3], start: 7.5, duration: 1.5, location: "کلاس ۲۱۰"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4814002,
+  name: "آزشيمي آلي ۱",
+  code: "41_4814002",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4814002,
+  name: "آزشيمي آلي ۱",
+  code: "41_4814002",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4814004,
+  name: "آزشيمي آلي ۲",
+  code: "41_4814004",
+  prof: "احمدي فرشته",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4814004,
+  name: "آزشيمي آلي ۲",
+  code: "41_4814004",
+  prof: "احمدي فرشته",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 8,
+  gender: "مختلط"
+},
+{
+  id: 4814005,
+  name: "شيمي آلي ۳",
+  code: "41_4814005",
+  prof: "درويش فاطمه",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۰۹"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4814025,
+  name: "طيف سنجي پيشرفته",
+  code: "41_4814025",
+  prof: "بلالائي سعيد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۰۸"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4814026,
+  name: "حد واسط هاي فعال",
+  code: "41_4814026",
+  prof: "درويش فاطمه",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4814027,
+  name: "شيمي آلي پيشرفته",
+  code: "41_4814027",
+  prof: "خاكي زاده وحيد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [3], start: 7.5, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4814028,
+  name: "شيمي ترکيبات هتروسيکل",
+  code: "41_4814028",
+  prof: "احمدي فرشته",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس ۲۱۰"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس ۲۱۰"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 4814033,
+  name: "NMR پيشرفته",
+  code: "41_4814033",
+  prof: "بلالائي سعيد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۰۸"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 5,
+  gender: "مختلط"
+},
+{
+  id: 4816002,
+  name: "شيمي عمومي ۱",
+  code: "41_4816002",
+  prof: "جليلي سيف اله",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4816003,
+  name: "آزشيمي عمومي ۱",
+  code: "41_4816003",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816003,
+  name: "آزشيمي عمومي ۱",
+  code: "41_4816003",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816003,
+  name: "آزشيمي عمومي ۱",
+  code: "41_4816003",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816003,
+  name: "آزشيمي عمومي ۱",
+  code: "41_4816003",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [5], start: 16.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816004,
+  name: "شيمي معدني ۱",
+  code: "41_4816004",
+  prof: "رعيتي سعيد",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۱۰"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۱۰"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4816005,
+  name: "آزشيمي معدني ۱",
+  code: "41_4816005",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816005,
+  name: "آزشيمي معدني ۱",
+  code: "41_4816005",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816007,
+  name: "آزشيمي معدني ۲",
+  code: "41_4816007",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816007,
+  name: "آزشيمي معدني ۲",
+  code: "41_4816007",
+  prof: "اساتيد گروه آموزشي",
+  units: 1,
+  sessions: [
+    {days: [4], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816011,
+  name: "بیوشیمی معدنی",
+  code: "41_4816011",
+  prof: "رعیتی سعید",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "حیاط دانشکده ۰۲"},
+    {days: [3], start: 9, duration: 1.5, location: "حیاط دانشکده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816015,
+  name: "شیمی معدنی پیشرفته",
+  code: "41_4816015",
+  prof: "حشمت پور فلورا",
+  units: 3,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس ۲۰۵"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس ۲۰۵"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4816019,
+  name: "ساختار و واکنش پذیری ترکیبات آلی فلزی",
+  code: "41_4816019",
+  prof: "مؤمنی بدری زمان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۰۸"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4816020,
+  name: "شیمی پلیمرهای معدنی",
+  code: "41_4816020",
+  prof: "حشمت پور فلورa",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس ۲۰۵"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس ۲۰۵"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 5,
+  gender: "مختلط"
+},
+{
+  id: 4816023,
+  name: "شیمی فلزات واسطه",
+  code: "41_4816023",
+  prof: "مؤمنی بدری زمان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4818002,
+  name: "شیمی فیزیک ۱",
+  code: "41_4818002",
+  prof: "جلیلی سيف اله",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4818015,
+  name: "شیمی فیزیک پیشرفته",
+  code: "41_4818015",
+  prof: "یاردانی سفیدی پریا",
+  units: 3,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [5], start: 15, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4818017,
+  name: "ترمودینامیک آماری",
+  code: "41_4818017",
+  prof: "جلیلی سيف اله",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس ۲۰۹"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4818059,
+  name: "سینتیک و دینامیک شیمیایی",
+  code: "41_4818059",
+  prof: "یاردانی سفیدی پریa",
+  units: 3,
+  sessions: [
+    {days: [2], start: 16.5, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [5], start: 16.5, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820003,
+  name: "شيمي تجزيه ۱",
+  code: "41_4820003",
+  prof: "سعيد زاده اميري نصيبه",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 4820004,
+  name: "آزشيمي تجزيه ۱",
+  code: "41_4820004",
+  prof: "سعيد زاده اميري نصيبه",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820004,
+  name: "آزشيمي تجزيه ۱",
+  code: "41_4820004",
+  prof: "سعيد زاده اميري نصيبه",
+  units: 1,
+  sessions: [
+    {days: [4], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820006,
+  name: "آزشيمي تجزيه ۲",
+  code: "41_4820006",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [1], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820006,
+  name: "آزشيمي تجزيه ۲",
+  code: "41_4820006",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [1], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820008,
+  name: "تجزيه مقادير بسيار كم",
+  code: "41_4820008",
+  prof: "صيدي شهرام",
+  units: 3,
+  sessions: [
+    {days: [3], start: 16.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4820010,
+  name: "اصول تصفيه آب و پساب هاي صنعتي",
+  code: "41_4820010",
+  prof: "صيدي شهرام",
+  units: 3,
+  sessions: [
+    {days: [5], start: 7.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820010,
+  name: "اصول تصفيه آب و پساب هاي صنعتي",
+  code: "41_4820010",
+  prof: "صيدي شهرام",
+  units: 3,
+  sessions: [
+    {days: [5], start: 7.5, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [5], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820011,
+  name: "شيمي تجزيه پيشرفته",
+  code: "41_4820011",
+  prof: "صيدي شهرام",
+  units: 3,
+  sessions: [
+    {days: [3], start: 15, duration: 1.5, location: "کلاس ۲۰۹"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس ۲۰۹"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4820021,
+  name: "روشهاي نوين در آناليز دستگاهي",
+  code: "41_4820021",
+  prof: "روح الهي احمد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "حیاط دانشکده ۰۲"},
+    {days: [4], start: 10.5, duration: 2, location: "حیاط دانشکده ۰۲"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۱۰:۳۰-۱۲:۳۰",
+  department: "شیمی",
+  capacity: 15,
+  gender: "مختلط"
+},
+{
+  id: 4820058,
+  name: "طيف بيني اتمي تجزيه اي",
+  code: "41_4820058",
+  prof: "روح الهي احمد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۳ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "شیمی",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 4822003,
+  name: "شيمي دارويي ۱",
+  code: "41_4822003",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [1], start: 15, duration: 1.5, location: "کلاس ۲۰۸"},
+    {days: [1], start: 16.5, duration: 1.5, location: "کلاس ۲۰۸"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۱۳:۳۰-۱۶:۳۰",
+  department: "شیمی",
+  capacity: 15,
+  gender: "مختلط"
+},
+// {
+//   id: 7707039,
+//   name: "رساله دكتري",
+//   code: "21_7707039",
+//   prof: "اساتيد گروه آموزشي",
+//   units: 24,
+//   sessions: [],
+//   examDate: "تعیین نشده",
+//   department: "مهندسی نقشه برداری",
+//   capacity: 65,
+//   gender: "مختلط"
+// },
+// {
+//   id: 7707057,
+//   name: "رساله دكتري پژوهشي",
+//   code: "21_7707057",
+//   prof: "اساتيد گروه آموزشي",
+//   units: 30,
+//   sessions: [],
+//   examDate: "تعیین نشده",
+//   department: "مهندسی نقشه برداری",
+//   capacity: 5,
+//   gender: "مختلط"
+// },
+// {
+//   id: 7707061,
+//   name: "دفاع مجدد از پيشنهاد رساله دكتري",
+//   code: "21_7707061",
+//   prof: "اساتيد گروه آموزشي",
+//   units: 0,
+//   sessions: [],
+//   examDate: "تعیین نشده",
+//   department: "مهندسی نقشه برداری",
+//   capacity: 10,
+//   gender: "مختلط"
+// },
+// {
+//   id: 7707062,
+//   name: "امتحان جامع دكتري ۱",
+//   code: "21_7707062",
+//   prof: "اساتيد گروه آموزشي",
+//   units: 0,
+//   sessions: [],
+//   examDate: "تعیین نشده",
+//   department: "مهندسی نقشه برداری",
+//   capacity: 12,
+//   gender: "مختلط"
+// },
+// {
+//   id: 7707064,
+//   name: "پايان نامه",
+//   code: "21_7707064",
+//   prof: "اساتيد گروه آموزشي",
+//   units: 6,
+//   sessions: [],
+//   examDate: "تعیین نشده",
+//   department: "مهندسی نقشه برداری",
+//   capacity: 100,
+//   gender: "مختلط"
+// },
+{
+  id: 7707073,
+  name: "نقشه برداري مسير و زيرزميني",
+  code: "21_7707073",
+  prof: "جزيرئيان ايرج",
+  units: 3,
+  sessions: [
+    {days: [1], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707074,
+  name: "عمليات نقشه برداري مسير و زيرزميني",
+  code: "21_7707074",
+  prof: "صبايي ماسوله جواد",
+  units: 1,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [3], start: 15, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 17,
+  gender: "مختلط"
+},
+{
+  id: 7707074,
+  name: "عمليات نقشه برداري مسير و زيرزميني",
+  code: "21_7707074",
+  prof: "صبايي ماسوله جواد",
+  units: 1,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 17,
+  gender: "مختلط"
+},
+{
+  id: 7707077,
+  name: "جبر خطي",
+  code: "21_7707077",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707079,
+  name: "هندسه ديفرانسيل",
+  code: "21_7707079",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707080,
+  name: "مباني ژئودزي",
+  code: "21_7707080",
+  prof: "جزيرئيان ايرج",
+  units: 3,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707082,
+  name: "ژئودزي ماهواره اي و عمليات",
+  code: "21_7707082",
+  prof: "مشهدي حسينعلي مسعود",
+  units: 3,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [3], start: 16.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707083,
+  name: "ژئodزي فيزيكي",
+  code: "21_7707083",
+  prof: "عامريان يزدان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707085,
+  name: "نقشه برداري ساختمان و ثبتي و عمليات",
+  code: "21_7707085",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707089,
+  name: "فتوگرامتري تحليلي",
+  code: "21_7707089",
+  prof: "ولدان زوج محمد جواد",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707090,
+  name: "كاربردهاي فتوگرامتري",
+  code: "21_7707090",
+  prof: "عبادي حميد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۳ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707092,
+  name: "پردازش تصاوير رقومي",
+  code: "21_7707092",
+  prof: "خصالي الهه",
+  units: 3,
+  sessions: [
+    {days: [2], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707093,
+  name: "سنجش از دور",
+  code: "21_7707093",
+  prof: "صاحبي محمودرضa",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 35,
+  gender: "مختلط"
+},
+{
+  id: 7707095,
+  name: "پويشگرهاي ليزري و عمليات",
+  code: "21_7707095",
+  prof: "محمدزاده علي",
+  units: 3,
+  sessions: [
+    {days: [3], start: 7.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707096,
+  name: "كارتوگرافي",
+  code: "21_7707096",
+  prof: "طالعي محمد",
+  units: 2,
+  sessions: [
+    {days: [1], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707097,
+  name: "عمليات كارتوگرافي",
+  code: "21_7707097",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 9,
+  gender: "مختلط"
+},
+{
+  id: 7707097,
+  name: "عمليات كارتوگرافي",
+  code: "21_7707097",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [2], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 9,
+  gender: "مختلط"
+},
+{
+  id: 7707097,
+  name: "عمليات كارتوگرafi",
+  code: "21_7707097",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 9,
+  gender: "مختلط"
+},
+{
+  id: 7707097,
+  name: "عمليات كارتوگرافي",
+  code: "21_7707097",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 9,
+  gender: "مختلط"
+},
+{
+  id: 7707098,
+  name: "سيستم اطلاعات مكاني",
+  code: "21_7707098",
+  prof: "كريمي محمد",
+  units: 2,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 40,
+  gender: "مختلط"
+},
+{
+  id: 7707099,
+  name: "عمليات سيستم اطلاعات مكاني",
+  code: "21_7707099",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [3], start: 15, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 12,
+  gender: "مختلط"
+},
+{
+  id: 7707099,
+  name: "عمليات سيستم اطلاعات مكاني",
+  code: "21_7707099",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [3], start: 7.5, duration: 1.5, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 12,
+  gender: "مختلط"
+},
+{
+  id: 7707099,
+  name: "عمليات سيستم اطلاعات مكاني",
+  code: "21_7707099",
+  prof: "سيلاوي طلوع",
+  units: 1,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+  ],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 12,
+  gender: "مختلط"
+},
+{
+  id: 7707107,
+  name: "آمايش سرزمين",
+  code: "21_7707107",
+  prof: "پيله فروشها پرستو",
+  units: 2,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7707108,
+  name: "پايگاه داده",
+  code: "21_7707108",
+  prof: "مسگري محمد سعدي",
+  units: 2,
+  sessions: [
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7707109,
+  name: "فناوری اطلاعات در مهندسی نقشه برداری",
+  code: "21_7707109",
+  prof: "قائمي‌راد طاهره",
+  units: 2,
+  sessions: [
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7707110,
+  name: "برنامه سازی کامپیوتر پیشرفته",
+  code: "21_7707110",
+  prof: "پيله فروشها پرستو",
+  units: 2,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 18,
+  gender: "مختلط"
+},
+{
+  id: 7707110,
+  name: "برنامه سازی کامپیوتر پیشرفته",
+  code: "21_7707110",
+  prof: "پیله‌فروشها پرستو",
+  units: 2,
+  sessions: [
+    {days: [5], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 18,
+  gender: "مختلط"
+},
+{
+  id: 7707110,
+  name: "برنامه سازی کامپیوتر پیشرفته",
+  code: "21_7707110",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 18,
+  gender: "مختلط"
+},
+{
+  id: 7707110,
+  name: "برنامه سازی کامپیوتر پیشرفته",
+  code: "21_7707110",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [
+    {days: [1], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 18,
+  gender: "مختلط"
+},
+{
+  id: 7707111,
+  name: "زبان تخصصي",
+  code: "21_7707111",
+  prof: "لطيفي هومن",
+  units: 2,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۵ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7728031,
+  name: "پروژه نقشه برداری",
+  code: "21_7728031",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 2,
+  gender: "مختلط"
+},
+{
+  id: 7728075,
+  name: "پروژه ژئودزی",
+  code: "21_7728075",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 2,
+  gender: "مختلط"
+},
+{
+  id: 7728151,
+  name: "ژئودزی هندسی ماهواره ای",
+  code: "21_7728151",
+  prof: "مشهدي حسينعلي مسعود",
+  units: 3,
+  sessions: [
+    {days: [2], start: 16.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 16.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7728152,
+  name: "ژئودزی فیزیک پیشرفته",
+  code: "21_7728152",
+  prof: "اساتيد گروه آموزشي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7728192,
+  name: "تئوری تقریب",
+  code: "21_7728192",
+  prof: "عامریان یزدان",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7728193,
+  name: "آنالیز تنسوری تغییرشکل",
+  code: "21_7728193",
+  prof: "وثوقی بهزاد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7728194,
+  name: "ژئودینامیک",
+  code: "21_7728194",
+  prof: "اساتید گروه آموزشی",
+  units: 3,
+  sessions: [
+    {days: [5], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 15, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۳ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 10,
+  gender: "مختلط"
+},
+{
+  id: 7729013,
+  name: "پروژه سنجش از دور",
+  code: "21_7729013",
+  prof: "اساتید گروه آموزشی",
+  units: 2,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 2,
+  gender: "مختلط"
+},
+{
+  id: 7729014,
+  name: "پروژه فتوگرامتری",
+  code: "21_7729014",
+  prof: "اساتید گروه آموزشی",
+  units: 2,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 2,
+  gender: "مختلط"
+},
+{
+  id: 7729049,
+  name: "فتوگرامتری رقومی",
+  code: "21_7729049",
+  prof: "عبادی حمید",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۶ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7729098,
+  name: "فتوگرامتری بردکوتاه",
+  code: "21_7729098",
+  prof: "حسینی نوه علی",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7729100,
+  name: "منطق فازی و شبکه های عصبی در فتوگرامتری و سنجش از دور",
+  code: "21_7729100",
+  prof: "مختارزاده مهدی",
+  units: 3,
+  sessions: [
+    {days: [1], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۲ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7729103,
+  name: "ماشین بینایی",
+  code: "21_7729103",
+  prof: "اساتید گروه آموزشی",
+  units: 3,
+  sessions: [
+    {days: [1], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [2], start: 7.5, duration: 1.5, location: "класс"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7775002,
+  name: "فیزیک سنجش از دور",
+  code: "21_7775002",
+  prof: "محمدزاده علی",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 7.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7775005,
+  name: "فتوگرامتري فضايي",
+  code: "21_7775005",
+  prof: "ولدان زوج محمد جواد",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7775030,
+  name: "تشخيص الگو از تصاوير سنجش از دور",
+  code: "21_7775030",
+  prof: "خصالي الهه",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۸ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7775041,
+  name: "تشخيص تغييرات و بروزرساني نقشه در فتوگرامتري و سنجش از دور",
+  code: "21_7775041",
+  prof: "صاحبي محمودرضا",
+  units: 3,
+  sessions: [
+    {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۳۰ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7775043,
+  name: "مطالعات پوشش گياهي مبتني بر فتوگرامتري و سنجش از دور",
+  code: "21_7775043",
+  prof: "لطيفي هومن",
+  units: 3,
+  sessions: [
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7776004,
+  name: "پروژه جي اي اس",
+  code: "21_7776004",
+  prof: "اساتيد گروه آموزشي",
+  units: 2,
+  sessions: [],
+  examDate: "تعیین نشده",
+  department: "مهندسی نقشه برداری",
+  capacity: 2,
+  gender: "مختلط"
+},
+{
+  id: 7776089,
+  name: "سامانه اطلاعات مكاني پيشرفته",
+  code: "21_7776089",
+  prof: "كريمي محمد، طالعي محمد",
+  units: 3,
+  sessions: [
+    {days: [2], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۱ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7776090,
+  name: "تحليل مكاني پيشرفته در GIS",
+  code: "21_7776090",
+  prof: "پيله فروشها پرستو، قائمي‌راد طاهره",
+  units: 3,
+  sessions: [
+    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [4], start: 10.5, duration: 2, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7776091,
+  name: "سامانه اطلاعات مكاني تحت اينترنت و وب سرويس هاي مكاني",
+  code: "21_7776091",
+  prof: "آل شيخ علي اصغر",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [4], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۹ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7776092,
+  name: "هوش محاسباتي در GIS",
+  code: "21_7776092",
+  prof: "ملك محمد رضا، مسگري محمد سعدي",
+  units: 3,
+  sessions: [
+    {days: [2], start: 10.5, duration: 2, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۱/۰۴ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 20,
+  gender: "مختلط"
+},
+{
+  id: 7776101,
+  name: "سيستم هاي اطلاعات مكاني و مدل سازي محيطي",
+  code: "21_7776101",
+  prof: "قائمي‌راد طاهره",
+  units: 3,
+  sessions: [
+    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
+    {days: [5], start: 9, duration: 1.5, location: "کلاس"}
+  ],
+  examDate: "۱۴۰۴/۱۰/۲۳ ساعت: ۰۸:۰۰-۱۰:۳۰",
+  department: "مهندسی نقشه برداری",
+  capacity: 10,
+  gender: "مختلط"
+},
 
-{
-    id: 896,
-    name: "مهارتهای زندگی دانشجویی",
-    code: "5505050_51",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی برق"
-},
-{
-    id: 897,
-    name: "مهارتهای زندگی دانشجویی",
-    code: "5505050_52",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 898,
-    name: "مهارتهای زندگی دانشجویی",
-    code: "5505050_53",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی عمران"
-},
-{
-    id: 899,
-    name: "مهارتهای زندگی دانشجویی",
-    code: "5505050_54",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 900,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_51",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی صنایع"
-},
-{
-    id: 901,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_52",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی صنایع"
-},
-{
-    id: 902,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_53",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی برق"
-},
-{
-    id: 903,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_54",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی عمران"
-},
-{
-    id: 904,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_55",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی عمران"
-},
-{
-    id: 905,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_56",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی هوافضا"
-}
-,
-
-{
-    id: 906,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_57",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 907,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_58",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 908,
-    name: "اندیشه اسلامی ۱",
-    code: "5505128_60",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 909,
-    name: "اندیشه اسلامی ۲",
-    code: "5505129_51",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 16.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی صنایع"
-},
-{
-    id: 910,
-    name: "اندیشه اسلامی ۲",
-    code: "5505129_54",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 911,
-    name: "اندیشه اسلامی ۲",
-    code: "5505129_55",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی عمران"
-},
-{
-    id: 912,
-    name: "اندیشه اسلامی ۲",
-    code: "5505129_56",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 913,
-    name: "اندیشه اسلامی ۲",
-    code: "5505129_57",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی مکانیک"
-}
-,
-{
-    id: 914,
-    name: "تربیت بدنی",
-    code: "5510001_51",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی عمران"
-},
-{
-    id: 915,
-    name: "تربیت بدنی",
-    code: "5510001_52",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی عمران"
-},
-{
-    id: 916,
-    name: "تربیت بدنی",
-    code: "5510001_53",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "تعیین نشده",
-    department: "دانشکده علوم"
-},
-{
-    id: 917,
-    name: "تربیت بدنی",
-    code: "5510001_54",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "تعیین نشده",
-    department: "دانشکده علوم"
-},
-{
-    id: 918,
-    name: "تربیت بدنی",
-    code: "5510001_55",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 919,
-    name: "تربیت بدنی",
-    code: "5510001_56",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 920,
-    name: "تربیت بدنی",
-    code: "5510001_57",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "تعیین نشده",
-    department: "دانشکده علوم"
-},
-{
-    id: 921,
-    name: "تربیت بدنی",
-    code: "5510001_58",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "تعیین نشده",
-    department: "دانشکده علوم"
-},
-{
-    id: 922,
-    name: "تربیت بدنی",
-    code: "5510001_59",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 923,
-    name: "تربیت بدنی",
-    code: "5510001_60",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-}
-,
-{
-    id: 924,
-    name: "تربیت بدنی",
-    code: "5510001_61",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-// ... [previous entries remain the same until id 927]
-{
-    id: 928,
-    name: "ورزش ۱",
-    code: "5510002_51",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی عمران"
-},
-{
-    id: 929,
-    name: "ورزش ۱",
-    code: "5510002_52",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "تعیین نشده",
-    department: "دانشکده علوم"
-},
-{
-    id: 930,
-    name: "ورزش ۱",
-    code: "5510002_53",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی عمران"
-},
-{
-    id: 931,
-    name: "ورزش ۱",
-    code: "5510002_54",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 932,
-    name: "ورزش ۱",
-    code: "5510002_55",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 933,
-    name: "ورزش ۱",
-    code: "5510002_56",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی مکانیک"
-}
-,
-{
-    id: 934,
-    name: "ورزش ۱",
-    code: "5510002_57",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "دانشکده علوم"
-},
-{
-    id: 935,
-    name: "ورزش ۱",
-    code: "5510002_58",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "دانشکده علوم"
-},
-{
-    id: 936,
-    name: "ورزش ۱",
-    code: "5510002_59",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "دانشکده علوم"
-},
-{
-    id: 937,
-    name: "ورزش ۱",
-    code: "5510002_60",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 938,
-    name: "ورزش ۱",
-    code: "5510002_61",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 939,
-    name: "ورزش ۱",
-    code: "5510002_62",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 940,
-    name: "ورزش ۱",
-    code: "5510002_63",
-    prof: "خانی زاده سحر",
-    units: 1,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 941,
-    name: "ورزش ۱",
-    code: "5510002_64",
-    prof: "خانی زاده سحر",
-    units: 1,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 942,
-    name: "ورزش ۱",
-    code: "5510002_65",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 943,
-    name: "ورزش ۱",
-    code: "5510002_66",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی هوافضا"
-}
-,
-{
-    id: 944,
-    name: "نگارش متون علمی",
-    code: "5512003_51",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 945,
-    name: "نگارش متون علمی",
-    code: "5512003_52",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 946,
-    name: "زبان فارسی۱",
-    code: "5512004_51",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 947,
-    name: "زبان فارسی۱",
-    code: "5512004_52",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 948,
-    name: "زبان فارسی۱",
-    code: "5512004_53",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "۱۰۱"},
-        {days: [1], start: 15, duration: 1.5, location: "۱۰۱"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 949,
-    name: "زبان فارسی۱",
-    code: "5512004_54",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 950,
-    name: "زبان فارسی۱",
-    code: "5512004_55",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی مکانیک"
-},
-{
-    id: 951,
-    name: "زبان فارسی۱",
-    code: "5512004_56",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "ساختمان آموزشی نقشه برداری"},
-        {days: [1], start: 10.5, duration: 2, location: "ساختمان آموزشی نقشه برداری"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی نقشه برداری"
-},
-{
-    id: 952,
-    name: "زبان فارسی۱",
-    code: "5512004_57",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"},
-        {days: [4], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-},
-{
-    id: 953,
-    name: "زبان فارسی۱",
-    code: "5512004_58",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"},
-        {days: [4], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-}
-,
-{
-    id: 954,
-    name: "زبان فارسی۱",
-    code: "5512004_59",
-    prof: "روستا امید",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"},
-        {days: [4], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-},
-{
-    id: 955,
-    name: "زبان فارسی۱",
-    code: "5512004_60",
-    prof: "روستا امید",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"},
-        {days: [4], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی عمران"
-},
-{
-    id: 956,
-    name: "زبان انگلیسی",
-    code: "5512006_51",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "ساختمان آموزشی صنایع"},
-        {days: [4], start: 9, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده صنایع"
-},
-{
-    id: 957,
-    name: "زبان انگلیسی",
-    code: "5512006_52",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "ساختمان آموزشی صنایع"},
-        {days: [4], start: 10.5, duration: 2, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده صنایع"
-},
-{
-    id: 958,
-    name: "زبان انگلیسی",
-    code: "5512006_53",
-    prof: "شریف مریم",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی برق"
-},
-{
-    id: 959,
-    name: "زبان انگلیسی",
-    code: "5512006_54",
-    prof: "شریف مریم",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی برق"
-},
-{
-    id: 960,
-    name: "زبان انگلیسی",
-    code: "5512006_55",
-    prof: "نظام ابادی حمیدرضا",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "کلاس ۲۱۰ دانشکده هوافضا"},
-        {days: [5], start: 15, duration: 1.5, location: "کلاس ۲۱۰ دانشکده هوافضا"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی هوافضا"
-},
-{
-    id: 961,
-    name: "زبان انگلیسی",
-    code: "5512006_56",
-    prof: "سعیدی سعید",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده ریاضی- سرویسی"},
-        {days: [1], start: 16.5, duration: 1.5, location: "دانشکده ریاضی- سرویسی"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشكده رياضي"
-},
-{
-    id: 962,
-    name: "زبان انگلیسی",
-    code: "5512006_57",
-    prof: "سعیدی سعید",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده ریاضی- سرویسی"},
-        {days: [3], start: 16.5, duration: 1.5, location: "دانشکده ریاضی- سرویسی"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشكده رياضي"
-},
-
-{
-    id: 963,
-    name: "18_برنامه سازی پیشرفته",
-    code: "18_1912002",
-    prof: "اثنی عشری اصفهانی محمدمهدی",
-    units: 3,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 964,
-    name: "19_برنامه سازی پیشرفته",
-    code: "19_1912002",
-    prof: "زمانیان مهدی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 965,
-    name: "19_ساختمان داده ها",
-    code: "19_1912003",
-    prof: "کوهزادی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 966,
-    name: "19_طراحی الگوریتم ها",
-    code: "19_1912004",
-    prof: "شیخی فرناز",
-    units: 3,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 967,
-    name: "19_نظریه زبان ها و ماشین ها",
-    code: "19_1912005",
-    prof: "ناصر شریف بابک",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 968,
-    name: "19_مبانی کامپیوتر و برنامه سازی",
-    code: "19_1912011",
-    prof: "خانمیرزا حامد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 969,
-    name: "19_اصول طراحی کامپایلر",
-    code: "19_1912012",
-    prof: "علائیان محمدهادی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 970,
-    name: "19_مهندسی اینترنت",
-    code: "19_1912016",
-    prof: "زمانیان مهدی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 971,
-    name: "17_آزمایشگاه سیستم عامل",
-    code: "17_1912024",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 972,
-    name: "18_آزمایشگاه سیستم عامل",
-    code: "18_1912024",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 973,
-    name: "آزمایشگاه سیستم عامل",
-    code: "19_1912024",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 974,
-    name: "آزمایشگاه پایگاه داده ها",
-    code: "17_1912025",
-    prof: "رویا بهرامی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 975,
-    name: "آزمایشگاه پایگاه داده ها",
-    code: "18_1912025",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 976,
-    name: "آزمایشگاه پایگاه داده ها",
-    code: "19_1912025",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 977,
-    name: "ریاضیات گسسته",
-    code: "18_1912027",
-    prof: "خواسته سید حسین",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 978,
-    name: "ریاضیات گسسته",
-    code: "19_1912027",
-    prof: "شهسواری",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 979,
-    name: "روش پژوهش و ارائه",
-    code: "19_1912029",
-    prof: "صیفوری",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 980,
-    name: "پایگاه داده ها",
-    code: "19_1912030",
-    prof: "پیشگو بشری",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 981,
-    name: "تحلیل و طراحی سیستم ها",
-    code: "19_1912032",
-    prof: "صدیقیان کاشی سعید",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 982,
-    name: "هندسه محاسباتی",
-    code: "19_1912049",
-    prof: "شیخی فرناز",
-    units: 3,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی کامپیوتر"
-}
-,
-
-{
-    id: 983,
-    name: "آزمون و طراحی آزمون پذیر",
-    code: "01_1914001",
-    prof: "حمیدی حجت اله",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 984,
-    name: "معماری کامپیوتر",
-    code: "19_1914002",
-    prof: "ده یادگاری مسعود",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 985,
-    name: "طراحی کامپیوتری سیستم های دیجیتال",
-    code: "19_1914004",
-    prof: "حسینی نژاد محبتی حسین",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 986,
-    name: "هم طراحی سخت افزار و نرم افزار",
-    code: "19_1914005",
-    prof: "رودکی لواسانی هدا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 987,
-    name: "سیستم های عامل",
-    code: "19_1914009",
-    prof: "خانمیرزا حامد",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 988,
-    name: "آز ریزپردازنده ۱",
-    code: "17_1914011",
-    prof: "رمضان نیا",
-    units: 1,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 989,
-    name: "آز ریزپردازنده ۱",
-    code: "18_1914011",
-    prof: "رمضان نیا",
-    units: 1,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 990,
-    name: "آز ریزپردازنده ۱",
-    code: "19_1914011",
-    prof: "شکیلا کاظم پور",
-    units: 1,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 991,
-    name: "سیگنال ها و سیستم ها",
-    code: "19_1914016",
-    prof: "رضائی فاطمه",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 992,
-    name: "آز شبکه های کامپیوتری",
-    code: "16_1914018",
-    prof: "میرزا حسینی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 993,
-    name: "آز شبکه های کامپیوتری",
-    code: "17_1914018",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 994,
-    name: "آز شبکه های کامپیوتری",
-    code: "18_1914018",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 995,
-    name: "آز شبکه های کامپیوتری",
-    code: "19_1914018",
-    prof: "اساتید گروه آموزشی",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 996,
-    name: "ریزپردازنده و زبان اسمبلی",
-    code: "18_1914043",
-    prof: "درمانی محمد یوسف",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 997,
-    name: "ریزپردازنده و زبان اسمبلی",
-    code: "19_1914043",
-    prof: "دلیر روی فرد رسول",
-    units: 3,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 998,
-    name: "مدارهای الکتریکی",
-    code: "19_1914045",
-    prof: "مرادیان",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 999,
-    name: "سیستم های نهفته و بی درنگ",
-    code: "19_1914046",
-    prof: "عبدی آتنا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1000,
-    name: "طراحی سیستم های کم مصرف",
-    code: "01_1914050",
-    prof: "رودکی لواسانی هدا",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1001,
-    name: "طراحی سیستم های تحمل پذیر اشکال",
-    code: "19_1914051",
-    prof: "عبدی آتنا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1002,
-    name: "معماری پردازنده های اختصاصی سیگنال دیجیتال",
-    code: "19_1914053",
-    prof: "حسینی نژاد محبتی حسین",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی کامپیوتر"
-}
-
-,
-{
-    id: 1003,
-    name: "فشرده سازی اطلاعات",
-    code: "19_1914058",
-    prof: "رودکی لواسانی هدا",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1004,
-    name: "ساختار و زبان کامپیوتر",
-    code: "19_1914059",
-    prof: "علائیان محمدهادی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1005,
-    name: "پردازش قابل باز پیکربندی",
-    code: "01_1914062",
-    prof: "صیفوری",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/08",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1006,
-    name: "پردازش قابل باز پیکربندی",
-    code: "19_1914062",
-    prof: "صیفوری",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1007,
-    name: "شتاب دهنده های سخت افزاری",
-    code: "19_1914063",
-    prof: "ده یادگاری مسعود",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 1008,
-    name: "یادگیری ماشین",
-    code: "11_1916005",
-    prof: "علیاری شوره دلی مهدی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1009,
-    name: "تصویرپردازی رقمی",
-    code: "01_1916011",
-    prof: "غیاثی راد",
-    units: 3,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1010,
-    name: "سمینار",
-    code: "01_1916022",
-    prof: "یعقوبی کعبه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 18, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1011,
-    name: "سمینار",
-    code: "17_1916022",
-    prof: "شیخی فرناز",
-    units: 2,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1012,
-    name: "سمینار",
-    code: "18_1916022",
-    prof: "پیشگو بشری",
-    units: 2,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1013,
-    name: "سمینار",
-    code: "19_1916022",
-    prof: "رضائی فاطمه",
-    units: 2,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "تعیین نشده",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1014,
-    name: "پردازش تکاملی",
-    code: "01_1916023",
-    prof: "کوهزادی",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1015,
-    name: "پردازش تکاملی",
-    code: "19_1916023",
-    prof: "اثنی عشری اصفهانی محمدمهدی",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 15.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/07",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1016,
-    name: "هوش مصنوعی و سیستم های خبره",
-    code: "19_1916028",
-    prof: "کوهزادی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/25",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1017,
-    name: "مبانی پردازش زبان و گفتار",
-    code: "19_1916032",
-    prof: "دوست",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 1018,
-    name: "مبانی بینایی کامپیوتر",
-    code: "19_1916033",
-    prof: "نصیحت کن سید بهروز",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1019,
-    name: "شناسایی الگو",
-    code: "19_1916035",
-    prof: "ناصر شریف بابک",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1020,
-    name: "یادگیری تقویتی",
-    code: "19_1916040",
-    prof: "خواسته سید حسین",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1021,
-    name: "داده کاوی پیشرفته",
-    code: "01_1916044",
-    prof: "پیشگو بشری",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1022,
-    name: "داده کاوی پیشرفته",
-    code: "19_1916044",
-    prof: "پیشگو بشری",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1023,
-    name: "پنهان سازی اطلاعات",
-    code: "19_1916045",
-    prof: "علائیان محمدهادی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1024,
-    name: "سیستم های توصیه گر",
-    code: "01_1916053",
-    prof: "دادخواه چیترا",
-    units: 3,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/27",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1025,
-    name: "یادگیری ژرف",
-    code: "01_1916054",
-    prof: "کوهزادی",
-    units: 3,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/01",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1026,
-    name: "مدل های مولد عمیق",
-    code: "19_1916057",
-    prof: "نصیحت کن سید بهروز",
-    units: 3,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/28",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 1027,
-    name: "ارزیابی کارایی سیستم های کامپیوتری",
-    code: "01_1918010",
-    prof: "مرادیان",
-    units: 3,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/03",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1028,
-    name: "ارزیابی کارایی سیستم های کامپیوتری",
-    code: "19_1918010",
-    prof: "مرادیان",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1029,
-    name: "شبکه های چند رسانه ای",
-    code: "19_1918011",
-    prof: "درمانی محمد یوسف",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1030,
-    name: "امنیت شبکه پیشرفته",
-    code: "01_1918014",
-    prof: "قرائی",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/02",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1031,
-    name: "مدیریت شبکه",
-    code: "01_1918020",
-    prof: "یعقوبی کعبه",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/04",
-    department: "مهندسی کامپیوتر"
-},
-{
-    id: 1032,
-    name: "مدیریت شبکه",
-    code: "19_1918020",
-    prof: "یعقوبی کعبه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/26",
-    department: "مهندسی کامپیوتر"
-}
-,
-{
-    id: 1037,
-    name: "معادلات دیفرانسیل",
-    code: "52_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده عمران"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی عمران"
-},
-{
-    id: 1038,
-    name: "معادلات دیفرانسیل",
-    code: "53_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده عمران"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی عمران"
-},
-{
-    id: 1039,
-    name: "معادلات دیفرانسیل",
-    code: "54_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی کامپیوتر"
-},
-{
-    id: 1040,
-    name: "ریاضی عمومی ۲",
-    code: "42_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مکانیک - کلاس ۲۰۲"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مکانیک - کلاس ۲۰۲"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی مکانیک و مواد"
-},
-{
-    id: 1041,
-    name: "ریاضی عمومی ۲",
-    code: "43_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده مکانیک - کلاس ۳۰۲"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده مکانیک - کلاس ۳۰۲"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی مکانیک و مواد"
-},
-{
-    id: 1042,
-    name: "ریاضی عمومی ۲",
-    code: "44_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده مکانیک - کلاس ۳۰۲"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده مکانیک - کلاس ۳۰۲"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی مکانیک و مواد"
-},
-{
-    id: 1043,
-    name: "ریاضی عمومی ۲",
-    code: "45_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مکانیک - کلاس ۲۰۴"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مکانیک - کلاس ۲۰۴"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی مکانیک و مواد"
-},
-{
-    id: 1044,
-    name: "ریاضی عمومی ۲",
-    code: "46_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده مکانیک - کلاس ۳۰۵"},
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده مکانیک - کلاس ۳۰۵"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی مکانیک و مواد"
-},
-{
-    id: 1045,
-    name: "ریاضی عمومی ۲",
-    code: "47_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده برق"
-},
-{
-    id: 1046,
-    name: "ریاضی عمومی ۲",
-    code: "48_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده برق"
-}
-,
-{
-    id: 1033,
-    name: "معادلات دیفرانسیل",
-    code: "48_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "ساختمان آموزشی صنایع"},
-        {days: [4], start: 7.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی صنایع"
-},
-{
-    id: 1034,
-    name: "معادلات دیفرانسیل",
-    code: "49_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [3], start: 16.5, duration: 1.5, location: "دانشکده فیزیک"},
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده فیزیک"
-},
-{
-    id: 1035,
-    name: "معادلات دیفرانسیل",
-    code: "50_5712095",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده فیزیک"},
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده فیزیک"
-},
-{
-    id: 1036,
-    name: "معادلات دیفرانسیل",
-    code: "51_5712095", 
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده عمران"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشكده رياضي",
-    notes: "مختص دانشجویان دانشکده مهندسی عمران"
-},
-{
-    id: 1047,
-    name: "ریاضی عمومی ۲",
-    code: "49_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده برق"
-},
-{
-    id: 1048,
-    name: "ریاضی عمومی ۲",
-    code: "50_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده برق"
-},
-{
-    id: 1049,
-    name: "ریاضی عمومی ۲",
-    code: "51_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "دانشکده عمران"},
-        {days: [4], start: 7.5, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده عمران"
-},
-{
-    id: 1050,
-    name: "ریاضی عمومی ۲",
-    code: "52_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی نقشه برداری"
-},
-{
-    id: 1051,
-    name: "ریاضی عمومی ۲",
-    code: "53_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی کامپیوتر"
-},
-{
-    id: 1052,
-    name: "ریاضی عمومی ۲",
-    code: "54_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده صنایع"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده صنایع"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی صنایع"
-},
-{
-    id: 1053,
-    name: "ریاضی عمومی ۲",
-    code: "55_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده صنایع"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده صنایع"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی صنایع"
-},
-{
-    id: 1054,
-    name: "ریاضی عمومی ۲",
-    code: "56_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده فیزیک"
-},
-{
-    id: 1055,
-    name: "ریاضی عمومی ۲",
-    code: "57_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده فیزیک"},
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده فیزیک"
-},
-{
-    id: 1056,
-    name: "ریاضی عمومی ۲",
-    code: "58_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده هوافضا"
-}
-
-,
-{
-    id: 1057,
-    name: "ریاضی عمومی ۲",
-    code: "59_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده هوافضا"},
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی هوافضا"
-},
-{
-    id: 1058,
-    name: "ریاضی عمومی ۲",
-    code: "60_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده شیمی"},
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده شیمی"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده شیمی"
-},
-{
-    id: 1059,
-    name: "ریاضی عمومی ۲",
-    code: "61_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "دانشکده عمران"},
-        {days: [4], start: 9, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی عمران"
-},
-{
-    id: 1060,
-    name: "ریاضی عمومی ۲",
-    code: "62_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده عمران"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی عمران"
-},
-{
-    id: 1061,
-    name: "ریاضی عمومی ۲",
-    code: "63_5712096",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [4], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی کامپیوتر"
-},
-{
-    id: 1062,
-    name: "نظریه گروه‌های خطی",
-    code: "42_5712101",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "کلاس ۱۰۵"},
-        {days: [4], start: 9, duration: 1.5, location: "کلاس ۱۰۵"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده ریاضی"
-},
-{
-    id: 1063,
-    name: "توپولوژی جبری ۱",
-    code: "42_5712107",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "کلاس ۱۰۷"},
-        {days: [4], start: 15, duration: 1.5, location: "کلاس ۱۰۷"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی"
-},
-{
-    id: 1064,
-    name: "نظریه پیشرفته احتمال",
-    code: "42_5712171",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "کلاس ۱۰۴"},
-        {days: [4], start: 15, duration: 1.5, location: "کلاس ۱۰۴"}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشکده ریاضی"
-},
-{
-    id: 1065,
-    name: "شبیه‌سازی",
-    code: "42_5712173",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "کلاس ۱۰۵"},
-        {days: [4], start: 7.5, duration: 1.5, location: "کلاس ۱۰۵"}
-    ],
-    examDate: "1404/04/03",
-    department: "دانشکده ریاضی"
-},
-{
-    id: 1066,
-    name: "جبر پیشرفته",
-    code: "42_5712190",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "کلاس ۱۰۶"},
-        {days: [4], start: 9, duration: 1.5, location: "کلاس ۱۰۶"}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشکده ریاضی"
-}
-,
-{
-    id: 1067,
-    name: "نظریه حلقه‌ها",
-    code: "42_5712198",
-    prof: "قلندرزاده شعبان",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "کلاس ۱۰۵"},
-        {days: [4], start: 10.5, duration: 2, location: "کلاس ۱۰۵"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشکده ریاضی",
-    notes: "این درس با همین مشخصات منتهی در قالب ۴ واحد تا حذف و اضافه جایگزین این گروه می‌شود",
-    capacity: 15
-},
-{
-    id: 1068,
-    name: "معادلات دیفرانسیل",
-    code: "42_5714055",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "سالن سمینار"},
-        {days: [4], start: 13.5, duration: 1.5, location: "سالن سمینار"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشکده ریاضی",
-    capacity: 50
-},
-{
-    id: 1069,
-    name: "برنامه‌سازی پیشرفته",
-    code: "42_5714087",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "سالن سمینار"},
-        {days: [4], start: 9, duration: 1.5, location: "سالن سمینار"},
-        {days: [5], start: 7.5, duration: 1.5, location: "سالن سمینار"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده ریاضی",
-    capacity: 40
-},
-{
-    id: 1070,
-    name: "برنامه‌سازی پیشرفته",
-    code: "43_5714087",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "سالن سمینار"},
-        {days: [4], start: 7.5, duration: 1.5, location: "سالن سمینار"},
-        {days: [5], start: 9, duration: 1.5, location: "سالن سمینار"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده ریاضی",
-    capacity: 40
-},
-{
-    id: 1071,
-    name: "محاسبات عددی",
-    code: "42_5714098",
-    prof: "گروه ریاضی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده صنایع"}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی صنایع",
-    capacity: 40
-},
-{
-    id: 1072,
-    name: "محاسبات عددی",
-    code: "43_5714098",
-    prof: "گروه ریاضی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی برق",
-    capacity: 40
-},
-{
-    id: 1073,
-    name: "ریاضیات مهندسی",
-    code: "42_5714101",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان دانشکده مهندسی کامپیوتر",
-    capacity: 40
-},
-{
-    id: 1074,
-    name: "ریاضیات مهندسی",
-    code: "43_5714101",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه‌برداری"},
-        {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه‌برداری"}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشکده ریاضی",
-    capacity: 50
-},
-{
-    id: 1075,
-    name: "مبانی ماتریس‌ها و جبرخطی",
-    code: "42_5714116",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "سالن سمینار"},
-        {days: [4], start: 10.5, duration: 2, location: "سالن سمینار"}
-    ],
-    examDate: "1404/04/07",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان آموزش ریاضی و دانشجویان ریاضی ورودی ۱۴۰۰ به قبل",
-    capacity: 25
-},
-{
-    id: 1076,
-    name: "مبانی ترکیبیات",
-    code: "42_5714117",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "سالن سمینار"},
-        {days: [3], start: 10.5, duration: 2, location: "سالن سمینار"}
-    ],
-    examDate: "1404/04/02",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان آموزش ریاضی و دانشجویان ریاضی ورودی ۱۴۰۰ به قبل",
-    capacity: 25
-},
-{
-    id: 1077,
-    name: "مبانی احتمال",
-    code: "42_5714118",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "کلاس ۱۰۳"},
-        {days: [4], start: 9, duration: 1.5, location: "کلاس ۱۰۳"}
-    ],
-    examDate: "1404/04/09",
-    department: "دانشکده ریاضی",
-    capacity: 40
-}
-,
-{
-    id: 1078,
-    name: "مبانی آنالیز عددی",
-    code: "42_5714122",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "کلاس ۱۰۱"},
-        {days: [4], start: 10.5, duration: 2, location: "کلاس ۱۰۱"}
-    ],
-    examDate: "1404/03/31",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان آموزش ریاضی و دانشجویان ریاضی ورودی ۱۴۰۰ به قبل",
-    capacity: 25
-},
-{
-    id: 1079,
-    name: "حل عددی معادلات دیفرانسیل",
-    code: "42_5714126",
-    prof: "قریشی فریده",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "کلاس ۱۰۱"},
-        {days: [3], start: 10.5, duration: 2, location: "کلاس ۱۰۱"}
-    ],
-    examDate: "1404/04/04",
-    department: "دانشکده ریاضی",
-    capacity: 40
-},
-{
-    id: 1080,
-    name: "مبانی جبر",
-    code: "42_5714134",
-    prof: "قلندرزاده شعبان",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "کلاس ۱۰۳"},
-        {days: [3], start: 10.5, duration: 2, location: "کلاس ۱۰۳"}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشکده ریاضی",
-    notes: "مختص دانشجویان آموزش ریاضی و دانشجویان ریاضی ورودی ۱۴۰۰ به قبل",
-    capacity: 25
-},
-{
-    id: 1081,
-    name: "بهینه‌سازی خطی",
-    code: "42_5714135",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "دانشکده هوافضا"},
-        {days: [4], start: 10.5, duration: 2, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/08",
-    department: "دانشکده ریاضی",
-    capacity: 40
-},
-{
-    id: 1082,
-    name: "روش‌های آماری",
-    code: "42_5714141",
-    prof: "خودسیانی راضیه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "کلاس ۱۰۴"},
-        {days: [3], start: 10.5, duration: 2, location: "کلاس ۱۰۴"}
-    ],
-    examDate: "1404/03/27",
-    department: "دانشکده ریاضی",
-    capacity: 30
-},
-{
-    id: 1083,
-    name: "نرم‌افزارهای ریاضی",
-    code: "42_5714148",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "کلاس ۱۰۳"},
-        {days: [3], start: 9, duration: 1.5, location: "کلاس ۱۰۳"}
-    ],
-    examDate: "1404/03/25",
-    department: "دانشکده ریاضی",
-    capacity: 25
-},
-{
-    id: 1084,
-    name: "فرآیندهای تصادفی",
-    code: "42_5714151",
-    prof: "خودسیانی راضیه",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "کلاس ۱۰۲"},
-        {days: [3], start: 7.5, duration: 1.5, location: "کلاس ۱۰۲"}
-    ],
-    examDate: "1404/04/03",
-    department: "دانشکده ریاضی",
-    capacity: 40
-},
-{
-    id: 1085,
-    name: "حل عددی معادلات دیفرانسیل جزیی",
-    code: "42_5714181",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "کلاس ۱۰۳"},
-        {days: [4], start: 7.5, duration: 1.5, location: "کلاس ۱۰۳"}
-    ],
-    examDate: "1404/04/08",
-    department: "دانشکده ریاضی",
-    capacity: 15
-},
-{
-    id: 1086,
-    name: "بهینه‌سازی محدب",
-    code: "42_5714190",
-    prof: "گروه ریاضی",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۱۰۵"},
-        {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۱۰۵"}
-    ],
-    examDate: "1404/04/07",
-    department: "دانشکده ریاضی",
-    notes: "این درس با همین مشخصات منتهی در قالب ۴ واحد تا حذف و اضافه جایگزین این گروه می‌شود",
-    capacity: 15
-},
-{
-    id: 1087,
-    name: "آنالیز حقیقی",
-    code: "42_5714193",
-    prof: "گروه ریاضی",
-    units: 4,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "کلاس ۱۰۲"},
-        {days: [4], start: 13.5, duration: 1.5, location: "کلاس ۱۰۲"}
-    ],
-    examDate: "1404/04/02",
-    department: "دانشکده ریاضی",
-    capacity: 30
-}
-,
-{
-    id: 1088,
-    name: "مهارت‌های زندگی دانشجویی",
-    code: "51_5505050",
-    prof: "گروه معارف",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/07",
-    department: "مرکز آموزش های عمومی",
-    capacity: 70,
-    notes: "مکان: دانشکده برق"
-},
-{
-    id: 1089,
-    name: "مهارت‌های زندگی دانشجویی",
-    code: "52_5505050",
-    prof: "گروه معارف",
-    units: 2,
-    sessions: [
-        {days: [3], start: 16.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/09",
-    department: "مرکز آموزش های عمومی",
-    capacity: 70,
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1090,
-    name: "مهارت‌های زندگی دانشجویی",
-    code: "53_5505050",
-    prof: "گروه معارف",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/09",
-    department: "مرکز آموزش های عمومی",
-    capacity: 70,
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1091,
-    name: "مهارت‌های زندگی دانشجویی",
-    code: "54_5505050",
-    prof: "گروه معارف",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده مکانیک"}
-    ],
-    examDate: "1404/04/08",
-    department: "مرکز آموزش های عمومی",
-    capacity: 70,
-    notes: "مکان: مکانیک-کلاس"
-},
-{
-    id: 1092,
-    name: "اندیشه اسلامی ۱",
-    code: "53_5505128",
-    prof: "مصباح مقدم سرور",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: دانشکده برق"
-},
-{
-    id: 1093,
-    name: "اندیشه اسلامی ۱",
-    code: "54_5505128",
-    prof: "بلخاری قهی حسین",
-    units: 2,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1094,
-    name: "اندیشه اسلامی ۱",
-    code: "55_5505128",
-    prof: "بلخاری قهی حسین",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده عمران"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1095,
-    name: "اندیشه اسلامی ۱",
-    code: "56_5505128",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1096,
-    name: "اندیشه اسلامی ۱",
-    code: "57_5505128",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1097,
-    name: "اندیشه اسلامی ۱",
-    code: "58_5505128",
-    prof: "شیری امیر مهدی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مکانیک"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: مکانیک-کلاس"
-}
-,
-{
-    id: 1098,
-    name: "اندیشه اسلامی ۱",
-    code: "60_5505128",
-    prof: "آقایی نعمت",
-    units: 2,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: مکانیک-کلاس"
-},
-{
-    id: 1099,
-    name: "اندیشه اسلامی ۱",
-    code: "61_5505128",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "این کلاس در ساختمان صنایع واقع در دانشکده برق(سیدخندان) برگزار می شود"
-},
-{
-    id: 1100,
-    name: "اندیشه اسلامی ۱",
-    code: "62_5505128",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/02",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "این کلاس در ساختمان صنایع واقع در دانشکده برق(سیدخندان) برگزار می شود"
-},
-{
-    id: 1101,
-    name: "اندیشه اسلامی ۲",
-    code: "51_5505129",
-    prof: "شیری امیر مهدی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 16.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: ساختمان آموزشی صنایع"
-},
-{
-    id: 1102,
-    name: "اندیشه اسلامی ۲",
-    code: "52_5505129",
-    prof: "آقایی نعمت",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: دانشکده برق"
-},
-{
-    id: 1103,
-    name: "اندیشه اسلامی ۲",
-    code: "53_5505129",
-    prof: "آقایی نعمت",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: دانشکده برق"
-},
-{
-    id: 1104,
-    name: "اندیشه اسلامی ۲",
-    code: "54_5505129",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1105,
-    name: "اندیشه اسلامی ۲",
-    code: "55_5505129",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1106,
-    name: "اندیشه اسلامی ۲",
-    code: "56_5505129",
-    prof: "آقایی نعمت",
-    units: 2,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد",
-    notes: "مکان: مکانیک-کلاس"
-},
-{
-    id: 1107,
-    name: "اندیشه اسلامی ۲",
-    code: "57_5505129",
-    prof: "شیری امیر مهدی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن",
-    notes: "مکان: مکانیک-کلاس"
-}
-
-,
-{
-    id: 1108,
-    name: "تربیت بدنی",
-    code: "51_5510001",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1109,
-    name: "تربیت بدنی",
-    code: "52_5510001",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش"
-},
-{
-    id: 1110,
-    name: "تربیت بدنی",
-    code: "53_5510001",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1111,
-    name: "تربیت بدنی",
-    code: "54_5510001",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1112,
-    name: "تربیت بدنی",
-    code: "55_5510001", 
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1113,
-    name: "تربیت بدنی",
-    code: "56_5510001",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1114,
-    name: "تربیت بدنی",
-    code: "57_5510001",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1115,
-    name: "تربیت بدنی",
-    code: "58_5510001",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1116,
-    name: "تربیت بدنی",
-    code: "59_5510001",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1117,
-    name: "تربیت بدنی",
-    code: "60_5510001",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-}
-,
-{
-    id: 1118,
-    name: "تربیت بدنی",
-    code: "61_5510001",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: هوافضا-سالن تربیت بدنی"
-},
-{
-    id: 1119,
-    name: "تربیت بدنی",
-    code: "62_5510001",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1120,
-    name: "تربیت بدنی",
-    code: "63_5510001",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1121,
-    name: "تربیت بدنی",
-    code: "64_5510001",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "زن",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم"
-},
-{
-    id: 1122,
-    name: "ورزش ۱",
-    code: "51_5510002",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش، فوتسال"
-},
-{
-    id: 1123,
-    name: "ورزش ۱",
-    code: "52_5510002",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم، بدنسازی"
-},
-{
-    id: 1124,
-    name: "ورزش ۱",
-    code: "53_5510002",
-    prof: "لطیفی حجت اله",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: عمران- ساختمان اموزش، فوتسال"
-},
-{
-    id: 1125,
-    name: "ورزش ۱",
-    code: "54_5510002",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 7.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده مهندسی مکانیک، تنیس روی میز"
-},
-{
-    id: 1126,
-    name: "ورزش ۱",
-    code: "55_5510002",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده مهندسی مکانیک، تنیس روی میز"
-},
-{
-    id: 1127,
-    name: "ورزش ۱",
-    code: "56_5510002",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "سالن تربیت بدنی دانشکده مهندسی مکانیک"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده مهندسی مکانیک، تنیس روی میز"
-}
-,
-{
-    id: 1128,
-    name: "ورزش ۱",
-    code: "57_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم، بدنسازی"
-},
-{
-    id: 1129,
-    name: "ورزش ۱",
-    code: "58_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم، بدنسازی"
-},
-{
-    id: 1130,
-    name: "ورزش ۱",
-    code: "59_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "سالن تربیت بدنی دانشکده علوم"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "مکان: سالن تربیت بدنی دانشکده علوم، بدنسازی"
-},
-{
-    id: 1131,
-    name: "ورزش ۱",
-    code: "60_5510002",
-    prof: "خنجری یاسر",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مرد",
-    notes: "فوتسال"
-},
-{
-    id: 1132,
-    name: "ورزش ۱",
-    code: "61_5510002",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "بدمینتون"
-},
-{
-    id: 1133,
-    name: "ورزش ۱",
-    code: "62_5510002",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "بدمینتون"
-},
-{
-    id: 1134,
-    name: "ورزش ۱",
-    code: "63_5510002",
-    prof: "خانی زاده سحر",
-    units: 1,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "پیلاتس"
-},
-{
-    id: 1135,
-    name: "ورزش ۱",
-    code: "64_5510002",
-    prof: "خانی زاده سحر",
-    units: 1,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "پیلاتس"
-},
-{
-    id: 1136,
-    name: "ورزش ۱",
-    code: "65_5510002",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "بدمینتون"
-},
-{
-    id: 1137,
-    name: "ورزش ۱",
-    code: "66_5510002",
-    prof: "محبی فرشته",
-    units: 1,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "سالن تربیت بدنی"}
-    ],
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "زن",
-    notes: "بدمینتون"
-}
-,
-{
-    id: 1138,
-    name: "تربیت بدنی ویژه",
-    code: "51_5510003",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "علوم-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 16,
-    gender: "مختلط",
-    notes: "ویژه دانشجویان دارای مشکلات جسمی – حرکتی با تأیید پزشک معتمد دانشگاه و پزشک متخصص ویژه معلولین"
-},
-{
-    id: 1139,
-    name: "ورزش ویژه",
-    code: "51_5510004",
-    prof: "خداداد کاشی شعله",
-    units: 1,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "علوم-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 12,
-    gender: "مختلط",
-    notes: "ویژه دانشجویان دارای مشکلات جسمی – حرکتی با تأیید پزشک معتمد دانشگاه و پزشک متخصص ویژه معلولین"
-}
-
-,{
-    id: 1140,
-    name: "نگارش متون علمی",
-    code: "51_5512003",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1141,
-    name: "نگارش متون علمی",
-    code: "52_5512003",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1142,
-    name: "زبان فارسی ۱",
-    code: "51_5512004",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1143,
-    name: "زبان فارسی ۱",
-    code: "52_5512004",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1144,
-    name: "زبان فارسی ۱",
-    code: "53_5512004", 
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "۱۰۱"},
-        {days: [1], start: 15, duration: 1.5, location: "۱۰۱"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1145,
-    name: "زبان فارسی ۱",
-    code: "54_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1146,
-    name: "زبان فارسی ۱",
-    code: "55_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1147,
-    name: "زبان فارسی ۱",
-    code: "56_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "ساختمان آموزشی نقشه برداری"},
-        {days: [1], start: 10.5, duration: 2, location: "ساختمان آموزشی نقشه برداری"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1148,
-    name: "زبان فارسی ۱",
-    code: "57_5512004",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1149,
-    name: "زبان فارسی ۱",
-    code: "58_5512004",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 15, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-}
-
-,
-{
-    id: 1140,
-    name: "نگارش متون علمی",
-    code: "51_5512003",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1141,
-    name: "نگارش متون علمی",
-    code: "52_5512003",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1142,
-    name: "زبان فارسی ۱",
-    code: "51_5512004",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 7.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1143,
-    name: "زبان فارسی ۱",
-    code: "52_5512004",
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1144,
-    name: "زبان فارسی ۱",
-    code: "53_5512004", 
-    prof: "سلمانی نژادمهرآبادی ساغر",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "۱۰۱"},
-        {days: [1], start: 15, duration: 1.5, location: "۱۰۱"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1145,
-    name: "زبان فارسی ۱",
-    code: "54_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1146,
-    name: "زبان فارسی ۱",
-    code: "55_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"},
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1147,
-    name: "زبان فارسی ۱",
-    code: "56_5512004",
-    prof: "علیقلی زاده حسین",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "ساختمان آموزشی نقشه برداری"},
-        {days: [1], start: 10.5, duration: 2, location: "ساختمان آموزشی نقشه برداری"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1148,
-    name: "زبان فارسی ۱",
-    code: "57_5512004",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1149,
-    name: "زبان فارسی ۱",
-    code: "58_5512004",
-    prof: "شاگشتاسبی مولود",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 15, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-}
-,
-{
-    id: 1150,
-    name: "زبان فارسی ۱",
-    code: "59_5512004",
-    prof: "روستا امید",
-    units: 3,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1151,
-    name: "زبان فارسی ۱",
-    code: "60_5512004",
-    prof: "روستا امید",
-    units: 3,
-    sessions: [
-        {days: [2], start: 15, duration: 1.5, location: "کلاس"},
-        {days: [4], start: 15, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/26",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1152,
-    name: "زبان انگلیسی",
-    code: "51_5512006",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "ساختمان آموزشی صنایع"},
-        {days: [4], start: 9, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 35,
-    gender: "مختلط",
-    notes: "محل تشکیل کلاس در ساختمان صنایع در سیدخندان است"
-},
-{
-    id: 1153,
-    name: "زبان انگلیسی",
-    code: "52_5512006",
-    prof: "نوروزی زاده سوگند",
-    units: 3,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "ساختمان آموزشی صنایع"},
-        {days: [4], start: 10.5, duration: 2, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 35,
-    gender: "مختلط",
-    notes: "محل تشکیل کلاس در ساختمان صنایع در سیدخندان است"
-},
-{
-    id: 1154,
-    name: "زبان انگلیسی",
-    code: "53_5512006",
-    prof: "شریف مریم",
-    units: 3,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "کلاس"},
-        {days: [5], start: 9, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1155,
-    name: "زبان انگلیسی",
-    code: "54_5512006",
-    prof: "شریف مریم",
-    units: 3,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "کلاس"},
-        {days: [5], start: 10.5, duration: 2, location: "کلاس"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1156,
-    name: "زبان انگلیسی",
-    code: "55_5512006",
-    prof: "نظام آبادی حمیدرضا",
-    units: 3,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "کلاس ۲۱۰ دانشکده هوافضا"},
-        {days: [5], start: 15, duration: 1.5, location: "کلاس ۲۱۰ دانشکده هوافضا"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط",
-    notes: "در کلاس ۲۱۰ دانشکده هوافضا تشکیل میشود"
-},
-{
-    id: 1157,
-    name: "زبان انگلیسی",
-    code: "56_5512006",
-    prof: "سعیدی سعید",
-    units: 3,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "کلاس"},
-        {days: [1], start: 16.5, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-},
-{
-    id: 1158,
-    name: "زبان انگلیسی",
-    code: "57_5512006",
-    prof: "سعیدی سعید",
-    units: 3,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "کلاس"},
-        {days: [3], start: 16.5, duration: 1.5, location: "کلاس"}
-    ],
-    examDate: "1404/03/31",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مختلط"
-}
-,
-{
-    id: 1159,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "51_5514003",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1160,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "52_5514003",
-    prof: "امامی محمد مهدی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1161,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "53_5514003",
-    prof: "امامی محمد مهدی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1162,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "54_5514003",
-    prof: "طهماسبی محمد",
-    units: 2,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1163,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "55_5514003",
-    prof: "نوروزی مهدی",
-    units: 2,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1164,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "56_5514003",
-    prof: "نوروزی مهدی",
-    units: 2,
-    sessions: [
-        {days: [4], start: 16.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1165,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "57_5514003",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1166,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "58_5514003",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1167,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "59_5514003",
-    prof: "طهماسبی محمد",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1168,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "60_5514003",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-}
-,
-{
-    id: 1169,
-    name: "انقلاب اسلامی و ریشه های آن",
-    code: "61_5514003",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/28",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1170,
-    name: "اخلاق و تربیت اسلامی",
-    code: "51_5514004",
-    prof: "مرتضایی بهزاد",
-    units: 2,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1171,
-    name: "اخلاق و تربیت اسلامی",
-    code: "52_5514004",
-    prof: "مرتضایی بهزاد",
-    units: 2,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1172,
-    name: "اخلاق و تربیت اسلامی",
-    code: "53_5514004",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [3], start: 16.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1173,
-    name: "اخلاق و تربیت اسلامی",
-    code: "54_5514004",
-    prof: "مستقیم امیرحسین",
-    units: 2,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1174,
-    name: "تفسیر موضوعی نهج البلاغه",
-    code: "51_5514005",
-    prof: "کاظم توری سعیده",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1175,
-    name: "تفسیر موضوعی نهج البلاغه",
-    code: "52_5514005",
-    prof: "کاظم توری سعیده",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1176,
-    name: "تفسیر موضوعی قرآن",
-    code: "51_5514006",
-    prof: "نوری حمید رضا",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1177,
-    name: "تفسیر موضوعی قرآن",
-    code: "52_5514006",
-    prof: "خدامی واحد",
-    units: 2,
-    sessions: [
-        {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1178,
-    name: "تفسیر موضوعی قرآن",
-    code: "53_5514006",
-    prof: "خدامی واحد",
-    units: 2,
-    sessions: [
-        {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-}
-,
-{
-    id: 1179,
-    name: "تفسیر موضوعی قرآن",
-    code: "54_5514006",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1180,
-    name: "تفسیر موضوعی قرآن",
-    code: "55_5514006",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [2], start: 10.5, duration: 2, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1181,
-    name: "تفسیر موضوعی قرآن",
-    code: "56_5514006",
-    prof: "نوری حمید رضا",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1182,
-    name: "تفسیر موضوعی قرآن",
-    code: "57_5514006",
-    prof: "گیاه پور هادی",
-    units: 2,
-    sessions: [
-        {days: [4], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1183,
-    name: "تفسیر موضوعی قرآن",
-    code: "58_5514006",
-    prof: "گیاه پور هادی",
-    units: 2,
-    sessions: [
-        {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1184,
-    name: "تفسیر موضوعی قرآن",
-    code: "60_5514006",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1185,
-    name: "تفسیر موضوعی قرآن",
-    code: "61_5514006",
-    prof: "اساتید گروه آموزشی",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/27",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1186,
-    name: "حقوق اجتماعی و سیاسی در اسلام",
-    code: "51_5514011",
-    prof: "نوری حمید رضا",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1187,
-    name: "حقوق اجتماعی و سیاسی در اسلام",
-    code: "52_5514011",
-    prof: "نوری حمید رضا",
-    units: 2,
-    sessions: [
-        {days: [1], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1188,
-    name: "حقوق اجتماعی و سیاسی در اسلام",
-    code: "53_5514011",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/03",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-}
-,
-{
-    id: 1189,
-    name: "تاریخ تمدن فرهنگ و تمدن اسلامی",
-    code: "51_5514014",
-    prof: "بابایی محمدحسن",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1190,
-    name: "تاریخ تمدن فرهنگ و تمدن اسلامی",
-    code: "52_5514014",
-    prof: "بابایی محمدحسن",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1191,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "51_5514015",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1192,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "52_5514015",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1193,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "53_5514015",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1194,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "54_5514015",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1195,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "55_5514015",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1196,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "56_5514015",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [1], start: 16.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1197,
-    name: "آیین زندگی و اخلاق کاربردی",
-    code: "57_5514015",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/01",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1198,
-    name: "دانش خانواده و جمعیت",
-    code: "51_5514016",
-    prof: "خدامی واحد",
-    units: 2,
-    sessions: [
-        {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-}
-,
-{
-    id: 1199,
-    name: "دانش خانواده و جمعیت",
-    code: "52_5514016",
-    prof: "مصباح مقدم سرور",
-    units: 2,
-    sessions: [
-        {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1200,
-    name: "دانش خانواده و جمعیت",
-    code: "53_5514016",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1201,
-    name: "دانش خانواده و جمعیت",
-    code: "54_5514016",
-    prof: "اکبری سکینه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1202,
-    name: "دانش خانواده و جمعیت",
-    code: "55_5514016",
-    prof: "خدامی واحد",
-    units: 2,
-    sessions: [
-        {days: [5], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1203,
-    name: "دانش خانواده و جمعیت",
-    code: "56_5514016",
-    prof: "حقیقت طلب سکینه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1204,
-    name: "دانش خانواده و جمعیت",
-    code: "57_5514016",
-    prof: "خدامی واحد",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "هوافضا-سالن تربیت بدنی"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1205,
-    name: "دانش خانواده و جمعیت",
-    code: "58_5514016",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1206,
-    name: "دانش خانواده و جمعیت",
-    code: "59_5514016",
-    prof: "موسوی سیدعلی محمد",
-    units: 2,
-    sessions: [
-        {days: [5], start: 16.5, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1207,
-    name: "دانش خانواده و جمعیت",
-    code: "60_5514016",
-    prof: "اکبری سکینه",
-    units: 2,
-    sessions: [
-        {days: [5], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/03/25",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1208,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "51_5514017",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [3], start: 16.5, duration: 1.5, location: "ساختمان آموزشی صنایع"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-}
-,
-{
-    id: 1209,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "52_5514017",
-    prof: "امامی محمد مهدی",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1210,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "53_5514017", 
-    prof: "امامی محمد مهدی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1211,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "54_5514017",
-    prof: "امامی محمد مهدی",
-    units: 2,
-    sessions: [
-        {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1212,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "55_5514017",
-    prof: "خادم الحسینی سید پیمان",
-    units: 2,
-    sessions: [
-        {days: [4], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-},
-{
-    id: 1213,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "56_5514017",
-    prof: "خادم الحسینی سید پیمان",
-    units: 2,
-    sessions: [
-        {days: [4], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "مرد"
-},
-{
-    id: 1214,
-    name: "تاریخ تحلیلی صدر اسلام",
-    code: "59_5514017",
-    prof: "منصوری بیژن",
-    units: 2,
-    sessions: [
-        {days: [3], start: 15, duration: 1.5, location: "مکانیک-کلاس"}
-    ],
-    examDate: "1404/04/04",
-    department: "مرکز آموزش های عمومی",
-    capacity: 40,
-    gender: "زن"
-}
-
-
-,
-
-];
-
-
-
+]

@@ -5964,7 +5964,7 @@ const courses = [
   id: 7707079,
   name: "هندسه ديفرانسيل",
   code: "21_7707079",
-  prof: "اساتيد گروه آموزشي",
+  prof: "قائمی راد طاهره",
   units: 2,
   sessions: [
     {days: [4], start: 13.5, duration: 1.5, location: "کلاس"}

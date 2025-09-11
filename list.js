@@ -9556,5 +9556,737 @@ const courses = [
   department: "مركز آموزش هاي عمومي",
   capacity: 40,
   gender: "مرد"
-}
+},
+{
+    id: 8880013,
+    name: "ديناميك",
+    code: "81_8880013",
+    prof: "با صحبت نوين زاد عليرضا",
+    units: 4,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۳"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880013,
+    name: "ديناميك",
+    code: "82_8880013",
+    prof: "جعفري ندوشن مهدي",
+    units: 4,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۰۷"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880016,
+    name: "مباني مهندسي برق والكترونيك",
+    code: "81_8880016",
+    prof: "چيني فروشان محمد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۳"},
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 8880016,
+    name: "مباني مهندسي برق والكترونيك",
+    code: "82_8880016",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880017,
+    name: "نقشه كشي صنعتي ۱",
+    code: "81_8880017",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۲۱۱"},
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۱۱"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880017,
+    name: "نقشه كشي صنعتي ۱",
+    code: "82_8880017",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۱۱"},
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۱۱"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880019,
+    name: "استاتيك",
+    code: "81_8880019",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۳"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880021,
+    name: "مكانيك سيالات",
+    code: "81_8880021",
+    prof: "ابراهيمي رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880024,
+    name: "مقاومت مصالح",
+    code: "81_8880024",
+    prof: "نوريان محمدعلي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "سالن"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۲۱۰"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880024,
+    name: "مقاومت مصالح",
+    code: "82_8880024",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۳"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880027,
+    name: "ارتعاشات مكانيكي",
+    code: "81_8880027",
+    prof: "ايراني سعيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس ۲۱۰"},
+      {days: [5], start: 10.5, duration: 2, location: "كلاس ۲۱۰"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880027,
+    name: "ارتعاشات مكانيكي",
+    code: "82_8880027",
+    prof: "خراساني رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "سالن"},
+      {days: [5], start: 10.5, duration: 2, location: "سالن"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880028,
+    name: "كنترل اتوماتيك",
+    code: "81_8880028",
+    prof: "طايفي نصرآبادي مرتضي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880029,
+    name: "آئروديناميك ۱",
+    code: "81_8880029",
+    prof: "شيخ الاسلام نوري سيد مهدي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880029,
+    name: "آئرودينamيك ۱",
+    code: "82_8880029",
+    prof: "فتحعلي ماني",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۰۳"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880030,
+    name: "آزمباني برق والكترونيك",
+    code: "81_8880030",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "آزمايشگاه"},
+      {days: [2], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 8880030,
+    name: "آزمباني برق والكترونيك",
+    code: "82_8880030",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 8880031,
+    name: "انتقال حرارت",
+    code: "81_8880031",
+    prof: "اعظم پور محمد هادي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880036,
+    name: "آز مكانيك سيالات",
+    code: "81_8880036",
+    prof: "شيخ الاسلام نوري سيد مهدي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880036,
+    name: "آز مكانيك سيالات",
+    code: "82_8880036",
+    prof: "شيخ الاسلام نوري سيد مهدي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+{
+    id: 8880038,
+    name: "آز مقاومت مصالح",
+    code: "81_8880038",
+    prof: "ذاكري مهناز",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 8880038,
+    name: "آز مقاومت مصالح",
+    code: "82_8880038",
+    prof: "ذاكري مهnاز",
+    units: 1,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۵"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 8,
+    gender: "مختلط"
+  },
+  {
+    id: 8880040,
+    name: "تحليل سازه هاي هوائي",
+    code: "81_8880040",
+    prof: "خراساني رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس ۲۱۰"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۱۰"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880040,
+    name: "تحليل سازه هاي هوائي",
+    code: "82_8880040",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "سالن"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880047,
+    name: "آز آئروديناميك ۱",
+    code: "81_8880047",
+    prof: "پوريوسفي غلامحسين",
+    units: 1,
+    sessions: [
+      {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880047,
+    name: "آز آئروديناميك ۱",
+    code: "82_8880047",
+    prof: "پوريوسفي غلامحسين",
+    units: 1,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880047,
+    name: "آز آئروديناميك ۱",
+    code: "83_8880047",
+    prof: "پوريوسفي غلامحسين",
+    units: 1,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880048,
+    name: "مقدمه اي برمهندسي هوافضا",
+    code: "81_8880048",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880048,
+    name: "مقدمه اي برمهندسي هوافضا",
+    code: "82_8880048",
+    prof: "چيني فروشان محمد",
+    units: 2,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس ۲۱۲"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880049,
+    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    code: "81_8880049",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [6], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [6], start: 9, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  }
+,
+{
+    id: 8880049,
+    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    code: "82_8880049",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [6], start: 10.5, duration: 2, location: "كارگاه"},
+      {days: [6], start: 13.5, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880049,
+    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    code: "83_8880049",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [6], start: 15, duration: 1.5, location: "كارگاه"},
+      {days: [6], start: 16.5, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 10,
+    gender: "مختلط"
+  },
+  {
+    id: 8880066,
+    name: "پروژه",
+    code: "80_8880066",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 8880067,
+    name: "ترموديناميك ۲",
+    code: "81_8880067",
+    prof: "شيخ الاسلام نوري سيد مهدي",
+    units: 2,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880067,
+    name: "ترموديناميك ۲",
+    code: "82_8880067",
+    prof: "مهدوي مقدم حسين",
+    units: 2,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "سالن"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880068,
+    name: "كارگاه موتور_بدنه وسيستمهاي هواپيما",
+    code: "81_8880068",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [6], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [6], start: 9, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 8880068,
+    name: "كارگاه موتور_بدنه وسيستمهاي هواپيما",
+    code: "82_8880068",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [6], start: 10.5, duration: 2, location: "كارگاه"},
+      {days: [6], start: 13.5, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 8880068,
+    name: "كارگاه موتور_بدنه وسيستمهاي هواپيma",
+    code: "83_8880068",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [6], start: 15, duration: 1.5, location: "كارگاه"},
+      {days: [6], start: 16.5, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 8880084,
+    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
+    code: "81_8880084",
+    prof: "نيكخواه امير علي",
+    units: 2,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس ۲۰۱"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 8880084,
+    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
+    code: "82_8880084",
+    prof: "نيكخواه امير علي",
+    units: 2,
+    sessions: [
+      {days: [3], start: 10.5, duration: 2, location: "كلاس ۲۰۱"},
+      {days: [3], start: 15, duration: 1.5, location: "كلاس ۲۰۱"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  }
+,
+{
+    id: 8880084,
+    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
+    code: "83_8880084",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [2], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 8880085,
+    name: "سمينار ۱",
+    code: "80_8880085",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 5,
+    gender: "مختلط"
+  },
+  {
+    id: 8880086,
+    name: "سمينar ۲",
+    code: "80_8880086",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی هوافضا",
+    capacity: 5,
+    gender: "مختلط"
+  },
+  {
+    id: 8880087,
+    name: "اصول جلوبرنده ها",
+    code: "81_8880087",
+    prof: "ابراهيمي رضا",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880088,
+    name: "طراحي سازه هاي صنايع هوايي",
+    code: "81_8880088",
+    prof: "مظفري علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880088,
+    name: "طراحي سازه هاي صنايع هوايي",
+    code: "82_8880088",
+    prof: "نوريان محمدعلي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880089,
+    name: "مكانيك پرواز ۲",
+    code: "81_8880089",
+    prof: "نيكخواه امير علي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس ۲۰۴"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880089,
+    name: "مكانيك پرواز ۲",
+    code: "82_8880089",
+    prof: "خوشنود عبدالمجيد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس ۲۰۷"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس ۲۰۷"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880090,
+    name: "طراحي هواپيما ۱",
+    code: "81_8880090",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس ۲۰۴"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۴"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 8880095,
+    name: "آيين نگارش وگزارش نويسي فني",
+    code: "81_8880095",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس ۲۰۳"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی هوافضا",
+    capacity: 25,
+    gender: "مختلط"
+  }
+,
+
 ]

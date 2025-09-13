@@ -10724,5 +10724,2118 @@ const courses = [
     capacity: 8,
     gender: "مختلط"
   }
+,
+{
+    id: 6660008,
+    name: "طراحي سيستم هاي صنعتي",
+    code: "60_6660008",
+    prof: "روغنيان عماد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 60,
+    gender: "مختلط"
+  },
+  {
+    id: 6660029,
+    name: "تصميم گيري با معيارهاي چندگانه",
+    code: "60_6660029",
+    prof: "رمضانيان رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660052,
+    name: "آناليزتصميم گيري",
+    code: "60_6660052",
+    prof: "صفايي ناصر",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/05 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660064,
+    name: "اصول حسابداري وهزينه يابي",
+    code: "60_6660064",
+    prof: "محسني حسين",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660066,
+    name: "ارزيابي كاروزمان",
+    code: "60_6660066",
+    prof: "سلمان زاده حامد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660067,
+    name: "طرح ريزي واحدهاي صنعتي",
+    code: "60_6660067",
+    prof: "رحماني دنيا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660068,
+    name: "برنامه ريزي كنترل توليدموجودي هاي ۱",
+    code: "60_6660068",
+    prof: "ستاك مصطفي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660070,
+    name: "كنترل كيفيت آماري",
+    code: "60_6660070",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660071,
+    name: "تحقيق درعمليا ت ۱",
+    code: "60_6660071",
+    prof: "خوش الحان فريد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/20 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660082,
+    name: "اصول مديريت و تئوري سازمان",
+    code: "60_6660082",
+    prof: "فرهاdi سجاد",
+    units: 2,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  }
+,
+{
+    id: 6660092,
+    name: "كارگاه ريخته گري (ذوب ومدلسازي)",
+    code: "60_6660092",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [3], start: 7.5, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 9, duration: 1.5, location: "كارگاه"},
+      {days: [3], start: 10.5, duration: 2, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 6660096,
+    name: "علم مواد",
+    code: "60_6660096",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660099,
+    name: "كارگاه عمومي جوش",
+    code: "60_6660099",
+    prof: "ابراهيمي هادي",
+    units: 1,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 15, duration: 1.5, location: "كارگاه"},
+      {days: [1], start: 16.5, duration: 1.5, location: "كارگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 12,
+    gender: "mokhtalet"
+  },
+  {
+    id: 6660100,
+    name: "تحقيق درعمليات۲",
+    code: "60_6660100",
+    prof: "رمضانيان رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660101,
+    name: "آمارمهندسي",
+    code: "60_6660101",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660102,
+    name: "مباني مهندسي برق",
+    code: "60_6660102",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 16.5, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 16.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660103,
+    name: "آزمباني برق",
+    code: "60_6660103",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 6660103,
+    name: "آزمباني برق",
+    code: "61_6660103",
+    prof: "اساتيد گروه آموزشي",
+    units: 1,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "آزمايشگاه"}
+    ],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 12,
+    gender: "مختلط"
+  },
+  {
+    id: 6660107,
+    name: "برنامه نويسي كامپيوتر",
+    code: "60_6660107",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [5], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [5], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660119,
+    name: "سمينار ۱",
+    code: "60_6660119",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 60,
+    gender: "مختلط"
+  }
+,
+{
+    id: 6660120,
+    name: "سمينار ۲",
+    code: "60_6660120",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 60,
+    gender: "مختلط"
+  },
+  {
+    id: 6660130,
+    name: "رساله دكترا",
+    code: "60_6660130",
+    prof: "اساتيد گروه آموزشي",
+    units: 24,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 60,
+    gender: "مختلط"
+  },
+  {
+    id: 6660132,
+    name: "جبرخطي",
+    code: "60_6660132",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660135,
+    name: "روش هاي توليد",
+    code: "60_6660135",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660136,
+    name: "مديريت وكنترل پروژه",
+    code: "60_6660136",
+    prof: "روغنيان عمad",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660141,
+    name: "طراحي ايجاد صنايع",
+    code: "60_6660141",
+    prof: "حسيني نژاد سيدجواد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/11/04 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660142,
+    name: "مهندسي فاكتورهاي انساني",
+    code: "60_6660142",
+    prof: "سلمان زاده حامد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/22 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660143,
+    name: "برنامه ريزي نگهداري و تعميرات",
+    code: "60_6660143",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [5], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [5], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660150,
+    name: "اصول بازاريابي",
+    code: "60_6660150",
+    prof: "فرهادي سجاد",
+    units: 2,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/06 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660157,
+    name: "نظريه بازيها",
+    code: "60_6660157",
+    prof: "خوش الحان فريد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  }
+,
+{
+    id: 6660159,
+    name: "اصول مهندسي لجستيك و زنجيره تامين",
+    code: "01_6660159",
+    prof: "آقايي عبداله",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [1], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/20 13:30-16:30",
+    department: "مهندسی صنایع",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 6660159,
+    name: "اصول مهندسي لجستيك و زنجيره تامين",
+    code: "60_6660159",
+    prof: "آقايي عبداله",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660166,
+    name: "برنامه ريزي توليد",
+    code: "60_6660166",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660167,
+    name: "اصول شبيه سازي",
+    code: "60_6660167",
+    prof: "آقايي عبداله",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660173,
+    name: "امتحان جامع دكتري ۱",
+    code: "60_6660173",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 6660175,
+    name: "پايان نامه",
+    code: "01_6660175",
+    prof: "اساتيد گروه آموزشي",
+    units: 6,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 6660175,
+    name: "پايان نامه",
+    code: "60_6660175",
+    prof: "اساتيد گروه آموزشي",
+    units: 6,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 150,
+    gender: "مختلط"
+  },
+  {
+    id: 6660187,
+    name: "دستيار آموزشي",
+    code: "60_6660187",
+    prof: "اساتيد گروه آموزشي",
+    units: 0,
+    sessions: [],
+    examDate: "تعیین نشده",
+    department: "مهندسی صنایع",
+    capacity: 20,
+    gender: "مختلط"
+  },
+  {
+    id: 6660192,
+    name: "مديريت درآمد و تقاضا",
+    code: "60_6660192",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [1], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660196,
+    name: "تحليل و طراحي سيستم هاي لجستيكي",
+    code: "60_6660196",
+    prof: "روغنيان عماد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  }
+,
+{
+    id: 6660200,
+    name: "نظريه فازي و كاربردهاي آن",
+    code: "01_6660200",
+    prof: "صفايي ناصر",
+    units: 3,
+    sessions: [
+      {days: [3], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 16.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/22 13:30-16:30",
+    department: "مهندسی صنایع",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 6660201,
+    name: "بهينه سازي تركيبي",
+    code: "60_6660201",
+    prof: "خوش الحان فريد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/21 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660211,
+    name: "سيستم هاي ساخت و توليد",
+    code: "60_6660211",
+    prof: "سلمان زاده حامد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660214,
+    name: "نظريه گراف",
+    code: "60_6660214",
+    prof: "بابايي اردوان",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 6660219,
+    name: "استراتژيهاي توليد و خدمات",
+    code: "01_6660219",
+    prof: "روغنيان عماد",
+    units: 3,
+    sessions: [
+      {days: [5], start: 10.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/04 13:30-16:30",
+    department: "مهندسی صنایع",
+    capacity: 30,
+    gender: "مختلط"
+  },
+  {
+    id: 6660220,
+    name: "تحليل و هوشمندي كسب و كار",
+    code: "60_6660220",
+    prof: "حميدي حجت اله",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 0,
+    gender: "مختلط"
+  },
+  {
+    id: 6660222,
+    name: "كارآفريني",
+    code: "60_6660222",
+    prof: "بabayi ardavan",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660223,
+    name: "بهينه سازي تصادفي",
+    code: "60_6660223",
+    prof: "آقايي عبداله",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6660229,
+    name: "اقتصاد خرد",
+    code: "60_6660229",
+    prof: "ميرزايي قزااني مجيد",
+    units: 2,
+    sessions: [
+      {days: [5], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660229,
+    name: "اقتصاد خرد",
+    code: "61_6660229",
+    prof: "ميرزايي قزااني مجيد",
+    units: 2,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/30 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  }
+,
+{
+    id: 6660233,
+    name: "طراحي و نقشه كشي مهندسي",
+    code: "60_6660233",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [5], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660233,
+    name: "طراحي و نقشه كشي مهندسي",
+    code: "61_6660233",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [5], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660254,
+    name: "مهارت هاي نرم شغلي",
+    code: "60_6660254",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [4], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/29 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6660255,
+    name: "نظريه احتمال و كاربردها",
+    code: "60_6660255",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [3], start: 15, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/23 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 35,
+    gender: "مختلط"
+  },
+  {
+    id: 6662016,
+    name: "نظريه بازي ها",
+    code: "01_6662016",
+    prof: "خوش الحان فريد",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [1], start: 16.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/29 13:30-16:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6662022,
+    name: "مهندسي سيستم",
+    code: "60_6662022",
+    prof: "حسيني نژاد سيدجواد",
+    units: 3,
+    sessions: [
+      {days: [2], start: 7.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6662025,
+    name: "مدل هاي تحقيق در عمليات در سلامت",
+    code: "60_6662025",
+    prof: "رمضانيان رضا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/10/28 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6662028,
+    name: "مدل هاي احتمالي در سلامت",
+    code: "60_6662028",
+    prof: "رحماني دنيا",
+    units: 3,
+    sessions: [
+      {days: [2], start: 10.5, duration: 2, location: "كلاس"},
+      {days: [4], start: 10.5, duration: 2, location: "كلاس"}
+    ],
+    examDate: "1404/10/24 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6662029,
+    name: " انفورماتيك در سلامت",
+    code: "60_6662029",
+    prof: "نصيري سپيده",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  },
+  {
+    id: 6662035,
+    name: "تصميم گيري در سيستم هاي سلامت",
+    code: "60_6662035",
+    prof: "صفايي ناصر",
+    units: 3,
+    sessions: [
+      {days: [2], start: 13.5, duration: 1.5, location: "كلاس"},
+      {days: [4], start: 13.5, duration: 1.5, location: "كلاس"}
+    ],
+    examDate: "1404/11/01 08:00-10:30",
+    department: "مهندسی صنایع",
+    capacity: 25,
+    gender: "مختلط"
+  }
+,
+
+{
+    id: 5712068,
+    name: "هندسه منيفلد",
+    code: "5712068_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5712069,
+    name: "رياضيات عمومي ۱",
+    code: "5712069_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 10.5, duration: 2, location: "دانشکده ریاضی - سالن سمينار"},
+      {days: [2], start: 10.5, duration: 2, location: "دانشکده ریاضی - سالن سمينار"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 50,
+    gender: "مختلط"
+  },
+{
+    id: 5712069,
+    name: "رياضيات عمومي ۱",
+    code: "5712069_42",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 55,
+    gender: "مختلط"
+  },
+{
+    id: 5712078,
+    name: "توابع مختلط",
+    code: "5712078_42",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_51",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 50,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_52",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده فيزيك - هوافضا-سالن تربيت بدني"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده فيزيك - هوافضا-سالن تربيت بدني"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_53",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده شيمي - هوافضا-سالن تربيت بدني"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده شيمي - هوافضا-سالن تربيت بدني"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_54",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسي مواد - مكانيك-كلاس"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسي مواد - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_56",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_57",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده صنايع - ساختمان آموزشي صنايع"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده صنايع - ساختمان آموزشي صنايع"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_58",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 65,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_59",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 65,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_60",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 65,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_61",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 65,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_62",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 70,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_63",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 70,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_64",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "پرديس رضایی نژاد - كلاس ۱۰۳"},
+      {days: [3], start: 7.5, duration: 1.5, location: "پرديس رضایی نژاد - كلاس ۱۰۳"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_65",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "پرديس رضایی نژاد - هوافضا-سالن تربيت بدني"},
+      {days: [3], start: 9, duration: 1.5, location: "پرديس رضایی نژاد - هوافضا-سالن تربيت بدني"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_66",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_67",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712094,
+    name: "رياضي عمومي ۱",
+    code: "5712094_68",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده عمران - عمران- ساختمان اموزش"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده عمران - عمران- ساختمان اموزش"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 5712095,
+    name: "معادلات ديفرانسيل",
+    code: "5712095_51",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712095,
+    name: "معادلات ديفرانسيل",
+    code: "5712095_52",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712095,
+    name: "معادلات ديفرانسيل",
+    code: "5712095_53",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712095,
+    name: "معادلات ديفرانسيل",
+    code: "5712095_54",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 15, duration: 1.5, location: "دانشکده هوافضا - هوافضا-سالن تربيت بدني"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده هوافضا - هوافضا-سالن تربيت بدني"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712096,
+    name: "رياضي عمومي۲",
+    code: "5712096_51",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق - دانشكده برق"},
+      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق - دانشكده برق"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 50,
+    gender: "مختلط"
+  },
+{
+    id: 5712096,
+    name: "رياضي عمومي۲",
+    code: "5712096_52",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712096,
+    name: "رياضي عمومي۲",
+    code: "5712096_53",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "پرديس رضایی نژاد - سالن سمينار"},
+      {days: [3], start: 7.5, duration: 1.5, location: "پرديس رضایی نژاد - سالن سمينар"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712096,
+    name: "رياضي عمومي۲",
+    code: "5712096_54",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [3], start: 15, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5712098,
+    name: "هندسه جبري ۲",
+    code: "5712098_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 20,
+    gender: "مختلط"
+  },
+{
+    id: 5712140,
+    name: "سمينار ۱",
+    code: "5712140_41",
+    prof: "حقيقي حسن",
+    units: 2,
+    sessions: [
+      {days: [0], start: 15, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي- سرويسي"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي- سرويسي"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5712190,
+    name: "جبر پيشرفته",
+    code: "5712190_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 5714055,
+    name: "معادلات ديفرانسيل",
+    code: "5714055_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 45,
+    gender: "مختلط"
+  },
+{
+    id: 5714059,
+    name: "حل عددي معادلات انتگرال",
+    code: "5714059_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [4], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714071,
+    name: "مباني كامپيوتر و برنامه سازي",
+    code: "5714071_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - سالن سمينار"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - سالن سمينار"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714071,
+    name: "مباني كامپيوتر و برنامه سازي",
+    code: "5714071_42",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 15, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714074,
+    name: "جبر۱",
+    code: "5714074_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 15, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714078,
+    name: "تاريخ علم رياضيات",
+    code: "5714078_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 10,
+    gender: "مختلط"
+  },
+{
+    id: 5714085,
+    name: "نظريه گراف و كاربرد هاي آن",
+    code: "5714085_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - هوافضا-سالن تربيت بدني"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - هوافضا-سالن تربيت بدني"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714097,
+    name: "برنامه نويسي كامپيوتر",
+    code: "5714097_51",
+    prof: "حسيني نوه علي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 45,
+    gender: "مختلط"
+  },
+{
+    id: 5714098,
+    name: "محاسبات عددي",
+    code: "5714098_51",
+    prof: "اساتيد گروه آموزشي",
+    units: 2,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714112,
+    name: "روش هاي عددي در جبرخطي",
+    code: "5714112_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 5714117,
+    name: "مباني تركيبيات",
+    code: "5714117_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [3], start: 18, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 10,
+    gender: "مختلط"
+  },
+{
+    id: 5714122,
+    name: "مباني آناليز عددي",
+    code: "5714122_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 10,
+    gender: "مختلط"
+  },
+{
+    id: 5714126,
+    name: "حل عددي معادلات ديفرانسيل",
+    code: "5714126_41",
+    prof: "قريشي فريده",
+    units: 3,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714134,
+    name: "مباني جبر",
+    code: "5714134_41",
+    prof: "مقدم فر عليرضا",
+    units: 3,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [0], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 10,
+    gender: "مختلط"
+  },
+{
+    id: 5714138,
+    name: "معادلات ديفرانسيل با مشتقات جزئي",
+    code: "5714138_41",
+    prof: "ذاكري علي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714166,
+    name: "تاريخ رياضيات",
+    code: "5714166_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714192,
+    name: "آناليز عددي پيشرفته",
+    code: "5714192_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714193,
+    name: "آناليز حقيقي",
+    code: "5714193_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۴"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۴"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714193,
+    name: "آناليز حقيقي",
+    code: "5714193_42",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714194,
+    name: "بهينه سازي غيرخطي پيشرفته ۱",
+    code: "5714194_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 5714195,
+    name: "بهينه سازي خطي پيشرفته ۱",
+    code: "5714195_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۴"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714227,
+    name: "يادگيري ژرف",
+    code: "5714227_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714231,
+    name: "مباني رياضي علوم داده",
+    code: "5714231_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/10/21 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714232,
+    name: "الگوريتم هاي علوم داده",
+    code: "5714232_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي"},
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714238,
+    name: "مباني ماتريس ها و جبر خطي",
+    code: "5714238_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۳"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 45,
+    gender: "مختلط"
+  },
+{
+    id: 5714240,
+    name: "روش هاي عددي в علوم داده",
+    code: "5714240_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"},
+      {days: [0], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۵"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714253,
+    name: "بهينه سازي ناهموار",
+    code: "5714253_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5714255,
+    name: "مباني جبر",
+    code: "5714255_41",
+    prof: "مقدم فر عليرضا",
+    units: 4,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [0], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714256,
+    name: "احتمال۱",
+    code: "5714256_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714265,
+    name: "جبرخطي عددي",
+    code: "5714265_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [3], start: 18, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/11/06 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+  {
+    id: 5714266,
+    name: "مباني تركيبيات",
+    code: "5714266_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [3], start: 18, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5714270,
+    name: "بهينه سازي خطي",
+    code: "5714270_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - سالن سمينار"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - سالن سمينار"}
+    ],
+    examDate: "1404/11/04 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716039,
+    name: "آمار و احتمالات",
+    code: "5716039_51",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716039,
+    name: "آمار و احتمالات",
+    code: "5716039_52",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"},
+      {days: [4], start: 9, duration: 1.5, location: "دانشکده مكانيك - مكانيك-كلاس"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716039,
+    name: "آمار و احتمالات",
+    code: "5716039_53",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"},
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده عمران - عمران- ساختمان اموزش"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 70,
+    gender: "مختلط"
+  },
+{
+    id: 5716039,
+    name: "آمار و احتمالات",
+    code: "5716039_54",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 15, duration: 1.5, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"},
+      {days: [3], start: 15, duration: 1.5, location: "دانشکده نقشه برداری - ساختمان آموزشي نقشه برداري"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716039,
+    name: "آمار و احتمالات",
+    code: "5716039_55",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [2], start: 15, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"},
+      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده صنايع - ساختمان آموزشي صنايع"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716043,
+    name: "استنباط آماري ۱",
+    code: "5716043_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۵"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5716049,
+    name: "مدل هاي خطي ۱",
+    code: "5716049_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 10.5, duration: 2, location: "دانشکده ریاضی - دانشكده رياضي"},
+      {days: [2], start: 10.5, duration: 2, location: "دانشکده ریاضی - دانشكده رياضي"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5716053,
+    name: "نظريه اندازه و احتمال ۱",
+    code: "5716053_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۶"},
+      {days: [2], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۶"}
+    ],
+    examDate: "1404/10/22 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5716056,
+    name: "نظريه تصميم بيزي",
+    code: "5716056_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+  {
+    id: 5716060,
+    name: "ساختمان داده ها و الگوريتم ها",
+    code: "5716060_41",
+    prof: "جوهري حسين",
+    units: 4,
+    sessions: [
+      {days: [1], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [3], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/11/01 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716061,
+    name: "طراحي و تحليل الگوريتم ها",
+    code: "5716061_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [3], start: 9, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716063,
+    name: "اصول سيستم هاي عامل",
+    code: "5716063_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/28 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716066,
+    name: "مباني آناليز عددي",
+    code: "5716066_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كــــلاس ۱۰۱"}
+    ],
+    examDate: "1404/10/29 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716074,
+    name: "شبيه سازي",
+    code: "5716074_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 9, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي"},
+      {days: [2], start: 9, duration: 1.5, location: "دانشکده ریاضی - دانشكده رياضي"}
+    ],
+    examDate: "1404/11/05 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 15,
+    gender: "مختلط"
+  },
+{
+    id: 5716076,
+    name: "مباني آناليز رياضي",
+    code: "5716076_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - سالن سمينار"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - سالن سمينار"},
+      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - سالن سمينار"}
+    ],
+    examDate: "1404/10/30 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716078,
+    name: "رياضي عمومي۳",
+    code: "5716078_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 4,
+    sessions: [
+      {days: [0], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۲"},
+      {days: [2], start: 10.5, duration: 2, location: "دانشکده ریاضی - كلاس ۱۰۲"}
+    ],
+    examDate: "1404/10/20 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 45,
+    gender: "مختلط"
+  },
+{
+    id: 5716079,
+    name: "هوش مصنوعي",
+    code: "5716079_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [0], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"},
+      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۳"}
+    ],
+    examDate: "1404/10/23 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  },
+{
+    id: 5716083,
+    name: "مباني منطق و نظريه مجموعه ها",
+    code: "5716083_41",
+    prof: "اساتيد گروه آموزشي",
+    units: 3,
+    sessions: [
+      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"},
+      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده ریاضی - كلاس ۱۰۷"}
+    ],
+    examDate: "1404/10/24 10:30-12:30",
+    department: "دانشکده ریاضی",
+    capacity: 40,
+    gender: "مختلط"
+  }
 
 ]

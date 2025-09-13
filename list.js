@@ -5920,9 +5920,7 @@ const courses = [
   prof: "صبايي ماسوله جواد",
   units: 1,
   sessions: [
-    {days: [3], start: 9, duration: 1.5, location: "کلاس"},
-    {days: [3], start: 10.5, duration: 2, location: "کلاس"},
-    {days: [3], start: 15, duration: 1.5, location: "کلاس"}
+    {days: [3], start: 9, duration: 3, location: "کلاس"}
   ],
   examDate: "تعیین نشده",
   department: "مهندسی نقشه برداری",
@@ -5936,9 +5934,7 @@ const courses = [
   prof: "صبايي ماسوله جواد",
   units: 1,
   sessions: [
-    {days: [5], start: 9, duration: 1.5, location: "کلاس"},
-    {days: [5], start: 10.5, duration: 2, location: "کلاس"},
-    {days: [5], start: 13.5, duration: 1.5, location: "کلاس"}
+    {days: [5], start: 9, duration: 3, location: "کلاس"}
   ],
   examDate: "تعیین نشده",
   department: "مهندسی نقشه برداری",

@@ -40,8 +40,6 @@
         <meta charset="UTF-8">
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>واحدینو | دستیار انتخاب واحد دانشگاه خواجه نصیر</title>
         <meta name="description"
             content="واحدینو، دستیار هوشمند انتخاب واحد دانشگاه خواجه نصیر. برنامه ریزی آسان دروس، مشاهده تداخل‌های زمانی و امتحانی، دریافت برنامه هفتگی">
@@ -764,6 +762,104 @@ table td:nth-child(2) {
             display: block;
         }
 
+        /* آیکون درباره ما */
+        .about-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .about-icon:hover {
+            background: #00D890;
+            color: #121212;
+            transform: translateY(-2px);
+        }
+
+        /* مودال درباره ما */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(2px);
+        }
+        .modal-overlay.open {
+            display: flex;
+        }
+        .modal-box {
+            background: #1a1a1a;
+            border: 1px solid rgba(0,216,144,0.25);
+            border-radius: 16px;
+            width: min(560px, 90vw);
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 28px;
+            position: relative;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            animation: modalPop 0.18s ease;
+        }
+        @keyframes modalPop {
+            from { transform: scale(0.96); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .modal-box h2 {
+            color: #00D890;
+            margin-bottom: 14px;
+            font-size: 1.4em;
+        }
+        .modal-box h3 {
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 6px;
+        }
+        .modal-box p {
+            color: #d5d5d5;
+            line-height: 1.9;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        .modal-team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .modal-team span {
+            background: rgba(0,216,144,0.1);
+            color: #00D890;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 22px;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+        .modal-close:hover {
+            color: #ff5722;
+        }
+
     </style>
     </head>
     <header class="header">
@@ -775,16 +871,41 @@ table td:nth-child(2) {
             <a href="../" class="nav-item">برنامه هفتگی</a>
             <a href="../summary/" class="nav-item">خلاصه وضعیت</a>
         </div>
-        <div class="social-icons">
+        <div class="social-icons" style="display:flex; align-items:center; gap:12px;">
             <a href="https://t.me/vahedino" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 4px; font-size: 14px;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                 </svg>
-                تلگرام
+               
             </a>
+            <a href="openAboutModal()"></a><div class="about-icon" onclick="openAboutModal()" title="درباره واحدینو">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+            </div>
+           
+        </a>
         </div>
     </header>
-    
+
+    <!-- مودال درباره واحدینو -->
+    <div class="modal-overlay" id="aboutModal" onclick="if(event.target === this) closeAboutModal()">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeAboutModal()">&times;</button>
+            <h2>درباره واحدینو</h2>
+            <p>واحدینو از یک ایده ساده شروع شد؛ اینکه انتخاب واحد برای دانشجوها می‌تواند ساده‌تر، سریع‌تر و منظم‌تر باشد.</p>
+            <p>در مسیر ساخت واحدینو، از ایده‌ها و تجربه‌های سایت‌هایی مثل ترمیناتور، برنومز و علموص الهام گرفتیم و تلاش کردیم با توجه به نیاز دانشجوها، تجربه‌ای بهتر و کاربردی‌تر بسازیم.</p>
+            <h3>تیم واحدینو</h3>
+            <div class="modal-team">
+                <span>امیرمسعود ندیمی</span>
+                <span>سروش سلطان‌زاده</span>
+            </div>
+            <p>واحدینو با کمک و همراهی افراد زیادی رشد کرده است. از سروش سلطانزاده، ماهان فراهانی و سید محمد حسین حائری و همچنین تمام کسانی که با ایده، بازخورد و حمایتشان در رشد کردن واحدینو نقش داشتند، صمیمانه تشکر می‌کنیم.</p>
+            <p>واحدینو هنوز در ابتدای مسیر است؛ اما قرار است هر روز بهتر شود.</p>
+        </div>
+    </div>
 
     <body>
         <div class="container">
@@ -792,19 +913,19 @@ table td:nth-child(2) {
                 <select id="departmentSelect" class="department-select"
                     onchange="filterCoursesByDepartment()">
                     <option value>کلیه دانشکده ها</option>
-                    <option value="دانشکده نقشه برداری">مهندسي نقشه
+                    <option value= "نقشه برداری">مهندسي نقشه
                         برداري</option>
-                    <option value="دانشکده مهندسی عمران">مهندسي عمران</option>
-                    <option value="دانشکده کامپیوتر">مهندسي کامپیوتر</option>
-                    <option value="دانشکده برق">مهندسي برق</option>
-                    <option value="دانشکده هوافضا">مهندسي هوافضا</option>
-                    <option value="دانشکده مهندسی مکانیک">مهندسي مکانیک</option>
-                    <option value="دانشکده مهندسی صنایع">مهندسی صنایع</option>
-                    <option value="مهندسی و علم مواد">مهندسی علم و مواد</option>
-                    <option value="دانشکده فیزیک"> فيزيك</option>
-                    <option value="دانشکده ریاضی"> ریاضی</option>
+                    <option value="عمران">مهندسي عمران</option>
+                    <option value="کامپیوتر">مهندسي کامپیوتر</option>
+                    <option value="برق">مهندسي برق</option>
+                    <option value="هوافضا">مهندسي هوافضا</option>
+                    <option value= "مکانیک">مهندسي مکانیک</option>
+                    <option value="صنايع">مهندسی صنایع</option>
+                    <option value= "مهندسی و علم مواد">مهندسی علم و مواد</option>
+                    <option value="فيزيك"> فيزيك</option>
+                    <option value="رياضي"> ریاضی</option>
                     <option value="شیمی"> شیمی</option>
-                    <option value="عمومی">مركز آموزش هاي
+                    <option value="عمومي">مركز آموزش هاي
                         عمومي</option>
 
                 </select>
@@ -851,6 +972,16 @@ table td:nth-child(2) {
 }
 
 window.addEventListener('load', setViewport);
+
+        function openAboutModal() {
+            document.getElementById('aboutModal').classList.add('open');
+        }
+        function closeAboutModal() {
+            document.getElementById('aboutModal').classList.remove('open');
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeAboutModal();
+        });
 
        
 

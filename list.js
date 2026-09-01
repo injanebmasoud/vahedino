@@ -1,16292 +1,13462 @@
-const courses = [
+const courses = 
+
+[
   
- 
+  {
+    "id": 7707070,
+    "name": "مباني نقشه برداري",
+    "code": "21_7707070",
+    "prof": "پيله فروشها پرستو",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707073,
+    "name": "نقشه برداري مسير و زيرزميني",
+    "code": "21_7707073",
+    "prof": "جزيرئيان ايرج",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707074,
+    "name": "عمليات نقشه برداري مسير و زيرزميني",
+    "code": "21_7707074",
+    "prof": "صبايي ماسوله جواد",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 17,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707074,
+    "name": "عمليات نقشه برداري مسير و زيرزميني",
+    "code": "22_7707074",
+    "prof": "صبايي ماسوله جواد",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 17,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707077,
+    "name": "جبر خطي",
+    "code": "21_7707077",
+    "prof": "قائمي‌راد طاهره",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707078,
+    "name": "تئوري برآورد",
+    "code": "21_7707078",
+    "prof": "مشهدي حسينعلي مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707079,
+    "name": "هندسه ديفرانسيل",
+    "code": "21_7707079",
+    "prof": "علي زاده اليزئي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707080,
+    "name": "مباني ژئودزي",
+    "code": "21_7707080",
+    "prof": "علي زاده اليزئي محمد مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707082,
+    "name": "ژئودزي ماهواره اي و عمليات",
+    "code": "21_7707082",
+    "prof": "مشهدي حسينعلي مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707083,
+    "name": "ژئودزي فيزيكي",
+    "code": "21_7707083",
+    "prof": "عامريان يزدان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707085,
+    "name": "نقشه برداري ساختمان و ثبتي و عمليات",
+    "code": "21_7707085",
+    "prof": "جزيرئيان ايرج",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707089,
+    "name": "فتوگرامتري تحليلي",
+    "code": "21_7707089",
+    "prof": "ولدان زوج محمد جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707093,
+    "name": "سنجش از دور",
+    "code": "21_7707093",
+    "prof": "صاحبي محمودرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707094,
+    "name": "عمليات سنجش از دور",
+    "code": "21_7707094",
+    "prof": "صاحبي محمودرضا",
+    "units": 1,
+    "sessions": [{ "days": [6], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 0,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707095,
+    "name": "پويشگرهاي ليزري و عمليات",
+    "code": "21_7707095",
+    "prof": "محمدزاده علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707096,
+    "name": "كارتوگرافي",
+    "code": "21_7707096",
+    "prof": "آل شيخ علي اصغر",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707097,
+    "name": "عمليات كارتوگرافي",
+    "code": "21_7707097",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707097,
+    "name": "عمليات كارتوگرافي",
+    "code": "22_7707097",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707097,
+    "name": "عمليات كارتوگرافي",
+    "code": "23_7707097",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707098,
+    "name": "سيستم اطلاعات مكاني",
+    "code": "21_7707098",
+    "prof": "طالعي محمد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707099,
+    "name": "عمليات سيستم اطلاعات مكاني",
+    "code": "21_7707099",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707099,
+    "name": "عمليات سيستم اطلاعات مكاني",
+    "code": "22_7707099",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707099,
+    "name": "عمليات سيستم اطلاعات مكاني",
+    "code": "23_7707099",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707101,
+    "name": "عمليات تحليل هاي مكاني",
+    "code": "21_7707101",
+    "prof": "سيلاوي طلوع",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 0,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707107,
+    "name": "آمايش سرزمين",
+    "code": "21_7707107",
+    "prof": "كريمي محمد",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707108,
+    "name": "پايگاه داده",
+    "code": "21_7707108",
+    "prof": "مسگري محمد سعدي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707109,
+    "name": "فناوري اطلاعات در مهندسي نقشه برداري",
+    "code": "21_7707109",
+    "prof": "قائمي‌راد طاهره",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707110,
+    "name": "برنامه سازي كامپيوتر پيشرفته",
+    "code": "21_7707110",
+    "prof": "پيله فروشها پرستو",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707111,
+    "name": "زبان تخصصي",
+    "code": "21_7707111",
+    "prof": "لطيفي هومن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7707113,
+    "name": "كاربردسنجش ازدوردرتوليدوبروزرساني نقشه هاي توپوگرافي وعمليات",
+    "code": "21_7707113",
+    "prof": "خصالي الهه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728031,
+    "name": "پروژه نقشه برداري",
+    "code": "21_7728031",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728075,
+    "name": "پروژه ژئودزي",
+    "code": "22_7728075",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728075,
+    "name": "پروژه ژئودزي",
+    "code": "23_7728075",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728075,
+    "name": "پروژه ژئودزي",
+    "code": "24_7728075",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728151,
+    "name": "ژئودزي هندسي ماهواره اي",
+    "code": "21_7728151",
+    "prof": "مشهدي حسينعلي مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728152,
+    "name": "ژئودزي فيزيك پيشرفته",
+    "code": "21_7728152",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728193,
+    "name": "آناليز تنسوري تغييرشكل",
+    "code": "21_7728193",
+    "prof": "وثوقي بهزاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7728205,
+    "name": "سنجش از دور با استفاده از سيستم هاي ماهواره اي ناوبري جهاني",
+    "code": "21_7728205",
+    "prof": "عامريان يزدان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "21_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "22_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "23_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "24_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "25_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729013,
+    "name": "پروژه سنجش از دور",
+    "code": "27_7729013",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729014,
+    "name": "پروژه فتوگرامتري",
+    "code": "21_7729014",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729014,
+    "name": "پروژه فتوگرامتري",
+    "code": "22_7729014",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729014,
+    "name": "پروژه فتوگرامتري",
+    "code": "23_7729014",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729049,
+    "name": "فتوگرامتري رقومي",
+    "code": "21_7729049",
+    "prof": "عبادي حميد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729098,
+    "name": "فتوگرامتري بردكوتاه",
+    "code": "21_7729098",
+    "prof": "حسيني نوه علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7729139,
+    "name": "هوش مصنوعي و فتوگرامتري در سنجش از راه دور",
+    "code": "21_7729139",
+    "prof": "مختارزاده مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7775002,
+    "name": "فيزيك سنجش از دور",
+    "code": "21_7775002",
+    "prof": "محمدزاده علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7775005,
+    "name": "فتوگرامتري فضايي",
+    "code": "21_7775005",
+    "prof": "ولدان زوج محمد جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7775030,
+    "name": "تشخيص الگو از تصاوير سنجش از دور",
+    "code": "21_7775030",
+    "prof": "خصالي الهه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7775041,
+    "name": "تشخيص تغييرات و بروزرساني نقشه در فتوگرامتري و سنجش از دور",
+    "code": "21_7775041",
+    "prof": "صاحبي محمودرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7775043,
+    "name": "مطالعات پوشش گياهي مبتني بر فتو گرامتري و سنجش از دور",
+    "code": "21_7775043",
+    "prof": "لطيفي هومن",
+    "units": 3,
+    "sessions": [
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "21_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "22_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+        "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "23_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "24_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "25_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "26_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776004,
+    "name": "پروژه جي اي اس",
+    "code": "27_7776004",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [],
+    "examDate": "",
+    "department": "نقشه برداری",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776089,
+    "name": "سامانه اطلاعات مكاني پيشرفته",
+    "code": "21_7776089",
+    "prof": "طالعي محمد، كريمي محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776090,
+    "name": "تحليل مكاني پيشرفته در GIS",
+    "code": "21_7776090",
+    "prof": "قائمي‌راد طاهره، پيله فروشها پرستو",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776091,
+    "name": "سامانه اطلاعات مكاني تحت اينترنت و وب سرويس هاي مكاني",
+    "code": "21_7776091",
+    "prof": "آل شيخ علي اصغر",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776092,
+    "name": "هوش محاسباتي در GIS",
+    "code": "21_7776092",
+    "prof": "ملك محمد رضا، مسگري محمد سعدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 7776097,
+    "name": "اطلاعات مكاني مردم گستر و شبكه هاي اجتماعي مكان مبنا",
+    "code": "21_7776097",
+    "prof": "ملك محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "نقشه برداری",
+    "capacity": 0,
+    "gender": "مختلط"
+  }
+,
+  {
+    "id": 1110001,
+    "name": "رياضيات مهندسي",
+    "code": "11_1110001",
+    "prof": "توكلي كاخكي مه سان",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110001,
+    "name": "رياضيات مهندسي",
+    "code": "12_1110001",
+    "prof": "خادم علي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110136,
+    "name": "مدارهاي الكتريكي 1",
+    "code": "11_1110136",
+    "prof": "كيوان فرد فرزانه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110234,
+    "name": "محاسبات عددي",
+    "code": "11_1110234",
+    "prof": "دلير روي فرد رسول",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "برق",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110234,
+    "name": "محاسبات عددي",
+    "code": "12_1110234",
+    "prof": "دلير روي فرد رسول",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "برق",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110236,
+    "name": "سيستمهاي كنترل خطي",
+    "code": "11_1110236",
+    "prof": "دلربايي مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110236,
+    "name": "سيستمهاي كنترل خطي",
+    "code": "12_1110236",
+    "prof": "نيكوفرد اميرحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110236,
+    "name": "سيستمهاي كنترل خطي",
+    "code": "13_1110236",
+    "prof": "حيراني نوبري جعفر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110237,
+    "name": "اصول سيستمهاي مخابراتي",
+    "code": "11_1110237",
+    "prof": "سبط محمدعلي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110237,
+    "name": "اصول سيستمهاي مخابراتي",
+    "code": "12_1110237",
+    "prof": "مختاري زهرا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110237,
+    "name": "اصول سيستمهاي مخابراتي",
+    "code": "13_1110237",
+    "prof": "مختاري زهرا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "برق",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110238,
+    "name": "تحليل سيستمهاي انرژي الكتريكي 1",
+    "code": "11_1110238",
+    "prof": "توكلي بينا محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "برق",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110238,
+    "name": "تحليل سيستمهاي انرژي الكتريكي 1",
+    "code": "12_1110238",
+    "prof": "فريدونيان عليرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "برق",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "11_1110242",
+    "prof": "اساتيد گروه آموزشي (صادقي)",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "12_1110242",
+    "prof": "اساتيد گروه آموزشي (صادقي)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "13_1110242",
+    "prof": "اساتيد گروه آموزشي (صادقي)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "14_1110242",
+    "prof": "اساتيد گروه آموزشي (صادقي)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "15_1110242",
+    "prof": "اساتيد گروه آموزشي (وحيدي)",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "16_1110242",
+    "prof": "اساتيد گروه آموزشي (وحيدي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "17_1110242",
+    "prof": "اساتيد گروه آموزشي (وحيدي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "18_1110242",
+    "prof": "اساتيد گروه آموزشي (وحيدي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "19_1110242",
+    "prof": "اساتيد گروه آموزشي (كهريزي)",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "20_1110242",
+    "prof": "اساتيد گروه آموزشي (كهريزي)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "21_1110242",
+    "prof": "اساتيد گروه آموزشي (كهريزي)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "22_1110242",
+    "prof": "اساتيد گروه آموزشي (كهريزي)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110242,
+    "name": "آزمدارهاي الكتريكي و اندازه گيري",
+    "code": "23_1110242",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "11_1110243",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "13_1110243",
+    "prof": "اساتيد گروه آموزشي (صادقي)",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "14_1110243",
+    "prof": "اساتيد گروه آموزشي (توكلي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "15_1110243",
+    "prof": "اساتيد گروه آموزشي (توكلي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "16_1110243",
+    "prof": "اساتيد گروه آموزشي (كشاورز)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "17_1110243",
+    "prof": "اساتيد گروه آموزشي (كشاورز)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "18_1110243",
+    "prof": "اساتيد گروه آموزشي (خان اف)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110243,
+    "name": "آز الكترونيك 1 و 2",
+    "code": "19_1110243",
+    "prof": "اساتيد گروه آموزشي (خان اف)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "11_1110273",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "12_1110273",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "13_1110273",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "14_1110273",
+    "prof": "اساتيد گروه آموزشي (كشاورز)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "15_1110273",
+    "prof": "اساتيد گروه آموزشي (كشاورز)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "16_1110273",
+    "prof": "اساتيد گروه آموزشي (حجازي فر)",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "17_1110273",
+    "prof": "اساتيد گروه آموزشي (حجازي فر)",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "18_1110273",
+    "prof": "اساتيد گروه آموزشي (مير)",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "19_1110273",
+    "prof": "اساتيد گروه آموزشي (مير)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "20_1110273",
+    "prof": "اساتيد گروه آموزشي (مير)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "21_1110273",
+    "prof": "اساتيد گروه آموزشي (مير)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110273,
+    "name": "آز فيزيك 1",
+    "code": "22_1110273",
+    "prof": "اساتيد گروه آموزشي (مير)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "11_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "12_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "13_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "14_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "15_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "16_1110274",
+    "prof": "اساتيد گروه آموزشي (كشي زاده)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "17_1110274",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "18_1110274",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "19_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "20_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "21_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "22_1110274",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "23_1110274",
+    "prof": "جم نژاد حسن",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+        "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "24_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "25_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "26_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110274,
+    "name": "آز فيزيك2",
+    "code": "27_1110274",
+    "prof": "اساتيد گروه آموزشي (ياوري)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110285,
+    "name": "آز سيگنال هاي حياتي",
+    "code": "11_1110285",
+    "prof": "خادم علي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1110292,
+    "name": "آز رباتيك و بينايي ماشين",
+    "code": "11_1110292",
+    "prof": "اساتيد گروه آموزشي (احمدي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111111,
+    "name": "آزالكترونيك 3",
+    "code": "11_1111111",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111111,
+    "name": "آزالكترونيك 3",
+    "code": "12_1111111",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111111,
+    "name": "آزالكترونيك 3",
+    "code": "13_1111111",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111179,
+    "name": "آز مدارهاي پالس و ديجيتال",
+    "code": "11_1111179",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111179,
+    "name": "آز مدارهاي پالس و ديجيتال",
+    "code": "12_1111179",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111179,
+    "name": "آز مدارهاي پالس و ديجيتال",
+    "code": "13_1111179",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1111179,
+    "name": "آز مدارهاي پالس و ديجيتال",
+    "code": "14_1111179",
+    "prof": "ميري سيده سميه",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1112067,
+    "name": "آز سيستم هاي قدرت",
+    "code": "11_1112067",
+    "prof": "اساتيد گروه آموزشي (فردوسي گلستان)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1112067,
+    "name": "آز سيستم هاي قدرت",
+    "code": "12_1112067",
+    "prof": "اساتيد گروه آموزشي (فردوسي گلستان)",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113042,
+    "name": "آزمدارهاي مخابراتي",
+    "code": "11_1113042",
+    "prof": "اساتيد گروه آموزشي (نعيمي)",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113042,
+    "name": "آزمدارهاي مخابراتي",
+    "code": "12_1113042",
+    "prof": "اساتيد گروه آموزشي (نعيمي)",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113231,
+    "name": "آز مخابرات ديجيتال",
+    "code": "11_1113231",
+    "prof": "اساتيد گروه آموزشي (آليا)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113231,
+    "name": "آز مخابرات ديجيتال",
+    "code": "12_1113231",
+    "prof": "اساتيد گروه آموزشي (آليا)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113232,
+    "name": "آز پردازش سيگنالهاي ديجيتال",
+    "code": "11_1113232",
+    "prof": "جمشيدي محمدعلي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113232,
+    "name": "آز پردازش سيگنالهاي ديجيتال",
+    "code": "12_1113232",
+    "prof": "جمشيدي محمدعلي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1113233,
+    "name": "آز ريز موج",
+    "code": "11_1113233",
+    "prof": "پاكيزه توكل",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115093,
+    "name": "آزمايشگاه كنترل فرآيندهاي صنعتي",
+    "code": "11_1115093",
+    "prof": "اساتيد گروه آموزشي (ميربراتي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115093,
+    "name": "آزمايشگاه كنترل فرآيندهاي صنعتي",
+    "code": "12_1115093",
+    "prof": "اساتيد گروه آموزشي (ميربراتي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115097,
+    "name": "آزمايشگاه PLC",
+    "code": "11_1115097",
+    "prof": "حسن نسب سياوش",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115097,
+    "name": "آزمايشگاه PLC",
+    "code": "12_1115097",
+    "prof": "حسن نسب سياوش",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115099,
+    "name": "آزمايشگاه ابزاردقيق",
+    "code": "11_1115099",
+    "prof": "اساتيد گروه آموزشي (چاوشي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115099,
+    "name": "آزمايشگاه ابزاردقيق",
+    "code": "12_1115099",
+    "prof": "اساتيد گروه آموزشي (اميني)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115120,
+    "name": "آز كنترل ديجيتال",
+    "code": "11_1115120",
+    "prof": "حيراني نوبري جعفر (دستجردي)",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115120,
+    "name": "آز كنترل ديجيتال",
+    "code": "12_1115120",
+    "prof": "حيراني نوبري جعفر (دستجردي)",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115120,
+    "name": "آز كنترل ديجيتال",
+    "code": "13_1115120",
+    "prof": "حيراني نوبري جعفر (دستجردي)",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1115120,
+    "name": "آز كنترل ديجيتال",
+    "code": "14_1115120",
+    "prof": "حيراني نوبري جعفر (دستجردي)",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "برق",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1117016,
+    "name": "مباني مكاترونيك1 (جبراني)",
+    "code": "11_1117016",
+    "prof": "نبي پور مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 310" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 310" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "برق",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  // کامپیوتر
 
-// {
-//     id: 7707039,
-//     name: "رساله دكترا",
-//     code: "21_7707039",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 24,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 60,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707057,
-//     name: "رساله دكتري پژوهشي",
-//     code: "21_7707057",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 30,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 5,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707059,
-//     name: "دفاع از پيشنهاد رساله دكتري",
-//     code: "21_7707059",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 0,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 10,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707060,
-//     name: "سمينار",
-//     code: "21_7707060",
-//     prof: "مسگري محمد سعدي",
-//     units: 2,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 25,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707060,
-//     name: "سمينار",
-//     code: "22_7707060",
-//     prof: "لطيفي هومن",
-//     units: 2,
-//     sessions: [
-//       {days: [5], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-//     ],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 25,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707060,
-//     name: "سمينار",
-//     code: "23_7707060",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 2,
-//     sessions: [
-//       {days: [5], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-//     ],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 25,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707060,
-//     name: "سمينار",
-//     code: "24_7707060",
-//     prof: "عامريان يزدان",
-//     units: 2,
-//     sessions: [
-//       {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-//     ],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 25,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707062,
-//     name: "امتحان جامع دكتري 1",
-//     code: "21_7707062",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 0,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 5,
-//     gender: "مختلط"
-//   },
-// {
-//     id: 7707064,
-//     name: "پايان نامه",
-//     code: "21_7707064",
-//     prof: "اساتيد گروه آموزشي",
-//     units: 6,
-//     sessions: [],
-//     examDate: "",
-//     department: "دانشکده نقشه برداری",
-//     capacity: 90,
-//     gender: "مختلط"
-//   },
-{
-    id: 7707070,
-    name: "مباني نقشه برداري",
-    code: "21_7707070",
-    prof: "پيله فروشها پرستو",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
+  {
+    "id": 1920054,
+    "name": "طراحي وارزيابي سيستم هاي بي درنگ نهفته",
+    "code": "19_1920054",
+    "prof": "عبدي آتنا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 7707071,
-    name: "عمليات مباني نقشه برداري",
-    code: "21_7707071",
-    prof: "صبايي ماسوله جواد",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 17,
-    gender: "مختلط"
-  },
-{
-    id: 7707071,
-    name: "عمليات مباني نقشه برداري",
-    code: "22_7707071",
-    prof: "صبايي ماسوله جواد",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 17,
-    gender: "مختلط"
-  },
-{
-    id: 7707072,
-    name: "مصالح ساختماني",
-    code: "21_7707072",
-    prof: "زنگانه حامد",
-    units: 2,
-    sessions: [],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 7707075,
-    name: "زيرسازي و روسازي راه",
-    code: "21_7707075",
-    prof: "خدادادي مجتبي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 7707076,
-    name: "روش هاي اجراي ساختمان",
-    code: "21_7707076",
-    prof: "دادپور محمد حسين",
-    units: 2,
-    sessions: [],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 7707078,
-    name: "تئوري برآورد",
-    code: "21_7707078",
-    prof: "مشهدي حسينعلي مسعود",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707081,
-    name: "ژئودزي هندسي",
-    code: "21_7707081",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707084,
-    name: "نقشه برداري ژئودتيك و عمليات",
-    code: "21_7707084",
-    prof: "وثوقي بهزاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707086,
-    name: "هيدروگرافي",
-    code: "21_7707086",
-    prof: "جزيرئيان ايرج",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707087,
-    name: "مباني فتوگرامتري",
-    code: "21_7707087",
-    prof: "مختارزاده مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
   },
   {
-    id: 7707088,
-    name: "عمليات مباني فتوگرامتري",
-    code: "21_7707088",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
+    "id": 1920058,
+    "name": "فشرده سازي اطلاعات",
+    "code": "01_1920058",
+    "prof": "رودكي لواساني هدا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7707088,
-    name: "عمليات مباني فتوگرامتري",
-    code: "22_7707088",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7707088,
-    name: "عمليات مباني فتوگرامتري",
-    code: "24_7707088",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7707088,
-    name: "عمليات مباني فتوگرامتري",
-    code: "25_7707088",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7707090,
-    name: "كاربردهاي فتوگرامتري",
-    code: "21_7707090",
-    prof: "عبادي حميد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707091,
-    name: "عمليات كاربردهاي فتوگرامتري",
-    code: "21_7707091",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 7707091,
-    name: "عمليات كاربردهاي فتوگرامتري",
-    code: "22_7707091",
-    prof: "محمدزنجاني پور الناز",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 7707092,
-    name: "پردازش تصاوير رقومي",
-    code: "21_7707092",
-    prof: "خصالي الهه",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 7707094,
-    name: "عمليات سنجش از دور",
-    code: "21_7707094",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 18,
-    gender: "مختلط"
-  },
-{
-    id: 7707094,
-    name: "عمليات سنجش از دور",
-    code: "22_7707094",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 18,
-    gender: "مختلط"
-  },
-{
-    id: 7707100,
-    name: "تحليل هاي مكاني",
-    code: "21_7707100",
-    prof: "ملك محمد رضا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707101,
-    name: "عمليات تحليل هاي مكاني",
-    code: "21_7707101",
-    prof: "سيلاوي طلوع",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 7707101,
-    name: "عمليات تحليل هاي مكاني",
-    code: "22_7707101",
-    prof: "سيلاوي طلوع",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 7707101,
-    name: "عمليات تحليل هاي مكاني",
-    code: "23_7707101",
-    prof: "سيلاوي طلوع",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 7707101,
-    name: "عمليات تحليل هاي مكاني",
-    code: "24_7707101",
-    prof: "سيلاوي طلوع",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 7707102,
-    name: "حد نگاري",
-    code: "21_7707102",
-    prof: "مسگري محمد سعدي",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707103,
-    name: "مديريت پروژه",
-    code: "21_7707103",
-    prof: "كريمي محمد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707105,
-    name: "كاربردهاي سيستم اطلاعات مكاني",
-    code: "21_7707105",
-    prof: "آل شيخ علي اصغر",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 25,
-    gender: "مختلط"
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
   },
   {
-    id: 7707106,
-    name: "برنامه ريزي شهري",
-    code: "21_7707106",
-    prof: "طالعي محمد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
+    "id": 1920058,
+    "name": "فشرده سازي اطلاعات",
+    "code": "19_1920058",
+    "prof": "رودكي لواساني هدا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 7707115,
-    name: "ميكروژئودزي",
-    code: "21_7707115",
-    prof: "وثوقي بهزاد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 7707118,
-    name: "جزر و مد",
-    code: "21_7707118",
-    prof: "جزيرئيان ايرج",
-    units: 2,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 7728031,
-    name: "پروژه نقشه برداري",
-    code: "21_7728031",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7728194,
-    name: "ژئوديناميك",
-    code: "21_7728194",
-    prof: "وثوقي بهزاد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7728195,
-    name: "ژئودزي ديناميكي ماهواره اي",
-    code: "21_7728195",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7728196,
-    name: "ارتفاع سنجي ماهواره اي",
-    code: "21_7728196",
-    prof: "جزيرئيان ايرج",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7728205,
-    name: "سنجش از دور با استفاده از سيستم هاي ماهواره اي ناوبري جهاني",
-    code: "21_7728205",
-    prof: "عامريان يزدان",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "21_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "22_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "23_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "24_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "25_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "26_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729013,
-    name: "پروژه سنجش از دور",
-    code: "27_7729013",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
   },
   {
-    id: 7729014,
-    name: "پروژه فتوگرامتري",
-    code: "21_7729014",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729014,
-    name: "پروژه فتوگرامتري",
-    code: "22_7729014",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729014,
-    name: "پروژه فتوگرامتري",
-    code: "23_7729014",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729014,
-    name: "پروژه فتوگرامتري",
-    code: "24_7729014",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7729130,
-    name: "كاربرد رباتيك در مهندسي ژئوماتيك",
-    code: "21_7729130",
-    prof: "حسيني نوه علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
+    "id": 1920065,
+    "name": "شبكه هاي كامپيوتري پيشرفته",
+    "code": "01_1920065",
+    "prof": "يعقوبي كعبه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7729132,
-    name: "رادارگرامتري",
-    code: "21_7729132",
-    prof: "خصالي الهه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7775005,
-    name: "فتوگرامتري فضايي",
-    code: "21_7775005",
-    prof: "ولدان زوج محمد جواد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7775028,
-    name: "سنجش از دور مايكروويو",
-    code: "21_7775028",
-    prof: "صاحبي محمودرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7775031,
-    name: "طيف سنجي و پردازش داده هاي ابرطيفي",
-    code: "21_7775031",
-    prof: "مختارزاده مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7775037,
-    name: "پويش گرهاي ليزري پيشرفته: پردازش و كاربردها",
-    code: "21_7775037",
-    prof: "محمدزاده علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7775042,
-    name: "كاربردهاي اكولوژيكي سنجش ازدوربراي پايش زيست بوم",
-    code: "21_7775042",
-    prof: "لطيفي هومن",
-    units: 3,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "21_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "22_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "23_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "24_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
   },
   {
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "25_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "26_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "27_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776093,
-    name: "تصميم گيري چندمعياره مكاني",
-    code: "21_7776093",
-    prof: "طالعي محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
+    "id": 1920065,
+    "name": "شبكه هاي كامپيوتري پيشرفته",
+    "code": "19_1920065",
+    "prof": "يعقوبي كعبه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776094,
-    name: "هستي شناسي مكاني و وب معنايي",
-    code: "21_7776094",
-    prof: "آل شيخ علي اصغر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776096,
-    name: "سيستم هاي اطلاعات مكاني فراگير و خدمات مكان مبنا",
-    code: "21_7776096",
-    prof: "ملك محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776098,
-    name: "بهينه سازي مكاني با روش هاي فرا ابتكاري",
-    code: "21_7776098",
-    prof: "مسگري محمد سعدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776101,
-    name: "سيستم هاي اطلاعات مكاني و مدل سازي محيطي",
-    code: "21_7776101",
-    prof: "قائمي‌راد طاهره",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776102,
-    name: "برنامه ريزي فضايي و آمايش سرزمين",
-    code: "21_7776102",
-    prof: "كريمي محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776103,
-    name: "داده كاوي مكاني",
-    code: "21_7776103",
-    prof: "پيله فروشها پرستو",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
   },
   {
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "25_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "26_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776004,
-    name: "پروژه جي اي اس",
-    code: "27_7776004",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده نقشه برداری",
-    capacity: 2,
-    gender: "مختلط"
-  },
-{
-    id: 7776093,
-    name: "تصميم گيري چندمعياره مكاني",
-    code: "21_7776093",
-    prof: "طالعي محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"}
+    "id": 1920068,
+    "name": "شبكه هاي بي سيم",
+    "code": "19_1920068",
+    "prof": "درماني محمد يوسف",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776094,
-    name: "هستي شناسي مكاني و وب معنايي",
-    code: "21_7776094",
-    prof: "آل شيخ علي اصغر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776096,
-    name: "سيستم هاي اطلاعات مكاني فراگير و خدمات مكان مبنا",
-    code: "21_7776096",
-    prof: "ملك محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776098,
-    name: "بهينه سازي مكاني با روش هاي فرا ابتكاري",
-    code: "21_7776098",
-    prof: "مسگري محمد سعدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776101,
-    name: "سيستم هاي اطلاعات مكاني و مدل سازي محيطي",
-    code: "21_7776101",
-    prof: "قائمي‌راد طاهره",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776102,
-    name: "برنامه ريزي فضايي و آمايش سرزمين",
-    code: "21_7776102",
-    prof: "كريمي محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده نقشه برداری"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 7776103,
-    name: "داده كاوي مكاني",
-    code: "21_7776103",
-    prof: "پيله فروشها پرستو",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده نقشه برداری"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده نقشه برداری"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده نقشه برداری",
-    capacity: 10,
-    gender: "مختلط"
-  },
-  // Bargh
-  {
-    id: 1110001,
-    name: "رياضيات مهندسي",
-    code: "11_1110001",
-    prof: "توكلي كاخكي مه سان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110136,
-    name: "مدارهاي الكتريكي 1",
-    code: "11_1110136",
-    prof: "شمسي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110136,
-    name: "مدارهاي الكتريكي 1",
-    code: "12_1110136",
-    prof: "كيوان فرد فرزانه",
-    units: 3,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110136,
-    name: "مدارهاي الكتريكي 1",
-    code: "13_1110136",
-    prof: "مختاري زهرا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110203,
-    name: "معادلات ديفرانسيل",
-    code: "11_1110203",
-    prof: "مختاري زهرا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110203,
-    name: "معادلات ديفرانسيل",
-    code: "12_1110203",
-    prof: "شاملي محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110203,
-    name: "معادلات ديفرانسيل",
-    code: "13_1110203",
-    prof: "خان كلانتري ركن آبادي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110234,
-    name: "محاسبات عددي",
-    code: "11_1110234",
-    prof: "دلير روي فرد رسول",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110234,
-    name: "محاسبات عددي",
-    code: "12_1110234",
-    prof: "دلير روي فرد رسول",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110235,
-    name: "آشنايي با مهندسي برق",
-    code: "11_1110235",
-    prof: "شاملي محمدعلي و دیگران",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق - آمفي تئاتر"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 62,
-    gender: "مختلط"
-  },
-{
-    id: 1110235,
-    name: "آشنايي با مهندسي برق",
-    code: "12_1110235",
-    prof: "شاملي محمدعلي و دیگران",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق - آمفي تئاتر"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 62,
-    gender: "مختلط"
-  },
-{
-    id: 1110235,
-    name: "آشنايي با مهندسي برق",
-    code: "13_1110235",
-    prof: "شاملي محمدعلي و دیگران",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق - آمفي تئاتر"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 62,
-    gender: "مختلط"
-  },
-{
-    id: 1110236,
-    name: "سيستمهاي كنترل خطي",
-    code: "11_1110236",
-    prof: "خالوزاده حميد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110237,
-    name: "اصول سيستمهاي مخابراتي",
-    code: "11_1110237",
-    prof: "سبط محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110238,
-    name: "تحليل سيستمهاي انرژي الكتريكي 1",
-    code: "11_1110238",
-    prof: "طولابي محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 1110239,
-    name: "سيستمهاي ديجيتال 1",
-    code: "11_1110239",
-    prof: "عليزاده مطلق عراقي محمدصادق",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110239,
-    name: "سيستمهاي ديجيتال 1",
-    code: "12_1110239",
-    prof: "يارمند روح اله",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110240,
-    name: "سيستمهاي ديجيتال 2",
-    code: "11_1110240",
-    prof: "درماني محمد يوسف",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 1110240,
-    name: "سيستمهاي ديجيتال 2",
-    code: "12_1110240",
-    prof: "دلير روي فرد رسول",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110241,
-    name: "مدارهاي الكتريكي 2",
-    code: "11_1110241",
-    prof: "حسين دخت زهرا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 5,
+    "gender": "مختلط"
   },
   {
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "11_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
+    "id": 1920074,
+    "name": "ارزيابي كارايي سيستم هاي كامپيوتري",
+    "code": "19_1920074",
+    "prof": "تارخ محمد جعفر",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "12_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "13_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "14_1110242",
-    prof: "وحيدي علي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "15_1110242",
-    prof: "وحيدي علي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "16_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي صادقي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "17_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي صادقي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "18_1110242",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "19_1110242",
-    prof: "كمالي پويان",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "20_1110242",
-    prof: "كمالي پويان",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110242,
-    name: "آزمدارهاي الكتريكي و اندازه گيري",
-    code: "21_1110242",
-    prof: "كمالي پويان",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "11_1110243",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "12_1110243",
-    prof: "توكلي سارا",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "13_1110243",
-    prof: "توكلي سارا",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "14_1110243",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "15_1110243",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "16_1110243",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "17_1110243",
-    prof: "اساتيد گروه آموزشي (آقاي خان اف)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "18_1110243",
-    prof: "اساتيد گروه آموزشي (آقاي خان اف)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "19_1110243",
-    prof: "اساتيد گروه آموزشي (آقاي كشي زاده)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110243,
-    name: "آز الكترونيك 1 و 2",
-    code: "20_1110243",
-    prof: "اساتيد گروه آموزشي (آقاي كشي زاده)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
   },
   {
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "11_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
+    "id": 1920075,
+    "name": "شبكه هاي چند رسانه اي",
+    "code": "01_1920075",
+    "prof": "اساتيد گروه آموزشي (قندچي)",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "12_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "13_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "14_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "15_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110244,
-    name: "آز سيستم هاي كنترل خطي",
-    code: "16_1110244",
-    prof: "مويدكاظمي حميدرضا",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "11_1110245",
-    prof: "اساتيد گروه آموزشي (خانم عيسي پور)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "12_1110245",
-    prof: "اساتيد گروه آموزشي (خانم عيسي پور)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "13_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي فرهادي راد)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "14_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي فرهادي راد)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "15_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي توحيدلو)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "16_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي توحيدلو)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "17_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي لاري)",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110245,
-    name: "آز سيستم هاي ديجيتال 1",
-    code: "18_1110245",
-    prof: "اساتيد گروه آموزشي (آقاي لاري)",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1110252,
-    name: "كارگاه عمومي",
-    code: "11_1110252",
-    prof: "ابراهيمي هادي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110252,
-    name: "كارگاه عمومي",
-    code: "12_1110252",
-    prof: "ابراهيمي هادي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 36,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "11_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "12_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "13_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "14_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "15_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "16_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "17_1110253",
-    prof: "پاسدار محدثه",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "18_1110253",
-    prof: "نقدي مرادي علي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110253,
-    name: "آزماشينهاي الكتريكي 1",
-    code: "19_1110253",
-    prof: "نقدي مرادي علي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110254,
-    name: "ماشينهاي الكتريكي 2",
-    code: "11_1110254",
-    prof: "عليپور سرابي رامين",
-    units: 3,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 1110255,
-    name: "ماشينهاي الكتريكي 1",
-    code: "11_1110255",
-    prof: "عليپور سرابي رامين",
-    units: 3,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110255,
-    name: "ماشينهاي الكتريكي 1",
-    code: "12_1110255",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110256,
-    name: "سيگنال ها و سيستم ها",
-    code: "11_1110256",
-    prof: "جمشيدي محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110256,
-    name: "سيگنال ها و سيستم ها",
-    code: "12_1110256",
-    prof: "حيراني نوبري جعفر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110256,
-    name: "سيگنال ها و سيستم ها",
-    code: "13_1110256",
-    prof: "محبي آشتياني مريم",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110257,
-    name: "زبان تخصصي برق",
-    code: "11_1110257",
-    prof: "اساتيد گروه آموزشي (خانم دکتر طوسي)",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110257,
-    name: "زبان تخصصي برق",
-    code: "12_1110257",
-    prof: "اساتيد گروه آموزشي (خانم دکتر طوسي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110258,
-    name: "الكترومغناطيس مهندسي",
-    code: "11_1110258",
-    prof: "قطان كاشاني زهرا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110259,
-    name: "الكترونيك 1",
-    code: "11_1110259",
-    prof: "زندي حسام",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110260,
-    name: "الكترونيك 2",
-    code: "11_1110260",
-    prof: "حسين دخت زهرا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110260,
-    name: "الكترونيك 2",
-    code: "12_1110260",
-    prof: "كرمي پوريا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110260,
-    name: "الكترونيك 2",
-    code: "13_1110260",
-    prof: "نديمي ابراهيم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1110261,
-    name: "احتمال مهندسي",
-    code: "11_1110261",
-    prof: "اخباري بهاره",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110261,
-    name: "احتمال مهندسي",
-    code: "12_1110261",
-    prof: "حبيبي بسطامي علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110262,
-    name: "برنامه نويسي كامپيوتر",
-    code: "11_1110262",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/19 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "11_1110273",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "12_1110273",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "13_1110273",
-    prof: "اساتيد گروه آموزشي (خانم عباسي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "14_1110273",
-    prof: "اساتيد گروه آموزشي (خانم عباسي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "15_1110273",
-    prof: "اساتيد گروه آموزشي (خانم مير)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "16_1110273",
-    prof: "اساتيد گروه آموزشي (خانم مير)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "17_1110273",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "18_1110273",
-    prof: "اساتيد گروه آموزشي (خانم اكبري)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "19_1110273",
-    prof: "اساتيد گروه آموزشي (خانم اكبري)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "20_1110273",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "21_1110273",
-    prof: "كشاورزافشار مريم",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "22_1110273",
-    prof: "اساتيد گروه آموزشي (آقاي بخت آوري)",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110273,
-    name: "آز فيزيك 1",
-    code: "23_1110273",
-    prof: "اساتيد گروه آموزشي (آقاي بخت آوري)",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110274,
-    name: "آز فيزيك2",
-    code: "11_1110274",
-    prof: "اساتيد گروه آموزشي (آقاي كشي زاده)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110274,
-    name: "آز فيزيك2",
-    code: "12_1110274",
-    prof: "اساتيد گروه آموزشي (آقاي كشي زاده)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110274,
-    name: "آز فيزيك2",
-    code: "13_1110274",
-    prof: "ياوري بيگوند نرگس",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1110275,
-    name: "پروژه",
-    code: "11_1110275",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 120,
-    gender: "مختلط"
-  },
-{
-    id: 1110280,
-    name: "مباني بيوالكتريك",
-    code: "11_1110280",
-    prof: "ولي منصور",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110284,
-    name: "سيستم هاي راديولوژي و تصويرگر پزشگي",
-    code: "11_1110284",
-    prof: "خادم علي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110285,
-    name: "آز سيگنال هاي حياتي",
-    code: "11_1110285",
-    prof: "خادم علي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1110286,
-    name: "آز ريزپردازنده",
-    code: "11_1110286",
-    prof: "يارمند روح اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110286,
-    name: "آز ريزپردازنده",
-    code: "12_1110286",
-    prof: "يارمند روح اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1110287,
-    name: "آز طراحي در سطح سيستم",
-    code: "11_1110287",
-    prof: "حسيني نژاد محبتي حسين",
-    units: 1,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
   },
   {
-    id: 1110288,
-    name: "كاربيني",
-    code: "11_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
+    "id": 1920076,
+    "name": "رايانش ابري",
+    "code": "01_1920076",
+    "prof": "اساتيد گروه آموزشي (جهاني راد)",
+    "units": 3,
+    "sessions": [
+      { "days": [6], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [6], "start": 15, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "12_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "13_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "14_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "15_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "16_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110288,
-    name: "كاربيني",
-    code: "17_1110288",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110289,
-    name: "هوش مصنوعي مقدماتي",
-    code: "11_1110289",
-    prof: "علياري شوره دلي مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110289,
-    name: "هوش مصنوعي مقدماتي",
-    code: "12_1110289",
-    prof: "تشنه لب محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110290,
-    name: "رباتيك و بينايي ماشين",
-    code: "11_1110290",
-    prof: "تقي راد حميد رضا و محمد جواد احمدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110291,
-    name: "يادگيري ماشين مقدماتي",
-    code: "11_1110291",
-    prof: "نيكوفرد اميرحسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1110292,
-    name: "آز رباتيك و بينايي ماشين",
-    code: "11_1110292",
-    prof: "اساتيد گروه آموزشي (محمدجواد احمدي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1111107,
-    name: "فيزيك مدرن",
-    code: "11_1111107",
-    prof: "اكبري برومند فرهاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1111109,
-    name: "آزالكترونيك صنعتي",
-    code: "11_1111109",
-    prof: "اساتيد گروه آموزشي (آقاي گلابي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1111109,
-    name: "آزالكترونيك صنعتي",
-    code: "12_1111109",
-    prof: "اساتيد گروه آموزشي (خانم نادي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1111109,
-    name: "آزالكترونيك صنعتي",
-    code: "13_1111109",
-    prof: "اساتيد گروه آموزشي (آقاي گلابي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1111109,
-    name: "آزالكترونيك صنعتي",
-    code: "14_1111109",
-    prof: "اساتيد گروه آموزشي (خانم نادي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1111110,
-    name: "الكترونيك 3",
-    code: "11_1111110",
-    prof: "احسانيان مفرد مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1111111,
-    name: "آزالكترونيك 3",
-    code: "11_1111111",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1111178,
-    name: "مدارهاي پالس و ديجيتال",
-    code: "11_1111178",
-    prof: "شمسي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1111179,
-    name: "آز مدارهاي پالس و ديجيتال",
-    code: "11_1111179",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
   },
   {
-    id: 1111179,
-    name: "آز مدارهاي پالس و ديجيتال",
-    code: "12_1111179",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
+    "id": 1920076,
+    "name": "رايانش ابري",
+    "code": "19_1920076",
+    "prof": "صديقيان كاشي سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1111179,
-    name: "آز مدارهاي پالس و ديجيتال",
-    code: "13_1111179",
-    prof: "ميري سيده سميه",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1111186,
-    name: "آزمايشگاه ابزارهاي طراحي به كمك كامپيوتر",
-    code: "11_1111186",
-    prof: "حسيني نژاد محبتي حسين",
-    units: 1,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1111194,
-    name: "مدارهاي مجتمع فركانس راديويي (RFIC)",
-    code: "11_1111194",
-    prof: "كرمي پوريا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111195,
-    name: "مبدل هاي داده مجتمع (A/D , D/A)",
-    code: "11_1111195",
-    prof: "احسانيان مفرد مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111202,
-    name: "شبكه هاي انتقال داده",
-    code: "11_1111202",
-    prof: "درماني محمد يوسف",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1111203,
-    name: "مدارهاي ASIC/FPGA",
-    code: "11_1111203",
-    prof: "حسيني نژاد محبتي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111218,
-    name: "الكترونيك ارگانيكي",
-    code: "11_1111218",
-    prof: "اكبري برومند فرهاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111219,
-    name: "شبيه سازي افزاره هاي نيم رسانا",
-    code: "11_1111219",
-    prof: "نديمي ابراهيم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111223,
-    name: "مشخصه يابي مواد و افزاره هاي نيم رسانا",
-    code: "11_1111223",
-    prof: "صالحي عليرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111227,
-    name: "الكترونيك نوري",
-    code: "11_1111227",
-    prof: "زندي حسام",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1111228,
-    name: "سمينار",
-    code: "11_1111228",
-    prof: "احسانيان مفرد مهدي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1112028,
-    name: "اقتصادمهندسي",
-    code: "11_1112028",
-    prof: "عليزاده مطلق عراقي محمدصادق",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1112028,
-    name: "اقتصادمهندسي",
-    code: "12_1112028",
-    prof: "اساتيد گروه آموزشي (آقاي دکتر پايداري)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1112030,
-    name: "طرح پست هاي فشارقوي وپروژه",
-    code: "11_1112030",
-    prof: "اكبري ازيراني اصغر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "11_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "12_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "13_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "14_1112034",
-    prof: "فريدونيان عليرضا",
-    units: 1,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "15_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "16_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "17_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112034,
-    name: "كارگاه برق",
-    code: "18_1112034",
-    prof: "اساتيد گروه آموزشي (آقاي ميربراتي)",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112040,
-    name: "آزماشينهاي الكتريكي 2",
-    code: "11_1112040",
-    prof: "نظري مراشي عباس",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112043,
-    name: "الكترونيك صنعتي",
-    code: "11_1112043",
-    prof: "محسن زاده هدش صادق",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1112051,
-    name: "آزعايقهاوفشارقوي",
-    code: "11_1112051",
-    prof: "اساتيد گروه آموزشي (آقاي سبارشاد)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1112063,
-    name: "تاسيسات الكتريكي",
-    code: "11_1112063",
-    prof: "فريدونيان عليرضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1112067,
-    name: "آز سيستم هاي قدرت",
-    code: "11_1112067",
-    prof: "اساتيد گروه آموزشي (آقاي محمد فردوسي گلستان)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1112185,
-    name: "بهره برداري ازسيستم هاي قدرت پيشرفته",
-    code: "11_1112185",
-    prof: "امرايي تورج",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1112189,
-    name: "بررسي وشناخت انرژي هاي نو",
-    code: "11_1112189",
-    prof: "طولابي محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112191,
-    name: "توزيع انرژي الكتريكي",
-    code: "11_1112191",
-    prof: "فريدونيان عليرضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112201,
-    name: "سيستم هاي قدرت انعطاف پذير",
-    code: "11_1112201",
-    prof: "توكلي بينا محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112202,
-    name: "پايش وضعيت تجهيزات فشارقوي",
-    code: "11_1112202",
-    prof: "اكبري ازيراني اصغر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112204,
-    name: "مهندسي توان پالسي",
-    code: "11_1112204",
-    prof: "محسن زاده هدش صادق",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1112205,
-    name: "سمينار",
-    code: "11_1112205",
-    prof: "توكلي بينا محمد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1112212,
-    name: "تئوري جامع ماشين الكتريكي",
-    code: "11_1112212",
-    prof: "عليپور سرابي رامين",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1112216,
-    name: "اصول سيستم هاي محركه الكتريكي",
-    code: "11_1112216",
-    prof: "عباس زاده كريم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 1113009,
-    name: "ميدانهاوامواج",
-    code: "11_1113009",
-    prof: "قطان كاشاني زهرا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1113032,
-    name: "آزآنتن",
-    code: "11_1113032",
-    prof: "احمدي سيدآرش",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113041,
-    name: "مدارهاي مخابراتي",
-    code: "11_1113041",
-    prof: "احمدي سيدآرش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1113042,
-    name: "آزمدارهاي مخابراتي",
-    code: "11_1113042",
-    prof: "اساتيد گروه آموزشي (آقاي توحيد نعيمي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1113229,
-    name: "ريز موج",
-    code: "11_1113229",
-    prof: "پاكيزه توكل",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1113231,
-    name: "آز مخابرات ديجيتال",
-    code: "11_1113231",
-    prof: "اساتيد گروه آموزشي (خانم آليا)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 10,
-    gender: "مختلط"
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
   },
   {
-    id: 1113232,
-    name: "آز پردازش سيگنالهاي ديجيتال",
-    code: "11_1113232",
-    prof: "جمشيدي محمدعلي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
+    "id": 1910011,
+    "name": "مدارهاي منطقي",
+    "code": "19_1910011",
+    "prof": "خانميرزا حامد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 1113233,
-    name: "آز ريز موج",
-    code: "11_1113233",
-    prof: "اساتيد گروه آموزشي (خانم صالحي يا آقاي علي نژاد باويل)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1113233,
-    name: "آز ريز موج",
-    code: "12_1113233",
-    prof: "اساتيد گروه آموزشي (خانم صالحي يا آقاي علي نژاد باويل)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1113250,
-    name: "مخابرات بي سيم و سيار",
-    code: "11_1113250",
-    prof: "محامدپور كمال",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1113255,
-    name: "نانواپتيك و نانوفوتونيك",
-    code: "11_1113255",
-    prof: "پاكيزه توكل",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113259,
-    name: "ريز موج وآنتن",
-    code: "11_1113259",
-    prof: "پاكيزه توكل و علي اكبريان هادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113262,
-    name: "آنتن 2",
-    code: "11_1113262",
-    prof: "علي اكبريان هادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113263,
-    name: "فيبرنوري",
-    code: "11_1113263",
-    prof: "شاملي محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113271,
-    name: "سمينار",
-    code: "11_1113271",
-    prof: "صادقزاده شيخان گفشه رمضانعلي",
-    units: 2,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1113275,
-    name: "طراحي شبكه هاي راديويي",
-    code: "11_1113275",
-    prof: "صادقزاده شيخان گفشه رمضانعلي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113278,
-    name: "مايكروويو2",
-    code: "11_1113278",
-    prof: "احمدي سيدآرش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113291,
-    name: "مخابرات سلولي",
-    code: "11_1113291",
-    prof: "محامدپور كمال",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113292,
-    name: "پردازش سيگنال ديجيتال",
-    code: "11_1113292",
-    prof: "محامدپور كمال",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1113294,
-    name: "تئوري پيشرفته مخابرات",
-    code: "11_1113294",
-    prof: "حبيبي بسطامي علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113298,
-    name: "تئوري تخمين",
-    code: "11_1113298",
-    prof: "سبط محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113299,
-    name: "روشهاي عددي بهينه سازي",
-    code: "11_1113299",
-    prof: "اخباري بهاره",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1113301,
-    name: "شبكه هاي مخابراتي",
-    code: "11_1113301",
-    prof: "جمشيدي محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115012,
-    name: "كنترل صنعتي",
-    code: "11_1115012",
-    prof: "توسلي بابك",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1115061,
-    name: "كنترل مدرن",
-    code: "11_1115061",
-    prof: "اساتيد گروه آموزشي (آقاي دكتر رمضاني مقدم)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1115093,
-    name: "آزمايشگاه كنترل فرآيندهاي صنعتي",
-    code: "11_1115093",
-    prof: "اساتيد گروه آموزشي (آقاي كهريزي يا آقاي ميربراتي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115093,
-    name: "آزمايشگاه كنترل فرآيندهاي صنعتي",
-    code: "12_1115093",
-    prof: "اساتيد گروه آموزشي (آقاي كهريزي يا آقاي ميربراتي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115093,
-    name: "آزمايشگاه كنترل فرآيندهاي صنعتي",
-    code: "13_1115093",
-    prof: "اساتيد گروه آموزشي (آقاي كهريزي يا آقاي ميربراتي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115097,
-    name: "آزمايشگاه PLC",
-    code: "11_1115097",
-    prof: "حسن نسب سياوش",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
   },
   {
-    id: 1115097,
-    name: "آزمايشگاه PLC",
-    code: "12_1115097",
-    prof: "حسن نسب سياوش",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده برق"}
+    "id": 1910020,
+    "name": "الكترونيك ديجيتال و طراحي مدارهاي مجتمع پر تراكم",
+    "code": "19_1910020",
+    "prof": "ده يادگاري مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115097,
-    name: "آزمايشگاه PLC",
-    code: "13_1115097",
-    prof: "حسن نسب سياوش",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115097,
-    name: "آزمايشگاه PLC",
-    code: "14_1115097",
-    prof: "حسن نسب سياوش",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115099,
-    name: "آزمايشگاه ابزاردقيق",
-    code: "11_1115099",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115099,
-    name: "آزمايشگاه ابزاردقيق",
-    code: "12_1115099",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115099,
-    name: "آزمايشگاه ابزاردقيق",
-    code: "13_1115099",
-    prof: "اساتيد گروه آموزشي (آقاي چاوشي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115099,
-    name: "آزمايشگاه ابزاردقيق",
-    code: "14_1115099",
-    prof: "اساتيد گروه آموزشي (آقاي اميني)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115119,
-    name: "جبر خطي",
-    code: "11_1115119",
-    prof: "توكلي كاخكي مه سان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1115120,
-    name: "آز كنترل ديجيتال",
-    code: "11_1115120",
-    prof: "اساتيد گروه آموزشي (آقاي محمد صادق دستجردي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115120,
-    name: "آز كنترل ديجيتال",
-    code: "12_1115120",
-    prof: "اساتيد گروه آموزشي (آقاي محمد صادق دستجردي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 1115122,
-    name: "مباني مكاترونيك",
-    code: "11_1115122",
-    prof: "دلربايي مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1115129,
-    name: "يادگيري ژرف",
-    code: "11_1115129",
-    prof: "تشنه لب محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115133,
-    name: "كنترل غيرخطي",
-    code: "11_1115133",
-    prof: "حيراني نوبري جعفر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115137,
-    name: "كنترل فرآيندهاي تصادفي",
-    code: "11_1115137",
-    prof: "خالوزاده حميد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115141,
-    name: "نظريه بازي ها",
-    code: "11_1115141",
-    prof: "نيكوفرد اميرحسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115147,
-    name: "كنترل بهينه",
-    code: "11_1115147",
-    prof: "توسلي بابك",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115148,
-    name: "سمينار",
-    code: "11_1115148",
-    prof: "توسلي بابك",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1115154,
-    name: "مباحث ويژه.سيستم هاي كنترل داده- راند",
-    code: "11_1115154",
-    prof: "خاكي صديق علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1115158,
-    name: "مهندسي آناليز ريسك و عدم قطعيت",
-    code: "11_1115158",
-    prof: "اساتيد گروه آموزشي (آقاي دكتر تحسيري)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116035,
-    name: "پردازش سيگنالهاي بيولوژيكي",
-    code: "11_1116035",
-    prof: "محبي آشتياني مريم",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116037,
-    name: "سمينار",
-    code: "11_1116037",
-    prof: "ابريشمي مقدم حميد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116042,
-    name: "پردازش سيگنالهاي تصويري",
-    code: "11_1116042",
-    prof: "ابريشمي مقدم حميد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116079,
-    name: "پردازش صوت درتشخيص پزشكي",
-    code: "11_1116079",
-    prof: "ولي منصور",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
   },
   {
-    id: 1116080,
-    name: "سيستم هاي تصويربرداري كاركردي مغز",
-    code: "11_1116080",
-    prof: "خادم علي",
-    units: 3,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده برق"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116083,
-    name: "فيزيولوژي",
-    code: "11_1116083",
-    prof: "اساتيد گروه آموزشي (خانم دكتر قلندري شمامي)",
-    units: 3,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1116085,
-    name: "آمار زيستي",
-    code: "11_1116085",
-    prof: "ابريشمي مقدم حميد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116091,
-    name: "تصويربرداري تشديد مغناطيسي",
-    code: "11_1116091",
-    prof: "كيوان فرد فرزانه",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1116092,
-    name: "كارآفريني در مهندسي پزشكي",
-    code: "11_1116092",
-    prof: "اساتيد گروه آموزشي (آقاي دكتر سلامت)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 1117008,
-    name: "سيستم هاي بيو مكاترونيك",
-    code: "11_1117008",
-    prof: "دلربايي مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده برق"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1117014,
-    name: "مكاترونيك",
-    code: "11_1117014",
-    prof: "خان كلانتري ركن آبادي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1117015,
-    name: "مباني مكاترونيك 2",
-    code: "11_1117015",
-    prof: "اساتيد گروه آموزشي (آقاي دكتر خليل پور)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده برق"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده برق",
-    capacity: 15,
-    gender: "مختلط"
-  },
-  //havafaza
-  {
-    id: 8880004,
-    name: "سمينار",
-    code: "81_8880004",
-    prof: "مظفري علي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 8880018,
-    name: "نقشه كشي صنعتي 2",
-    code: "81_8880018",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 211"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880018,
-    name: "نقشه كشي صنعتي 2",
-    code: "82_8880018",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 211"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880019,
-    name: "استاتيك",
-    code: "81_8880019",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "سالن"},
-      {days: [5], start: 9, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880019,
-    name: "استاتيك",
-    code: "82_8880019",
-    prof: "ايراني سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 210"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 210"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880020,
-    name: "رياضيات مهندسي",
-    code: "81_8880020",
-    prof: "جعفري ندوشن مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 203"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880020,
-    name: "رياضيات مهندسي",
-    code: "82_8880020",
-    prof: "اساتيد گروه آموزشي (دكتر برزميني)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 204"},
-      {days: [5], start: 15, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880021,
-    name: "مكانيك سيالات",
-    code: "81_8880021",
-    prof: "ابراهيمي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 207"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880021,
-    name: "مكانيك سيالات",
-    code: "82_8880021",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 203"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880022,
-    name: "علم مواد",
-    code: "81_8880022",
-    prof: "خراساني رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 210"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 210"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880022,
-    name: "علم مواد",
-    code: "82_8880022",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 207"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880025,
-    name: "آلگوريتمها و برنامه سازي كامپيوتر",
-    code: "81_8880025",
-    prof: "اساتيد گروه آموزشي (دكتر چيت ساز)",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 203"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 8880026,
-    name: "ترموديناميك 1",
-    code: "81_8880026",
-    prof: "مهدوي مقدم حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "سالن"},
-      {days: [4], start: 10.5, duration: 2, location: "سالن"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880026,
-    name: "ترموديناميك 1",
-    code: "82_8880026",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 203"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880028,
-    name: "كنترل اتوماتيك",
-    code: "81_8880028",
-    prof: "طايفي نصرآبادي مرتضي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 203"},
-      {days: [5], start: 15, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 8880031,
-    name: "انتقال حرارت",
-    code: "81_8880031",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "سالن"},
-      {days: [4], start: 9, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 8880036,
-    name: "آز مكانيك سيالات",
-    code: "81_8880036",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "آزمايشگاه مكانيك سيالات، مجتمع آزمايشگاهي و كارگاهي دانشكده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 8880036,
-    name: "آز مكانيك سيالات",
-    code: "82_8880036",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "آزمايشگاه مكانيك سيالات، مجتمع آزمايشگاهي و كارگاهي دانشكده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 8880037,
-    name: "طراحي اجزاء 1",
-    code: "81_8880037",
-    prof: "مظفري علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "سالن"},
-      {days: [5], start: 10.5, duration: 2, location: "سالن"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880037,
-    name: "طراحي اجزاء 1",
-    code: "82_8880037",
-    prof: "ذاكري مهناز",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 203"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
+    "id": 1910021,
+    "name": "پروژه",
+    "code": "19_1910021",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 50,
+    "gender": "مختلط"
   },
   {
-    id: 8880038,
-    name: "آز مقاومت مصالح",
-    code: "81_8880038",
-    prof: "ذاكري مهناز",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 205"}
+    "id": 1910022,
+    "name": "نظريه و الگوريتم هاي گراف",
+    "code": "19_1910022",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8880038,
-    name: "آز مقاومت مصالح",
-    code: "82_8880038",
-    prof: "ذاكري مهناز",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8880047,
-    name: "آز آئروديناميك 1",
-    code: "81_8880047",
-    prof: "پوريوسفي غلامحسين",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "آزمايشگاه آيروديناميك، دانشكده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 8880047,
-    name: "آز آئروديناميك 1",
-    code: "82_8880047",
-    prof: "پوريوسفي غلامحسين",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "آزمايشگاه آيروديناميك، دانشكده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 8880047,
-    name: "آز آئروديناميك 1",
-    code: "83_8880047",
-    prof: "پوريوسفي غلامحسين",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "آزمايشگاه آيروديناميك، دانشكده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 6,
-    gender: "مختلط"
-  },
-{
-    id: 8880049,
-    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
-    code: "81_8880049",
-    prof: "نيكخواه امير علي",
-    units: 1,
-    sessions: [
-      {days: [6], start: 7.5, duration: 1.5, location: "دانشکده هوافضا"},
-      {days: [6], start: 9, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880049,
-    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
-    code: "82_8880049",
-    prof: "نيكخواه امير علي",
-    units: 1,
-    sessions: [
-      {days: [6], start: 10.5, duration: 2, location: "دانشکده هوافضا"},
-      {days: [6], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880049,
-    name: "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
-    code: "83_8880049",
-    prof: "نيكخواه امير علي",
-    units: 1,
-    sessions: [
-      {days: [6], start: 15, duration: 1.5, location: "دانشکده هوافضا"},
-      {days: [6], start: 16.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880050,
-    name: "زبان تخصصي مهندسي هوافضا",
-    code: "81_8880050",
-    prof: "اساتيد گروه آموزشي (دكتر نظام آبادي)",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 210"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 8880059,
-    name: "محاسبات عددي",
-    code: "81_8880059",
-    prof: "اعظم پور محمد هادي",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880059,
-    name: "محاسبات عددي",
-    code: "82_8880059",
-    prof: "پوريوسفي غلامحسين",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880060,
-    name: "مكانيك پرواز 1",
-    code: "81_8880060",
-    prof: "نيكخواه امير علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 204"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880060,
-    name: "مكانيك پرواز 1",
-    code: "82_8880060",
-    prof: "خوشنود عبدالمجيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 207"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 210"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880066,
-    name: "پروژه",
-    code: "80_8880066",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880068,
-    name: "كارگاه موتور_بدنه وسيستمهاي هواپيما",
-    code: "81_8880068",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 2,
-    sessions: [
-      {days: [6], start: 7.5, duration: 1.5, location: "دانشکده هوافضا"},
-      {days: [6], start: 9, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880068,
-    name: "كارگاه موتور_بدنه وسيستمهاي هواپيما",
-    code: "82_8880068",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 2,
-    sessions: [
-      {days: [6], start: 10.5, duration: 2, location: "دانشکده هوافضا"},
-      {days: [6], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880068,
-    name: "كارگاه موتور_بدنه وسيستمهاي هواپيما",
-    code: "83_8880068",
-    prof: "كريمي مزرعه شاهي حسن",
-    units: 2,
-    sessions: [
-      {days: [6], start: 15, duration: 1.5, location: "دانشکده هوافضا"},
-      {days: [6], start: 16.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880081,
-    name: "سوخت واحتراق",
-    code: "81_8880081",
-    prof: "مهدوي مقدم حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "سالن"},
-      {days: [4], start: 15, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880082,
-    name: "آئروديناميك 2",
-    code: "81_8880082",
-    prof: "فتحعلي ماني",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "سالن"},
-      {days: [4], start: 13.5, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880082,
-    name: "آئروديناميك 2",
-    code: "82_8880082",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 207"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },{
-    id: 8880084,
-    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
-    code: "81_8880084",
-    prof: "نيكخواه امير علي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 207"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880084,
-    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
-    code: "82_8880084",
-    prof: "نيكخواه امير علي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 207"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880084,
-    name: "كارگاه ابزاردقيق واندازه گيري درهواپيما",
-    code: "83_8880084",
-    prof: "اساتيد گروه آموزشي (مهندس خانمحمدي نيماوري)",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 205"},
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880085,
-    name: "سمينار 1",
-    code: "81_8880085",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880086,
-    name: "سمينار 2",
-    code: "81_8880086",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880097,
-    name: "روش هاي تجربي درآئروديناميك",
-    code: "81_8880097",
-    prof: "پوريوسفي غلامحسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 203"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880102,
-    name: "سيستم هاي اتوماتيك درفضا",
-    code: "81_8880102",
-    prof: "با صحبت نوين زاد عليرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 207"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880110,
-    name: "طراحي،كنترل وكاربردسيستم هاي ماهواره اي",
-    code: "81_8880110",
-    prof: "چيني فروشان محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 207"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 8880126,
-    name: "رساله دكترا",
-    code: "81_8880126",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 8880132,
-    name: "مكانيك مدارهاي فضايي",
-    code: "81_8880132",
-    prof: "مير شمس مهران",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: ""},
-      {days: [5], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880132,
-    name: "مكانيك مدارهاي فضايي",
-    code: "82_8880132",
-    prof: "چيني فروشان محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 204"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 22,
-    gender: "مختلط"
-  },
-{
-    id: 8880134,
-    name: "رياضيات پيشرفته 1",
-    code: "81_8880134",
-    prof: "اساتيد گروه آموزشي (دكتر خوئي)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 8880141,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "81_8880141",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 5,
-    gender: "مختلط"
-  },
-{
-    id: 8880142,
-    name: "دفاع مجدد از پيشنهاد رساله دكتري",
-    code: "81_8880142",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 5,
-    gender: "مختلط"
-  },
-{
-    id: 8880143,
-    name: "امتحان جامع دكتري 1",
-    code: "81_8880143",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 8880144,
-    name: "امتحان جامع دكتري 2",
-    code: "81_8880144",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 5,
-    gender: "مختلط"
-  },{
-    id: 8880152,
-    name: "پايان نامه",
-    code: "81_8880152",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 8880153,
-    name: "دستيار آموزشي",
-    code: "81_8880153",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده هوافضا",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 8882012,
-    name: "ديناميك سيالات عددي 1",
-    code: "82_8882012",
-    prof: "علي صادقي آراني حامد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 207"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8882016,
-    name: "سوخت و احتراق پيشرفته 1",
-    code: "82_8882016",
-    prof: "ابراهيمي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 204"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8882017,
-    name: "اصول جلوبرنده پيشرفته",
-    code: "82_8882017",
-    prof: "مهدوي مقدم حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "سالن"},
-      {days: [4], start: 7.5, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8882035,
-    name: "توربولانس",
-    code: "82_8882035",
-    prof: "اساتيد گروه آموزشي (دكتر خوئي)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8882041,
-    name: "ديناميك سيالات عددي 2",
-    code: "82_8882041",
-    prof: "اعظم پور محمد هادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "سايت كامپيوتر هوافضا"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884008,
-    name: "ديناميك پروازو كنترل فضا پيما",
-    code: "84_8884008",
-    prof: "با صحبت نوين زاد عليرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 207"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884014,
-    name: "مكانيك مدار پيشرفته",
-    code: "84_8884014",
-    prof: "جعفري ندوشن مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884024,
-    name: "طراحي سيستمي فضاپيما",
-    code: "84_8884024",
-    prof: "مير شمس مهران",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884043,
-    name: "كنترل جريان سيال",
-    code: "84_8884043",
-    prof: "شيخ الاسلام نوري سيد مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884058,
-    name: "تئوري كنترل بهينه",
-    code: "84_8884058",
-    prof: "روشني يان جعفر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 204"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },{
-    id: 8884060,
-    name: "هدايت و ناوبري 1",
-    code: "84_8884060",
-    prof: "روشني يان جعفر و نيكخواه امير علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 204"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884075,
-    name: "شناسايي سيستم و تخمين پارامترهاي پرواز",
-    code: "84_8884075",
-    prof: "خوشنود عبدالمجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [5], start: 15, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884079,
-    name: "طراحي سيستم هاي كنترلي",
-    code: "84_8884079",
-    prof: "طايفي نصرآبادي مرتضي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 205"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8884080,
-    name: "تعيين مدار و وضعيت",
-    code: "84_8884080",
-    prof: "چيني فروشان محمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "سالن"},
-      {days: [5], start: 15, duration: 1.5, location: "سالن"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8895009,
-    name: "روشهاي اجزا محدود",
-    code: "95_8895009",
-    prof: "خراساني رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 203"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 203"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8895015,
-    name: "آئروالاستيسيته",
-    code: "95_8895015",
-    prof: "ايراني سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 205"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8895028,
-    name: "مكانيك مواد مركب",
-    code: "95_8895028",
-    prof: "ذاكري مهناز",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 201، ساختمان اداري دانشكده هوافضا"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8895029,
-    name: "مكانيك محيط هاي پيوسته 1",
-    code: "95_8895029",
-    prof: "ابراهيمي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 204"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 8895033,
-    name: "آناليز و تست مودال",
-    code: "95_8895033",
-    prof: "نوريان محمدعلي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 207"},
-      {days: [5], start: 15, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده هوافضا",
-    capacity: 8,
-    gender: "مختلط"
-  },
-//fizik
-{
-    id: 4210001,
-    name: "سمينار",
-    code: "41_4210001",
-    prof: "رحماني فائزه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "حياط دانشكده 01"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4210001,
-    name: "سمينار",
-    code: "42_4210001",
-    prof: "مشكوري مهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4210001,
-    name: "سمينار",
-    code: "43_4210001",
-    prof: "افضلي رضا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4210001,
-    name: "سمينار",
-    code: "44_4210001",
-    prof: "حاتمي محمد محسن",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4210006,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "41_4210006",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4210008,
-    name: "امتحان جامع دكتري 1",
-    code: "41_4210008",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4210013,
-    name: "الكترومغناطيس 1",
-    code: "41_4210013",
-    prof: "تقي زاده فيروزجائي جواد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 212"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 212"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210015,
-    name: "آز فيزيك 4",
-    code: "41_4210015",
-    prof: "مشحون سارا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210016,
-    name: "كارگاه ماشين افزار",
-    code: "41_4210016",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "پرديش شهيد رضايي نژاد - كارگاه هاي دانشكده مكانيك"},
-      {days: [3], start: 16.5, duration: 1.5, location: "پرديش شهيد رضايي نژاد - كارگاه هاي دانشكده مكانيك"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 4210016,
-    name: "كارگاه ماشين افزار",
-    code: "42_4210016",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "پرديش شهيد رضايي نژاد - كارگاه هاي دانشكده مكانيك"},
-      {days: [4], start: 15, duration: 1.5, location: "پرديش شهيد رضايي نژاد - كارگاه هاي دانشكده مكانيك"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 4210019,
-    name: "ترموديناميك و مكانيك آماري 2",
-    code: "41_4210019",
-    prof: "نوروزي فر احسان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 212"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 212"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
   },
   {
-    id: 4210020,
-    name: "كارگاه الكتروتكنيك",
-    code: "41_4210020",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده برق"}
+    "id": 1910023,
+    "name": "شبكه هاي كامپيوتري 1",
+    "code": "19_1910023",
+    "prof": "يعقوبي كعبه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 4210020,
-    name: "كارگاه الكتروتكنيك",
-    code: "42_4210020",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده برق"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 4210021,
-    name: "مكانيك كوانتمي 2",
-    code: "41_4210021",
-    prof: "هدايتي خليل آباد هادي",
-    units: 3,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 202"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210022,
-    name: "برنامه نويسي كامپيوتر",
-    code: "41_4210022",
-    prof: "صداقت مهسا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 212"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 212"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210024,
-    name: "نظريه نسبيت",
-    code: "41_4210024",
-    prof: "انصاري فرد محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 212"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 212"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 4210025,
-    name: "امواج و ارتعاشات",
-    code: "41_4210025",
-    prof: "افشاري محمد مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 211"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 4210027,
-    name: "مكانيك شاره ها",
-    code: "41_4210027",
-    prof: "نصيري راد امين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 202"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 4210030,
-    name: "محاسبات عددي",
-    code: "41_4210030",
-    prof: "ژوليده حقيقي محمد حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 4210034,
-    name: "محاسبات و اطلاعات كوانتمي",
-    code: "41_4210034",
-    prof: "تقي زاده فيروزجائي جواد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 211"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4210044,
-    name: "پايان نامه",
-    code: "41_4210044",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 4210051,
-    name: "رساله دكترا",
-    code: "41_4210051",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210070,
-    name: "مكانيك آماري پيشرفته 1",
-    code: "41_4210070",
-    prof: "حمزه پور حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "حياط دانشكده 01"},
-      {days: [4], start: 13.5, duration: 1.5, location: "حياط دانشكده 01"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4210071,
-    name: "مكانيك كوانتوم پيشرفته 1",
-    code: "41_4210071",
-    prof: "افشاري محمد مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: ""},
-      {days: [3], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4210086,
-    name: "رياضي فيزيك 1",
-    code: "41_4210086",
-    prof: "مقدسين هدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 212"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 212"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210088,
-    name: "مكانيك تحليلي 2",
-    code: "41_4210088",
-    prof: "انصاري فرد محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 202"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210090,
-    name: "رياضي فيزيك 2",
-    code: "41_4210090",
-    prof: "جعفري محمود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 202"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210091,
-    name: "آزفيزيك پايه 3",
-    code: "41_4210091",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210091,
-    name: "آزفيزيك پايه 3",
-    code: "42_4210091",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210096,
-    name: "رياضي فيزيك 3",
-    code: "41_4210096",
-    prof: "رادين مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 211"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 35,
-    gender: "مختلط"
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
   },
   {
-    id: 4210097,
-    name: "آزاپتيك",
-    code: "41_4210097",
-    prof: "حمزه پور حسين",
-    units: 2,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210097,
-    name: "آزاپتيك",
-    code: "42_4210097",
-    prof: "حمزه پور حسين",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210113,
-    name: "فيزيك 1",
-    code: "41_4210113",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210113,
-    name: "فيزيك 1",
-    code: "42_4210113",
-    prof: "افشاري محمد مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: ""},
-      {days: [4], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210113,
-    name: "فيزيك 1",
-    code: "43_4210113",
-    prof: "مشحون سارا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "41_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "42_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "43_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "44_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "45_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "46_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "47_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "48_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "49_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "50_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "51_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "52_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "53_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "54_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "55_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "56_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "57_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "58_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "59_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "60_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "61_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "62_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "63_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "64_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "زن"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "65_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210114,
-    name: "آزفيزيك 1",
-    code: "66_4210114",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مرد"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "40_4210115",
-    prof: "مقدسين هدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "43_4210115",
-    prof: "واعظ زاده مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "44_4210115",
-    prof: "واعظ زاده مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: ""},
-      {days: [4], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "45_4210115",
-    prof: "حاتمي محمد محسن",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "پرديس شهيد رضايي نژاد"},
-      {days: [3], start: 10.5, duration: 2, location: "پرديس شهيد رضايي نژاد"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "46_4210115",
-    prof: "حاتمي محمد محسن",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: ""},
-      {days: [3], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "47_4210115",
-    prof: "صداقت مهسا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: ""},
-      {days: [4], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "48_4210115",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [4], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "49_4210115",
-    prof: "صداقت مهسا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "51_4210115",
-    prof: "افضل زاده رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: ""},
-      {days: [4], start: 7.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 4210115,
-    name: "فيزيك 2",
-    code: "52_4210115",
-    prof: "افضل زاده رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: ""},
-      {days: [4], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "41_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "42_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "43_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "44_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "45_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "46_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "47_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "48_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "49_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "50_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "51_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "52_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "53_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "54_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "55_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "56_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "57_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "58_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "59_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "60_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "61_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "62_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "63_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "64_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "65_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "66_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "67_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "68_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "69_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "70_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "71_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4210116,
-    name: "آزفيزيك 2",
-    code: "72_4210116",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },{
-    id: 4210130,
-    name: "الكترو ديناميك پيشرفته 1",
-    code: "41_4210130",
-    prof: "رادين مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4210134,
-    name: "يادگيري ماشيني در فيزيك",
-    code: "41_4210134",
-    prof: "هدايتي خليل آباد هادي",
-    units: 3,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 206"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4212152,
-    name: "مباني ماده چگال نرم",
-    code: "41_4212152",
-    prof: "نوروزي فر احسان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 206"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4212159,
-    name: "فيزيك حالت جامد پيشرفته 2",
-    code: "41_4212159",
-    prof: "مشحون سارا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 211"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4212160,
-    name: "فيزيك حالت جامد پيشرفته 1",
-    code: "41_4212160",
-    prof: "مشكوري مهدي",
-    units: 3,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 206"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4212167,
-    name: "فيزيك حالت جامد 1",
-    code: "41_4212167",
-    prof: "جعفري محمود",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 202"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4212173,
-    name: "ابررسانايي و كاربرد آن",
-    code: "41_4212173",
-    prof: "افضلي رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 211"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4212213,
-    name: "آز حالت جامد",
-    code: "41_4212213",
-    prof: "صمدپور محمود",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4212213,
-    name: "آز حالت جامد",
-    code: "42_4212213",
-    prof: "صمدپور محمود",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 4212228,
-    name: "فيزيك ماده چگال 1",
-    code: "41_4212228",
-    prof: "جعفري محمود",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 206"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4214022,
-    name: "فيزيك آشكارسازها",
-    code: "41_4214022",
-    prof: "رحماني فائزه",
-    units: 3,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "حياط دانشكده 01"},
-      {days: [4], start: 9, duration: 1.5, location: "حياط دانشكده 01"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4214036,
-    name: "فيزيك هسته اي و ذرات بنيادي",
-    code: "41_4214036",
-    prof: "رسولي فاطمه سادات",
-    units: 3,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 202"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4214044,
-    name: "نظريه ميدان هاي كوانتومي 1",
-    code: "41_4214044",
-    prof: "نصيري راد امين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 206"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },{
-    id: 4218001,
-    name: "نجوم و اختر فيزيك",
-    code: "41_4218001",
-    prof: "ژوليده حقيقي محمد حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 211"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 211"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 4218011,
-    name: "ليزر",
-    code: "41_4218011",
-    prof: "رضايي فاطمه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "حياط دانشكده 01"},
-      {days: [4], start: 9, duration: 1.5, location: "حياط دانشكده 01"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 4218015,
-    name: "فيزيك الكترومغناطيس و نور",
-    code: "41_4218015",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 4218024,
-    name: "كيهان شناسي",
-    code: "41_4218024",
-    prof: "انصاري فرد محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 206"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4218025,
-    name: "فيزيك ليزر پيشرفته 1",
-    code: "41_4218025",
-    prof: "رضايي فاطمه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "حياط دانشكده 01"},
-      {days: [4], start: 15, duration: 1.5, location: "حياط دانشكده 01"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4218027,
-    name: "اختر فيزيك پيشرفته 2",
-    code: "41_4218027",
-    prof: "نصيري راد امين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 206"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4218034,
-    name: "روش هاي آناليز نانو ساختارها",
-    code: "41_4218034",
-    prof: "صمدپور محمود",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 206"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده فیزیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 4218035,
-    name: "آز نانوفيزيك 1",
-    code: "41_4218035",
-    prof: "صمدپور محمود",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده فیزیک"}
-    ],
-    examDate: "",
-    department: "دانشکده فیزیک",
-    capacity: 6,
-    gender: "مختلط"
+    "id": 1910024,
+    "name": "شبكه هاي كامپيوتري 2",
+    "code": "19_1910024",
+    "prof": "رضائي فاطمه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910026,
+    "name": "جبر خطي",
+    "code": "19_1910026",
+    "prof": "نصيحت كن سيد بهروز",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910029,
+    "name": "آمار و احتمالات مهندسي",
+    "code": "19_1910029",
+    "prof": "مراديان معصومه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910030,
+    "name": "آشنايي با صنعت كامپيوتر(كاربيني)",
+    "code": "19_1910030",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910031,
+    "name": "داده ساختارها و الگوريتم ها",
+    "code": "19_1910031",
+    "prof": "كوهزادي هيكويي مريم",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910032,
+    "name": "مهارت هاي نرم شغلي",
+    "code": "19_1910032",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910033,
+    "name": "رايانش كوانتومي",
+    "code": "01_1910033",
+    "prof": "تارخ محمد جعفر",
+    "units": 3,
+    "sessions": [
+      { "days": [6], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [6], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1910039,
+    "name": "زبان تخصصي",
+    "code": "19_1910039",
+    "prof": "علائيان محمدهادي",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912002,
+    "name": "برنامه سازي پيشرفته",
+    "code": "19_1912002",
+    "prof": "زمانيان مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912004,
+    "name": "طراحي الگوريتمها",
+    "code": "19_1912004",
+    "prof": "پيشگو بشري",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912005,
+    "name": "نظريه زبانها وماشينها",
+    "code": "19_1912005",
+    "prof": "خواسته سيد حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912011,
+    "name": "مباني كامپيوتروبرنامه سازي",
+    "code": "18_1912011",
+    "prof": "زمانيان مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912011,
+    "name": "مباني كامپيوتروبرنامه سازي",
+    "code": "19_1912011",
+    "prof": "قاسمي نراقي زينب",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912016,
+    "name": "مهندسي اينترنت",
+    "code": "19_1912016",
+    "prof": "زمانيان مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912024,
+    "name": "آزمايشگاه سيستم عامل",
+    "code": "17_1912024",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912024,
+    "name": "آزمايشگاه سيستم عامل",
+    "code": "18_1912024",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912024,
+    "name": "آزمايشگاه سيستم عامل",
+    "code": "19_1912024",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912025,
+    "name": "آزمايشگاه پايگاه داده ها",
+    "code": "17_1912025",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912025,
+    "name": "آزمايشگاه پايگاه داده ها",
+    "code": "18_1912025",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912025,
+    "name": "آزمايشگاه پايگاه داده ها",
+    "code": "19_1912025",
+    "prof": "بهرامي رويا",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912027,
+    "name": "رياضيات گسسته",
+    "code": "19_1912027",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912028,
+    "name": "كارگاه كامپيوتر",
+    "code": "15_1912028",
+    "prof": "مقيمي عطيه",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912028,
+    "name": "كارگاه كامپيوتر",
+    "code": "16_1912028",
+    "prof": "مقيمي عطيه",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912028,
+    "name": "كارگاه كامپيوتر",
+    "code": "17_1912028",
+    "prof": "مقيمي عطيه",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912028,
+    "name": "كارگاه كامپيوتر",
+    "code": "18_1912028",
+    "prof": "مقيمي عطيه",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912028,
+    "name": "كارگاه كامپيوتر",
+    "code": "19_1912028",
+    "prof": "مقيمي عطيه",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912029,
+    "name": "روش پژوهش و ارائه",
+    "code": "19_1912029",
+    "prof": "قاسمي نراقي زينب",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912030,
+    "name": "پايگاه داده ها",
+    "code": "19_1912030",
+    "prof": "كوهزادي هيكويي مريم",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912032,
+    "name": "تحليل و طراحي سيستم ها",
+    "code": "19_1912032",
+    "prof": "اثني عشري اصفهاني محمدمهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912033,
+    "name": "مهندسي نرم افزار",
+    "code": "19_1912033",
+    "prof": "صديقيان كاشي سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912037,
+    "name": "تحليل ها و سيستم هاي داده هاي حجيم",
+    "code": "19_1912037",
+    "prof": "خواسته سيد حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912048,
+    "name": "الگوريتم هاي پيشرفته",
+    "code": "19_1912048",
+    "prof": "ده يادگاري مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1912054,
+    "name": "هوش تجاري",
+    "code": "01_1912054",
+    "prof": "تارخ محمد جعفر",
+    "units": 3,
+    "sessions": [
+      { "days": [6], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [6], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916002,
+    "name": "شبكه هاي عصبي",
+    "code": "01_1916002",
+    "prof": "كوهزادي هيكويي مريم",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916005,
+    "name": "يادگيري ماشين",
+    "code": "01_1916005",
+    "prof": "اساتيد گروه آموزشي (آفتابي)",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 18, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916010,
+    "name": "پردازش زبانهاي طبيعي",
+    "code": "01_1916010",
+    "prof": "پيشگو بشري",
+    "units": 3,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916012,
+    "name": "بينائي ماشين",
+    "code": "01_1916012",
+    "prof": "اساتيد گروه آموزشي (غياثي راد)",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 18, "duration": 1.5, "location": "" }
+    ],
+        "examDate": "1405/10/20 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916028,
+    "name": "هوش مصنوعي و سيستم هاي خبره",
+    "code": "19_1916028",
+    "prof": "پيشگو بشري",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916035,
+    "name": "شناسايي الگو",
+    "code": "01_1916035",
+    "prof": "ناصر شريف بابك",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 18, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916041,
+    "name": "گفتارپردازي رقمي",
+    "code": "19_1916041",
+    "prof": "ناصر شريف بابك",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1916058,
+    "name": "مباحث پيشرفته در يادگيري ژرف",
+    "code": "01_1916058",
+    "prof": "قاسمي نراقي زينب",
+    "units": 3,
+    "sessions": [
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920002,
+    "name": "معماري كامپيوتر",
+    "code": "19_1920002",
+    "prof": "صيفوري زينب",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920004,
+    "name": "طراحي كامپيوتري سيستم هاي ديجيتال",
+    "code": "18_1920004",
+    "prof": "صيفوري زينب",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920004,
+    "name": "طراحي كامپيوتري سيستم هاي ديجيتال",
+    "code": "19_1920004",
+    "prof": "حسيني نژاد محبتي حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920005,
+    "name": "هم طراحي سخت افزار و نرم افزار",
+    "code": "19_1920005",
+    "prof": "عبدي آتنا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920009,
+    "name": "سيستمهاي عامل",
+    "code": "19_1920009",
+    "prof": "يعقوبي كعبه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920016,
+    "name": "سيگنالها وسيستمها",
+    "code": "19_1920016",
+    "prof": "مراديان معصومه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920018,
+    "name": "آزشبكه هاي كامپيوتري",
+    "code": "16_1920018",
+    "prof": "ميرزاحسيني داود",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920018,
+    "name": "آزشبكه هاي كامپيوتري",
+    "code": "17_1920018",
+    "prof": "ميرزاحسيني داود",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920018,
+    "name": "آزشبكه هاي كامپيوتري",
+    "code": "18_1920018",
+    "prof": "ميرزاحسيني داود",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920018,
+    "name": "آزشبكه هاي كامپيوتري",
+    "code": "19_1920018",
+    "prof": "ميرزاحسيني داود",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920024,
+    "name": "روشهاي محاسبات عددي",
+    "code": "19_1920024",
+    "prof": "دلير روي فرد رسول",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920031,
+    "name": "كارگاه عمومي",
+    "code": "18_1920031",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920031,
+    "name": "كارگاه عمومي",
+    "code": "19_1920031",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "کامپیوتر",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920035,
+    "name": "معماري كامپيوترپيشرفته",
+    "code": "01_1920035",
+    "prof": "اساتيد گروه آموزشي (سيفي پور)",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 18, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920035,
+    "name": "معماري كامپيوترپيشرفته",
+    "code": "19_1920035",
+    "prof": "ده يادگاري مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920043,
+    "name": "ريزپردازنده و زبان اسمبلي",
+    "code": "17_1920043",
+    "prof": "دلير روي فرد رسول",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920043,
+    "name": "ريزپردازنده و زبان اسمبلي",
+    "code": "18_1920043",
+    "prof": "رودكي لواساني هدا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920043,
+    "name": "ريزپردازنده و زبان اسمبلي",
+    "code": "19_1920043",
+    "prof": "درماني محمد يوسف",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920045,
+    "name": "مدارهاي الكتريكي",
+    "code": "19_1920045",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "کامپیوتر",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920051,
+    "name": "طراحي سيستم هاي تحمل پذير اشكال",
+    "code": "01_1920051",
+    "prof": "حميدي حجت اله",
+    "units": 3,
+    "sessions": [
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920077,
+    "name": "سيستم هاي توزيع شده",
+    "code": "19_1920077",
+    "prof": "خانميرزا حامد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "کامپیوتر",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 1920191,
+    "name": "شبكه هاي اجتماعي",
+    "code": "01_1920191",
+    "prof": "مراديان معصومه",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "کامپیوتر",
+    "capacity": 60,
+    "gender": "مختلط"
   }
 ,
-// Kamp
-{
-    id: 1910002,
-    name: "سمينار",
-    code: "01_1910002",
-    prof: "يعقوبي كعبه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 1910006,
-    name: "رساله دكتري",
-    code: "19_1910006",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910007,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "19_1910007",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910008,
-    name: "دفاع مجدد از پيشنهاد رساله دكتري",
-    code: "19_1910008",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910009,
-    name: "امتحان جامع دكتري 1",
-    code: "19_1910009",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910010,
-    name: "امتحان جامع دكتري 2",
-    code: "19_1910010",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910011,
-    name: "مدارهاي منطقي",
-    code: "19_1910011",
-    prof: "دلير روي فرد رسول",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910016,
-    name: "دستيار آموزشي",
-    code: "19_1910016",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910017,
-    name: "رساله دكترا",
-    code: "19_1910017",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910018,
-    name: "سمينار 1",
-    code: "19_1910018",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910019,
-    name: "سمينار 2",
-    code: "19_1910019",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1910020,
-    name: "الكترونيك ديجيتال و طراحي مدارهاي مجتمع پر تراكم",
-    code: "19_1910020",
-    prof: "صيفوري زينب",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910021,
-    name: "پروژه",
-    code: "19_1910021",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910022,
-    name: "نظريه و الگوريتم هاي گراف",
-    code: "19_1910022",
-    prof: "اساتيد گروه آموزشي (دكتر حسين شهسواري)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910023,
-    name: "شبكه هاي كامپيوتري 1",
-    code: "19_1910023",
-    prof: "مراديان معصومه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910024,
-    name: "شبكه هاي كامپيوتري 2",
-    code: "19_1910024",
-    prof: "يعقوبي كعبه",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910026,
-    name: "جبر خطي",
-    code: "19_1910026",
-    prof: "اساتيد گروه آموزشي (دكتر حسين شهسواري)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910031,
-    name: "داده ساختارها و الگوريتم ها",
-    code: "19_1910031",
-    prof: "اساتيد گروه آموزشي (دكتر زينب قاسمي نراقي)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1910033,
-    name: "رايانش كوانتومي",
-    code: "19_1910033",
-    prof: "اساتيد گروه آموزشي (دكتر سيد عليرضا حسام محسني)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-  {
-    id: 1910039,
-    name: "زبان تخصصي",
-    code: "19_1910039",
-    prof: "يعقوبي كعبه",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912002,
-    name: "برنامه سازي پيشرفته",
-    code: "18_1912002",
-    prof: "خانميرزا حامد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912002,
-    name: "برنامه سازي پيشرفته",
-    code: "19_1912002",
-    prof: "زمانيان مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912004,
-    name: "طراحي الگوريتمها",
-    code: "19_1912004",
-    prof: "اثني عشري اصفهاني محمدمهدي",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912005,
-    name: "نظريه زبانها وماشينها",
-    code: "19_1912005",
-    prof: "ناصر شريف بابك",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912011,
-    name: "مباني كامپيوتر و برنامه سازي",
-    code: "19_1912011",
-    prof: "اساتيد گروه آموزشي (دكتر زينب قاسمي نراقي)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912012,
-    name: "اصول طراحي كامپايلر",
-    code: "19_1912012",
-    prof: "علائيان محمدهادي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912016,
-    name: "مهندسي اينترنت",
-    code: "19_1912016",
-    prof: "زمانيان مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912024,
-    name: "آزمايشگاه سيستم عامل",
-    code: "17_1912024",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912024,
-    name: "آزمايشگاه سيستم عامل",
-    code: "18_1912024",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912024,
-    name: "آزمايشگاه سيستم عامل",
-    code: "19_1912024",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912025,
-    name: "آزمايشگاه پايگاه داده ها",
-    code: "17_1912025",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912025,
-    name: "آزمايشگاه پايگاه داده ها",
-    code: "18_1912025",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912025,
-    name: "آزمايشگاه پايگاه داده ها",
-    code: "19_1912025",
-    prof: "اساتيد گروه آموزشي (رويا بهرامي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1912027,
-    name: "رياضيات گسسته",
-    code: "19_1912027",
-    prof: "خواسته سيد حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912028,
-    name: "كارگاه كامپيوتر",
-    code: "19_1912028",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-  {
-    id: 1912029,
-    name: "روش پژوهش و ارائه",
-    code: "19_1912029",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912030,
-    name: "پايگاه داده ها",
-    code: "19_1912030",
-    prof: "پيشگو بشري",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912032,
-    name: "تحليل و طراحي سيستم ها",
-    code: "19_1912032",
-    prof: "صديقيان كاشي سعيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1912050,
-    name: "اصول و كاربردهاي اينترنت اشياء",
-    code: "01_1912050",
-    prof: "اساتيد گروه آموزشي (جهاني راد)",
-    units: 3,
-    sessions: [
-      {days: [6], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [6], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 1912050,
-    name: "اصول و كاربردهاي اينترنت اشياء",
-    code: "19_1912050",
-    prof: "صديقيان كاشي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1912054,
-    name: "هوش تجاري",
-    code: "19_1912054",
-    prof: "تارخ محمد جعفر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916005,
-    name: "يادگيري ماشين",
-    code: "11_1916005",
-    prof: "علياري شوره دلي مهدي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1916005,
-    name: "يادگيري ماشين",
-    code: "72_1916005",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916010,
-    name: "پردازش زبانهاي طبيعي",
-    code: "19_1916010",
-    prof: "پيشگو بشري",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916011,
-    name: "تصويرپردازي رقمي",
-    code: "01_1916011",
-    prof: "اساتيد گروه آموزشي (دكتر غياثي راد)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [1], start: 18, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 60,
-    gender: "مختلط"
-  },
-  {
-    id: 1916022,
-    name: "سمينار",
-    code: "01_1916022",
-    prof: "يعقوبي كعبه",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 1916022,
-    name: "سمينار",
-    code: "17_1916022",
-    prof: "رضائي فاطمه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916022,
-    name: "سمينار",
-    code: "18_1916022",
-    prof: "علائيان محمدهادي",
-    units: 2,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916022,
-    name: "سمينار",
-    code: "19_1916022",
-    prof: "پيشگو بشري",
-    units: 2,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916023,
-    name: "پردازش تكاملي",
-    code: "01_1916023",
-    prof: "حميدي حجت اله",
-    units: 3,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 1916023,
-    name: "پردازش تكاملي",
-    code: "19_1916023",
-    prof: "اثني عشري اصفهاني محمدمهدي",
-    units: 3,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/18 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916028,
-    name: "هوش مصنوعي و سيستم هاي خبره",
-    code: "19_1916028",
-    prof: "كوهزادي هيكويي مريم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1916033,
-    name: "مباني بينائي كامپيوتر",
-    code: "19_1916033",
-    prof: "نصيحت كن سيد بهروز",
-    units: 3,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1916035,
-    name: "شناسايي الگو",
-    code: "19_1916035",
-    prof: "ناصر شريف بابك",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916040,
-    name: "يادگيري تقويتي",
-    code: "19_1916040",
-    prof: "خواسته سيد حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916044,
-    name: "داده كاوي پيشرفته",
-    code: "01_1916044",
-    prof: "پيشگو بشري",
-    units: 3,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/16 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 1916044,
-    name: "داده كاوي پيشرفته",
-    code: "19_1916044",
-    prof: "كوهزادي هيكويي مريم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916045,
-    name: "پنهان سازي اطلاعات",
-    code: "19_1916045",
-    prof: "علائيان محمدهادي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1916053,
-    name: "سيستم هاي توصيه گر",
-    code: "01_1916053",
-    prof: "اساتيد گروه آموزشي (دكتر آفتابي)",
-    units: 3,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 70,
-    gender: "مختلط"
-  },
-  {
-    id: 1916054,
-    name: "يادگيري ژرف",
-    code: "01_1916054",
-    prof: "كوهزادي هيكويي مريم",
-    units: 3,
-    sessions: [
-      {days: [6], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [6], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 1916057,
-    name: "مدل هاي مولد عميق",
-    code: "19_1916057",
-    prof: "نصيحت كن سيد بهروز",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1920001,
-    name: "آزمون و طراحي آزمون پذير",
-    code: "01_1920001",
-    prof: "حميدي حجت اله",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 1920002,
-    name: "معماري كامپيوتر",
-    code: "19_1920002",
-    prof: "ده يادگاري مسعود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920004,
-    name: "طراحي كامپيوتري سيستم هاي ديجيتال",
-    code: "19_1920004",
-    prof: "صيفوري زينب",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920005,
-    name: "هم طراحي سخت افزار و نرم افزار",
-    code: "19_1920005",
-    prof: "رودكي لواساني هدا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920009,
-    name: "سيستمهاي عامل",
-    code: "19_1920009",
-    prof: "خانميرزا حامد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920016,
-    name: "سيگنالها وسيستمها",
-    code: "19_1920016",
-    prof: "رضائي فاطمه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920018,
-    name: "آزشبكه هاي كامپيوتري",
-    code: "16_1920018",
-    prof: "اساتيد گروه آموزشي (داوود ميرزاحسيني)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 1920018,
-    name: "آزشبكه هاي كامپيوتري",
-    code: "17_1920018",
-    prof: "اساتيد گروه آموزشي (داوود ميرزاحسيني)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 1920018,
-    name: "آزشبكه هاي كامپيوتري",
-    code: "18_1920018",
-    prof: "اساتيد گروه آموزشي (داوود ميرزاحسيني)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 1920018,
-    name: "آزشبكه هاي كامپيوتري",
-    code: "19_1920018",
-    prof: "اساتيد گروه آموزشي (داوود ميرزاحسيني)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 1920031,
-    name: "كارگاه عمومي",
-    code: "18_1920031",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1920031,
-    name: "كارگاه عمومي",
-    code: "19_1920031",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده هوافضا"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1920043,
-    name: "ريزپردازنده و زبان اسمبلي",
-    code: "18_1920043",
-    prof: "دلير روي فرد رسول",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-  {
-    id: 1920043,
-    name: "ريزپردازنده و زبان اسمبلي",
-    code: "19_1920043",
-    prof: "درماني محمد يوسف",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 1920044,
-    name: "آزمايشگاه مدارهاي منطقي و معماري كامپيوتر",
-    code: "17_1920044",
-    prof: "اساتيد گروه آموزشي (آقاي نصراللهي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1920044,
-    name: "آزمايشگاه مدارهاي منطقي و معماري كامپيوتر",
-    code: "18_1920044",
-    prof: "اساتيد گروه آموزشي (آقاي بنداريان)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1920044,
-    name: "آزمايشگاه مدارهاي منطقي و معماري كامپيوتر",
-    code: "19_1920044",
-    prof: "اساتيد گروه آموزشي (آقاي نصرالهي)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "",
-    department: "دانشکده کامپیوتر",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 1920045,
-    name: "مدارهاي الكتريكي",
-    code: "19_1920045",
-    prof: "مراديان معصومه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920046,
-    name: "سيستم هاي نهفته و بي درنگ",
-    code: "19_1920046",
-    prof: "عبدي آتنا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 1920050,
-    name: "طراحي سيستم هاي كم مصرف",
-    code: "01_1920050",
-    prof: "رودكي لواساني هدا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 1920050,
-    name: "طراحي سيستم هاي كم مصرف",
-    code: "19_1920050",
-    prof: "رودكي لواساني هدا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1920051,
-    name: "طراحي سيستم هاي تحمل پذير اشكال",
-    code: "19_1920051",
-    prof: "عبدي آتنا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1920053,
-    name: "معماري پردازنده هاي اختصاصي سيگنال ديجيتال",
-    code: "19_1920053",
-    prof: "حسيني نژاد محبتي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1920062,
-    name: "پردازش قابل باز پيكربندي",
-    code: "01_1920062",
-    prof: "صيفوري زينب",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/14 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 1920062,
-    name: "پردازش قابل باز پيكربندي",
-    code: "19_1920062",
-    prof: "صيفوري زينب",
-    units: 3,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1920063,
-    name: "شتاب دهنده هاي سخت افزاري",
-    code: "19_1920063",
-    prof: "ده يادگاري مسعود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-  {
-    id: 1920074,
-    name: "ارزيابي كارايي سيستم هاي كامپيوتري",
-    code: "01_1920074",
-    prof: "مراديان معصومه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/06 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 1920074,
-    name: "ارزيابي كارايي سيستم هاي كامپيوتري",
-    code: "19_1920074",
-    prof: "مراديان معصومه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/19 10:30-12:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 1920075,
-    name: "شبكه هاي چند رسانه اي",
-    code: "01_1920075",
-    prof: "اساتيد گروه آموزشي (دكتر قندچي)",
-    units: 3,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/08 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 1920075,
-    name: "شبكه هاي چند رسانه اي",
-    code: "19_1920075",
-    prof: "درماني محمد يوسف",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 1920084,
-    name: "مديريت شبكه",
-    code: "01_1920084",
-    prof: "يعقوبي كعبه",
-    units: 3,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده کامپیوتر"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 1920084,
-    name: "مديريت شبكه",
-    code: "19_1920084",
-    prof: "يعقوبي كعبه",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده کامپیوتر"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده کامپیوتر",
-    capacity: 20,
-    gender: "مختلط"
-  }
-,
-//Omran
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "21_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "22_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "23_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "24_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "25_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "26_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "27_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220035,
-    name: "سمينار",
-    code: "28_2220035",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2220084,
-    name: "اقتصاد مهندسي",
-    code: "21_2220084",
-    prof: "دهقاني سانيج محمدسعيد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220097,
-    name: "بازرسي،تعميروترميم سازه ها",
-    code: "21_2220097",
-    prof: "بهشتي اول سيد بهرام",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220098,
-    name: "اصول مهندسي زلزله وباد",
-    code: "21_2220098",
-    prof: "قادري گركاني مجيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2220101,
-    name: "رساله دكترا",
-    code: "21_2220101",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 2220105,
-    name: "مباني GIS در مهندسي عمران",
-    code: "21_2220105",
-    prof: "رحيم زادگان مجيد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220110,
-    name: "محاسبات عددي",
-    code: "21_2220110",
-    prof: "اسدي رزا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2220110,
-    name: "محاسبات عددي",
-    code: "22_2220110",
-    prof: "ايزدي اردلان",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2220116,
-    name: "مقررات ملي ساختمان",
-    code: "21_2220116",
-    prof: "صباغ يزدي سعيد رضا",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-  {
-    id: 2220121,
-    name: "پروژه تخصصي",
-    code: "21_2220121",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 2220157,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "21_2220157",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 2220158,
-    name: "دفاع مجدد از پيشنهاد رساله دكتري",
-    code: "21_2220158",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 2220159,
-    name: "امتحان جامع دكتري 1",
-    code: "21_2220159",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 2220160,
-    name: "امتحان جامع دكتري 2",
-    code: "21_2220160",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 2220162,
-    name: "تاسيسات مكانيكي وبرقي",
-    code: "21_2220162",
-    prof: "وكيل زاده داود",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220164,
-    name: "پايان نامه",
-    code: "21_2220164",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 120,
-    gender: "مختلط"
-  },
-{
-    id: 2220171,
-    name: "هوش مصنوعي و تحول ديجيتال",
-    code: "21_2220171",
-    prof: "قاسم زاده حسن",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220171,
-    name: "هوش مصنوعي و تحول ديجيتال",
-    code: "22_2220171",
-    prof: "صادقي نعيمه",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220171,
-    name: "هوش مصنوعي و تحول ديجيتال",
-    code: "23_2220171",
-    prof: "صادقي نعيمه",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220172,
-    name: "كارگاه عمومي",
-    code: "21_2220172",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2220172,
-    name: "كارگاه عمومي",
-    code: "22_2220172",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2220172,
-    name: "كارگاه عمومي",
-    code: "23_2220172",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2220172,
-    name: "كارگاه عمومي",
-    code: "24_2220172",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2220172,
-    name: "كارگاه عمومي",
-    code: "25_2220172",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2220173,
-    name: "برنامه سازي كامپيوتر",
-    code: "21_2220173",
-    prof: "باراني لنباني اميد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2220173,
-    name: "برنامه سازي كامپيوتر",
-    code: "22_2220173",
-    prof: "خدادادي مجتبي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-  {
-    id: 2220175,
-    name: "مكانيك جامدات1",
-    code: "21_2220175",
-    prof: "عسجدي امير حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220175,
-    name: "مكانيك جامدات1",
-    code: "22_2220175",
-    prof: "قادري گركاني مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220177,
-    name: "مباني معماري و شهرسازي",
-    code: "21_2220177",
-    prof: "اساتيد گروه آموزشي (دكتر رفيع زاده)",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 32,
-    gender: "مختلط"
-  },
-{
-    id: 2220177,
-    name: "مباني معماري و شهرسازي",
-    code: "22_2220177",
-    prof: "اساتيد گروه آموزشي (دكتر رفيع زاده)",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 32,
-    gender: "مختلط"
-  },
-{
-    id: 2220177,
-    name: "مباني معماري و شهرسازي",
-    code: "23_2220177",
-    prof: "اساتيد گروه آموزشي (دكتر يزدان نجاد)",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمرan",
-    capacity: 32,
-    gender: "مختلط"
-  },
-{
-    id: 2220185,
-    name: "مكانيك خاك",
-    code: "21_2220185",
-    prof: "عبدي محمود رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220185,
-    name: "مكانيك خاك",
-    code: "22_2220185",
-    prof: "رئيسيان زاده جواد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220205,
-    name: "تغيير اقليم",
-    code: "21_2220205",
-    prof: "اسدي رزا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2220228,
-    name: "كاربرد پيشرفته هوش مصنوعي و تحول ديجيتال",
-    code: "21_2220228",
-    prof: "قاسم زاده حسن",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2221023,
-    name: "مكانيك سيالات",
-    code: "21_2221023",
-    prof: "سلطان پور محسن",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2221023,
-    name: "مكانيك سيالات",
-    code: "22_2221023",
-    prof: "استادميرزا تهراني محمدجواد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2221023,
-    name: "مكانيك سيالات",
-    code: "23_2221023",
-    prof: "عليزاد كريم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2221026,
-    name: "هيدروليك",
-    code: "21_2221026",
-    prof: "يكه يزدان دوست فرهاد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2221026,
-    name: "هيدروليك",
-    code: "22_2221026",
-    prof: "استادميرزا تهراني محمدجواد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-  {
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "21_2221027",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "22_2221027",
-    prof: "وكيل زاده داود",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "23_2221027",
-    prof: "عليزاد كريم",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "24_2221027",
-    prof: "ايزدي اردلان",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "25_2221027",
-    prof: "ايزدي اردلان",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221027,
-    name: "آزهيدروليك",
-    code: "26_2221027",
-    prof: "استادميرزا تهراني محمدجواد",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2221036,
-    name: "هيدرولوژي مهندسي",
-    code: "21_2221036",
-    prof: "مهجوري مجد نجمه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2221036,
-    name: "هيدرولوژي مهندسي",
-    code: "22_2221036",
-    prof: "مهجوري مجد نجمه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2221039,
-    name: "زبان تخصصي",
-    code: "21_2221039",
-    prof: "عليزاد كريم",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2221043,
-    name: "آبهاي زيرزميني",
-    code: "21_2221043",
-    prof: "موسوي سيد مرتضي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2221047,
-    name: "مهندسي اب وفاضلاب وپروژه",
-    code: "21_2221047",
-    prof: "كاويانپور محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2221049,
-    name: "بناهاي ابي",
-    code: "21_2221049",
-    prof: "كاويانپور محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2221065,
-    name: "روشهاي عددي درمهندسي اب",
-    code: "21_2221065",
-    prof: "حجازي كورش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2221067,
-    name: "طراحي هيدروليكي سازه ها",
-    code: "21_2221067",
-    prof: "كاويانپور محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2221068,
-    name: "مهندسي رودخانه",
-    code: "21_2221068",
-    prof: "يكه يزدان دوست فرهاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 2221107,
-    name: "سكوهاي دريايي",
-    code: "21_2221107",
-    prof: "عسگريان بهروز و زين الديني مصطفي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2221108,
-    name: "طراحي بنادر",
-    code: "21_2221108",
-    prof: "وفائي فريدون و زين الديني مصطفي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2221118,
-    name: "هيدروليك محاسباتي",
-    code: "21_2221118",
-    prof: "عليزاد كريم",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2221172,
-    name: "مدل هاي فيزيكي واندازه گيري ميداني",
-    code: "21_2221172",
-    prof: "استادميرزا تهراني محمدجواد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2222002,
-    name: "تحليل و مديريت سيستم هاي منابع آب 1",
-    code: "21_2222002",
-    prof: "برهاني داريان عليرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2222019,
-    name: "روش هاي عددي در مهندسي آب ( يا هيدروليك محاسباتي)",
-    code: "21_2222019",
-    prof: "موسوي سيد مرتضي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2222021,
-    name: "مدلسازي جريان وكيفيت منابع آب ( سطحي و زيرزميني)",
-    code: "21_2222021",
-    prof: "اسدي رزا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2222035,
-    name: "مباحث پيشرفته در كاربرد GIS و RS درمنابع آب",
-    code: "21_2222035",
-    prof: "رحيم زادگان مجيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2227003,
-    name: "آز مكانيك خاك پيشرفته",
-    code: "21_2227003",
-    prof: "عبدي محمود رضا",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/12 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227012,
-    name: "مكانيك خاك 2",
-    code: "21_2227012",
-    prof: "عبدي محمود رضا",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2227013,
-    name: "روشهاي اجزامحدود",
-    code: "21_2227013",
-    prof: "باراني لنباني اميد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-  {
-    id: 2227031,
-    name: "آزمكانيك خاك",
-    code: "21_2227031",
-    prof: "علي آباديان زينب",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2227031,
-    name: "آزمكانيك خاك",
-    code: "22_2227031",
-    prof: "رئيسيان زاده جواد",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2227031,
-    name: "آزمكانيك خاك",
-    code: "23_2227031",
-    prof: "علي آباديان زينب",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2227031,
-    name: "آزمكانيك خاك",
-    code: "24_2227031",
-    prof: "رئيسيان زاده جواد",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2227048,
-    name: "نظريه خميري درمكانيك خاك",
-    code: "21_2227048",
-    prof: "باراني لنباني اميد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227059,
-    name: "ژئوتكنيك لرزه اي",
-    code: "21_2227059",
-    prof: "رئيسيان زاده جواد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227066,
-    name: "تحقيقات محلي درساختگاه",
-    code: "21_2227066",
-    prof: "عبدي محمود رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227071,
-    name: "مهندسي پي وپروژه",
-    code: "21_2227071",
-    prof: "مقدس تفرشي سيد ناصر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2227071,
-    name: "مهندسي پي وپروژه",
-    code: "22_2227071",
-    prof: "قضاوي محمود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2227074,
-    name: "بهسازي خاك",
-    code: "21_2227074",
-    prof: "قضاوي محمود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227078,
-    name: "خاك مسلح",
-    code: "21_2227078",
-    prof: "مقدس تفرشي سيد ناصر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 2227105,
-    name: "روش هاي اجرائ گودوسازه نگهبان",
-    code: "21_2227105",
-    prof: "رئيسيان زاده جواد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2227112,
-    name: "پترو فيزيك مياني نمودارگيري و چاه آزمايي",
-    code: "21_2227112",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمرan"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 5,
-    gender: "مختلط"
-  },
-  {
-    id: 2227116,
-    name: "ژئو فيزيك لرزه اي",
-    code: "21_2227116",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 5,
-    gender: "مختلط"
-  },
-{
-    id: 2227117,
-    name: "ژئومكانيك حفاري و تكميل چاه",
-    code: "21_2227117",
-    prof: "علي آباديان زينب",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 5,
-    gender: "مختلط"
-  },
-{
-    id: 2229001,
-    name: "حقوق ساخت",
-    code: "21_2229001",
-    prof: "عباسيان جهرمي حميدرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [2], start: 18, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 2229004,
-    name: "تكنولوژي عالي بتن",
-    code: "21_2229004",
-    prof: "باقري عليرضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2229008,
-    name: "مدل سازي اطلاعات ساخت",
-    code: "21_2229008",
-    prof: "صادقي نعيمه",
-    units: 3,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [5], start: 18, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 2229010,
-    name: "مديريت پروژه",
-    code: "21_2229010",
-    prof: "دادپور محمد حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [1], start: 18, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 2229013,
-    name: "تحليل و طراحي سيستم ها",
-    code: "21_2229013",
-    prof: "صادقي نعيمه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2229018,
-    name: "مديريت نگهداري پروژه هاي عمراني",
-    code: "21_2229018",
-    prof: "دهقاني سانيج محمدسعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2229024,
-    name: "مديريت ماشين آلات ساخت",
-    code: "21_2229024",
-    prof: "عليپوري يعقوب",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2229024,
-    name: "مديريت ماشين آلات ساخت",
-    code: "22_2229024",
-    prof: "عليپوري يعقوب",
-    units: 3,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 18, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 40,
-    gender: "مختلط"
-  },
-  {
-    id: 2271042,
-    name: "طراحي ساختمانهاي فلزي پيشرفته",
-    code: "21_2271042",
-    prof: "زندي امير پيمان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271068,
-    name: "مقاومت مصالح 2",
-    code: "21_2271068",
-    prof: "علي آباديان زينب",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271068,
-    name: "مقاومت مصالح 2",
-    code: "22_2271068",
-    prof: "كياني كيوان",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271082,
-    name: "سازه هاي فولادي 1",
-    code: "21_2271082",
-    prof: "خليفه لو سيداكبر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271082,
-    name: "سازه هاي فولادي 1",
-    code: "22_2271082",
-    prof: "اساتيد گروه آموزشي (مهندس زندي)",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271084,
-    name: "سازه هاي بتن آرمه 2",
-    code: "21_2271084",
-    prof: "ميرزا بزرگ حسن",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271084,
-    name: "سازه هاي بتن آرمه 2",
-    code: "22_2271084",
-    prof: "نصراله زاده نشلي كورش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271086,
-    name: "تئوري نقشه برداري 1",
-    code: "21_2271086",
-    prof: "رحيم زادگان مجيد",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271086,
-    name: "تئوري نقشه برداري 1",
-    code: "22_2271086",
-    prof: "رحيم زادگان مجيد",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271088,
-    name: "استاتيك",
-    code: "21_2271088",
-    prof: "عسگريان بهروز",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2271088,
-    name: "استاتيك",
-    code: "22_2271088",
-    prof: "عسجدي امير حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-{
-    id: 2271088,
-    name: "استاتيك",
-    code: "23_2271088",
-    prof: "اصيل قره باغي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 25,
-    gender: "مختلط"
-  },
-  {
-    id: 2271100,
-    name: "آزبتن",
-    code: "21_2271100",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2271100,
-    name: "آزبتن",
-    code: "22_2271100",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2271102,
-    name: "آزمصالح ساختمان",
-    code: "21_2271102",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2271102,
-    name: "آزمصالح ساختمان",
-    code: "22_2271102",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2271102,
-    name: "آزمصالح ساختمان",
-    code: "23_2271102",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2271107,
-    name: "متره وبراورد وپروژه",
-    code: "21_2271107",
-    prof: "دادپور محمد حسين",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2271108,
-    name: "تحليل سازه ها 1",
-    code: "21_2271108",
-    prof: "كرمي محمدي رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271108,
-    name: "تحليل سازه ها 1",
-    code: "22_2271108",
-    prof: "دلفاني محمدرسول",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271118,
-    name: "تحليل سازه ها 2",
-    code: "21_2271118",
-    prof: "خليفه لو سيداكبر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 2271121,
-    name: "سازه هاي بتن آرمه 1",
-    code: "21_2271121",
-    prof: "بهشتي اول سيد بهرام",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271121,
-    name: "سازه هاي بتن آرمه 1",
-    code: "22_2271121",
-    prof: "مسعودي مصطفي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271123,
-    name: "روشهاي اجرايي ساختمان",
-    code: "21_2271123",
-    prof: "اساتيد گروه آموزشي (دكتر سيد پيمان موسوي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 35,
-    gender: "مختلط"
-  },
-  {
-    id: 2271131,
-    name: "سازه هاي فولادي 2",
-    code: "21_2271131",
-    prof: "فنائي نادر",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271131,
-    name: "سازه هاي فولادي 2",
-    code: "22_2271131",
-    prof: "مشايخي محمد رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271142,
-    name: "آزمقاومت مصالح",
-    code: "21_2271142",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271142,
-    name: "آزمقاومت مصالح",
-    code: "22_2271142",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271142,
-    name: "آزمقاومت مصالح",
-    code: "23_2271142",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271148,
-    name: "تكنولوژي بتن",
-    code: "21_2271148",
-    prof: "زنگانه حامد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271148,
-    name: "تكنولوژي بتن",
-    code: "22_2271148",
-    prof: "باقري عليرضا",
-    units: 2,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271148,
-    name: "تكنولوژي بتن",
-    code: "23_2271148",
-    prof: "باقري عليرضا",
-    units: 2,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 2271196,
-    name: "روشهاي عددي دردريا",
-    code: "21_2271196",
-    prof: "حجازي كورش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271209,
-    name: "پروژه بتن آرمه",
-    code: "21_2271209",
-    prof: "ميرزا بزرگ حسن",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271209,
-    name: "پروژه بتن آرمه",
-    code: "22_2271209",
-    prof: "نصراله زاده نشلي كورش",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271209,
-    name: "پروژه بتن آرمه",
-    code: "23_2271209",
-    prof: "مسعودي مصطفي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2271209,
-    name: "پروژه بتن آرمه",
-    code: "24_2271209",
-    prof: "بهشتي اول سيد بهرام",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-  {
-    id: 2271216,
-    name: "پروژه سازه هاي فولادي",
-    code: "21_2271216",
-    prof: "فنائي نادر",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271216,
-    name: "پروژه سازه هاي فولادي",
-    code: "22_2271216",
-    prof: "مشايخي محمد رضا",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271216,
-    name: "پروژه سازه هاي فولادي",
-    code: "23_2271216",
-    prof: "خليفه لو سيداكبر",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271216,
-    name: "پروژه سازه هاي فولادي",
-    code: "24_2271216",
-    prof: "زندي امير پيمان",
-    units: 1,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271225,
-    name: "ميكرو مكانيك آسيب در جامدات",
-    code: "21_2271225",
-    prof: "دلفاني محمدرسول",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271231,
-    name: "پايداري سازه ها",
-    code: "21_2271231",
-    prof: "خليفه لو سيداكبر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271233,
-    name: "انفجار و ملاحظات طراحي",
-    code: "21_2271233",
-    prof: "زين الديني مصطفي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271237,
-    name: "طراحي لرزه اي سازه ها",
-    code: "21_2271237",
-    prof: "فنائي نادر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271238,
-    name: "آسيب پذيري و بهسازي لرزه اي سازه ها",
-    code: "21_2271238",
-    prof: "نصراله زاده نشلي كورش",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271242,
-    name: "پايش سلامت سازه ها",
-    code: "21_2271242",
-    prof: "بهشتي اول سيد بهرام",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-  {
-    id: 2271246,
-    name: "تئوري ورق و پوسته",
-    code: "21_2271246",
-    prof: "كياني كيوان",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271253,
-    name: "اجزاء محدود پيشرفته (غير خطي)",
-    code: "21_2271253",
-    prof: "ميرزا بزرگ حسن",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271259,
-    name: "روش اجزاء محدود",
-    code: "21_2271259",
-    prof: "اصيل قره باغي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271264,
-    name: "روش هاي عددي در مهندسي سازه",
-    code: "21_2271264",
-    prof: "اصيل قره باغي سعيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271274,
-    name: "طراحي سازه هاي چوبي نوين",
-    code: "21_2271274",
-    prof: "صباغ يزدي سعيد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2271277,
-    name: "عمليات نقشه برداري 1",
-    code: "21_2271277",
-    prof: "اساتيد گروه آموزشي (مهندس آرش اميني)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/19 17:00-20:00",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271277,
-    name: "عمليات نقشه برداري 1",
-    code: "22_2271277",
-    prof: "اساتيد گروه آموزشي (مهندس آرش اميني)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/19 17:00-20:00",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271277,
-    name: "عمليات نقشه برداري 1",
-    code: "23_2271277",
-    prof: "اساتيد گروه آموزشي (مهندس آرش اميني)",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/19 17:00-20:00",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2271277,
-    name: "عمليات نقشه برداري 1",
-    code: "24_2271277",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/19 17:00-20:00",
-    department: "دانشکده مهندسی عمران",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 2272009,
-    name: "تحليل و طراحي غير ارتجاعي سازه ها",
-    code: "21_2272009",
-    prof: "عسگريان بهروز",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2272032,
-    name: "لرزه شناسي و مهندسي زلزله",
-    code: "21_2272032",
-    prof: "ذوالفقاري محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-  {
-    id: 2272033,
-    name: "طراحي لرزه اي سازه ها",
-    code: "21_2272033",
-    prof: "قادري گركاني مجيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2272034,
-    name: "آسيب پذيري و بهسازي لرزه اي سازه ها",
-    code: "21_2272034",
-    prof: "مسعودي مصطفي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2272038,
-    name: "پايش سلامت سازه ها",
-    code: "21_2272038",
-    prof: "مشايخي محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2272049,
-    name: "تحليل خطر زلزله",
-    code: "21_2272049",
-    prof: "ذوالفقاري محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2272064,
-    name: "كنترل لرزه اي سازه ها",
-    code: "21_2272064",
-    prof: "كرمي محمدي رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2274026,
-    name: "مديريت كيفي منابع آب",
-    code: "21_2274026",
-    prof: "مهجوري مجد نجمه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 2279005,
-    name: "آزمايشگاه روسازي",
-    code: "21_2279005",
-    prof: "فخري منصور",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2279005,
-    name: "آزمايشگاه روسازي",
-    code: "22_2279005",
-    prof: "خدادادي مجتبي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 2279008,
-    name: "مهندسي ترابري",
-    code: "21_2279008",
-    prof: "حاجي حسينلو منصور",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2279018,
-    name: "روسازي راه",
-    code: "21_2279018",
-    prof: "فخري منصور",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-  {
-    id: 2279021,
-    name: "راهسازي",
-    code: "21_2279021",
-    prof: "منجم محمد سعيد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2279021,
-    name: "راهسازي",
-    code: "22_2279021",
-    prof: "منجم محمد سعيد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 2279032,
-    name: "تقاضا در حمل ونقل",
-    code: "21_2279032",
-    prof: "ادريسي علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/06 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279038,
-    name: "مديريت ونگهداري راه",
-    code: "21_2279038",
-    prof: "فخري منصور",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279040,
-    name: "ايمني در ترافيك",
-    code: "21_2279040",
-    prof: "حاجي حسينلو منصور",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279058,
-    name: "مهندسي بنادر",
-    code: "21_2279058",
-    prof: "فخري منصور",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279060,
-    name: "مهندسي راه آهن پيشرفته",
-    code: "21_2279060",
-    prof: "منجم محمد سعيد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279066,
-    name: "تحليل و ارزيابي سيستم هاي حمل و نقل",
-    code: "21_2279066",
-    prof: "ادريسي علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279076,
-    name: "پروژه راه",
-    code: "21_2279076",
-    prof: "منجم محمد سعيد",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279076,
-    name: "پروژه راه",
-    code: "22_2279076",
-    prof: "منجم محمد سعيد",
-    units: 1,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279076,
-    name: "پروژه راه",
-    code: "23_2279076",
-    prof: "منجم محمد سعيد",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 2279076,
-    name: "پروژه راه",
-    code: "24_2279076",
-    prof: "منجم محمد سعيد",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده مهندسی عمران"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی عمران",
-    capacity: 10,
-    gender: "مختلط"
-  },
-// Mekanik
-{
-    id: 3330014,
-    name: "زبان تخصصي",
-    code: "31_3330014",
-    prof: "آقانجفي سيروس",
-    units: 2,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330039,
-    name: "برنامه سازي كامپيوتر",
-    code: "31_3330039",
-    prof: "ستاري اميرمحمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "كلاس 204"},
-      {days: [4], start: 16.5, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330039,
-    name: "برنامه سازي كامپيوتر",
-    code: "32_3330039",
-    prof: "كازروني مهرداد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 16.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330040,
-    name: "محاسبات عددي",
-    code: "31_3330040",
-    prof: "ساداتي سيدحسين",
-    units: 2,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330040,
-    name: "محاسبات عددي",
-    code: "32_3330040",
-    prof: "ترابي فرشاد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330042,
-    name: "مباني مهندسي برق 2",
-    code: "31_3330042",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 205"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330043,
-    name: "آز مباني مهندسي برق",
-    code: "31_3330043",
-    prof: "اساتيد گروه آموزشي (مهندس محمدي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 3330043,
-    name: "آز مباني مهندسي برق",
-    code: "32_3330043",
-    prof: "اساتيد گروه آموزشي (مهندس محمدي)",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 3330043,
-    name: "آز مباني مهندسي برق",
-    code: "33_3330043",
-    prof: "اساتيد گروه آموزشي (مهندس بهاري)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 3330043,
-    name: "آز مباني مهندسي برق",
-    code: "34_3330043",
-    prof: "اساتيد گروه آموزشي (مهندس بهاري)",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 3330051,
-    name: "كنترل مدرن",
-    code: "31_3330051",
-    prof: "نجفي اردكاني علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 205"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-  {
-    id: 3330077,
-    name: "محركه هاي نا متداول",
-    code: "31_3330077",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330089,
-    name: "اقتصاد و انرژي در ايران و جهان",
-    code: "31_3330089",
-    prof: "عميد پور مجيد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330092,
-    name: "كاربردهاي انرژي خورشيدي",
-    code: "31_3330092",
-    prof: "بهبهاني نيا سيد علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 306"},
-      {days: [5], start: 15, duration: 1.5, location: "كلاس 306"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330103,
-    name: "رياضيات مهندسي",
-    code: "31_3330103",
-    prof: "رسولي آيسا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 202"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330103,
-    name: "رياضيات مهندسي",
-    code: "32_3330103",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 204"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330105,
-    name: "دفاع از پيشنهاد رساله دكتري",
-    code: "30_3330105",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 3330106,
-    name: "دفاع مجدد از پيشنهاد رساله دكتري",
-    code: "30_3330106",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 3330107,
-    name: "امتحان جامع دكتري 1",
-    code: "30_3330107",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 3330108,
-    name: "امتحان جامع دكتري 2",
-    code: "30_3330108",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 5,
-    gender: "مختلط"
-  },
-{
-    id: 3330111,
-    name: "پايان نامه",
-    code: "30_3330111",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330114,
-    name: "اقتصاد مهندسي",
-    code: "31_3330114",
-    prof: "زماني پدرام مونا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 205"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330115,
-    name: "پروژه",
-    code: "31_3330115",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 100,
-    gender: "مختلط"
-  },
-{
-    id: 3330117,
-    name: "دستيار آموزشي",
-    code: "30_3330117",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330118,
-    name: "رساله دكترا",
-    code: "30_3330118",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 3330122,
-    name: "مقدمه اي بر سيستم هاي ميكرو و نانوالكترومكانيك",
-    code: "31_3330122",
-    prof: "لساني علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 206"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/21 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-  {
-    id: 3330129,
-    name: "پديده هاي انتقال حرارت و جرم در سيستم هاي حياتي",
-    code: "31_3330129",
-    prof: "شربتدار مهكامه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 306"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 306"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330131,
-    name: "ترموديناميك 1",
-    code: "31_3330131",
-    prof: "بازارگان مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330131,
-    name: "ترموديناميك 1",
-    code: "32_3330131",
-    prof: "شهيديان آزاده",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 204"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330132,
-    name: "ترموديناميك 2",
-    code: "31_3330132",
-    prof: "كارمزدي محسن",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 206"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330132,
-    name: "ترموديناميك 2",
-    code: "32_3330132",
-    prof: "ضيابشرحق مسعود",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 205"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330133,
-    name: "آزترموديناميك",
-    code: "31_3330133",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330133,
-    name: "آزترموديناميك",
-    code: "32_3330133",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330133,
-    name: "آزترموديناميك",
-    code: "33_3330133",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"},
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330133,
-    name: "آزترموديناميك",
-    code: "34_3330133",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330133,
-    name: "آزترموديناميك",
-    code: "35_3330133",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330134,
-    name: "مكانيك سيالات 1",
-    code: "31_3330134",
-    prof: "مجري افسانه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 207"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330134,
-    name: "مكانيك سيالات 1",
-    code: "32_3330134",
-    prof: "شمس مهرزاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 201"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-  {
-    id: 3330135,
-    name: "مكانيك سيالات 2",
-    code: "31_3330135",
-    prof: "شربتدار مهكامه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 201"},
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330136,
-    name: "آزمكانيك سيالات",
-    code: "31_3330136",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 3330136,
-    name: "آزمكانيك سيالات",
-    code: "32_3330136",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 3330136,
-    name: "آزمكانيك سيالات",
-    code: "33_3330136",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 3330136,
-    name: "آزمكانيك سيالات",
-    code: "34_3330136",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 3330136,
-    name: "آزمكانيك سيالات",
-    code: "35_3330136",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 9,
-    gender: "مختلط"
-  },
-{
-    id: 3330137,
-    name: "انتقال حرارت 1",
-    code: "31_3330137",
-    prof: "قاسمي مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 205"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330137,
-    name: "انتقال حرارت 1",
-    code: "32_3330137",
-    prof: "آقانجفي سيروس",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 206"},
-      {days: [4], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330139,
-    name: "موتورهاي احتراق داخلي",
-    code: "31_3330139",
-    prof: "شامخي امير حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 201"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330143,
-    name: "كنترل آلودگي محيط زيست",
-    code: "31_3330143",
-    prof: "بازارگان مجيد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330149,
-    name: "نيروگاه حرارتي",
-    code: "31_3330149",
-    prof: "شاه نظري محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 207"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330150,
-    name: "طراحي مبدلهاي حرارتي",
-    code: "31_3330150",
-    prof: "صيادي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 307"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 307"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330152,
-    name: "حرارت مركزي و تهويه مطبوع 1",
-    code: "31_3330152",
-    prof: "ستاري اميرمحمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 207"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330171,
-    name: "استاتيك",
-    code: "31_3330171",
-    prof: "شاهاني امير رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 202"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330171,
-    name: "استاتيك",
-    code: "32_3330171",
-    prof: "خليلي سيد محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 201"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330171,
-    name: "استاتيك",
-    code: "33_3330171",
-    prof: "لساني علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 204"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-  {
-    id: 3330172,
-    name: "ديناميك",
-    code: "31_3330172",
-    prof: "ساداتي سيدحسين",
-    units: 4,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "كلاس 206"},
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330174,
-    name: "مقاومت مصالح 1",
-    code: "31_3330174",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 206"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330174,
-    name: "مقاومت مصالح 1",
-    code: "32_3330174",
-    prof: "قاجار رحمت الله",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 205"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330177,
-    name: "طراحي اجزاء 1",
-    code: "31_3330177",
-    prof: "لساني علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 202"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330177,
-    name: "طراحي اجزاء 1",
-    code: "32_3330177",
-    prof: "هدايتي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "كلاس 204"},
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330178,
-    name: "طراحي اجزاء 2",
-    code: "31_3330178",
-    prof: "كارمزدي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 205"},
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330178,
-    name: "طراحي اجزاء 2",
-    code: "32_3330178",
-    prof: "نخودچي سهيل",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 206"},
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330179,
-    name: "مقاومت مصالح 2",
-    code: "31_3330179",
-    prof: "جلالي آقچاي عبدالحسين",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330179,
-    name: "مقاومت مصالح 2",
-    code: "32_3330179",
-    prof: "قريشي سيد مجيد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330180,
-    name: "آزمقاومت مصالح",
-    code: "31_3330180",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330180,
-    name: "آزمقاومت مصالح",
-    code: "32_3330180",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330180,
-    name: "آزمقاومت مصالح",
-    code: "33_3330180",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330180,
-    name: "آزمقاومت مصالح",
-    code: "34_3330180",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330180,
-    name: "آزمقاومت مصالح",
-    code: "35_3330180",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-  {
-    id: 3330181,
-    name: "ديناميك ماشين",
-    code: "31_3330181",
-    prof: "موسويان سيد علي اكبر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 202"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330181,
-    name: "ديناميك ماشين",
-    code: "32_3330181",
-    prof: "ناصري فر ناصر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 204"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330182,
-    name: "آز ديناميك ماشين و ارتعاشات",
-    code: "31_3330182",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330182,
-    name: "آز ديناميك ماشين و ارتعاشات",
-    code: "32_3330182",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330182,
-    name: "آز ديناميك ماشين و ارتعاشات",
-    code: "33_3330182",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330182,
-    name: "آز ديناميك ماشين و ارتعاشات",
-    code: "34_3330182",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330182,
-    name: "آز ديناميك ماشين و ارتعاشات",
-    code: "35_3330182",
-    prof: "اساتيد گروه آموزشي",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی مکانیک"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 3330183,
-    name: "ارتعاشات مكانيكي",
-    code: "31_3330183",
-    prof: "همائي نژاد محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 202"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330183,
-    name: "ارتعاشات مكانيكي",
-    code: "32_3330183",
-    prof: "آزادي شهرام",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 204"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 204"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330185,
-    name: "كنترل اتوماتيك",
-    code: "31_3330185",
-    prof: "نحوي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 206"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330185,
-    name: "كنترل اتوماتيك",
-    code: "32_3330185",
-    prof: "غفاري علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 205"},
-      {days: [3], start: 10.5, duration: 2, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330186,
-    name: "اندازه گيري وسيستم هاي كنترل",
-    code: "31_3330186",
-    prof: "همائي نژاد محمد رضا",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-  {
-    id: 3330192,
-    name: "طراحي مكانيزمها",
-    code: "31_3330192",
-    prof: "موسويان سيد علي اكبر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 207"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330194,
-    name: "مقاومت مصالح 3",
-    code: "31_3330194",
-    prof: "شرعيات محمد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 307"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 307"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330206,
-    name: "مباني بينايي كامپيوتر",
-    code: "31_3330206",
-    prof: "نحوي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "كلاس 205"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330218,
-    name: "مقدمه اي برآناتومي وفيزيك سيستم هاي بدن انسان",
-    code: "31_3330218",
-    prof: "رسولي آيسا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 308"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 308"}
-    ],
-    examDate: "1405/04/08 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330219,
-    name: "دانش مهندسي مواد",
-    code: "31_3330219",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "كلاس 205"},
-      {days: [4], start: 16.5, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330219,
-    name: "دانش مهندسي مواد",
-    code: "32_3330219",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "كلاس 206"},
-      {days: [4], start: 16.5, duration: 1.5, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330222,
-    name: "مهارت هاي نرم شغلي",
-    code: "31_3330222",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330228,
-    name: "مباني مهندسي برق",
-    code: "31_3330228",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 202"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 202"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 3330229,
-    name: "هوش مصنوعي و تحول ديجيتال",
-    code: "31_3330229",
-    prof: "پوربگيان برزي مهدي",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 205"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330230,
-    name: "نقشه كشي صنعتي به كمك كامپيوتر",
-    code: "31_3330230",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330230,
-    name: "نقشه كشي صنعتي به كمك كامپيوتر",
-    code: "32_3330230",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-  {
-    id: 3330231,
-    name: "روشهاي توليد و كارگاه",
-    code: "31_3330231",
-    prof: "ظهور مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "كلاس 201"},
-      {days: [5], start: 16.5, duration: 1.5, location: "كلاس 201"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330232,
-    name: "كاربردهاي صنعتي باتري هاي الكترو شيميايي",
-    code: "31_3330232",
-    prof: "ترابي فرشاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "كلاس 207"},
-      {days: [5], start: 13.5, duration: 1.5, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330233,
-    name: "تكنولوژي ساخت افزايشي",
-    code: "31_3330233",
-    prof: "هدايتي رضا",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 206"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330234,
-    name: "مهندسي به كمك كامپيوتر",
-    code: "31_3330234",
-    prof: "كارمزدي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 207"},
-      {days: [5], start: 10.5, duration: 2, location: "كلاس 207"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3330235,
-    name: "روش هاي بهينه سازي",
-    code: "31_3330235",
-    prof: "شربتدار مهكامه",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 306"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 306"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331003,
-    name: "توربوماشين پيشرفته",
-    code: "31_3331003",
-    prof: "كارمزدي محسن",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "كلاس 302"},
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331004,
-    name: "كاربرد پيشرفته هوش مصنوعي و تحول ديجيتال",
-    code: "31_3331004",
-    prof: "پوربگيان برزي مهدي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: ""},
-      {days: [4], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331048,
-    name: "طراحي كلي نيروگاهها",
-    code: "31_3331048",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 302"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331060,
-    name: "مكانيك محيط پيوسته",
-    code: "31_3331060",
-    prof: "شاه نظري محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [5], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331064,
-    name: "انتقال حرارت پيشرفته هدايت",
-    code: "31_3331064",
-    prof: "قاسمي مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 302"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 3331065,
-    name: "انتقال حرارت پيشرفته جابجاي",
-    code: "31_3331065",
-    prof: "شهيديان آزاده",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331076,
-    name: "ديناميك سيالات محاسباتي 1",
-    code: "31_3331076",
-    prof: "اشرفي زاده علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 302"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331079,
-    name: "سمينار",
-    code: "31_3331079",
-    prof: "اشرفي زاده علي",
-    units: 2,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 3331082,
-    name: "جريانهاي دوفازي",
-    code: "31_3331082",
-    prof: "شمس مهرزاد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 307"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 307"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331084,
-    name: "مدلسازي جريانهاي مغشوش",
-    code: "31_3331084",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331094,
-    name: "ترموديناميك پيشرفته",
-    code: "31_3331094",
-    prof: "آقانجفي سيروس",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3331137,
-    name: "مكانيك سيالات درمحيط هاي متخلخل",
-    code: "31_3331137",
-    prof: "مجري افسانه",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 305"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333104,
-    name: "رياضيات پيشرفته 1",
-    code: "31_3333104",
-    prof: "همائي نژاد محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 301"},
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 301"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3333113,
-    name: "روش اجزائ محدود1",
-    code: "31_3333113",
-    prof: "شاهاني امير رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3333115,
-    name: "الاستيسيته",
-    code: "31_3333115",
-    prof: "هدايتي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [5], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 3333132,
-    name: "كنترل پيشرفته 2",
-    code: "31_3333132",
-    prof: "همائي نژاد محمد رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: ""},
-      {days: [3], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 0,
-    gender: "مختلط"
-  },
-{
-    id: 3333136,
-    name: "ارتعاشات پيشرفته غيرخطي",
-    code: "31_3333136",
-    prof: "جعفري علي اصغر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس نقشه كشي( طبقه اول)"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس نقشه كشي( طبقه اول)"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333137,
-    name: "ارتعاشات پيشرفته-ارتعاشات سيستم هاي ممتد",
-    code: "31_3333137",
-    prof: "جعفري علي اصغر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 306"},
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 306"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333147,
-    name: "سيستمهاي كنترل پيشرفته 1",
-    code: "31_3333147",
-    prof: "كارمزدي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 301"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 301"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333157,
-    name: "سمينار",
-    code: "31_3333157",
-    prof: "ناصري فر ناصر",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 3333178,
-    name: "واقعيت مجازي",
-    code: "31_3333178",
-    prof: "نحوي علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: ""},
-      {days: [5], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333217,
-    name: "كنترل غير خطي",
-    code: "31_3333217",
-    prof: "غفاري علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 302"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 302"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333219,
-    name: "مكانيك شكست",
-    code: "31_3333219",
-    prof: "شاهاني امير رضا",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 305"},
-      {days: [5], start: 9, duration: 1.5, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 3333230,
-    name: "مكانيك سازه هاي پيشرفته وهوشمند",
-    code: "31_3333230",
-    prof: "خليلي سيد محمدرضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "سالن سمينار دكتري"},
-      {days: [5], start: 9, duration: 1.5, location: "سالن سمينار دكتري"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333233,
-    name: "كنترل دررباتيك",
-    code: "31_3333233",
-    prof: "موسويان سيد علي اكبر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [5], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333253,
-    name: "كنترل بهينه",
-    code: "33_3333253",
-    prof: "ساداتي سيدحسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3333253,
-    name: "كنترل بهينه",
-    code: "97_3333253",
-    prof: "كاظمي رضا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 209"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 209"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339018,
-    name: "رياضيات پيشرفته 1",
-    code: "31_3339018",
-    prof: "رسولي آيسا",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "كلاس 305"},
-      {days: [3], start: 7.5, duration: 1.5, location: "كلاس 305"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339021,
-    name: "متالوژي درتوليد",
-    code: "39_3339021",
-    prof: "عسگري مسعود",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339022,
-    name: "روش اجزامحدود1",
-    code: "39_3339022",
-    prof: "جلالي آقچاي عبدالحسين",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: ""},
-      {days: [5], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339027,
-    name: "ابزارشناسي وماشين كاري",
-    code: "39_3339027",
-    prof: "وحدتي مهرداد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "كلاس 301"},
-      {days: [5], start: 7.5, duration: 1.5, location: "كلاس 301"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339033,
-    name: "طراحي وساخت بكمك كامپيوتر پيشرفته",
-    code: "39_3339033",
-    prof: "نخودچي سهيل",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "كلاس 310"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 310"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 3339040,
-    name: "بهينه سازي در طراحي وتوليد",
-    code: "39_3339040",
-    prof: "قريشي سيد مجيد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "كلاس 306"},
-      {days: [3], start: 9, duration: 1.5, location: "كلاس 306"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3339045,
-    name: "سمينار",
-    code: "39_3339045",
-    prof: "زماني اشني جمال",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 40,
-    gender: "مختلط"
-  },
-{
-    id: 3339049,
-    name: "برنامه ريزي وكنترل توليد وكيفيت",
-    code: "39_3339049",
-    prof: "كازروني مهرداد",
-    units: 3,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: ""},
-      {days: [4], start: 15, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3366032,
-    name: "كنترل سيستم هاي پيوسته",
-    code: "66_3366032",
-    prof: "نجفي اردكاني علي",
-    units: 3,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: ""},
-      {days: [3], start: 16.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/14 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3368016,
-    name: "بيومكانيك ارتوپدي",
-    code: "68_3368016",
-    prof: "هدايتي رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: ""},
-      {days: [5], start: 16.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3368031,
-    name: "مكانيك سيالات زيستي",
-    code: "68_3368031",
-    prof: "ستاري اميرمحمد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3397006,
-    name: "ديناميك خودرووآز",
-    code: "97_3397006",
-    prof: "كاظمي رضا",
-    units: 3,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 9, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3397025,
-    name: "تئوري ورقها و پوسته هاوكاربرد",
-    code: "97_3397025",
-    prof: "شرعيات محمد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: ""},
-      {days: [3], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3397037,
-    name: "طراحي سيستمهاي انتقال قدرت",
-    code: "97_3397037",
-    prof: "شامخي امير حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [4], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-  {
-    id: 3397043,
-    name: "سمينار",
-    code: "97_3397043",
-    prof: "شرعيات محمد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 3397048,
-    name: "مشابه سازي موتورهاي پيستوني",
-    code: "97_3397048",
-    prof: "شامخي امير حسين",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 13,
-    gender: "مختلط"
-  },
-{
-    id: 3397053,
-    name: "كنترل پيشرفته 2",
-    code: "97_3397053",
-    prof: "آزادي شهرام",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: ""},
-      {days: [5], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 8,
-    gender: "مختلط"
-  },
-{
-    id: 3398003,
-    name: "برنامه ريزي رياضي پيشرفته",
-    code: "98_3398003",
-    prof: "صيادي حسين",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: ""},
-      {days: [4], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3398006,
-    name: "قابليت اطمينان و تحليل ريسك",
-    code: "98_3398006",
-    prof: "بهبهاني نيا سيد علي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: ""},
-      {days: [4], start: 13.5, duration: 1.5, location: ""}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3398025,
-    name: "سمينار",
-    code: "98_3398025",
-    prof: "ترابي فرشاد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: ""}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 3398055,
-    name: "سيستم هاي توليد همزمان قدرت وحرارت",
-    code: "98_3398055",
-    prof: "عميد پور مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "كلاس 301"},
-      {days: [4], start: 7.5, duration: 1.5, location: "كلاس 301"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3398060,
-    name: "طراحي پايه و تفصيلي فرآيندهاي شيميايي",
-    code: "98_3398060",
-    prof: "زماني پدرام مونا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "سمعي بصري كارشناسي"},
-      {days: [4], start: 9, duration: 1.5, location: "سمعي بصري كارشناسي"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-{
-    id: 3398072,
-    name: "انرژي باد پيشرفته",
-    code: "98_3398072",
-    prof: "ترابي فرشاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "كلاس 301"},
-      {days: [4], start: 9, duration: 1.5, location: "كلاس 301"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی مکانیک",
-    capacity: 7,
-    gender: "مختلط"
-  },
-// Sanye
-{
-    id: 6660004,
-    name: "سمينار",
-    code: "60_6660004",
-    prof: "آقايي عبداله",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660010,
-    name: "سيستم هاي صف",
-    code: "60_6660010",
-    prof: "آقايي عبداله",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660025,
-    name: "برنامه ريزي متغيرهاي صحيح",
-    code: "60_6660025",
-    prof: "حسيني نژاد سيدجواد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660029,
-    name: "تصميم گيري با معيارهاي چندگانه",
-    code: "60_6660029",
-    prof: "خوش الحان فريد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/21 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660064,
-    name: "اصول حسابداري وهزينه يابي",
-    code: "60_6660064",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660066,
-    name: "ارزيابي كاروزمان",
-    code: "60_6660066",
-    prof: "سلمان زاده حامد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660067,
-    name: "طرح ريزي واحدهاي صنعتي",
-    code: "60_6660067",
-    prof: "رحماني دنيا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-  {
-    id: 6660068,
-    name: "برنامه ريزي كنترل توليد موجودي هاي 1",
-    code: "60_6660068",
-    prof: "ستاك مصطفي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660071,
-    name: "تحقيق درعمليات 1",
-    code: "60_6660071",
-    prof: "خوش الحان فريد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660077,
-    name: "مديريت مالي",
-    code: "60_6660077",
-    prof: "اساتيد گروه آموزشي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660078,
-    name: "مونتاژ مكانيكي",
-    code: "60_6660078",
-    prof: "سلمان زاده حامد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660082,
-    name: "اصول مديريت و تئوري سازمان",
-    code: "60_6660082",
-    prof: "فرهادي سجاد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/14 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660100,
-    name: "تحقيق درعمليات2",
-    code: "60_6660100",
-    prof: "رمضانيان رضا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660102,
-    name: "مباني مهندسي برق",
-    code: "60_6660102",
-    prof: "يارمند روح اله",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660103,
-    name: "آزمباني برق",
-    code: "60_6660103",
-    prof: "عباس زاده كريم",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 6660103,
-    name: "آزمباني برق",
-    code: "61_6660103",
-    prof: "عباس زاده كريم",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 12,
-    gender: "مختلط"
-  },
-{
-    id: 6660107,
-    name: "برنامه نويسي كامپيوتر",
-    code: "60_6660107",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660119,
-    name: "سمينار 1",
-    code: "60_6660119",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 50,
-    gender: "مختلط"
-  },
-  {
-    id: 6660120,
-    name: "سمينار 2",
-    code: "60_6660120",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 50,
-    gender: "مختلط"
-  },
-{
-    id: 6660130,
-    name: "رساله دكترا",
-    code: "60_6660130",
-    prof: "اساتيد گروه آموزشي",
-    units: 24,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 60,
-    gender: "مختلط"
-  },
-{
-    id: 6660131,
-    name: "استاتيك ومقاومت مصالح",
-    code: "60_6660131",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660132,
-    name: "جبرخطي",
-    code: "60_6660132",
-    prof: "پروانه مسيحا هاشم",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660136,
-    name: "مديريت وكنترل پروژه",
-    code: "60_6660136",
-    prof: "روغنيان عماد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660139,
-    name: "مديريت كيفيت و بهره وري",
-    code: "60_6660139",
-    prof: "صفايي ناصر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660140,
-    name: "سيستم هاي اطلاعات مديريت",
-    code: "60_6660140",
-    prof: "حسيني نژاد سيدجواد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660150,
-    name: "اصول بازاريابي",
-    code: "60_6660150",
-    prof: "نصيري سپيده",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660166,
-    name: "برنامه ريزي توليد",
-    code: "60_6660166",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [5], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/18 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660173,
-    name: "امتحان جامع دكتري 1",
-    code: "60_6660173",
-    prof: "اساتيد گروه آموزشي",
-    units: 0,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 20,
-    gender: "مختلط"
-  },
-{
-    id: 6660175,
-    name: "پايان نامه",
-    code: "01_6660175",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 10,
-    gender: "مختلط"
-  },
-{
-    id: 6660175,
-    name: "پايان نامه",
-    code: "60_6660175",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 70,
-    gender: "مختلط"
-  },
-{
-    id: 6660175,
-    name: "پايان نامه",
-    code: "61_6660175",
-    prof: "اساتيد گروه آموزشي",
-    units: 6,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 3,
-    gender: "مختلط"
-  },
-  {
-    id: 6660198,
-    name: "زنجيره تامين سبز و پايدار",
-    code: "60_6660198",
-    prof: "روغنيان عماد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660210,
-    name: "داده كاوي، مدل ها، الگوريتم ها و كاربردها",
-    code: "60_6660210",
-    prof: "روغنيان عماد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660217,
-    name: "بازاريابي تحليلي",
-    code: "60_6660217",
-    prof: "حسيني منيره",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/07 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660219,
-    name: "استراتژيهاي توليد و خدمات",
-    code: "60_6660219",
-    prof: "خوش الحان فريد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6660221,
-    name: "تحليل داده و اطلاعات",
-    code: "60_6660221",
-    prof: "حميدي حجت اله",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660228,
-    name: "اقتصاد كلان",
-    code: "61_6660228",
-    prof: "ميرزايي قزااني مجيد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/16 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 30,
-    gender: "مختلط"
-  },
-{
-    id: 6660240,
-    name: "هوش مصنوعي و تحول ديجيتال",
-    code: "60_6660240",
-    prof: "زاهدي محمدهادي",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6660260,
-    name: "طراحي انبار، جابجايي مواد و بسته بندي",
-    code: "60_6660260",
-    prof: "سلمان زاده حامد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/20 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662015,
-    name: "مدلسازي پويايي هاي سيستم",
-    code: "60_6662015",
-    prof: "صفايي ناصر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662021,
-    name: "سمينار",
-    code: "60_6662021",
-    prof: "رمضانيان رضا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6662029,
-    name: "انفورماتيك در سلامت",
-    code: "60_6662029",
-    prof: "نصيري سپيده",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-  {
-    id: 6662033,
-    name: "داده كاوي در سلامت",
-    code: "60_6662033",
-    prof: "ستاك مصطفي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/09 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662040,
-    name: "شبكه و مكان گسسته در سلامت",
-    code: "60_6662040",
-    prof: "حسيني نژاد سيدجواد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662042,
-    name: "كارورزي مهندسي سيستم هاي سلامت 1",
-    code: "60_6662042",
-    prof: "رحماني دنيا",
-    units: 0.5,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662043,
-    name: "كارورزي مهندسي سيستم هاي سلامت 2",
-    code: "60_6662043",
-    prof: "رحماني دنيا",
-    units: 0.5,
-    sessions: [],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6662053,
-    name: "مديريت ريسك",
-    code: "60_6662053",
-    prof: "رحماني دنيا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684001,
-    name: "بازاريابي اينترنتي",
-    code: "60_6684001",
-    prof: "حسيني منيره",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684002,
-    name: "سيستمهاي پرداخت الكترونيكي",
-    code: "60_6684002",
-    prof: "محمدي شهريار",
-    units: 3,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684011,
-    name: "روش تحقيق و سمينار",
-    code: "60_6684011",
-    prof: "حسيني منيره",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 35,
-    gender: "مختلط"
-  },
-{
-    id: 6684019,
-    name: "انباره هاي داده و داده كاوي",
-    code: "60_6684019",
-    prof: "زاهدي محمدهادي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/17 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684023,
-    name: "هوش تجاري",
-    code: "60_6684023",
-    prof: "تارخ محمد جعفر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/20 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684069,
-    name: "تجارت الكترونيكي سيار و محاسبات فراگير",
-    code: "60_6684069",
-    prof: "محمدي شهريار",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-  {
-    id: 6684092,
-    name: "مديريت ارتباط الكترونيكي با مشتري (ECRM)",
-    code: "60_6684092",
-    prof: "تارخ محمد جعفر",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/14 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684094,
-    name: "برنامه ريزي منابع سازمان",
-    code: "60_6684094",
-    prof: "حميدي حجت اله",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684100,
-    name: "رايانش نرم و ملهم از زيست",
-    code: "60_6684100",
-    prof: "زاهدي محمدهادي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6684102,
-    name: "تحليل شبكه هاي اطلاعات",
-    code: "60_6684102",
-    prof: "حميدي حجت اله",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [3], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/13 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6686016,
-    name: "مديريت منابع انساني",
-    code: "60_6686016",
-    prof: "صفايي ناصر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6686059,
-    name: "قيمت گذاري",
-    code: "60_6686059",
-    prof: "اساتيد گروه آموزشي",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6686072,
-    name: "اصول كارآفريني",
-    code: "60_6686072",
-    prof: "فرهادي سجاد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 10.5, duration: 2, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/10 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6688001,
-    name: "فرآيندهاي تصادفي",
-    code: "60_6688001",
-    prof: "ميرزايي قزااني مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/15 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6688006,
-    name: "مديريت وتحليل ريسك مالي",
-    code: "60_6688006",
-    prof: "ابراهيمي سيد بابك",
-    units: 3,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 15, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/08 10:30-12:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6688008,
-    name: "مديريت سرمايه گذاري",
-    code: "60_6688008",
-    prof: "ميرزايي قزااني مجيد",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 15,
-    gender: "مختلط"
-  },
-{
-    id: 6688015,
-    name: "سمينار مهندسي مالي",
-    code: "60_6688015",
-    prof: "فرهادي سجاد",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشکده مهندسی صنایع"}
-    ],
-    examDate: "",
-    department: "دانشکده مهندسی صنایع",
-    capacity: 25,
-    gender: "مختلط"
-  }
-,
-// Mavad
 
-{
-    id: 9912027,
-    name: "اصول انجماد و ريخته گري مواد",
-    code: "99_9912027",
-    prof: "خسروشاهي زهرا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشکده مهندسی و علم مواد"},
-      {days: [3], start: 15, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+// عمران
+
+
+  {
+    "id": 2221023,
+    "name": "مكانيك سيالات",
+    "code": "21_2221023",
+    "prof": "استادميرزا تهراني محمدجواد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
   },
-{
-    id: 9912029,
-    name: "اصول مهندسي پليمر",
-    code: "99_9912029",
-    prof: "خسروشاهي زهرا",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221023,
+    "name": "مكانيك سيالات",
+    "code": "22_2221023",
+    "prof": "عليزاد كريم",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/07 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
   },
-{
-    id: 9912035,
-    name: "خواص الكتروني و مغناطيسي مواد",
-    code: "99_9912035",
-    prof: "سيادتي سيد محمد حسين",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
-    ],
-    examDate: "1405/04/13 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+  {
+    "id": 2221026,
+    "name": "هيدروليك",
+    "code": "21_2221026",
+    "prof": "عليزاد كريم",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
   },
-{
-    id: 9912036,
-    name: "اصول مهندسي سراميك",
-    code: "99_9912036",
-    prof: "قنادي صابر",
-    units: 3,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی و علم مواد"},
-      {days: [4], start: 9, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
-    ],
-    examDate: "1405/04/09 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+  {
+    "id": 2221036,
+    "name": "هيدرولوژي مهندسي",
+    "code": "21_2221036",
+    "prof": "مهجوري مجد نجمه",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 40,
+    "gender": "مختلط"
   },
-{
-    id: 9912037,
-    name: "طراحي و انتخاب مواد مهندسي",
-    code: "99_9912037",
-    prof: "اسلامي فارساني رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221043,
+    "name": "آبهاي زيرزميني",
+    "code": "21_2221043",
+    "prof": "موسوي سيد مرتضي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/17 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
   },
-{
-    id: 9912080,
-    name: "بلورشناسي",
-    code: "99_9912080",
-    prof: "خسروشاهي زهرا",
-    units: 2,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221047,
+    "name": "مهندسي اب وفاضلاب وپروژه",
+    "code": "21_2221047",
+    "prof": "كاويانپور محمدرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/16 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 40,
+    "gender": "مختلط"
   },
-{
-    id: 9912097,
-    name: "رياضي مهندسي",
-    code: "99_9912097",
-    prof: "منتظري هدش عباس",
-    units: 3,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "دانشکده مهندسی و علم مواد"},
-      {days: [3], start: 10.5, duration: 2, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221049,
+    "name": "بناهاي ابي",
+    "code": "21_2221049",
+    "prof": "كاويانپور محمدرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/10 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "عمران",
+    "capacity": 40,
+    "gender": "مختلط"
   },
-{
-    id: 9914004,
-    name: "ترموديناميك مواد 1",
-    code: "99_9914004",
-    prof: "حسن زاده يزدي نفيسه",
-    units: 3,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "دانشکده مهندسی و علم مواد"},
-      {days: [3], start: 9, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221061,
+    "name": "هيدروليك پيشرفته",
+    "code": "21_2221061",
+    "prof": "يكه يزدان دوست فرهاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/08 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/11/10 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
   },
-{
-    id: 9914007,
-    name: "خواص مكانيكي مواد 1",
-    code: "99_9914007",
-    prof: "اقائي خفري مهرداد",
-    units: 3,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221064,
+    "name": "هيدروديناميك",
+    "code": "21_2221064",
+    "prof": "كاويانپور محمدرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/06 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
   },
-{
-    id: 9914036,
-    name: "اقتصاد و مديريت صنعتي",
-    code: "99_9914036",
-    prof: "اقائي خفري مهرداد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2221112,
+    "name": "مباني هيدروليك دريا",
+    "code": "21_2221112",
+    "prof": "سلطان پور محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/15 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/11/12 10:30-12:30",
+    "department": "عمران",
+    "capacity": 14,
+    "gender": "مختلط"
   },
-{
-    id: 9914058,
-    name: "استاتيك",
-    code: "99_9914058",
-    prof: "نارويي كيوان",
-    units: 3,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"},
-      {days: [4], start: 7.5, duration: 1.5, location: "دانشکده مهندسی و علم مواد"}
+  {
+    "id": 2220034,
+    "name": "رياضيات عالي مهندسي",
+    "code": "21_2220034",
+    "prof": "قاسم زاده حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/21 08:00-10:30",
-    department: "دانشکده مهندسی و علم مواد",
-    capacity: 45,
-    gender: "مختلط"
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220098,
+    "name": "اصول مهندسي زلزله وباد",
+    "code": "21_2220098",
+    "prof": "قادري گركاني مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220098,
+    "name": "اصول مهندسي زلزله وباد",
+    "code": "22_2220098",
+    "prof": "مشايخي محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220101,
+    "name": "رساله دكترا",
+    "code": "21_2220101",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 24,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220110,
+    "name": "محاسبات عددي",
+    "code": "21_2220110",
+    "prof": "ايزدي اردلان",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220110,
+    "name": "محاسبات عددي",
+    "code": "22_2220110",
+    "prof": "ايزدي اردلان",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220116,
+    "name": "مقررات ملي ساختمان",
+    "code": "21_2220116",
+    "prof": "صباغ يزدي سعيد رضا",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220157,
+    "name": "دفاع از پيشنهاد رساله دكتري",
+    "code": "21_2220157",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220158,
+    "name": "دفاع مجدد از پيشنهاد رساله دكتري",
+    "code": "21_2220158",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220159,
+    "name": "امتحان جامع دكتري 1",
+    "code": "21_2220159",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220160,
+    "name": "امتحان جامع دكتري 2",
+    "code": "21_2220160",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220162,
+    "name": "تاسيسات مكانيكي وبرقي",
+    "code": "21_2220162",
+    "prof": "وكيل زاده داود",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220163,
+    "name": "اصول مديريت ساخت",
+    "code": "21_2220163",
+    "prof": "عليپوري يعقوب",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220164,
+    "name": "پايان نامه",
+    "code": "21_2220164",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 120,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220170,
+    "name": "آشنايي با رشته مهندسي عمران (كاربيني)",
+    "code": "21_2220170",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220170,
+    "name": "آشنايي با رشته مهندسي عمران (كاربيني)",
+    "code": "22_2220170",
+    "prof": "وكيل زاده داود، اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220171,
+    "name": "هوش مصنوعي و تحول ديجيتال",
+    "code": "21_2220171",
+    "prof": "قاسم زاده حسن",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220171,
+    "name": "هوش مصنوعي و تحول ديجيتال",
+    "code": "22_2220171",
+    "prof": "صادقي نعيمه",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220172,
+    "name": "كارگاه عمومي",
+    "code": "21_2220172",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220172,
+    "name": "كارگاه عمومي",
+    "code": "22_2220172",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220172,
+    "name": "كارگاه عمومي",
+    "code": "23_2220172",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220173,
+    "name": "برنامه سازي كامپيوتر",
+    "code": "21_2220173",
+    "prof": "خدادادي مجتبي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220175,
+    "name": "مكانيك جامدات1",
+    "code": "21_2220175",
+    "prof": "عسگريان بهروز",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220175,
+    "name": "مكانيك جامدات1",
+    "code": "22_2220175",
+    "prof": "مسعودي مصطفي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220175,
+    "name": "مكانيك جامدات1",
+    "code": "23_2220175",
+    "prof": "اصيل قره باغي سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "21_2220178",
+    "prof": "استادميرزا تهراني محمدجواد",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "22_2220178",
+    "prof": "استادميرزا تهراني محمدجواد",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "23_2220178",
+    "prof": "عليزاد كريم",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "24_2220178",
+    "prof": "عليزاد كريم",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "25_2220178",
+    "prof": "ايزدي اردلان",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "26_2220178",
+    "prof": "ايزدي اردلان",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "27_2220178",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220178,
+    "name": "آزمايشگاه هيدروليك و سيالات",
+    "code": "28_2220178",
+    "prof": "وكيل زاده داود",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220179,
+    "name": "طرح هندسي راه",
+    "code": "21_2220179",
+    "prof": "منجم محمد سعيد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220180,
+    "name": "هيدروليك و بناهاي آبي",
+    "code": "21_2220180",
+    "prof": "استادميرزا تهراني محمدجواد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220180,
+    "name": "هيدروليك و بناهاي آبي",
+    "code": "22_2220180",
+    "prof": "ايزدي اردلان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220182,
+    "name": "آزمايشگاه مصالح و فرآورده هاي ساختماني",
+    "code": "21_2220182",
+    "prof": "زنگانه حامد",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/24 08:00-10:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220182,
+    "name": "آزمايشگاه مصالح و فرآورده هاي ساختماني",
+    "code": "22_2220182",
+    "prof": "زنگانه حامد",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/24 08:00-10:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220183,
+    "name": "مصالح و فرآورده هاي ساختماني",
+    "code": "21_2220183",
+    "prof": "باقري عليرضا",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220183,
+    "name": "مصالح و فرآورده هاي ساختماني",
+    "code": "22_2220183",
+    "prof": "باقري عليرضا",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220183,
+    "name": "مصالح و فرآورده هاي ساختماني",
+    "code": "23_2220183",
+    "prof": "زنگانه حامد",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220184,
+    "name": "اقتصاد پروژه هاي عمراني",
+    "code": "21_2220184",
+    "prof": "دهقاني سانيج محمدسعيد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220185,
+    "name": "مكانيك خاك",
+    "code": "21_2220185",
+    "prof": "عبدي محمود رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220185,
+    "name": "مكانيك خاك",
+    "code": "22_2220185",
+    "prof": "رئيسيان زاده جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220188,
+    "name": "مهارتهاي نرم شغلي",
+    "code": "21_2220188",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220188,
+    "name": "مهارتهاي نرم شغلي",
+    "code": "22_2220188",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220191,
+    "name": "مكانيك جامدات2",
+    "code": "21_2220191",
+    "prof": "كياني كيوان",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220225,
+    "name": "ديناميك",
+    "code": "21_2220225",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+        "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2220225,
+    "name": "ديناميك",
+    "code": "22_2220225",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2221112,
+    "name": "مباني هيدروليك دريا",
+    "code": "22_2221112",
+    "prof": "حجازي كورش",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/12 10:30-12:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2221117,
+    "name": "اصول طراحي سازه هاي دريايي",
+    "code": "21_2221117",
+    "prof": "زين الديني مصطفي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/11 10:30-12:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2221151,
+    "name": "سدهاي خاكي",
+    "code": "21_2221151",
+    "prof": "حجازي كورش",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2221179,
+    "name": "هيدرولوژي پيشرفته",
+    "code": "21_2221179",
+    "prof": "يكه يزدان دوست فرهاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/14 08:00-10:30",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227012,
+    "name": "مكانيك خاك 2",
+    "code": "21_2227012",
+    "prof": "عبدي محمود رضا",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227012,
+    "name": "مكانيك خاك 2",
+    "code": "22_2227012",
+    "prof": "مقدس تفرشي سيد ناصر",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227013,
+    "name": "روشهاي اجزامحدود",
+    "code": "21_2227013",
+    "prof": "باراني لنباني اميد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/14 10:30-12:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227019,
+    "name": "مكانيك خاك پيشرفته",
+    "code": "21_2227019",
+    "prof": "عبدي محمود رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/10 10:30-12:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227031,
+    "name": "آزمكانيك خاك",
+    "code": "21_2227031",
+    "prof": "علي آباديان زينب",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227031,
+    "name": "آزمكانيك خاك",
+    "code": "22_2227031",
+    "prof": "رئيسيان زاده جواد",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227046,
+    "name": "ديناميك خاك",
+    "code": "21_2227046",
+    "prof": "قاسم زاده حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227046,
+    "name": "ديناميك خاك",
+    "code": "22_2227046",
+    "prof": "رئيسيان زاده جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227049,
+    "name": "مهندسي پي سازي پيشرفته",
+    "code": "21_2227049",
+    "prof": "قضاوي محمود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/17 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227049,
+    "name": "مهندسي پي سازي پيشرفته",
+    "code": "22_2227049",
+    "prof": "مقدس تفرشي سيد ناصر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/17 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227071,
+    "name": "مهندسي پي وپروژه",
+    "code": "21_2227071",
+    "prof": "مقدس تفرشي سيد ناصر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227071,
+    "name": "مهندسي پي وپروژه",
+    "code": "22_2227071",
+    "prof": "قضاوي محمود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227103,
+    "name": "مكانيك محيط هاي متخلخل",
+    "code": "21_2227103",
+    "prof": "باراني لنباني اميد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/12 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227105,
+    "name": "روش هاي اجرائ گودوسازه نگهبان",
+    "code": "21_2227105",
+    "prof": "رئيسيان زاده جواد",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227116,
+    "name": "ژئو فيزيك لرزه اي",
+    "code": "21_2227116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2227126,
+    "name": "مكانيك سنگ نفت پيشرفته",
+    "code": "21_2227126",
+    "prof": "علي آباديان زينب",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271036,
+    "name": "سازه هاي بتن آرمه پيشرفته",
+    "code": "21_2271036",
+    "prof": "بهشتي اول سيد بهرام",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/11 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271081,
+    "name": "تكنولوژي جوش و اتصالات جوش",
+    "code": "21_2271081",
+    "prof": "زين الديني مصطفي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271082,
+    "name": "سازه هاي فولادي 1",
+    "code": "21_2271082",
+    "prof": "فنائي نادر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271082,
+    "name": "سازه هاي فولادي 1",
+    "code": "22_2271082",
+    "prof": "مشايخي محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271084,
+    "name": "سازه هاي بتن آرمه 2",
+    "code": "21_2271084",
+    "prof": "بهشتي اول سيد بهرام",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271084,
+    "name": "سازه هاي بتن آرمه 2",
+    "code": "22_2271084",
+    "prof": "مسعودي مصطفي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271086,
+    "name": "تئوري نقشه برداري 1",
+    "code": "21_2271086",
+    "prof": "رحيم زادگان مجيد",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271086,
+    "name": "تئوري نقشه برداري 1",
+    "code": "22_2271086",
+    "prof": "رحيم زادگان مجيد",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271088,
+    "name": "استاتيك",
+    "code": "21_2271088",
+    "prof": "عسجدي امير حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271088,
+    "name": "استاتيك",
+    "code": "22_2271088",
+    "prof": "باراني لنباني اميد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271094,
+    "name": "رسم فني و نقشه كشي ساختمان",
+    "code": "21_2271094",
+    "prof": "وكيل زاده داود",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271094,
+    "name": "رسم فني و نقشه كشي ساختمان",
+    "code": "22_2271094",
+    "prof": "وكيل زاده داود",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271094,
+    "name": "رسم فني و نقشه كشي ساختمان",
+    "code": "23_2271094",
+    "prof": "وكيل زاده داود",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271094,
+    "name": "رسم فني و نقشه كشي ساختمان",
+    "code": "24_2271094",
+    "prof": "وكيل زاده داود",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "عمران",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271098,
+    "name": "زمين شناسي مهندسي",
+    "code": "21_2271098",
+    "prof": "علي آباديان زينب",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271098,
+    "name": "زمين شناسي مهندسي",
+    "code": "22_2271098",
+    "prof": "علي آباديان زينب",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271098,
+    "name": "زمين شناسي مهندسي",
+    "code": "23_2271098",
+    "prof": "اساتيد گروه آموزشي (جودكي)",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271100,
+    "name": "آزبتن",
+    "code": "21_2271100",
+    "prof": "زنگانه حامد",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271107,
+    "name": "متره وبراورد وپروژه",
+    "code": "21_2271107",
+    "prof": "اساتيد گروه آموزشي (دادپور)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271107,
+    "name": "متره وبراورد وپروژه",
+    "code": "22_2271107",
+    "prof": "اساتيد گروه آموزشي (خانعلي پور)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271108,
+    "name": "تحليل سازه ها 1",
+    "code": "21_2271108",
+    "prof": "قادري گركاني مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271108,
+    "name": "تحليل سازه ها 1",
+    "code": "22_2271108",
+    "prof": "عسجدي امير حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271118,
+    "name": "تحليل سازه ها 2",
+    "code": "21_2271118",
+    "prof": "كرمي محمدي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271118,
+    "name": "تحليل سازه ها 2",
+    "code": "22_2271118",
+    "prof": "دلفاني محمدرسول",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271121,
+    "name": "سازه هاي بتن آرمه 1",
+    "code": "21_2271121",
+    "prof": "ميرزا بزرگ حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271121,
+    "name": "سازه هاي بتن آرمه 1",
+    "code": "22_2271121",
+    "prof": "نصراله زاده نشلي كورش",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271123,
+    "name": "روشهاي اجرايي ساختمان",
+    "code": "21_2271123",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271131,
+    "name": "سازه هاي فولادي 2",
+    "code": "21_2271131",
+    "prof": "خليفه لو سيداكبر",
+    "units": 2,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271131,
+    "name": "سازه هاي فولادي 2",
+    "code": "22_2271131",
+    "prof": "اساتيد گروه آموزشي (زندي)",
+    "units": 2,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271142,
+    "name": "آزمقاومت مصالح",
+    "code": "21_2271142",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271142,
+    "name": "آزمقاومت مصالح",
+    "code": "22_2271142",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271142,
+    "name": "آزمقاومت مصالح",
+    "code": "23_2271142",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+        "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271142,
+    "name": "آزمقاومت مصالح",
+    "code": "24_2271142",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 13,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271163,
+    "name": "تئوري الاستيسيته وپلاستيسيته",
+    "code": "21_2271163",
+    "prof": "فنائي نادر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/17 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271163,
+    "name": "تئوري الاستيسيته وپلاستيسيته",
+    "code": "22_2271163",
+    "prof": "دلفاني محمدرسول",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/17 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271163,
+    "name": "تئوري الاستيسيته وپلاستيسيته",
+    "code": "23_2271163",
+    "prof": "خدادادي مجتبي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271209,
+    "name": "پروژه بتن آرمه",
+    "code": "21_2271209",
+    "prof": "ميرزا بزرگ حسن",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271211,
+    "name": "ديناميك سازه ها",
+    "code": "21_2271211",
+    "prof": "نصراله زاده نشلي كورش",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271211,
+    "name": "ديناميك سازه ها",
+    "code": "22_2271211",
+    "prof": "كياني كيوان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271216,
+    "name": "پروژه سازه هاي فولادي",
+    "code": "21_2271216",
+    "prof": "خليفه لو سيداكبر",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271216,
+    "name": "پروژه سازه هاي فولادي",
+    "code": "22_2271216",
+    "prof": "اساتيد گروه آموزشي (زندي)",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271224,
+    "name": "سازه هاي چوبي",
+    "code": "21_2271224",
+    "prof": "صباغ يزدي سعيد رضا",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271259,
+    "name": "روش اجزاء محدود",
+    "code": "21_2271259",
+    "prof": "اصيل قره باغي سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/13 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271259,
+    "name": "روش اجزاء محدود",
+    "code": "22_2271259",
+    "prof": "ميرزا بزرگ حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/13 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271267,
+    "name": "ايروالاستيسيته در مهندسي عمران",
+    "code": "21_2271267",
+    "prof": "صباغ يزدي سعيد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/16 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271277,
+    "name": "عمليات نقشه برداري 1",
+    "code": "21_2271277",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271277,
+    "name": "عمليات نقشه برداري 1",
+    "code": "22_2271277",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2271277,
+    "name": "عمليات نقشه برداري 1",
+    "code": "23_2271277",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272011,
+    "name": "ديناميك سازه ها",
+    "code": "21_2272011",
+    "prof": "كرمي محمدي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272012,
+    "name": "ديناميك سازه هاي دريايي",
+    "code": "21_2272012",
+    "prof": "عسگريان بهروز",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272026,
+    "name": "ديناميك خاك",
+    "code": "21_2272026",
+    "prof": "مسعودي مصطفي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272029,
+    "name": "روشهاي اجزامحدود",
+    "code": "21_2272029",
+    "prof": "قادري گركاني مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272052,
+    "name": "مديريت داده ها و كاربرد GIS",
+    "code": "21_2272052",
+    "prof": "ذوالفقاري محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2272066,
+    "name": "قابليت اعتمادلرزه اي سازه ها",
+    "code": "21_2272066",
+    "prof": "مشايخي محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274004,
+    "name": "مهندسي محيط زيست",
+    "code": "21_2274004",
+    "prof": "بوداقپور سيامك",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274004,
+    "name": "مهندسي محيط زيست",
+    "code": "22_2274004",
+    "prof": "بوداقپور سيامك",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274004,
+    "name": "مهندسي محيط زيست",
+    "code": "23_2274004",
+    "prof": "وفائي فريدون",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "عمران",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274043,
+    "name": "آلودگي هوا و روش هاي كنترل",
+    "code": "21_2274043",
+    "prof": "زارع شحنه مريم",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274046,
+    "name": "مباني انتقال وانتشارومدلسازي آلاينده ها",
+    "code": "21_2274046",
+    "prof": "زارع شحنه مريم",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/12 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274047,
+    "name": "اصول مهندسي و مديريت پسماند",
+    "code": "21_2274047",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/16 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274050,
+    "name": "اصول مهندسي تصفيه آب وفاضلاب",
+    "code": "21_2274050",
+    "prof": "صدري مقدم شبنم",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/06 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274061,
+    "name": "مهندسي محيط زيست دريايي",
+    "code": "21_2274061",
+    "prof": "وفائي فريدون",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/13 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2274081,
+    "name": "مدلسازي جريان و آلودگي آبهاي سطحي",
+    "code": "21_2274081",
+    "prof": "بوداقپور سيامك",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/10 10:30-12:30",
+    "department": "عمران",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279005,
+    "name": "آزمايشگاه روسازي",
+    "code": "21_2279005",
+    "prof": "فخري منصور",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279005,
+    "name": "آزمايشگاه روسازي",
+    "code": "22_2279005",
+    "prof": "خدادادي مجتبي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279008,
+    "name": "مهندسي ترابري",
+    "code": "21_2279008",
+    "prof": "ادريسي علي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279017,
+    "name": "ماشين آلات راهسازي",
+    "code": "21_2279017",
+    "prof": "ادريسي علي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279018,
+    "name": "روسازي راه",
+    "code": "21_2279018",
+    "prof": "فخري منصور",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279034,
+    "name": "طرح مهندسي راه پيشرفته",
+    "code": "21_2279034",
+    "prof": "منجم محمد سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "عمران",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279035,
+    "name": "طرح روسازي پيشرفته",
+    "code": "21_2279035",
+    "prof": "فخري منصور",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/12 10:30-12:30",
+    "department": "عمران",
+    "capacity": 17,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279036,
+    "name": "مهندسي ترافيك پيشرفته",
+    "code": "21_2279036",
+    "prof": "حاجي حسينلو منصور",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/16 10:30-12:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279044,
+    "name": "برنامه ريزي حمل ونقل",
+    "code": "21_2279044",
+    "prof": "حاجي حسينلو منصور",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/17 10:30-12:30",
+    "department": "عمران",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279047,
+    "name": "تكنولوژي آسفالت",
+    "code": "21_2279047",
+    "prof": "فخري منصور",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/11/10 10:30-12:30",
+    "department": "عمران",
+    "capacity": 17,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279076,
+    "name": "پروژه راه",
+    "code": "21_2279076",
+    "prof": "منجم محمد سعيد",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279076,
+    "name": "پروژه راه",
+    "code": "22_2279076",
+    "prof": "منجم محمد سعيد",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 2279076,
+    "name": "پروژه راه",
+    "code": "23_2279076",
+    "prof": "منجم محمد سعيد",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "عمران",
+    "capacity": 12,
+    "gender": "مختلط"
+  }
+// مکانیک
+,
+  {
+    "id": 3330143,
+    "name": "كنترل آلودگي محيط زيست",
+    "code": "31_3330143",
+    "prof": "بازارگان مجيد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 308" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330144,
+    "name": "انتقال حرارت 2",
+    "code": "31_3330144",
+    "prof": "آقانجفي سيروس",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 201" }],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330147,
+    "name": "توربوماشين",
+    "code": "31_3330147",
+    "prof": "اشرفي زاده علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330149,
+    "name": "نيروگاه حرارتي",
+    "code": "31_3330149",
+    "prof": "بهبهاني نيا سيد علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330152,
+    "name": "حرارت مركزي وتهويه مطبوع 1",
+    "code": "31_3330152",
+    "prof": "صيادي حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330158,
+    "name": "نيروگاه ابي",
+    "code": "31_3330158",
+    "prof": "كارمزدي محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330171,
+    "name": "استاتيك",
+    "code": "31_3330171",
+    "prof": "لساني علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330172,
+    "name": "ديناميك",
+    "code": "31_3330172",
+    "prof": "موسويان سيد علي اكبر",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 205" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330172,
+    "name": "ديناميك",
+    "code": "32_3330172",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 206" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330174,
+    "name": "مقاومت مصالح 1",
+    "code": "31_3330174",
+    "prof": "شاهاني امير رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330014,
+    "name": "زبان تخصصي",
+    "code": "31_3330014",
+    "prof": "ساداتي سيدحسين",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 201" }],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330039,
+    "name": "برنامه سازي كامپيوتر",
+    "code": "31_3330039",
+    "prof": "ترابي فرشاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330039,
+    "name": "برنامه سازي كامپيوتر",
+    "code": "32_3330039",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330040,
+    "name": "محاسبات عددي",
+    "code": "31_3330040",
+    "prof": "رسولي آيسا",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 206" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330040,
+    "name": "محاسبات عددي",
+    "code": "32_3330040",
+    "prof": "ساداتي سيدحسين",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 207" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330041,
+    "name": "مباني مهندسي برق 1",
+    "code": "31_3330041",
+    "prof": "خليل پور سيدي سيداحمد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 4,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330042,
+    "name": "مباني مهندسي برق 2",
+    "code": "31_3330042",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330049,
+    "name": "سمينار 1",
+    "code": "30_3330049",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330050,
+    "name": "سمينار 2",
+    "code": "30_3330050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330053,
+    "name": "پلاستيسيته وشكل دهي فلزات",
+    "code": "31_3330053",
+    "prof": "جلالي آقچاي عبدالحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 302" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 308" }
+    ],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330056,
+    "name": "ديناميك خودرو",
+    "code": "31_3330056",
+    "prof": "آزادي شهرام",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 201" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330062,
+    "name": "روش اجزائ محدودمقدماتي",
+    "code": "31_3330062",
+    "prof": "هدايتي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330083,
+    "name": "تئوري جوشكاري وآزمون غيرمخرب",
+    "code": "31_3330083",
+    "prof": "هنرور فرهنگ",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330089,
+    "name": "اقتصادوانرژي درايران وجهان",
+    "code": "31_3330089",
+    "prof": "عميد پور مجيد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 201" }],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330091,
+    "name": "مكانيك سيالات زيستي",
+    "code": "31_3330091",
+    "prof": "ستاري اميرمحمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330103,
+    "name": "رياضيات مهندسي",
+    "code": "31_3330103",
+    "prof": "لساني علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330103,
+    "name": "رياضيات مهندسي",
+    "code": "32_3330103",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 308" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 308" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330105,
+    "name": "دفاع از پيشنهاد رساله دكتري",
+    "code": "30_3330105",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330106,
+    "name": "دفاع مجدد از پيشنهاد رساله دكتري",
+    "code": "30_3330106",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330107,
+    "name": "امتحان جامع دكتري 1",
+    "code": "30_3330107",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330108,
+    "name": "امتحان جامع دكتري 2",
+    "code": "30_3330108",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330111,
+    "name": "پايان نامه",
+    "code": "30_3330111",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 400,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330117,
+    "name": "دستيار آموزشي",
+    "code": "30_3330117",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330118,
+    "name": "رساله دكترا",
+    "code": "30_3330118",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 24,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 100,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330131,
+    "name": "ترموديناميك 1",
+    "code": "31_3330131",
+    "prof": "بازارگان مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330131,
+    "name": "ترموديناميك 1",
+    "code": "32_3330131",
+    "prof": "قاسمي مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330132,
+    "name": "ترموديناميك 2",
+    "code": "31_3330132",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330132,
+    "name": "ترموديناميك 2",
+    "code": "32_3330132",
+    "prof": "ستاري اميرمحمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330133,
+    "name": "آزترموديناميك",
+    "code": "31_3330133",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330133,
+    "name": "آزترموديناميك",
+    "code": "32_3330133",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330133,
+    "name": "آزترموديناميك",
+    "code": "33_3330133",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330133,
+    "name": "آزترموديناميك",
+    "code": "34_3330133",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330134,
+    "name": "مكانيك سيالات 1",
+    "code": "31_3330134",
+    "prof": "كارمزدي محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 201" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330134,
+    "name": "مكانيك سيالات 1",
+    "code": "32_3330134",
+    "prof": "شهيديان آزاده",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 205" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330135,
+    "name": "مكانيك سيالات 2",
+    "code": "31_3330135",
+    "prof": "شمس مهرزاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 206" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330135,
+    "name": "مكانيك سيالات 2",
+    "code": "32_3330135",
+    "prof": "مجري افسانه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 207" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330136,
+    "name": "آزمكانيك سيالات",
+    "code": "31_3330136",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330136,
+    "name": "آزمكانيك سيالات",
+    "code": "32_3330136",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330136,
+    "name": "آزمكانيك سيالات",
+    "code": "33_3330136",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330136,
+    "name": "آزمكانيك سيالات",
+    "code": "34_3330136",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 9,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330137,
+    "name": "انتقال حرارت 1",
+    "code": "31_3330137",
+    "prof": "آقانجفي سيروس",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330137,
+    "name": "انتقال حرارت 1",
+    "code": "32_3330137",
+    "prof": "پوربگيان برزي مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330139,
+    "name": "موتورهاي احتراق داخلي",
+    "code": "31_3330139",
+    "prof": "شامخي امير حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "31_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+      },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "32_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "33_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "34_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "35_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "36_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330141,
+    "name": "كارگاه اتومكانيك",
+    "code": "37_3330141",
+    "prof": "غفاري ملكي سيدمجتبي",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330174,
+    "name": "مقاومت مصالح 1",
+    "code": "32_3330174",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330175,
+    "name": "علم مواد",
+    "code": "31_3330175",
+    "prof": "قنادي صابر",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330175,
+    "name": "علم مواد",
+    "code": "32_3330175",
+    "prof": "انصاري چهارسوقي فهيمه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 2,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330176,
+    "name": "آزعلم مواد",
+    "code": "31_3330176",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 6,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330176,
+    "name": "آزعلم مواد",
+    "code": "32_3330176",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330177,
+    "name": "طراحي اجزائ1",
+    "code": "31_3330177",
+    "prof": "عسگري علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330177,
+    "name": "طراحي اجزائ1",
+    "code": "32_3330177",
+    "prof": "كارمزدي علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330178,
+    "name": "طراحي اجزائ2",
+    "code": "31_3330178",
+    "prof": "هدايتي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330178,
+    "name": "طراحي اجزائ2",
+    "code": "32_3330178",
+    "prof": "نخودچي سهيل",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330179,
+    "name": "مقاومت مصالح 2",
+    "code": "31_3330179",
+    "prof": "قريشي سيد مجيد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 202" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330179,
+    "name": "مقاومت مصالح 2",
+    "code": "32_3330179",
+    "prof": "شرعيات محمد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 204" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330180,
+    "name": "آزمقاومت مصالح",
+    "code": "31_3330180",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330180,
+    "name": "آزمقاومت مصالح",
+    "code": "32_3330180",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330180,
+    "name": "آزمقاومت مصالح",
+    "code": "33_3330180",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330180,
+    "name": "آزمقاومت مصالح",
+    "code": "34_3330180",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330181,
+    "name": "ديناميك ماشين",
+    "code": "31_3330181",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330181,
+    "name": "ديناميك ماشين",
+    "code": "32_3330181",
+    "prof": "كارمزدي علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330182,
+    "name": "آز ديناميك ماشين و ارتعاشات",
+    "code": "31_3330182",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330182,
+    "name": "آز ديناميك ماشين و ارتعاشات",
+    "code": "32_3330182",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330182,
+    "name": "آز ديناميك ماشين و ارتعاشات",
+    "code": "33_3330182",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330182,
+    "name": "آز ديناميك ماشين و ارتعاشات",
+    "code": "34_3330182",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330182,
+    "name": "آز ديناميك ماشين و ارتعاشات",
+    "code": "35_3330182",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330183,
+    "name": "ارتعاشات مكانيكي",
+    "code": "31_3330183",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330183,
+    "name": "ارتعاشات مكانيكي",
+    "code": "32_3330183",
+    "prof": "كاظمي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330184,
+    "name": "روشهاي توليدوكارگاه",
+    "code": "31_3330184",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 306" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330185,
+    "name": "كنترل اتوماتيك",
+    "code": "31_3330185",
+    "prof": "موسويان سيد علي اكبر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330185,
+    "name": "كنترل اتوماتيك",
+    "code": "32_3330185",
+    "prof": "ناصري فر ناصر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 206" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330186,
+    "name": "اندازه گيري وسيستم هاي كنترل",
+    "code": "31_3330186",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 205" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "31_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "32_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "33_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "34_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "35_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330189,
+    "name": "كارگاه جوشكاري وورقكاري",
+    "code": "36_3330189",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "31_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "32_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "33_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "34_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "35_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "36_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "37_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330191,
+    "name": "كارگاه ماشين ابزار",
+    "code": "38_3330191",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330193,
+    "name": "روشهاي طراحي مهندسي",
+    "code": "31_3330193",
+    "prof": "كازروني مهرداد",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 205" }],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330198,
+    "name": "مكانيك موادمركب",
+    "code": "31_3330198",
+    "prof": "خليلي سيد محمدرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330205,
+    "name": "رساله دكتري پژوهشي",
+    "code": "30_3330205",
+        "units": 30,
+    "sessions": [],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 5,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330206,
+    "name": "مباني بينايي كامپيوتر",
+    "code": "31_3330206",
+    "prof": "نحوي علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330219,
+    "name": "دانش مهندسي مواد",
+    "code": "31_3330219",
+    "prof": "قنادي صابر",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 28,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330219,
+    "name": "دانش مهندسي مواد",
+    "code": "32_3330219",
+    "prof": "انصاري چهارسوقي فهيمه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 28,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330220,
+    "name": "نقشه كشي صنعتي",
+    "code": "31_3330220",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330220,
+    "name": "نقشه كشي صنعتي",
+    "code": "32_3330220",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 308" },
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "كلاس 308" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330220,
+    "name": "نقشه كشي صنعتي",
+    "code": "33_3330220",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330220,
+    "name": "نقشه كشي صنعتي",
+    "code": "34_3330220",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330221,
+    "name": "آشنايي با رشته مهندسي مكانيك(كاربيني)",
+    "code": "31_3330221",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "آمفي تئاتر دانشكده" }],
+    "examDate": "",
+    "department": "مکانیک",
+    "capacity": 120,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330222,
+    "name": "مهارت هاي نرم شغلي",
+    "code": "31_3330222",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 204" }],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330227,
+    "name": "ديناميك",
+    "code": "31_3330227",
+    "prof": "موسويان سيد علي اكبر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 205" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 28,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330227,
+    "name": "ديناميك",
+    "code": "32_3330227",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 206" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 206" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 28,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330228,
+    "name": "مباني مهندسي برق",
+    "code": "31_3330228",
+    "prof": "خليل پور سيدي سيداحمد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330228,
+    "name": "مباني مهندسي برق",
+    "code": "32_3330228",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330229,
+    "name": "هوش مصنوعي و تحول ديجيتال",
+    "code": "31_3330229",
+    "prof": "كازروني مهرداد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 206" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330229,
+    "name": "هوش مصنوعي و تحول ديجيتال",
+    "code": "32_3330229",
+    "prof": "نبي پور مهدي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 207" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330230,
+    "name": "نقشه كشي صنعتي به كمك كامپيوتر",
+    "code": "31_3330230",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330230,
+    "name": "نقشه كشي صنعتي به كمك كامپيوتر",
+    "code": "32_3330230",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330232,
+    "name": "كاربردهاي صنعتي باتري هاي الكترو شيميايي",
+    "code": "31_3330232",
+    "prof": "ترابي فرشاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 307" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/30 13:30-16:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330236,
+    "name": "طراحي و بهينه سازي سامانه هاي انرژي",
+    "code": "31_3330236",
+    "prof": "شربتدار مهكامه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330237,
+    "name": "شبيه سازي حركت انسان",
+    "code": "66_3330237",
+    "prof": "نبي پور مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "سالن سمينار دكتري" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "سالن سمينار دكتري" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3330239,
+    "name": "ديناميك تخصصي",
+    "code": "31_3330239",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 205" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331001,
+    "name": "مباني انرژي هاي تجديد پذير",
+    "code": "31_3331001",
+    "prof": "اشرفي زاده علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331059,
+    "name": "رياضيات پيشرفته",
+    "code": "31_3331059",
+    "prof": "كارمزدي محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 302" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331059,
+    "name": "رياضيات پيشرفته",
+    "code": "32_3331059",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331065,
+    "name": "انتقال حرارت پيشرفته جابجاي",
+    "code": "31_3331065",
+    "prof": "قاسمي مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 302" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331066,
+    "name": "انتقال حرارت پيشرفته تشعشع",
+    "code": "31_3331066",
+    "prof": "آقانجفي سيروس",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 306" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331068,
+    "name": "مكانيك سيالات پيشرفته",
+    "code": "31_3331068",
+    "prof": "مجري افسانه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331071,
+    "name": "لايه هاي مرزي 1",
+    "code": "31_3331071",
+    "prof": "شمس مهرزاد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 302" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331076,
+    "name": "ديناميك سيالات محاسباتي 1",
+    "code": "31_3331076",
+    "prof": "پوربگيان برزي مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 301" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3331147,
+    "name": "نانو سيال- ميكرو و نانوفلويديك",
+    "code": "31_3331147",
+    "prof": "شهيديان آزاده",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333005,
+    "name": "هدايت و ناوبري",
+    "code": "33_3333005",
+    "prof": "كارمزدي علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "سمعي بصري كارشناسي" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "سمعي بصري كارشناسي" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333104,
+    "name": "رياضيات پيشرفته 1",
+    "code": "31_3333104",
+    "prof": "همائي نژاد محمد رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 302" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333104,
+    "name": "رياضيات پيشرفته 1",
+    "code": "32_3333104",
+    "prof": "شاهاني امير رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333106,
+    "name": "مكانيك محيط پيوسته",
+    "code": "33_3333106",
+    "prof": "شاهاني امير رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 301" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333133,
+    "name": "ديناميك پيشرفته",
+    "code": "33_3333133",
+    "prof": "موسويان سيد علي اكبر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 308" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 308" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333147,
+    "name": "سيستمهاي كنترل پيشرفته 1",
+    "code": "33_3333147",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 306" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333161,
+    "name": "مواد مركب",
+    "code": "33_3333161",
+    "prof": "خليلي سيد محمدرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333250,
+    "name": "ميكرو الكترومكانيك",
+    "code": "33_3333250",
+    "prof": "ناصري فر ناصر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3333253,
+    "name": "كنترل بهينه",
+    "code": "33_3333253",
+    "prof": "ساداتي سيدحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 308" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 308" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339023,
+    "name": "شكل دهي فلزات",
+    "code": "39_3339023",
+    "prof": "عسگري علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "سالن سمينار دكتري" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339025,
+    "name": "طراحي اجزا سازه و ماشين ابزار",
+    "code": "39_3339025",
+    "prof": "وحدتي مهرداد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 209" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 209" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339029,
+    "name": "فرايندهاي الكتروفيزيكي",
+    "code": "39_3339029",
+    "prof": "قريشي سيد مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 302" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 302" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339030,
+    "name": "آناليز شكل دادن فلزات",
+    "code": "39_3339030",
+    "prof": "جلالي آقچاي عبدالحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339032,
+    "name": "موادمركب",
+    "code": "39_3339032",
+    "prof": "زماني اشني جمال",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 308" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339037,
+    "name": "تست غير مخرب پيشرفته",
+    "code": "39_3339037",
+    "prof": "هنرور فرهنگ",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339043,
+    "name": "هوش مصنوعي وسيستم هاي خبره",
+    "code": "39_3339043",
+    "prof": "كازروني مهرداد",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [4], "start": 16.5, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3339057,
+    "name": "نمونه سازي سريع",
+    "code": "39_3339057",
+    "prof": "نخودچي سهيل",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5,       "location": "كلاس 306" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3366008,
+    "name": "هوش مصنوعي وسيستم هاي خبره",
+    "code": "66_3366008",
+    "prof": "شربتدار مهكامه",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "107" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "107" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3368003,
+    "name": "مباني بيومكانيك",
+    "code": "68_3368003",
+    "prof": "رسولي آيسا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 310" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 310" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3368011,
+    "name": "ميكروسيالات",
+    "code": "68_3368011",
+    "prof": "ستاري اميرمحمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3368018,
+    "name": "بيومكانيك برخورد و تصادم",
+    "code": "68_3368018",
+    "prof": "هدايتي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "107" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "107" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3368028,
+    "name": "بيو مكانيك اسكلتي عضلاني",
+    "code": "68_3368028",
+    "prof": "لساني علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "كلاس 306" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397011,
+    "name": "طراحي وتحليل سازه و بدنه خودرو",
+    "code": "97_3397011",
+    "prof": "شرعيات محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 310" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 310" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397018,
+    "name": "ديناميك پيشرفته",
+    "code": "97_3397018",
+    "prof": "كاظمي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 209" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 209" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397023,
+    "name": "مكانيك محيط پيوسته",
+    "code": "97_3397023",
+    "prof": "عسگري مسعود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 307" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397048,
+    "name": "مشابه سازي موتورهاي پيستوني",
+    "code": "97_3397048",
+    "prof": "شامخي امير حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 310" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 310" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397057,
+    "name": "رياضيات پيشرفته 1",
+    "code": "97_3397057",
+    "prof": "شرعيات محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3397060,
+    "name": "سيستم هاي كنترل پيشرفته 1",
+    "code": "97_3397060",
+    "prof": "آزادي شهرام",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 209" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 209" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398004,
+    "name": "مباني اقتصاد",
+    "code": "98_3398004",
+    "prof": "زماني پدرام مونا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 306" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398005,
+    "name": "مهندسي فرايند",
+    "code": "98_3398005",
+    "prof": "زماني پدرام مونا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 307" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 307" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398017,
+    "name": "بهينه سازي جريان اگزژي",
+    "code": "98_3398017",
+    "prof": "صيادي حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 308" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 308" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398018,
+    "name": "تكنولوژي Pinch",
+    "code": "98_3398018",
+    "prof": "عميد پور مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398027,
+    "name": "تكنولوژي نيروگاههاي حرارتي خورشيدي وهيدروژن خورشيدي",
+    "code": "98_3398027",
+    "prof": "بهبهاني نيا سيد علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 306" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398071,
+    "name": "مباني و مدلسازي باتري هاي الكتروشيميايي",
+    "code": "98_3398071",
+    "prof": "ترابي فرشاد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 301" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 301" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
+  },
+  {
+    "id": 3398075,
+    "name": "تبديل انرژي پيشرفته",
+    "code": "98_3398075",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 306" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 306" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مکانیک",
+    "capacity": 7,
+    "gender": "مختلط"
   }
 ,
-// Omomi
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "51_5510001",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
+// هوافضا
+
+  {
+    "id": 8880013,
+    "name": "ديناميك",
+    "code": "81_8880013",
+    "prof": "با صحبت نوين زاد عليرضا",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 210" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 210" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "52_5510001",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "53_5510001",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "54_5510001",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "55_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "56_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "57_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "58_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "59_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "60_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "61_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
+    "id": 8880013,
+    "name": "ديناميك",
+    "code": "82_8880013",
+    "prof": "جعفري ندوشن مهدي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 210" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 210" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "62_5510001",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "63_5510001",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "64_5510001",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "65_5510001",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "66_5510001",
-    prof: "خضري عبدالرحمن",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "67_5510001",
-    prof: "خضري عبدالرحمن",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "دانشكده برق"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "68_5510001",
-    prof: "خضري عبدالرحمن",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "69_5510001",
-    prof: "خضري عبدالرحمن",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشكده برق"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "70_5510001",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مرد"
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "71_5510001",
-    prof: "محبي فرشته",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
+    "id": 8880016,
+    "name": "مباني مهندسي برق والكترونيك",
+    "code": "81_8880016",
+    "prof": "چيني فروشان محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 203" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "72_5510001",
-    prof: "محبي فرشته",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "73_5510001",
-    prof: "محبي فرشته",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "74_5510001",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [1], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "75_5510001",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "76_5510001",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "77_5510001",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [5], start: 7.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510001,
-    name: "تربيت بدني",
-    code: "78_5510001",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 16,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "51_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [2], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "52_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5510002,
-    name: "ورزش 1",
-    code: "53_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
+    "id": 8880016,
+    "name": "مباني مهندسي برق والكترونيك",
+    "code": "82_8880016",
+    "prof": "اساتيد گروه آموزشي (سعادتمند)",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 207" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "54_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "55_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "56_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [4], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "57_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "58_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "59_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "60_5510002",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "61_5510002",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "62_5510002",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5510002,
-    name: "ورزش 1",
-    code: "63_5510002",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
+    "id": 8880021,
+    "name": "مكانيك سيالات",
+    "code": "81_8880021",
+    "prof": "ابراهيمي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 207" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "64_5510002",
-    prof: "لطيفي حجت اله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "65_5510002",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "66_5510002",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "67_5510002",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "68_5510002",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "69_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "70_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "71_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "72_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [3], start: 7.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 30,
+    "gender": "مختلط"
   },
   {
-    id: 5510002,
-    name: "ورزش 1",
-    code: "73_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "علوم-سالن تربيت بدني"}
+    "id": 8880024,
+    "name": "مقاومت مصالح",
+    "code": "81_8880024",
+    "prof": "نوريان محمدعلي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 210" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 210" }
     ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "74_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "75_5510002",
-    prof: "خداداد كاشي شعله",
-    units: 1,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "76_5510002",
-    prof: "محبي فرشته",
-    units: 1,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "77_5510002",
-    prof: "كريمي ترانه",
-    units: 1,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "زن"
-  },
-{
-    id: 5510002,
-    name: "ورزش 1",
-    code: "78_5510002",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مرد"
-  },
-{
-    id: 5510003,
-    name: "تربيت بدني ويژه",
-    code: "51_5510003",
-    prof: "هنرور افشار",
-    units: 1,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "علوم-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 16,
-    gender: "مختلط"
-  },
-{
-    id: 5510004,
-    name: "ورزش ويژه",
-    code: "51_5510004",
-    prof: "خنجري ياسر",
-    units: 1,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 12,
-    gender: "مختلط"
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "51_5514003",
-    prof: "امامي محمد مهدي",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "دانشكده برق"}
+    "id": 8880024,
+    "name": "مقاومت مصالح",
+    "code": "82_8880024",
+    "prof": "اساتيد گروه آموزشي (پيمان)",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "كلاس 207" }
     ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 30,
-    gender: "مرد"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "52_5514003",
-    prof: "اساتيد گروه آموزشي (تقديري)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "53_5514003",
-    prof: "اساتيد گروه آموزشي (غلامي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "54_5514003",
-    prof: "بابايي محمدحسن",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "55_5514003",
-    prof: "طهماسبي محمد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "56_5514003",
-    prof: "عبداللهي عباس",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "57_5514003",
-    prof: "عبداللهي عباس",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514003,
-    name: "انقلاب اسلامي وريشه هاي آن",
-    code: "58_5514003",
-    prof: "طهماسبي محمد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/17 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "51_5514006",
-    prof: "كاظم توري سعيده",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "دانشكده برق"}
+    "id": 8880025,
+    "name": "آلگوريتمهاوبرنامه سازي كامپيوتر",
+    "code": "81_8880025",
+    "prof": "اعظم پور محمد هادي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "سالن" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "سالن" }
     ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "52_5514006",
-    prof: "باباجان‌نژاد چاري محمدمهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "53_5514006",
-    prof: "باباجان‌نژاد چاري محمدمهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "54_5514006",
-    prof: "نوري حميد رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "55_5514006",
-    prof: "نوري حميد رضا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "56_5514006",
-    prof: "اشتري ماهيني ليلا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "57_5514006",
-    prof: "نادري مريم",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "59_5514006",
-    prof: "اساتيد گروه آموزشي (مختاري)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
   {
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "60_5514006",
-    prof: "اساتيد گروه آموزشي (كاملي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "مكانيك-كلاس"}
+    "id": 8880025,
+    "name": "آلگوريتمهاوبرنامه سازي كامپيوتر",
+    "code": "82_8880025",
+    "prof": "اعظم پور محمد هادي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 203" }
     ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "61_5514006",
-    prof: "اساتيد گروه آموزشي (مختاري)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
+  {
+    "id": 8880027,
+    "name": "ارتعاشات مكانيكي",
+    "code": "81_8880027",
+    "prof": "ايراني سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 207" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 207" }
     ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "62_5514006",
-    prof: "صادقي معصومه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 9, duration: 1.5, location: "مكانيك-كلاس"}
+  {
+    "id": 8880027,
+    "name": "ارتعاشات مكانيكي",
+    "code": "82_8880027",
+    "prof": "خراساني رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 203" }
     ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
-{
-    id: 5514006,
-    name: "تفسيرموضوعي قرآن",
-    code: "63_5514006",
-    prof: "صادقي معصومه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 10.5, duration: 2, location: "مكانيك-كلاس"}
+  {
+    "id": 8880028,
+    "name": "كنترل اتوماتيك",
+    "code": "81_8880028",
+    "prof": "طايفي نصرآبادي مرتضي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 203" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 203" }
     ],
-    examDate: "1405/04/13 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 30,
+    "gender": "مختلط"
   },
-{
-    id: 5514011,
-    name: "حقوق اجتماعي وسياسي دراسلام",
-    code: "51_5514011",
-    prof: "نوري حميد رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
+  {
+    "id": 8880029,
+    "name": "آئروديناميك 1",
+    "code": "81_8880029",
+    "prof": "شيخ الاسلام نوري سيد مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 204" }
     ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
-{
-    id: 5514011,
-    name: "حقوق اجتماعي وسياسي دراسلام",
-    code: "52_5514011",
-    prof: "نوري حميد رضا",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
+  {
+    "id": 8880029,
+    "name": "آئروديناميك 1",
+    "code": "82_8880029",
+    "prof": "فتحعلي ماني",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 204" }
     ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
   },
-{
-    id: 5514011,
-    name: "حقوق اجتماعي وسياسي دراسلام",
-    code: "53_5514011",
-    prof: "نوري حميد رضا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 8880030,
+    "name": "آزمباني برق والكترونيك",
+    "code": "81_8880030",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "دانشكده برق" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
   },
-{
-    id: 5514014,
-    name: "تاريخ تمدن فرهنگ و تمدن اسلامي",
-    code: "51_5514014",
-    prof: "بابايي محمدحسن",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 8880030,
+    "name": "آزمباني برق والكترونيك",
+    "code": "82_8880030",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
   },
-{
-    id: 5514014,
-    name: "تاريخ تمدن فرهنگ و تمدن اسلامي",
-    code: "52_5514014",
-    prof: "سعيدي نسب تورج",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 8880030,
+    "name": "آزمباني برق والكترونيك",
+    "code": "83_8880030",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
   },
-{
-    id: 5514014,
-    name: "تاريخ تمدن فرهنگ و تمدن اسلامي",
-    code: "53_5514014",
-    prof: "سعيدي نسب تورج",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
+  {
+    "id": 8880031,
+    "name": "انتقال حرارت",
+    "code": "81_8880031",
+    "prof": "كريمي مزرعه شاهي حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "سالن" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "سالن" }
     ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 30,
+    "gender": "مختلط"
   },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "51_5514015",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 8880036,
+    "name": "آز مكانيك سيالات",
+    "code": "81_8880036",
+    "prof": "شيخ الاسلام نوري سيد مهدي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "آزمايشگاه مكانيك سيالات" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
   },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "52_5514015",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+  {
+    "id": 8880036,
+    "name": "آز مكانيك سيالات",
+    "code": "82_8880036",
+    "prof": "شيخ الاسلام نوري سيد مهدي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "آزمايشگاه مكانيك سيالات" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
   },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "53_5514015",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+  {
+    "id": 8880038,
+    "name": "آز مقاومت مصالح",
+    "code": "81_8880038",
+    "prof": "ذاكري مهناز",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 205" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
   },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "54_5514015",
-    prof: "موسوي گرمارودي رويا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
+  {
+    "id": 8880038,
+    "name": "آز مقاومت مصالح",
+    "code": "82_8880038",
+    "prof": "ذاكري مهناز",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 201" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880040,
+    "name": "تحليل سازه هاي هوائي",
+    "code": "81_8880040",
+    "prof": "خراساني رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "سالن" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "كلاس 207" }
     ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880047,
+    "name": "آز آئروديناميك 1",
+    "code": "81_8880047",
+    "prof": "پوريوسفي غلامحسين",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "آزمايشگاه آيروديناميك" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880047,
+    "name": "آز آئروديناميك 1",
+    "code": "82_8880047",
+    "prof": "پوريوسفي غلامحسين",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "آزمايشگاه آيروديناميك" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880047,
+    "name": "آز آئروديناميك 1",
+    "code": "83_8880047",
+    "prof": "پوريوسفي غلامحسين",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "آزمايشگاه آيروديناميك" }],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880048,
+    "name": "مقدمه اي برمهندسي هوافضا",
+    "code": "81_8880048",
+    "prof": "اساتيد گروه آموزشي (خوئي)",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 203" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880048,
+    "name": "مقدمه اي برمهندسي هوافضا",
+    "code": "82_8880048",
+    "prof": "اساتيد گروه آموزشي (خوئي)",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 203" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880049,
+    "name": "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    "code": "81_8880049",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [6], "start": 7.5, "duration": 1.5, "location": "كارگاه ورقكاري و جوشكاري" },
+      { "days": [6], "start": 9, "duration": 1.5, "location": "كارگاه ورقكاري و جوشكاري" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880049,
+    "name": "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    "code": "82_8880049",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [6], "start": 10.5, "duration": 2, "location": "كارگاه ورقكاري و جوشكاري" },
+      { "days": [6], "start": 13.5, "duration": 1.5, "location": "كارگاه ورقكاري و جوشكاري" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880049,
+    "name": "كارگاه ورقكاري وجوشكاري درصنايع هوائي",
+    "code": "83_8880049",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [6], "start": 15, "duration": 1.5, "location": "كارگاه ورقكاري و جوشكاري" },
+      { "days": [6], "start": 16.5, "duration": 1.5, "location": "كارگاه ورقكاري و جوشكاري" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880066,
+    "name": "پروژه",
+    "code": "80_8880066",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880067,
+    "name": "ترموديناميك 2",
+    "code": "81_8880067",
+    "prof": "شيخ الاسلام نوري سيد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 203" }],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880067,
+    "name": "ترموديناميك 2",
+    "code": "82_8880067",
+    "prof": "مهدوي مقدم حسين",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "سالن" }],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880068,
+    "name": "كارگاه موتور_بدنه وسيستمهاي هواپيما",
+    "code": "81_8880068",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [6], "start": 7.5, "duration": 1.5, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" },
+      { "days": [6], "start": 9, "duration": 1.5, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880068,
+    "name": "كارگاه موتور_بدنه وسيستمهاي هواپيما",
+    "code": "82_8880068",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [6], "start": 10.5, "duration": 2, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" },
+      { "days": [6], "start": 13.5, "duration": 1.5, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880068,
+    "name": "كارگاه موتور_بدنه وسيستمهاي هواپيما",
+    "code": "83_8880068",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [6], "start": 15, "duration": 1.5, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" },
+      { "days": [6], "start": 16.5, "duration": 1.5, "location": "كارگاه موتور، بدنه و سيستم هاي هواپيما" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880084,
+    "name": "كارگاه ابزاردقيق واندازه گيري درهواپيما",
+    "code": "81_8880084",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880084,
+    "name": "كارگاه ابزاردقيق واندازه گيري درهواپيما",
+    "code": "82_8880084",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 201" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880085,
+    "name": "سمينار 1",
+    "code": "81_8880085",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880086,
+    "name": "سمينار 2",
+    "code": "81_8880086",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880087,
+    "name": "اصول جلوبرنده ها",
+    "code": "81_8880087",
+    "prof": "ابراهيمي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "سالن" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "سالن" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 35,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880088,
+    "name": "طراحي سازه هاي صنايع هوايي",
+    "code": "81_8880088",
+    "prof": "مظفري علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "سالن" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "سالن" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880088,
+    "name": "طراحي سازه هاي صنايع هوايي",
+    "code": "82_8880088",
+    "prof": "نوريان محمدعلي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 203" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880089,
+    "name": "مكانيك پرواز 2",
+    "code": "81_8880089",
+    "prof": "نيكخواه امير علي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 204" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880089,
+    "name": "مكانيك پرواز 2",
+    "code": "82_8880089",
+    "prof": "خوشنود عبدالمجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 210" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 210" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880090,
+    "name": "طراحي هواپيما 1",
+    "code": "81_8880090",
+    "prof": "علي صادقي آراني حامد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 203" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880090,
+    "name": "طراحي هواپيما 1",
+    "code": "82_8880090",
+    "prof": "اساتيد گروه آموزشي (خوئي)",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880095,
+    "name": "آيين نگارش وگزارش نويسي فني",
+    "code": "81_8880095",
+    "prof": "اساتيد گروه آموزشي (پاچناري)",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 203" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880095,
+    "name": "آيين نگارش وگزارش نويسي فني",
+    "code": "82_8880095",
+    "prof": "اساتيد گروه آموزشي (پاچناري)",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 203" }],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 22,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880126,
+    "name": "رساله دكترا",
+    "code": "80_8880126",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 24,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 0,
+        "gender": "مختلط"
+  },
+  {
+    "id": 8880134,
+    "name": "رياضيات پيشرفته 1",
+    "code": "81_8880134",
+    "prof": "ابراهيمي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 207" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880134,
+    "name": "رياضيات پيشرفته 1",
+    "code": "82_8880134",
+    "prof": "طايفي نصرآبادي مرتضي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880141,
+    "name": "دفاع از پيشنهاد رساله دكتري",
+    "code": "80_8880141",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 5,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880142,
+    "name": "دفاع مجدد از پيشنهاد رساله دكتري",
+    "code": "80_8880142",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 5,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880143,
+    "name": "امتحان جامع دكتري 1",
+    "code": "80_8880143",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 5,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880144,
+    "name": "امتحان جامع دكتري 2",
+    "code": "80_8880144",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "هوافضا",
+    "capacity": 5,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8880157,
+    "name": "مباني هوش مصنوعي",
+    "code": "81_8880157",
+    "prof": "چيني فروشان محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 16.5, "duration": 1.5, "location": "كلاس 203" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "كلاس 203" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882007,
+    "name": "آئروترموديناميك موتورهاي موشك",
+    "code": "81_8882007",
+    "prof": "مهدوي مقدم حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "سالن" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "سالن" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882014,
+    "name": "جريان لزج پيشرفته 1",
+    "code": "81_8882014",
+    "prof": "فتحعلي ماني",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882015,
+    "name": "ديناميك گازها پيشرفته 1",
+    "code": "81_8882015",
+    "prof": "كريمي مزرعه شاهي حسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "سالن" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "سالن" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882018,
+    "name": "طراحي آيروديناميكي توربوماشين ها",
+    "code": "81_8882018",
+    "prof": "شيخ الاسلام نوري سيد مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 201" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882029,
+    "name": "آئروديناميك مافوق صوت",
+    "code": "81_8882029",
+    "prof": "پوريوسفي غلامحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882031,
+    "name": "آئروديناميك مادون صوت",
+    "code": "81_8882031",
+    "prof": "علي صادقي آراني حامد",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882041,
+    "name": "ديناميك سيالات عددي 2",
+    "code": "81_8882041",
+    "prof": "اعظم پور محمد هادي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "سايت كامپيوتر هوافضا" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882045,
+    "name": "آيروديناميك تجربي",
+    "code": "81_8882045",
+    "prof": "پوريوسفي غلامحسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8882047,
+    "name": "اندركنش سيال با جامد",
+    "code": "81_8882047",
+    "prof": "نوريان محمدعلي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884023,
+    "name": "روش هاي بهينه سازي",
+    "code": "81_8884023",
+    "prof": "اساتيد گروه آموزشي (ابراهيمي)",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884027,
+    "name": "محيط عملكردي فضاپيما",
+    "code": "81_8884027",
+    "prof": "مير شمس مهران",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884028,
+    "name": "مدلسازي سيستم هاي ديناميكي در هوافضا",
+    "code": "81_8884028",
+    "prof": "با صحبت نوين زاد عليرضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884031,
+    "name": "طراحي سيستمي فضا پيما 2",
+    "code": "81_8884031",
+    "prof": "مير شمس مهران",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884032,
+    "name": "طراحي ماموريت هاي فضايي",
+    "code": "81_8884032",
+    "prof": "جعفري ندوشن مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/23 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884044,
+    "name": "شبكه هاي عصبي",
+    "code": "81_8884044",
+    "prof": "چيني فروشان محمد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 205" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884065,
+    "name": "كنترل پيشرفته",
+    "code": "81_8884065",
+    "prof": "روشني يان جعفر",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 204" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884070,
+    "name": "ديناميك پرواز پيشرفته 1",
+    "code": "81_8884070",
+    "prof": "نيكخواه امير علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 204" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 204" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8884074,
+    "name": "كنترل غير خطي",
+    "code": "81_8884074",
+    "prof": "خوشنود عبدالمجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 207" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 207" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8895010,
+    "name": "ديناميك سازه",
+    "code": "81_8895010",
+    "prof": "ايراني سعيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 205" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 205" }
+    ],
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8895026,
+    "name": "تحليل پيشرفته سازه هاي هوافضايي",
+    "code": "81_8895026",
+    "prof": "ذاكري مهناز",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 201" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 8895027,
+    "name": "طراحي پيشرفته سازه هاي هوافضايي",
+    "code": "81_8895027",
+    "prof": "مظفري علي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 201" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 201" }
+    ],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "هوافضا",
+    "capacity": 8,
+    "gender": "مختلط"
+  }
+,
+// صنایع
+  
+  {
+    "id": 6660119,
+    "name": "سمينار 1",
+    "code": "60_6660119",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660120,
+    "name": "سمينار 2",
+    "code": "60_6660120",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660130,
+    "name": "رساله دكترا",
+    "code": "60_6660130",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 24,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 80,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660171,
+    "name": "دفاع از پيشنهاد رساله دكتري",
+    "code": "60_6660171",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660172,
+    "name": "دفاع مجدد از پيشنهاد رساله دكتري",
+    "code": "60_6660172",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660173,
+    "name": "امتحان جامع دكتري 1",
+    "code": "60_6660173",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660175,
+    "name": "پايان نامه",
+    "code": "01_6660175",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660175,
+    "name": "پايان نامه",
+    "code": "60_6660175",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 180,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660175,
+    "name": "پايان نامه",
+    "code": "61_6660175",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 4,
+    "gender": "مختلط"
+  },
+  {
+    "id": 6660187,
+    "name": "دستيار آموزشي",
+    "code": "60_6660187",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "صنايع",
+    "capacity": 30,
+    "gender": "مختلط"
   }
   ,
+  // مواد
+  
   {
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "55_5514015",
-    prof: "نوروزي مهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "مكانيك-كلاس"}
+    "id": 9912003,
+    "name": "متالورژي فيزيكي 2",
+    "code": "99_9912003",
+    "prof": "سيدصالحي مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "56_5514015",
-    prof: "نوروزي مهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514015,
-    name: "آيين زندگي و اخلاق كاربردي",
-    code: "57_5514015",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/20 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "51_5514016",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "52_5514016",
-    prof: "مهدوي مجيد",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "53_5514016",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 13.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "54_5514016",
-    prof: "مرتضايي بهزاد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/22 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
   {
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "55_5514016",
-    prof: "مرتضايي بهزاد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
+    "id": 9912026,
+    "name": "پديده هاي انتقال",
+    "code": "99_9912026",
+    "prof": "اقائي خفري مهرداد",
+    "units": 2,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "56_5514016",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "57_5514016",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 16.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "58_5514016",
-    prof: "اكبري سكينه",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "59_5514016",
-    prof: "مشهدي نجميه السادات",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "60_5514016",
-    prof: "مشهدي نجميه السادات",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "61_5514016",
-    prof: "حقيقت طلب سكينه",
-    units: 2,
-    sessions: [
-      {days: [2], start: 16.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 10,
+    "gender": "مختلط"
   },
   {
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "62_5514016",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 9, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "63_5514016",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 13.5, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514016,
-    name: "دانش خانواده وجمعيت",
-    code: "64_5514016",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [1], start: 16.5, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/07 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "51_5514017",
-    prof: "امامي محمد مهدي",
-    units: 2,
-    sessions: [
-      {days: [1], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 30,
-    gender: "مرد"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "52_5514017",
-    prof: "امامي محمد مهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 30,
-    gender: "مرد"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "53_5514017",
-    prof: "امامي محمد مهدي",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 30,
-    gender: "مرد"
+    "id": 9912030,
+    "name": "مواد مركب",
+    "code": "99_9912030",
+    "prof": "اسلامي فارساني رضا",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/19 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
   {
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "55_5514017",
-    prof: "كاظم توري سعيده",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "56_5514017",
-    prof: "نادري مريم",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "57_5514017",
-    prof: "موسوي گرمارودي رويا",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514017,
-    name: "تاريخ تحليلي صدر اسلام",
-    code: "58_5514017",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/15 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "51_5514128",
-    prof: "بلخاري قهي حسين",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "52_5514128",
-    prof: "اساتيد گروه آموزشي (آرپناهي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 9, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "id": 9912031,
+    "name": "اصول مهندسي سطح",
+    "code": "99_9912031",
+    "prof": "سيادتي سيد محمد حسين",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
   {
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "53_5514128",
-    prof: "آقابيگي سعيد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
+    "id": 9912034,
+    "name": "اصول شكل دهي مواد 1",
+    "code": "99_9912034",
+    "prof": "اقائي خفري مهرداد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "54_5514128",
-    prof: "كهنداني تفرشي مهناز",
-    units: 2,
-    sessions: [
-      {days: [4], start: 13.5, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "55_5514128",
-    prof: "شيري امير مهدي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "56_5514128",
-    prof: "شيري امير مهدي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "59_5514128",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514128,
-    name: "انديشه اسلامي 1",
-    code: "60_5514128",
-    prof: "موسوي سيدعلي محمد",
-    units: 2,
-    sessions: [
-      {days: [5], start: 13.5, duration: 1.5, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/09 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/20 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
   {
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "51_5514129",
-    prof: "بلخاري قهي حسين",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "52_5514129",
-    prof: "بلخاري قهي حسين",
-    units: 2,
-    sessions: [
-      {days: [5], start: 16.5, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "53_5514129",
-    prof: "اساتيد گروه آموزشي (محمودزاده)",
-    units: 2,
-    sessions: [
-      {days: [4], start: 9, duration: 1.5, location: "دانشكده برق"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "54_5514129",
-    prof: "اساتيد گروه آموزشي (محمودزاده)",
-    units: 2,
-    sessions: [
-      {days: [4], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "55_5514129",
-    prof: "اساتيد گروه آموزشي (آرپناهي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "56_5514129",
-    prof: "آقابيگي سعيد",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
-  },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "57_5514129",
-    prof: "كهنداني تفرشي مهناز",
-    units: 2,
-    sessions: [
-      {days: [4], start: 15, duration: 1.5, location: "هوافضا-سالن تربيت بدني"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "id": 9912042,
+    "name": "بايو مواد",
+    "code": "99_9912042",
+    "prof": "صلاحي نژاد عرفان",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
   {
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "58_5514129",
-    prof: "شيري امير مهدي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "id": 9912043,
+    "name": "شبيه سازي در علم و مهندسي مواد",
+    "code": "99_9912043",
+    "prof": "منتظري هدش عباس",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "59_5514129",
-    prof: "شيري امير مهدي",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 9912045,
+    "name": "فرآيند هاي ساخت مواد",
+    "code": "99_9912045",
+    "prof": "خرسند حميد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/26 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "60_5514129",
-    prof: "اساتيد گروه آموزشي (مختاري)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 15, duration: 1.5, location: "عمران- ساختمان اموزش"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 9912072,
+    "name": "آز انجماد و ريخته گري مواد",
+    "code": "98_9912072",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "61_5514129",
-    prof: "اساتيد گروه آموزشي (كاملي)",
-    units: 2,
-    sessions: [
-      {days: [5], start: 10.5, duration: 2, location: "مكانيك-كلاس"}
-    ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+  {
+    "id": 9912072,
+    "name": "آز انجماد و ريخته گري مواد",
+    "code": "99_9912072",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "62_5514129",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [3], start: 9, duration: 1.5, location: "مكانيك-كلاس"}
+  {
+    "id": 9912081,
+    "name": "برنامه سازي كامپيوتر",
+    "code": "99_9912081",
+    "prof": "ترابي فرشاد",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/10/21 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "63_5514129",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [3], start: 10.5, duration: 2, location: "مكانيك-كلاس"}
+  {
+    "id": 9912082,
+    "name": "مكانيك مواد",
+    "code": "99_9912082",
+    "prof": "منتظري هدش عباس",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
     ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "زن"
+    "examDate": "1405/10/28 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
   },
-{
-    id: 5514129,
-    name: "انديشه اسلامي 2",
-    code: "64_5514129",
-    prof: "منصوري بيژن",
-    units: 2,
-    sessions: [
-      {days: [3], start: 16.5, duration: 1.5, location: "مكانيك-كلاس"}
+  {
+    "id": 9912084,
+    "name": "متالورژي فيزيكي 1",
+    "code": "99_9912084",
+    "prof": "قنادي صابر",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "" }
     ],
-    examDate: "1405/04/10 13:30-16:30",
-    department: "عمومی",
-    capacity: 40,
-    gender: "مرد"
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9912086,
+    "name": "سينتيك مواد",
+    "code": "99_9912086",
+    "prof": "خسروشاهي زهرا",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9912091,
+    "name": "اصول الكتروشيمي و خوردگي",
+    "code": "99_9912091",
+    "prof": "انصاري چهارسوقي فهيمه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/29 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9912094,
+    "name": "اصول هيدرومتالورژي",
+    "code": "99_9912094",
+    "prof": "خسروشاهي زهرا",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914002,
+    "name": "پديده هاي انتقال",
+    "code": "99_9914002",
+    "prof": "اقائي خفري مهرداد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914003,
+    "name": "شيمي فيزيك مواد",
+    "code": "99_9914003",
+    "prof": "صلاحي نژاد عرفان",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 08:00-10:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914006,
+    "name": "آزمايشگاه متالو گرافي",
+    "code": "98_9914006",
+    "prof": "قنادي صابر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914006,
+    "name": "آزمايشگاه متالو گرافي",
+    "code": "99_9914006",
+    "prof": "قنادي صابر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914008,
+    "name": "آزمايشگاه خواص مكانيكي مواد 1",
+    "code": "98_9914008",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914008,
+    "name": "آزمايشگاه خواص مكانيكي مواد 1",
+    "code": "99_9914008",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914010,
+    "name": "انتقال مطالب علمي و فني",
+    "code": "99_9914010",
+    "prof": "صلاحي نژاد عرفان",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914023,
+    "name": "آزمايشگاه عمليات حرارتي",
+    "code": "98_9914023",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914023,
+    "name": "آزمايشگاه عمليات حرارتي",
+    "code": "99_9914023",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914052,
+    "name": "پروژه",
+    "code": "99_9914052",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9914053,
+    "name": "كارگاه عمومي",
+    "code": "99_9914053",
+    "prof": "ابراهيمي هادي",
+    "units": 1,
+    "sessions": [
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "مهندسی و علم مواد",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916001,
+    "name": "خطا هاي اندازه گيري در تحقيق مواد",
+    "code": "99_9916001",
+    "prof": "سيدصالحي مجيد",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/30 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916009,
+    "name": "ترموديناميك پيشرفته مواد",
+    "code": "99_9916009",
+    "prof": "خرسند حميد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916017,
+    "name": "مكانيك شكست",
+    "code": "99_9916017",
+    "prof": "اقائي خفري مهرداد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916018,
+    "name": "مهندسي سطح پيشرفته",
+    "code": "99_9916018",
+    "prof": "خرسند حميد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916026,
+    "name": "پليمرپيشرفته",
+    "code": "99_9916026",
+    "prof": "اسلامي فارساني رضا",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916037,
+    "name": "علم و تكنولوژي پيشرفته پودر",
+    "code": "99_9916037",
+    "prof": "خرسند حميد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916080,
+    "name": "نفوذ و دگرگوني هاي فازي پيشرفته درمواد",
+    "code": "99_9916080",
+    "prof": "قنادي صابر",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916082,
+    "name": "مشخصه يابي پيشرفته موادوآزمايشگاه",
+    "code": "99_9916082",
+    "prof": "اسلامي فارساني رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916085,
+    "name": "مواد و انرژي هاي تجديد پذير",
+    "code": "99_9916085",
+    "prof": "انصاري چهارسوقي فهيمه",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9916087,
+    "name": "بيونانو فناوري",
+    "code": "99_9916087",
+    "prof": "سيادتي سيد محمد حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9918002,
+    "name": "مكانيك محيط هاي پيوسته",
+    "code": "99_9918002",
+    "prof": "نارويي كيوان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9918019,
+    "name": "شكل دادن گرم",
+    "code": "99_9918019",
+    "prof": "سيدصالحي مجيد",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9918023,
+    "name": "شكل پذيري فلزات",
+    "code": "99_9918023",
+    "prof": "اقائي خفري مهرداد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9918024,
+    "name": "شكل دادن ورق",
+    "code": "99_9918024",
+    "prof": "اقائي خفري مهرداد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 9918033,
+    "name": "اجزاي محدود و يادگيري عميق فيزيك مبنا",
+    "code": "99_9918033",
+    "prof": "نارويي كيوان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "مهندسی و علم مواد",
+    "capacity": 20,
+    "gender": "مختلط"
   }
+  ,
+  // ریاضی
+  
+  {
+    "id": 5714227,
+    "name": "يادگيري ژرف",
+    "code": "41_5714227",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 105" },
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 105" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714237,
+    "name": "هوش مصنوعي",
+    "code": "41_5714237",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 103" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 103" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714145,
+    "name": "نظريه گراف وكاربردها",
+    "code": "41_5714145",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 102" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 10,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714085,
+    "name": "نظريه گراف وكاربرد هاي آن",
+    "code": "41_5714085",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 102" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714055,
+    "name": "معادلات ديفرانسيل",
+    "code": "41_5714055",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 102" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714260,
+    "name": "مباني هندسه ديفرانسيل",
+    "code": "41_5714260",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 102" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714238,
+    "name": "مباني ماتريس ها و جبر خطي",
+    "code": "41_5714238",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714071,
+    "name": "مباني كامپيوتروبرنامه سازي",
+    "code": "41_5714071",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "سالن سمينار" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714071,
+    "name": "مباني كامپيوتروبرنامه سازي",
+    "code": "42_5714071",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "سالن سمينار" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714271,
+    "name": "مباني علوم رياضي",
+    "code": "41_5714271",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "سالن سمينار" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714231,
+    "name": "مباني رياضي علوم داده",
+    "code": "41_5714231",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 105" },
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 105" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714266,
+    "name": "مباني تركيبيات",
+    "code": "41_5714266",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 102" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714081,
+    "name": "سري هاي زماني",
+    "code": "41_5714081",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714169,
+    "name": "زبان تخصصي",
+    "code": "41_5714169",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 102" }],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714112,
+    "name": "روش هاي عددي درجبرخطي",
+    "code": "41_5714112",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 104" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 104" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714063,
+    "name": "حل عددي معادلات ديفرانسيل معمولي",
+    "code": "41_5714063",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714074,
+    "name": "جبر1",
+    "code": "41_5714074",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 103" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 103" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714194,
+    "name": "بهينه سازي غيرخطي پيشرفته 1",
+    "code": "41_5714194",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 106" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 106" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714239,
+    "name": "بهينه سازي در علوم داده",
+    "code": "41_5714239",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 106" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 106" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714195,
+    "name": "بهينه سازي خطي پيشرفته 1",
+    "code": "41_5714195",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 105" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 105" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712065,
+    "name": "گروههاي متناهي",
+    "code": "41_5712065",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712069,
+    "name": "رياضيات عمومي 1",
+    "code": "41_5712069",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "سالن سمينار" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712069,
+    "name": "رياضيات عمومي 1",
+    "code": "42_5712069",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "سالن سمينار" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712070,
+    "name": "رياضيات عمومي 2",
+    "code": "41_5712070",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 107" }],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712071,
+    "name": "رياضيات عمومي 3",
+    "code": "41_5712071",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 107" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712072,
+    "name": "مباني رياضيات",
+    "code": "41_5712072",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "سالن سمينار" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "سالن سمينار" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712088,
+    "name": "نظريه اعداد",
+    "code": "41_5712088",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 103" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 103" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712092,
+    "name": "توپولوژي",
+    "code": "41_5712092",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5712190,
+    "name": "جبر پيشرفته",
+    "code": "41_5712190",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 104" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 104" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714270,
+    "name": "بهينه سازي خطي",
+    "code": "41_5714270",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714232,
+    "name": "الگوريتم هاي علوم داده",
+    "code": "41_5714232",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 105" }],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714256,
+    "name": "احتمال1",
+    "code": "41_5714256",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 102" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714193,
+    "name": "آناليز حقيقي",
+    "code": "41_5714193",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 104" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 104" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5714235,
+    "name": "آزمايشگاه رياضي 1",
+    "code": "41_5714235",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716035,
+    "name": "هوش مصنوعي",
+    "code": "41_5716035",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 101" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 101" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716056,
+    "name": "نظريه تصميم بيزي",
+    "code": "41_5716056",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 104" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 104" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716053,
+    "name": "نظريه اندازه و احتمال 1",
+    "code": "41_5716053",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 106" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 106" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716049,
+    "name": "مدل هاي خطي 1",
+    "code": "41_5716049",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 106" }],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716083,
+    "name": "مباني منطق و نظريه مجموعه ها",
+    "code": "41_5716083",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 101" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 101" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716066,
+    "name": "مباني آناليز عددي",
+    "code": "41_5716066",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716076,
+    "name": "مباني آناليز رياضي",
+    "code": "41_5716076",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 102" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 102" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716061,
+    "name": "طراحي و تحليل الگوريتم ها",
+    "code": "41_5716061",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 101" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 101" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716029,
+    "name": "شبكه هاي كامپيوتري",
+    "code": "41_5716029",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 107" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716078,
+    "name": "رياضي عمومي3",
+    "code": "41_5716078",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716059,
+    "name": "اصول سيستم هاي كامپيوتري",
+    "code": "41_5716059",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 103" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 103" }
+    ],
+    "examDate": "1405/10/24 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716063,
+    "name": "اصول سيستم هاي عامل",
+    "code": "41_5716063",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 107" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 107" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5716043,
+    "name": "استنباط آماري 1",
+    "code": "41_5716043",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 4,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 106" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 106" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "رياضي",
+    "capacity": 15,
+    "gender": "مختلط"
+  }
+,
+
+// فیزیک
+
+  {
+    "id": 4210006,
+    "name": "دفاع از پيشنهاد رساله دكتري",
+    "code": "41_4210006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210007,
+    "name": "دفاع مجدد از پيشنهاد رساله دكتري",
+    "code": "41_4210007",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 0,
+    "sessions": [],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210010,
+    "name": "فيزيك عمومي 3",
+    "code": "42_4210010",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 212" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210011,
+    "name": "فيزيك عمومي 4",
+    "code": "42_4210011",
+    "prof": "افشاري محمد مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "كلاس 212" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/22 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210012,
+    "name": "ترموديناميك و مكانيك آماري 1",
+    "code": "42_4210012",
+    "prof": "نوروزي فر احسان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "كلاس 212" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210016,
+    "name": "كارگاه ماشين افزار",
+    "code": "42_4210016",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210016,
+    "name": "كارگاه ماشين افزار",
+    "code": "43_4210016",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210017,
+    "name": "مكانيك كوانتمي 1",
+    "code": "42_4210017",
+    "prof": "هدايتي خليل آباد هادي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/21 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210018,
+    "name": "الكترومغناطيس 2",
+    "code": "42_4210018",
+    "prof": "تقي زاده فيروزجايي جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 212" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210020,
+    "name": "كارگاه الكتروتكنيك",
+    "code": "42_4210020",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "دانشكده برق" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210020,
+    "name": "كارگاه الكتروتكنيك",
+    "code": "43_4210020",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210029,
+    "name": "انرژي هاي نو",
+    "code": "42_4210029",
+    "prof": "مشحون سارا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 212" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210030,
+    "name": "محاسبات عددي",
+    "code": "42_4210030",
+    "prof": "مسعودي سيد فرهاد",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 9, "duration": 1.5, "location": "كلاس 211" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "كلاس 211" }
+    ],
+    "examDate": "1405/10/28 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 25,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210033,
+    "name": "مواد مغناطيسي",
+    "code": "42_4210033",
+    "prof": "مشكوري مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 211" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 211" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210034,
+    "name": "محاسبات و اطلاعات كوانتمي",
+    "code": "42_4210034",
+    "prof": "تقي زاده فيروزجايي جواد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "كلاس 211" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "كلاس 211" }
+    ],
+    "examDate": "1405/10/20 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210044,
+    "name": "پايان نامه",
+    "code": "41_4210044",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 6,
+    "sessions": [],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 100,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210051,
+    "name": "رساله دكترا",
+    "code": "41_4210051",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 24,
+    "sessions": [],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210070,
+    "name": "مكانيك آماري پيشرفته 1",
+    "code": "41_4210070",
+    "prof": "مشحون سارا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210071,
+    "name": "مكانيك كوانتوم پيشرفته 1",
+    "code": "41_4210071",
+    "prof": "افضلي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210075,
+    "name": "اپتيك",
+    "code": "42_4210075",
+    "prof": "افشاري محمد مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "كلاس 202" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/30 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210076,
+    "name": "يادگيري ماشيني در فيزيك",
+    "code": "42_4210076",
+    "prof": "هدايتي خليل آباد هادي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210085,
+    "name": "مكانيك تحليلي 1",
+    "code": "42_4210085",
+    "prof": "افضلي رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 202" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210086,
+    "name": "رياضي فيزيك 1",
+    "code": "42_4210086",
+    "prof": "مقدسين هدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210089,
+    "name": "الكترونيك 1",
+    "code": "42_4210089",
+    "prof": "رضايي فاطمه",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 211" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 211" }
+    ],
+    "examDate": "1405/11/05 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210091,
+    "name": "آزفيزيك پايه 3",
+    "code": "41_4210091",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210091,
+    "name": "آزفيزيك پايه 3",
+    "code": "42_4210091",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210096,
+    "name": "رياضي فيزيك 3",
+    "code": "42_4210096",
+    "prof": "نصيري راد امين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "كلاس 202" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "كلاس 202" }
+    ],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210097,
+    "name": "آزاپتيك",
+    "code": "41_4210097",
+    "prof": "حمزه پور حسين",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210097,
+    "name": "آزاپتيك",
+    "code": "42_4210097",
+    "prof": "افشاري محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "42_4210113",
+    "prof": "نوروزي فر احسان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "كلاس 212" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "43_4210113",
+    "prof": "ژوليده حقيقي محمد حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "44_4210113",
+    "prof": "رادين مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "45_4210113",
+    "prof": "واعظ زاده مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "46_4210113",
+    "prof": "واعظ زاده مجيد",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "47_4210113",
+    "prof": "حمزه پور حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "48_4210113",
+    "prof": "حاتمي محمد محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "49_4210113",
+    "prof": "حاتمي محمد محسن",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "50_4210113",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "51_4210113",
+    "prof": "صداقت مهسا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "52_4210113",
+    "prof": "صداقت مهسا",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "53_4210113",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "54_4210113",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 9, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 9, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210113,
+    "name": "فيزيك 1",
+    "code": "55_4210113",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [4], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "41_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "42_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "43_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "44_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "45_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "46_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "47_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "48_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "49_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "50_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "51_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "52_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "53_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5,
+    "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "54_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "55_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "56_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "57_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "58_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "59_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "60_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "61_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "62_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "63_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "64_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "زن"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "65_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210114,
+    "name": "آزفيزيك 1",
+    "code": "66_4210114",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مرد"
+  },
+  {
+    "id": 4210115,
+    "name": "فيزيك 2",
+    "code": "43_4210115",
+    "prof": "افضل زاده رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "پرديس شهيد رضايي نژاد" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "پرديس شهيد رضايي نژاد" }
+    ],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "41_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "42_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "43_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "44_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "45_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "46_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "47_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "48_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "49_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "50_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "51_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "52_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "53_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "54_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "55_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "56_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "57_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "58_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "59_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "60_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 0,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "61_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "62_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "63_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "64_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "65_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "66_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "67_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "68_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "69_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "70_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "71_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210116,
+    "name": "آزفيزيك 2",
+    "code": "72_4210116",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210119,
+    "name": "فيزيك محاسباتي پيشرفته",
+    "code": "41_4210119",
+    "prof": "حمزه پور حسين",
+    "units": 3,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210119,
+    "name": "فيزيك محاسباتي پيشرفته",
+    "code": "42_4210119",
+    "prof": "مسعودي سيد فرهاد",
+    "units": 3,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "" }],
+    "examDate": "1405/11/03 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210128,
+    "name": "فيزيك مكانيك و حرارت",
+    "code": "43_4210128",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210130,
+    "name": "الكترو ديناميك پيشرفته 1",
+    "code": "41_4210130",
+    "prof": "رادين مهدي",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 13.5, "duration": 1.5, "location": "" },
+      { "days": [4], "start": 13.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/19 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4210135,
+    "name": "بيوفيزيك",
+    "code": "42_4210135",
+    "prof": "نوروزي فر احسان",
+    "units": 3,
+    "sessions": [
+      { "days": [2], "start": 15, "duration": 1.5, "location": "كلاس 212" },
+      { "days": [4], "start": 15, "duration": 1.5, "location": "كلاس 212" }
+    ],
+    "examDate": "1405/10/26 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4212137,
+    "name": "فيزيك محاسباتي",
+    "code": "41_4212137",
+    "prof": "صداقت مهسا",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "1405/10/23 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4212160,
+    "name": "فيزيك حالت جامد پيشرفته 1",
+    "code": "41_4212160",
+    "prof": "جعفري محمود",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "" }
+    ],
+    "examDate": "1405/10/29 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4212213,
+    "name": "آز حالت جامد",
+    "code": "41_4212213",
+    "prof": "مشكوري مهدي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4212213,
+    "name": "آز حالت جامد",
+    "code": "42_4212213",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 8,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4212231,
+    "name": "فيزيك سطح پيشرفته 1",
+    "code": "41_4212231",
+    "prof": "افضل زاده رضا",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "" }
+    ],
+    "examDate": "1405/10/27 10:30-12:30",
+    "department": "فيزيك",
+    "capacity": 20,
+    "gender": "مختلط"
+  },
+  {
+    "id": 4214012,
+    "name": "آز پيشرفته هسته اي 1",
+    "code": "41_4214012",
+    "prof": "رحماني فائزه",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "" }],
+    "examDate": "",
+    "department": "فيزيك",
+    "capacity": 6,
+    "gender": "مختلط"
+  }
+,
+// omomi
+
+  {
+    "id": 5512003,
+    "name": "نگارش متون علمي",
+    "code": "51_5512003",
+    "prof": "نوروزي زاده سوگند",
+    "units": 3,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512003,
+    "name": "نگارش متون علمي",
+    "code": "52_5512003",
+    "prof": "نوروزي زاده سوگند",
+    "units": 3,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "51_5512004",
+    "prof": "سلماني نژادمهرآبادي ساغر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "205" },
+      { "days": [5], "start": 7.5, "duration": 1.5, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "52_5512004",
+    "prof": "سلماني نژادمهرآبادي ساغر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "205" },
+      { "days": [5], "start": 9, "duration": 1.5, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "53_5512004",
+    "prof": "سلماني نژادمهرآبادي ساغر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "205" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "54_5512004",
+    "prof": "سلماني نژادمهرآبادي ساغر",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "205" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "55_5512004",
+    "prof": "عليقلي زاده حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 13.5, "duration": 1.5, "location": "205" },
+      { "days": [5], "start": 13.5, "duration": 1.5, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "56_5512004",
+    "prof": "عليقلي زاده حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "205" },
+      { "days": [5], "start": 15, "duration": 1.5, "location": "205" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "57_5512004",
+    "prof": "عليقلي زاده حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "101" },
+      { "days": [1], "start": 10.5, "duration": 2, "location": "101" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512004,
+    "name": "زبان فارسي1",
+    "code": "58_5512004",
+    "prof": "عليقلي زاده حسين",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 9, "duration": 1.5, "location": "101" },
+      { "days": [5], "start": 10.5, "duration": 2, "location": "101" }
+    ],
+    "examDate": "1405/10/19 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "51_5514003",
+    "prof": "امامي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "زن"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "52_5514003",
+    "prof": "امامي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "53_5514003",
+    "prof": "طهماسبي محمد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "54_5514003",
+    "prof": "طهماسبي محمد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "56_5514003",
+    "prof": "بابايي محمدحسن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "57_5514003",
+    "prof": "بابايي محمدحسن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "58_5514003",
+    "prof": "عبداللهي عباس",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "59_5514003",
+    "prof": "عبداللهي عباس",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514003,
+    "name": "انقلاب اسلامي وريشه هاي آن",
+    "code": "60_5514003",
+    "prof": "نوروزي مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/26 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "51_5514006",
+    "prof": "كاظم توري سعيده",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "54_5514006",
+    "prof": "اشتري ماهيني ليلا",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "55_5514006",
+    "prof": "كاملي علي اصغر",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "56_5514006",
+    "prof": "كاملي علي اصغر",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "57_5514006",
+    "prof": "صادقي معصومه",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "58_5514006",
+    "prof": "صادقي معصومه",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514006,
+    "name": "تفسيرموضوعي قرآن",
+    "code": "59_5514006",
+    "prof": "نوروزي مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/22 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514010,
+    "name": "فلسفه اخلاق",
+    "code": "51_5514010",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514014,
+    "name": "تاريخ تمدن فرهنگ و تمدن اسلامي",
+    "code": "51_5514014",
+    "prof": "بابايي محمدحسن",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514014,
+    "name": "تاريخ تمدن فرهنگ و تمدن اسلامي",
+    "code": "52_5514014",
+    "prof": "بابايي محمدحسن",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514014,
+    "name": "تاريخ تمدن فرهنگ و تمدن اسلامي",
+    "code": "53_5514014",
+    "prof": "سعيدي نسب تورج",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514014,
+    "name": "تاريخ تمدن فرهنگ و تمدن اسلامي",
+    "code": "54_5514014",
+    "prof": "سعيدي نسب تورج",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514015,
+    "name": "آيين زندگي و اخلاق كاربردي",
+    "code": "51_5514015",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514015,
+    "name": "آيين زندگي و اخلاق كاربردي",
+    "code": "52_5514015",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514015,
+    "name": "آيين زندگي و اخلاق كاربردي",
+    "code": "53_5514015",
+    "prof": "مرتضايي بهزاد",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514015,
+    "name": "آيين زندگي و اخلاق كاربردي",
+    "code": "54_5514015",
+    "prof": "موسوي گرمارودي رويا",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514015,
+    "name": "آيين زندگي و اخلاق كاربردي",
+    "code": "55_5514015",
+    "prof": "نوروزي مهدي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/21 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "51_5514016",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "52_5514016",
+    "prof": "مهدوي مجيد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "53_5514016",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "54_5514016",
+    "prof": "مرتضايي بهزاد",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "55_5514016",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "56_5514016",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "57_5514016",
+    "prof": "اكبري سكينه",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "60_5514016",
+    "prof": "موسوي سيدعلي محمد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "61_5514016",
+    "prof": "موسوي سيدعلي محمد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 16.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "62_5514016",
+    "prof": "موسوي سيدعلي محمد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "64_5514016",
+    "prof": "حقيقت طلب سكينه",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "65_5514016",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514016,
+    "name": "دانش خانواده وجمعيت",
+    "code": "66_5514016",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/20 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514017,
+    "name": "تاريخ تحليلي صدر اسلام",
+    "code": "51_5514017",
+    "prof": "امامي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "زن"
+  },
+  {
+    "id": 5514017,
+    "name": "تاريخ تحليلي صدر اسلام",
+    "code": "52_5514017",
+    "prof": "امامي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514017,
+    "name": "تاريخ تحليلي صدر اسلام",
+    "code": "53_5514017",
+    "prof": "امامي محمد مهدي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "دانشكده برق" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 30,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514017,
+    "name": "تاريخ تحليلي صدر اسلام",
+    "code": "54_5514017",
+    "prof": "كاظم توري سعيده",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514017,
+    "name": "تاريخ تحليلي صدر اسلام",
+    "code": "55_5514017",
+    "prof": "موسوي گرمارودي رويا",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "عمران- ساختمان اموزش" }],
+    "examDate": "1405/10/23 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514128,
+    "name": "انديشه اسلامي 1",
+    "code": "51_5514128",
+    "prof": "بلخاري قهي حسين",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+        "gender": "مرد"
+  },
+  {
+    "id": 5514128,
+    "name": "انديشه اسلامي 1",
+    "code": "52_5514128",
+    "prof": "بلخاري قهي حسين",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514128,
+    "name": "انديشه اسلامي 1",
+    "code": "54_5514128",
+    "prof": "آرپناهي ايستادگي فاطمه",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514128,
+    "name": "انديشه اسلامي 1",
+    "code": "58_5514128",
+    "prof": "كهنداني تفرشي مهناز",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514128,
+    "name": "انديشه اسلامي 1",
+    "code": "63_5514128",
+    "prof": "موسوي سيدعلي محمد",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/27 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "51_5514129",
+    "prof": "بلخاري قهي حسين",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "53_5514129",
+    "prof": "آرپناهي ايستادگي فاطمه",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "54_5514129",
+    "prof": "كهنداني تفرشي مهناز",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "زن"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "56_5514129",
+    "prof": "موسوي سيدعلي محمد",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "57_5514129",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5514129,
+    "name": "انديشه اسلامي 2",
+    "code": "58_5514129",
+    "prof": "منصوري بيژن",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "1405/10/28 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مرد"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "51_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [1], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "52_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "53_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "54_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "دانشكده برق" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 60,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "55_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "ساختمان آموزشي نقشه برداري" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "56_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 13.5, "duration": 1.5, "location": "دانشكده عمران" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "57_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "دانشكده عمران" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "58_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "مكانيك-كلاس" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 70,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "59_5505050",
+    "prof": "اكبري سكينه",
+    "units": 2,
+    "sessions": [{ "days": [4], "start": 16.5, "duration": 1.5, "location": "ساختمان آموزشي صنايع" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 50,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "60_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [5], "start": 15, "duration": 1.5, "location": "كلاس 304" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "61_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "دانشكده فيزيك" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "62_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "101" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 45,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5505050,
+    "name": "مهارتهاي زندگي دانشجويي",
+    "code": "64_5505050",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 2,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "101" }],
+    "examDate": "1405/11/05 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "51_5510001",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "52_5510001",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "53_5510001",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "54_5510001",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "55_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "56_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "57_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "58_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "59_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "60_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "61_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "62_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "63_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "64_5510001",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "دانشكده مهندسي برق و كامپيوتر پرديس شهيد قندي زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "65_5510001",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "66_5510001",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "67_5510001",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "68_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "69_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "70_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "71_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "72_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "73_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "74_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510001,
+    "name": "تربيت بدني",
+    "code": "75_5510001",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "51_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "52_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "53_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "54_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "سالن تربيت بدني دانشكده علوم" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "55_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "56_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 7.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "57_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "58_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "59_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "60_5510002",
+    "prof": "هنرور افشار",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "61_5510002",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "62_5510002",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [2],    "start": 13.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "63_5510002",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "64_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 15, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "65_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 16.5, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "66_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "67_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 16.5, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "68_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "69_5510002",
+    "prof": "خنجري ياسر",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 15, "duration": 1.5, "location": "پرديس شهيد قندي دانشكده برق زمين چمن" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مرد"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "70_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "71_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "72_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "73_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 15, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "74_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [2], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "75_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 9, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "76_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "هوافضا-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "77_5510002",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [5], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "78_5510002",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "79_5510002",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [1], "start": 13.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "80_5510002",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510002,
+    "name": "ورزش 1",
+    "code": "81_5510002",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 10.5, "duration": 2, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "زن"
+  },
+  {
+    "id": 5510003,
+    "name": "تربيت بدني ويژه",
+    "code": "51_5510003",
+    "prof": "خداداد كاشي شعله",
+    "units": 1,
+    "sessions": [{ "days": [3], "start": 15, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 16,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5510004,
+    "name": "ورزش ويژه",
+    "code": "51_5510004",
+    "prof": "لطيفي حجت اله",
+    "units": 1,
+    "sessions": [{ "days": [4], "start": 13.5, "duration": 1.5, "location": "علوم-سالن تربيت بدني" }],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 12,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "51_5512006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 15, "duration": 1.5, "location": "101" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "101" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "52_5512006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [5], "start": 15, "duration": 1.5, "location": "101" },
+      { "days": [5], "start": 16.5, "duration": 1.5, "location": "101" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "53_5512006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 7.5, "duration": 1.5, "location": "مكانيك-كلاس" },
+      { "days": [3], "start": 7.5, "duration": 1.5, "location": "مكانيك-كلاس" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "54_5512006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 9, "duration": 1.5, "location": "مكانيك-كلاس" },
+      { "days": [3], "start": 9, "duration": 1.5, "location": "مكانيك-كلاس" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "55_5512006",
+    "prof": "اساتيد گروه آموزشي",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 10.5, "duration": 2, "location": "مكانيك-كلاس" },
+      { "days": [3], "start": 10.5, "duration": 2, "location": "مكانيك-كلاس" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "56_5512006",
+    "prof": "نوروزي زاده سوگند",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 15, "duration": 1.5, "location": "ساختمان آموزشي صنايع" },
+      { "days": [3], "start": 15, "duration": 1.5, "location": "ساختمان آموزشي صنايع" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  },
+  {
+    "id": 5512006,
+    "name": "زبان انگليسي",
+    "code": "57_5512006",
+    "prof": "نوروزي زاده سوگند",
+    "units": 3,
+    "sessions": [
+      { "days": [1], "start": 16.5, "duration": 1.5, "location": "ساختمان آموزشي صنايع" },
+      { "days": [3], "start": 16.5, "duration": 1.5, "location": "ساختمان آموزشي صنايع" }
+    ],
+    "examDate": "1405/10/29 13:30-16:30",
+    "department": "عمومي",
+    "capacity": 40,
+    "gender": "مختلط"
+  }
+
 
 ]

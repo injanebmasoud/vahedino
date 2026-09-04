@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
 <head>
@@ -590,6 +591,82 @@
             margin-bottom: 4px;
             color: #aaa;
         }
+        /* بنر اطلاع‌رسانی پویش کوله امید */
+        .site-banner {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            background: linear-gradient(90deg, rgba(0,216,144,0.18), rgba(0,216,144,0.05));
+            border: 1px solid rgba(0,216,144,0.45);
+            border-radius: 12px;
+            padding: 12px 18px;
+            margin-bottom: 16px;
+            font-size: 0.95em;
+        }
+        .site-banner.show { display: flex; }
+        .site-banner .banner-text { line-height: 1.7; }
+        .site-banner .banner-text strong { color: var(--primary-hover); }
+        .site-banner .banner-link {
+            background: var(--primary-hover);
+            color: #121212;
+            font-weight: bold;
+            padding: 7px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s;
+        }
+        .site-banner .banner-link:hover { background: var(--primary); }
+        .site-banner .banner-close {
+            background: transparent;
+            border: none;
+            color: #aaa;
+            font-size: 20px;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .site-banner .banner-close:hover { color: var(--accent); }
+
+        /* امتیازدهی چندمعیاری اساتید */
+        .criteria-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+        }
+        .criteria-label { font-size: 0.9em; color: #e0e0e0; }
+        .criteria-stars { display: flex; direction: ltr; gap: 4px; }
+        .criteria-stars .star-btn {
+            font-size: 22px;
+            color: var(--star-gray);
+            cursor: pointer;
+            transition: transform 0.1s, color 0.1s;
+        }
+        .criteria-stars .star-btn:hover,
+        .criteria-stars .star-btn.active {
+            color: var(--star-gold);
+            transform: scale(1.15);
+        }
+        .criteria-summary {
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .criteria-summary-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-size: 0.82em;
+            display: flex;
+            justify-content: space-between;
+            color: #d5d5d5;
+        }
+        .criteria-summary-item strong { color: var(--star-gold); }
     </style>
 </head>
 
@@ -618,6 +695,18 @@
             </div>
         </div>
     </header>
+
+    <!-- بنر اطلاع‌رسانی پویش کوله امید -->
+     <!-- <div class="site-banner" id="kooleBanner">
+        <div class="banner-text">
+            🎒 <strong id="kooleBannerTitle">پویش کوله امید</strong>
+            <span id="kooleBannerText"></span>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+            <a id="kooleBannerLink" class="banner-link" target="_blank" href="#">اطلاعات بیشتر</a>
+            <button class="banner-close" onclick="dismissKooleBanner()" title="بستن">&times;</button>
+        </div>
+    </div>  -->
 
     <div class="container">
         <div class="sidebar">
@@ -708,18 +797,13 @@
                     <div id="modalProfStars" class="rating-stars"></div>
                     <span id="modalProfCount" style="color: #888; font-size: 0.85em;">(۰ نظر)</span>
                 </div>
+                <div class="criteria-summary" id="modalCriteriaSummary"></div>
             </div>
 
             <h3>ثبت امتیاز و دیدگاه</h3>
-            <p style="font-size: 0.85em; color: #aaa; margin-bottom: 8px;">امتیاز شما ثبت شده و میانگین کلی نمرات استاد را به‌روز می‌کند.</p>
+            <p style="font-size: 0.85em; color: #aaa; margin-bottom: 8px;">به هر معیار از ۱ تا ۵ ستاره بدهید؛ نمره کلی استاد، میانگین این چهار معیار خواهد بود.</p>
 
-            <div class="interactive-stars" id="interactiveStarContainer">
-                <span class="star-btn" data-value="1" onclick="setSelectRating(1)">★</span>
-                <span class="star-btn" data-value="2" onclick="setSelectRating(2)">★</span>
-                <span class="star-btn" data-value="3" onclick="setSelectRating(3)">★</span>
-                <span class="star-btn" data-value="4" onclick="setSelectRating(4)">★</span>
-                <span class="star-btn" data-value="5" onclick="setSelectRating(5)">★</span>
-            </div>
+            <div id="criteriaContainer"></div>
 
             <textarea id="reviewComment" class="review-input" placeholder="نظرتان درباره نحوه تدریس، اخلاق یا نمره‌دهی استاد را بنویسید (واحدینو مسئولیتی در برابر نظرات داده شده نداره)..."></textarea>
             <button class="submit-btn" id="submitBtn" onclick="submitProfRating()">ثبت امتیاز و نظر</button>
@@ -786,14 +870,54 @@
             return starsHTML;
         }
 
+        // معیارهای ارزیابی اساتید (قابل ویرایش/افزایش)
+        const RATING_CRITERIA = [
+            { key: 'teaching', label: 'کیفیت تدریس' },
+            { key: 'behavior', label: 'خوش‌رویی و اخلاق' },
+            { key: 'grading',  label: 'نمره‌دهی' },
+            { key: 'exam',     label: 'امتحان و رسیدگی' }
+        ];
         let currentSelectedProf = null;
-        let selectedUserRating = 0;
+        let criteriaRatings = {};
+
+        function renderCriteriaInputs() {
+            const container = document.getElementById('criteriaContainer');
+            if (!container) return;
+            container.innerHTML = '';
+            RATING_CRITERIA.forEach(c => {
+                const row = document.createElement('div');
+                row.className = 'criteria-row';
+                let stars = '';
+                for (let i = 1; i <= 5; i++) {
+                    stars += `<span class="star-btn" data-crit="${c.key}" data-value="${i}" onclick="setCriteriaRating('${c.key}', ${i})">★</span>`;
+                }
+                row.innerHTML = `<span class="criteria-label">${c.label}</span><div class="criteria-stars">${stars}</div>`;
+                container.appendChild(row);
+            });
+        }
+
+        function setCriteriaRating(key, val) {
+            criteriaRatings[key] = val;
+            document.querySelectorAll(`.star-btn[data-crit="${key}"]`).forEach((btn, idx) => {
+                btn.classList.toggle('active', idx < val);
+            });
+        }
+
+        function getCriteriaAverages(profName) {
+            const entry = profRatingsDB[profName];
+            const result = {};
+            RATING_CRITERIA.forEach(c => {
+                const arr = entry && entry.criteria && entry.criteria[c.key] ? entry.criteria[c.key] : [];
+                result[c.key] = arr.length ? parseFloat((arr.reduce((a, b) => a + b, 0) / arr.length).toFixed(1)) : 0;
+            });
+            return result;
+        }
 
         function openProfModal(profName, event) {
             if (event) event.stopPropagation();
             currentSelectedProf = profName;
-            selectedUserRating = 0;
-            updateInteractiveStars(0);
+            criteriaRatings = {};
+            renderCriteriaInputs();
 
             document.getElementById('modalProfName').textContent = profName;
             document.getElementById('reviewComment').value = '';
@@ -807,22 +931,6 @@
             currentSelectedProf = null;
         }
 
-        function setSelectRating(val) {
-            selectedUserRating = val;
-            updateInteractiveStars(val);
-        }
-
-        function updateInteractiveStars(val) {
-            const starBtns = document.querySelectorAll('#interactiveStarContainer .star-btn');
-            starBtns.forEach((btn, idx) => {
-                if (idx < val) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-        }
-
         function refreshProfModalDetails() {
             if (!currentSelectedProf) return;
             const data = getProfRatingData(currentSelectedProf);
@@ -830,6 +938,18 @@
             document.getElementById('modalProfScore').textContent = data.average;
             document.getElementById('modalProfStars').innerHTML = renderStarsHTML(data.average);
             document.getElementById('modalProfCount').textContent = `(${data.count} ثبت نمره)`;
+
+            const summaryEl = document.getElementById('modalCriteriaSummary');
+            if (summaryEl) {
+                if (data.count === 0) {
+                    summaryEl.innerHTML = '';
+                } else {
+                    const critAvg = getCriteriaAverages(currentSelectedProf);
+                    summaryEl.innerHTML = RATING_CRITERIA.map(c =>
+                        `<div class="criteria-summary-item"><span>${c.label}</span><strong>${critAvg[c.key]} از ۵</strong></div>`
+                    ).join('');
+                }
+            }
 
             const reviewsListEl = document.getElementById('modalReviewsList');
             reviewsListEl.innerHTML = '';
@@ -854,31 +974,48 @@
 
         function submitProfRating() {
             if (!currentSelectedProf) return;
-            if (selectedUserRating === 0) {
-                alert('لطفاً با کلیک روی ستاره‌ها، نمره مورد نظر را انتخاب کنید.');
+
+            const missing = RATING_CRITERIA.filter(c => !criteriaRatings[c.key]);
+            if (missing.length > 0) {
+                alert('لطفاً برای هر چهار معیار (تدریس، خوش‌رویی، نمره‌دهی و امتحان) ستاره انتخاب کنید.');
                 return;
             }
 
             const commentText = document.getElementById('reviewComment').value.trim();
 
             if (!profRatingsDB[currentSelectedProf]) {
-                profRatingsDB[currentSelectedProf] = { ratings: [], comments: [] };
+                profRatingsDB[currentSelectedProf] = { ratings: [], comments: [], criteria: {} };
             }
+            const entry = profRatingsDB[currentSelectedProf];
+            if (!entry.criteria) entry.criteria = {};
 
-            profRatingsDB[currentSelectedProf].ratings.push(selectedUserRating);
+            // نمره کلی = میانگین چهار معیار (از ۵)
+            const values = RATING_CRITERIA.map(c => criteriaRatings[c.key]);
+            const overall = parseFloat((values.reduce((a, b) => a + b, 0) / values.length).toFixed(2));
+
+            entry.ratings.push(overall);
+            RATING_CRITERIA.forEach(c => {
+                if (!entry.criteria[c.key]) entry.criteria[c.key] = [];
+                entry.criteria[c.key].push(criteriaRatings[c.key]);
+            });
+
             if (commentText) {
                 const today = new Date().toLocaleDateString('fa-IR');
-                profRatingsDB[currentSelectedProf].comments.push({
+                entry.comments.push({
                     text: commentText,
-                    score: selectedUserRating,
+                    score: overall,
                     date: today
                 });
             }
 
             saveProfRatingsDB();
+
+            criteriaRatings = {};
+            renderCriteriaInputs();
+            document.getElementById('reviewComment').value = '';
             refreshProfModalDetails();
             filterCourses();
-            alert('نمره و دیدگاه شما ثبت شد.');
+            alert('امتیاز و دیدگاه شما ثبت شد.');
         }
 
         function escapeHtml(text) {
@@ -934,7 +1071,7 @@
             });
 
             loadProfRatingsData();
-            resetAllProfRatings();
+            // توجه: resetAllProfRatings حذف شد — چون با هر بار بارگذاری صفحه، تمام امتیازهای ثبت‌شده دانشجویان پاک می‌شد
             updateSchedule();
             updateUnits();
         }
@@ -1196,11 +1333,49 @@
             });
         }
 
+        // ===== تنظیمات بنر پویش کوله امید =====
+        // هر سال فقط مقادیر این بخش را به‌روزرسانی کنید (متن، لینک و بازه زمانی)
+        const KOOLE_BANNER = {
+            enabled: true,
+            campaignId: 'koole-omid-1405',          // شناسه کمپین امسال (برای سال بعد تغییرش بدهید تا بنر دوباره برای همه نمایش داده شود)
+            startDate: '2026-08-15',                 // شروع نمایش بنر (میلادی)
+            endDate:   '2026-10-15',                 // پایان نمایش بنر (میلادی)
+            title: 'پویش کوله امید',
+            text: 'امسال هم مثل هر سال پویش «کوله امید» راه افتاده تا با کمک شما، کوله‌بار تحصیل دانش‌آموزان نیازمند سبک‌تر شود. هر مشارکت، یعنی یک کوله پر از امید! 🎒',
+            linkText: 'مشارکت در پویش',
+            link: 'https://t.me/vahedino'
+        };
+
+        function initKooleBanner() {
+            try {
+                const cfg = KOOLE_BANNER;
+                const banner = document.getElementById('kooleBanner');
+                if (!banner || !cfg.enabled) return;
+                const now = new Date();
+                if (cfg.startDate && now < new Date(cfg.startDate + 'T00:00:00')) return;
+                if (cfg.endDate && now > new Date(cfg.endDate + 'T23:59:59')) return;
+                if (localStorage.getItem('dismissed_' + cfg.campaignId)) return;
+                document.getElementById('kooleBannerTitle').textContent = cfg.title;
+                document.getElementById('kooleBannerText').textContent = ' ' + cfg.text;
+                const link = document.getElementById('kooleBannerLink');
+                link.href = cfg.link;
+                link.textContent = cfg.linkText;
+                banner.classList.add('show');
+            } catch (e) {}
+        }
+
+        function dismissKooleBanner() {
+            localStorage.setItem('dismissed_' + KOOLE_BANNER.campaignId, '1');
+            document.getElementById('kooleBanner').classList.remove('show');
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const meta = document.querySelector('meta[name="viewport"]');
             if (meta) meta.setAttribute('content', 'width=1200');
+            initKooleBanner();
             initSchedule();
         });
     </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>

@@ -470,15 +470,6 @@
             font-size: 0.95em;
         }
 
-        .modal-team span {
-            background: rgba(0,216,144,0.1);
-            color: var(--primary-hover);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            display: inline-block;
-        }
-
         .modal-close {
             position: absolute;
             top: 16px;
@@ -517,27 +508,6 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-        }
-
-        .interactive-stars {
-            display: flex;
-            direction: ltr;
-            justify-content: center;
-            gap: 8px;
-            margin: 15px 0;
-        }
-
-        .interactive-stars .star-btn {
-            font-size: 32px;
-            color: var(--star-gray);
-            cursor: pointer;
-            transition: transform 0.1s, color 0.1s;
-        }
-
-        .interactive-stars .star-btn:hover,
-        .interactive-stars .star-btn.active {
-            color: var(--star-gold);
-            transform: scale(1.15);
         }
 
         .review-input {
@@ -589,7 +559,7 @@
             margin-bottom: 4px;
             color: #aaa;
         }
-        /* بنر اطلاع‌رسانی پویش کوله امید */
+
         .site-banner {
             display: none;
             align-items: center;
@@ -626,7 +596,6 @@
         }
         .site-banner .banner-close:hover { color: var(--accent); }
 
-        /* امتیازدهی چندمعیاری اساتید */
         .criteria-row {
             display: flex;
             align-items: center;
@@ -694,7 +663,6 @@
         </div>
     </header>
 
-    <!-- بنر اطلاع‌رسانی پویش کوله امید -->
     <div class="site-banner" id="kooleBanner">
         <div class="banner-text">
             🎒 <strong id="kooleBannerTitle">پویش کوله امید</strong>
@@ -814,59 +782,40 @@
     <script src="https://nadmi.ir/list.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
-    <!-- ===== Firebase (برای ذخیره‌ی مشترک امتیاز اساتید بین همه‌ی کاربران) ===== -->
-    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <!-- ===== JSONBin.io Configuration ===== -->
     <script>
-        // مقادیر زیر را با کانفیگ پروژه‌ی خودتان در Firebase Console جایگزین کنید
-        // (Project settings → your apps → SDK setup and configuration)
-        const firebaseConfig = {
-            apiKey: "AIzaSyD4iFSjzXTSu_nBiz5e4Qo-p0f8ZXeOdgY",
-            authDomain: "vahedino-85c0b.firebaseapp.com",
-            projectId: "vahedino-85c0b",
-            storageBucket: "vahedino-85c0b.firebasestorage.app",
-            messagingSenderId: "941774610851",
-            appId: "1:941774610851:web:df7581b638fdc342f83a16",
-            measurementId: "G-H8PYQPWNB8"
-
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.firestore();
-        const PROF_RATINGS_COLLECTION = 'profRatings';
-
-        // چون نام استاد ممکنه شامل "/" یا کاراکترهای خاص باشه، برای امن بودن به‌عنوان id سند آن را رمزگذاری می‌کنیم
-        function sanitizeProfId(profName) {
-            return encodeURIComponent(profName || 'unknown');
-        }
+        const JSONBIN_BIN_ID = '6a9b0bb1f5f4af5e296b2274';
+        const JSONBIN_API_KEY = '$2a$10$wljxE9tsSF.xrgrHHo9uWO/E3ixnaCAMO/m5cKT8PpDMB28nVxH0i';
+        const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`;
     </script>
 
     <script>
         let profRatingsDB = {};
         let profRatingsLoaded = false;
 
-        // امتیازها از Firestore خوانده می‌شوند تا بین همه‌ی کاربران و مرورگرها مشترک باشند
         function loadProfRatingsData() {
-            return db.collection(PROF_RATINGS_COLLECTION).get().then(snapshot => {
-                const freshDB = {};
-                snapshot.forEach(doc => {
-                    const data = doc.data();
-                    const profName = data.profName || decodeURIComponent(doc.id);
-                    freshDB[profName] = {
-                        ratings: data.ratings || [],
-                        comments: data.comments || [],
-                        criteria: data.criteria || {}
-                    };
-                });
-                profRatingsDB = freshDB;
+            return fetch(JSONBIN_URL + '/latest', {
+                method: 'GET',
+                headers: {
+                    'X-Master-Key': JSONBIN_API_KEY
+                }
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('خطا در دریافت اطلاعات از JSONBin');
+                return response.json();
+            })
+            .then(data => {
+                profRatingsDB = data.record || {};
                 profRatingsLoaded = true;
-            }).catch(err => {
-                console.error('خطا در دریافت امتیازهای اساتید از Firebase:', err);
-                profRatingsLoaded = true; // اجازه بده صفحه با امتیاز صفر هم بالا بیاد
+                filterCourses();
+            })
+            .catch(err => {
+                console.error('خطا در دریافت امتیازها از JSONBin:', err);
+                profRatingsLoaded = true;
+                filterCourses();
             });
         }
 
-        // مقدار پیش‌فرض نمرات تمامی اساتید به 0 تغییر یافت
         function getProfRatingData(profName) {
             if (!profName) return { average: 0, count: 0, comments: [] };
             if (!profRatingsDB[profName]) {
@@ -879,11 +828,6 @@
                 count: ratings.length,
                 comments: profRatingsDB[profName].comments || []
             };
-        }
-
-        // فقط کش محلی را پاک می‌کند و دوباره از Firebase می‌خواند؛ داده‌ی مشترک روی سرور پاک نمی‌شود
-        function resetAllProfRatings() {
-            loadProfRatingsData().then(() => filterCourses());
         }
 
         function renderStarsHTML(rating) {
@@ -903,7 +847,6 @@
             return starsHTML;
         }
 
-        // معیارهای ارزیابی اساتید (قابل ویرایش/افزایش)
         const RATING_CRITERIA = [
             { key: 'teaching', label: 'کیفیت تدریس' },
             { key: 'behavior', label: 'خوش‌رویی و اخلاق' },
@@ -1015,8 +958,6 @@
             }
 
             const commentText = document.getElementById('reviewComment').value.trim();
-
-            // نمره کلی = میانگین چهار معیار (از ۵)
             const values = RATING_CRITERIA.map(c => criteriaRatings[c.key]);
             const overall = parseFloat((values.reduce((a, b) => a + b, 0) / values.length).toFixed(2));
             const today = new Date().toLocaleDateString('fa-IR');
@@ -1024,53 +965,63 @@
             const submitBtn = document.getElementById('submitBtn');
             if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'در حال ثبت...'; }
 
-            const criteriaUpdate = {};
-            RATING_CRITERIA.forEach(c => {
-                criteriaUpdate[c.key] = firebase.firestore.FieldValue.arrayUnion(criteriaRatings[c.key]);
-            });
+            fetch(JSONBIN_URL + '/latest', {
+                method: 'GET',
+                headers: { 'X-Master-Key': JSONBIN_API_KEY }
+            })
+            .then(res => res.json())
+            .then(data => {
+                let currentDB = data.record || {};
 
-            const updatePayload = {
-                profName: currentSelectedProf,
-                ratings: firebase.firestore.FieldValue.arrayUnion(overall),
-                criteria: criteriaUpdate
-            };
-            if (commentText) {
-                updatePayload.comments = firebase.firestore.FieldValue.arrayUnion({
-                    text: commentText,
-                    score: overall,
-                    date: today,
-                    ts: Date.now()
-                });
-            }
-
-            const profRef = db.collection(PROF_RATINGS_COLLECTION).doc(sanitizeProfId(currentSelectedProf));
-
-            profRef.set(updatePayload, { merge: true }).then(() => {
-                // به‌روزرسانی نسخه‌ی محلی برای نمایش فوری بدون نیاز به رفرش
-                if (!profRatingsDB[currentSelectedProf]) {
-                    profRatingsDB[currentSelectedProf] = { ratings: [], comments: [], criteria: {} };
+                if (!currentDB[currentSelectedProf]) {
+                    currentDB[currentSelectedProf] = { ratings: [], comments: [], criteria: {} };
                 }
-                const entry = profRatingsDB[currentSelectedProf];
-                if (!entry.criteria) entry.criteria = {};
-                entry.ratings.push(overall);
+
+                const profEntry = currentDB[currentSelectedProf];
+                if (!profEntry.ratings) profEntry.ratings = [];
+                if (!profEntry.comments) profEntry.comments = [];
+                if (!profEntry.criteria) profEntry.criteria = {};
+
+                profEntry.ratings.push(overall);
+
                 RATING_CRITERIA.forEach(c => {
-                    if (!entry.criteria[c.key]) entry.criteria[c.key] = [];
-                    entry.criteria[c.key].push(criteriaRatings[c.key]);
+                    if (!profEntry.criteria[c.key]) profEntry.criteria[c.key] = [];
+                    profEntry.criteria[c.key].push(criteriaRatings[c.key]);
                 });
+
                 if (commentText) {
-                    entry.comments.push({ text: commentText, score: overall, date: today });
+                    profEntry.comments.push({
+                        text: commentText,
+                        score: overall,
+                        date: today,
+                        ts: Date.now()
+                    });
                 }
 
+                return fetch(JSONBIN_URL, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Master-Key': JSONBIN_API_KEY
+                    },
+                    body: JSON.stringify(currentDB)
+                });
+            })
+            .then(res => res.json())
+            .then(responseData => {
+                profRatingsDB = responseData.record;
                 criteriaRatings = {};
                 renderCriteriaInputs();
                 document.getElementById('reviewComment').value = '';
                 refreshProfModalDetails();
                 filterCourses();
                 alert('امتیاز و دیدگاه شما ثبت شد.');
-            }).catch(err => {
+            })
+            .catch(err => {
                 console.error('خطا در ثبت امتیاز:', err);
-                alert('ثبت امتیاز با خطا مواجه شد. لطفاً اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.');
-            }).finally(() => {
+                alert('ثبت امتیاز با خطا مواجه شد. لطفاً اتصال اینترنت را بررسی کنید.');
+            })
+            .finally(() => {
                 if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'ثبت امتیاز و نظر'; }
             });
         }
@@ -1127,11 +1078,8 @@
                 scheduleBody.appendChild(row);
             });
 
-            // توجه: resetAllProfRatings حذف شد — چون با هر بار بارگذاری صفحه، تمام امتیازهای ثبت‌شده دانشجویان پاک می‌شد
-            loadProfRatingsData().then(() => {
-                // بعد از اینکه امتیازها از Firebase رسیدند، لیست دروس را دوباره بساز تا امتیازها نمایش داده شوند
-                if (typeof filterCourses === 'function') filterCourses();
-            });
+            filterCourses();
+            loadProfRatingsData();
             updateSchedule();
             updateUnits();
         }
@@ -1393,13 +1341,11 @@
             });
         }
 
-        // ===== تنظیمات بنر پویش کوله امید =====
-        // هر سال فقط مقادیر این بخش را به‌روزرسانی کنید (متن، لینک و بازه زمانی)
         const KOOLE_BANNER = {
             enabled: true,
-            campaignId: 'koole-omid-1405',          // شناسه کمپین امسال (برای سال بعد تغییرش بدهید تا بنر دوباره برای همه نمایش داده شود)
-            startDate: '2026-08-15',                 // شروع نمایش بنر (میلادی)
-            endDate:   '2026-10-15',                 // پایان نمایش بنر (میلادی)
+            campaignId: 'koole-omid-1405',
+            startDate: '2026-08-15',
+            endDate:   '2026-10-15',
             title: 'پویش کوله امید',
             text: 'امسال هم مثل هر سال پویش «کوله امید» راه افتاده تا با کمک شما، کوله‌بار تحصیل دانش‌آموزان نیازمند سبک‌تر شود. هر مشارکت، یعنی یک کوله پر از امید! 🎒',
             linkText: 'مشارکت در پویش',

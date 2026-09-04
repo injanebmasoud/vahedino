@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
 <head>
@@ -697,7 +695,7 @@
     </header>
 
     <!-- بنر اطلاع‌رسانی پویش کوله امید -->
-     <!-- <div class="site-banner" id="kooleBanner">
+    <div class="site-banner" id="kooleBanner">
         <div class="banner-text">
             🎒 <strong id="kooleBannerTitle">پویش کوله امید</strong>
             <span id="kooleBannerText"></span>
@@ -706,7 +704,7 @@
             <a id="kooleBannerLink" class="banner-link" target="_blank" href="#">اطلاعات بیشتر</a>
             <button class="banner-close" onclick="dismissKooleBanner()" title="بستن">&times;</button>
         </div>
-    </div>  -->
+    </div>
 
     <div class="container">
         <div class="sidebar">
@@ -816,20 +814,56 @@
     <script src="https://nadmi.ir/list.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
+    <!-- ===== Firebase (برای ذخیره‌ی مشترک امتیاز اساتید بین همه‌ی کاربران) ===== -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    <script>
+        // مقادیر زیر را با کانفیگ پروژه‌ی خودتان در Firebase Console جایگزین کنید
+        // (Project settings → your apps → SDK setup and configuration)
+        const firebaseConfig = {
+            apiKey: "AIzaSyD4iFSjzXTSu_nBiz5e4Qo-p0f8ZXeOdgY",
+            authDomain: "vahedino-85c0b.firebaseapp.com",
+            projectId: "vahedino-85c0b",
+            storageBucket: "vahedino-85c0b.firebasestorage.app",
+            messagingSenderId: "941774610851",
+            appId: "1:941774610851:web:df7581b638fdc342f83a16",
+            measurementId: "G-H8PYQPWNB8"
+
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const PROF_RATINGS_COLLECTION = 'profRatings';
+
+        // چون نام استاد ممکنه شامل "/" یا کاراکترهای خاص باشه، برای امن بودن به‌عنوان id سند آن را رمزگذاری می‌کنیم
+        function sanitizeProfId(profName) {
+            return encodeURIComponent(profName || 'unknown');
+        }
+    </script>
+
     <script>
         let profRatingsDB = {};
+        let profRatingsLoaded = false;
 
+        // امتیازها از Firestore خوانده می‌شوند تا بین همه‌ی کاربران و مرورگرها مشترک باشند
         function loadProfRatingsData() {
-            const localData = localStorage.getItem('vahedino_prof_ratings');
-            if (localData) {
-                try {
-                    profRatingsDB = JSON.parse(localData);
-                } catch(e) {}
-            }
-        }
-
-        function saveProfRatingsDB() {
-            localStorage.setItem('vahedino_prof_ratings', JSON.stringify(profRatingsDB));
+            return db.collection(PROF_RATINGS_COLLECTION).get().then(snapshot => {
+                const freshDB = {};
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const profName = data.profName || decodeURIComponent(doc.id);
+                    freshDB[profName] = {
+                        ratings: data.ratings || [],
+                        comments: data.comments || [],
+                        criteria: data.criteria || {}
+                    };
+                });
+                profRatingsDB = freshDB;
+                profRatingsLoaded = true;
+            }).catch(err => {
+                console.error('خطا در دریافت امتیازهای اساتید از Firebase:', err);
+                profRatingsLoaded = true; // اجازه بده صفحه با امتیاز صفر هم بالا بیاد
+            });
         }
 
         // مقدار پیش‌فرض نمرات تمامی اساتید به 0 تغییر یافت
@@ -847,10 +881,9 @@
             };
         }
 
+        // فقط کش محلی را پاک می‌کند و دوباره از Firebase می‌خواند؛ داده‌ی مشترک روی سرور پاک نمی‌شود
         function resetAllProfRatings() {
-            profRatingsDB = {};
-            localStorage.removeItem('vahedino_prof_ratings');
-            filterCourses();
+            loadProfRatingsData().then(() => filterCourses());
         }
 
         function renderStarsHTML(rating) {
@@ -983,39 +1016,63 @@
 
             const commentText = document.getElementById('reviewComment').value.trim();
 
-            if (!profRatingsDB[currentSelectedProf]) {
-                profRatingsDB[currentSelectedProf] = { ratings: [], comments: [], criteria: {} };
-            }
-            const entry = profRatingsDB[currentSelectedProf];
-            if (!entry.criteria) entry.criteria = {};
-
             // نمره کلی = میانگین چهار معیار (از ۵)
             const values = RATING_CRITERIA.map(c => criteriaRatings[c.key]);
             const overall = parseFloat((values.reduce((a, b) => a + b, 0) / values.length).toFixed(2));
+            const today = new Date().toLocaleDateString('fa-IR');
 
-            entry.ratings.push(overall);
+            const submitBtn = document.getElementById('submitBtn');
+            if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'در حال ثبت...'; }
+
+            const criteriaUpdate = {};
             RATING_CRITERIA.forEach(c => {
-                if (!entry.criteria[c.key]) entry.criteria[c.key] = [];
-                entry.criteria[c.key].push(criteriaRatings[c.key]);
+                criteriaUpdate[c.key] = firebase.firestore.FieldValue.arrayUnion(criteriaRatings[c.key]);
             });
 
+            const updatePayload = {
+                profName: currentSelectedProf,
+                ratings: firebase.firestore.FieldValue.arrayUnion(overall),
+                criteria: criteriaUpdate
+            };
             if (commentText) {
-                const today = new Date().toLocaleDateString('fa-IR');
-                entry.comments.push({
+                updatePayload.comments = firebase.firestore.FieldValue.arrayUnion({
                     text: commentText,
                     score: overall,
-                    date: today
+                    date: today,
+                    ts: Date.now()
                 });
             }
 
-            saveProfRatingsDB();
+            const profRef = db.collection(PROF_RATINGS_COLLECTION).doc(sanitizeProfId(currentSelectedProf));
 
-            criteriaRatings = {};
-            renderCriteriaInputs();
-            document.getElementById('reviewComment').value = '';
-            refreshProfModalDetails();
-            filterCourses();
-            alert('امتیاز و دیدگاه شما ثبت شد.');
+            profRef.set(updatePayload, { merge: true }).then(() => {
+                // به‌روزرسانی نسخه‌ی محلی برای نمایش فوری بدون نیاز به رفرش
+                if (!profRatingsDB[currentSelectedProf]) {
+                    profRatingsDB[currentSelectedProf] = { ratings: [], comments: [], criteria: {} };
+                }
+                const entry = profRatingsDB[currentSelectedProf];
+                if (!entry.criteria) entry.criteria = {};
+                entry.ratings.push(overall);
+                RATING_CRITERIA.forEach(c => {
+                    if (!entry.criteria[c.key]) entry.criteria[c.key] = [];
+                    entry.criteria[c.key].push(criteriaRatings[c.key]);
+                });
+                if (commentText) {
+                    entry.comments.push({ text: commentText, score: overall, date: today });
+                }
+
+                criteriaRatings = {};
+                renderCriteriaInputs();
+                document.getElementById('reviewComment').value = '';
+                refreshProfModalDetails();
+                filterCourses();
+                alert('امتیاز و دیدگاه شما ثبت شد.');
+            }).catch(err => {
+                console.error('خطا در ثبت امتیاز:', err);
+                alert('ثبت امتیاز با خطا مواجه شد. لطفاً اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.');
+            }).finally(() => {
+                if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'ثبت امتیاز و نظر'; }
+            });
         }
 
         function escapeHtml(text) {
@@ -1070,8 +1127,11 @@
                 scheduleBody.appendChild(row);
             });
 
-            loadProfRatingsData();
             // توجه: resetAllProfRatings حذف شد — چون با هر بار بارگذاری صفحه، تمام امتیازهای ثبت‌شده دانشجویان پاک می‌شد
+            loadProfRatingsData().then(() => {
+                // بعد از اینکه امتیازها از Firebase رسیدند، لیست دروس را دوباره بساز تا امتیازها نمایش داده شوند
+                if (typeof filterCourses === 'function') filterCourses();
+            });
             updateSchedule();
             updateUnits();
         }
